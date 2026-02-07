@@ -1,142 +1,57 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map Preview</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            background: transparent;
-            overflow: hidden;
-        }
-        
-        #map {
-            height: 100vh;
-            width: 100%;
-            cursor: default;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; overflow: hidden; }
+        #map { width: 100%; height: 100%; }
     </style>
 </head>
 <body>
     <div id="map"></div>
-    
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
         const countryData = {
-            'Greenland': {score: 85},
-            'Norway': {score: 92},
-            'Denmark': {score: 91},
-            'Sweden': {score: 90},
-            'Finland': {score: 89},
-            'Switzerland': {score: 88},
-            'Netherlands': {score: 87},
-            'Iceland': {score: 86},
-            'Germany': {score: 85},
-            'Austria': {score: 84},
-            'Luxembourg': {score: 84},
-            'Belgium': {score: 83},
-            'United Kingdom': {score: 82},
-            'France': {score: 81},
-            'Ireland': {score: 80},
-            'Canada': {score: 82},
-            'United States of America': {score: 79},
-            'Australia': {score: 83},
-            'New Zealand': {score: 85},
-            'Japan': {score: 78},
-            'South Korea': {score: 77},
-            'Singapore': {score: 81},
-            'Spain': {score: 76},
-            'Italy': {score: 75},
-            'Portugal': {score: 74},
-            'Greece': {score: 70},
-            'Poland': {score: 72},
-            'Czech Republic': {score: 73},
-            'Estonia': {score: 74},
-            'Slovenia': {score: 75},
-            'Chile': {score: 68},
-            'Uruguay': {score: 70},
-            'Argentina': {score: 65},
-            'Brazil': {score: 62},
-            'Mexico': {score: 60},
-            'China': {score: 64},
-            'India': {score: 54},
-            'Russia': {score: 58},
-            'Turkey': {score: 61},
-            'South Africa': {score: 55},
-            'Egypt': {score: 52},
-            'Nigeria': {score: 45},
-            'Kenya': {score: 48},
-            'Ghana': {score: 50},
-            'Morocco': {score: 53},
-            'Tunisia': {score: 56},
-            'Romania': {score: 69},
-            'Bulgaria': {score: 66},
-            'Hungary': {score: 68},
-            'Croatia': {score: 71},
-            'Serbia': {score: 63},
-            'Ukraine': {score: 55},
-            'Thailand': {score: 59},
-            'Vietnam': {score: 57},
-            'Malaysia': {score: 63},
-            'Indonesia': {score: 56},
-            'Philippines': {score: 54},
-            'Pakistan': {score: 47},
-            'Bangladesh': {score: 49},
-            'Iran': {score: 51},
-            'Iraq': {score: 43},
-            'Saudi Arabia': {score: 58},
-            'United Arab Emirates': {score: 67},
-            'Israel': {score: 76},
-            'Colombia': {score: 59},
-            'Peru': {score: 57},
-            'Venezuela': {score: 42},
-            'Ecuador': {score: 55},
-            'Bolivia': {score: 51},
-            'Paraguay': {score: 54},
-            'Costa Rica': {score: 66},
-            'Panama': {score: 63},
-            'Cuba': {score: 52},
-            'Jamaica': {score: 56},
-            'Ethiopia': {score: 41},
-            'Tanzania': {score: 44},
-            'Uganda': {score: 46},
-            'Sudan': {score: 38},
-            'Algeria': {score: 54},
-            'Libya': {score: 40},
-            'Zimbabwe': {score: 39},
-            'Mozambique': {score: 42},
-            'Madagascar': {score: 40},
-            'Cameroon': {score: 43},
-            'Senegal': {score: 49},
-            'Mali': {score: 37},
-            'Niger': {score: 35},
-            'Chad': {score: 34},
-            'Central African Republic': {score: 32},
-            'Congo': {score: 36},
-            'Democratic Republic of the Congo': {score: 33},
-            'Angola': {score: 44},
-            'Zambia': {score: 45},
-            'Malawi': {score: 41},
-            'Botswana': {score: 57},
-            'Namibia': {score: 53},
-            'Afghanistan': {score: 28},
-            'Syria': {score: 31},
-            'Yemen': {score: 30},
-            'Myanmar': {score: 42},
-            'Cambodia': {score: 51},
-            'Laos': {score: 48},
-            'Nepal': {score: 46},
-            'Sri Lanka': {score: 55},
-            'Kazakhstan': {score: 61},
-            'Uzbekistan': {score: 52},
-            'Mongolia': {score: 56},
+            'Greenland': {score: 85}, 'Norway': {score: 92}, 'Denmark': {score: 91},
+            'Sweden': {score: 90}, 'Finland': {score: 89}, 'Switzerland': {score: 88},
+            'Netherlands': {score: 87}, 'Iceland': {score: 86}, 'Germany': {score: 85},
+            'Austria': {score: 84}, 'Luxembourg': {score: 84}, 'Belgium': {score: 83},
+            'United Kingdom': {score: 82}, 'France': {score: 81}, 'Ireland': {score: 80},
+            'Canada': {score: 82}, 'United States of America': {score: 79},
+            'Australia': {score: 83}, 'New Zealand': {score: 85}, 'Japan': {score: 78},
+            'South Korea': {score: 77}, 'Singapore': {score: 81}, 'Spain': {score: 76},
+            'Italy': {score: 75}, 'Portugal': {score: 74}, 'Greece': {score: 70},
+            'Poland': {score: 72}, 'Czech Republic': {score: 73}, 'Estonia': {score: 74},
+            'Slovenia': {score: 75}, 'Chile': {score: 68}, 'Uruguay': {score: 70},
+            'Argentina': {score: 65}, 'Brazil': {score: 62}, 'Mexico': {score: 60},
+            'China': {score: 64}, 'India': {score: 54}, 'Russia': {score: 58},
+            'Turkey': {score: 61}, 'South Africa': {score: 55}, 'Egypt': {score: 52},
+            'Nigeria': {score: 45}, 'Kenya': {score: 48}, 'Ghana': {score: 50},
+            'Morocco': {score: 53}, 'Tunisia': {score: 56}, 'Romania': {score: 69},
+            'Bulgaria': {score: 66}, 'Hungary': {score: 68}, 'Croatia': {score: 71},
+            'Serbia': {score: 63}, 'Ukraine': {score: 55}, 'Thailand': {score: 59},
+            'Vietnam': {score: 57}, 'Malaysia': {score: 63}, 'Indonesia': {score: 56},
+            'Philippines': {score: 54}, 'Pakistan': {score: 47}, 'Bangladesh': {score: 49},
+            'Iran': {score: 51}, 'Iraq': {score: 43}, 'Saudi Arabia': {score: 58},
+            'United Arab Emirates': {score: 67}, 'Israel': {score: 76},
+            'Colombia': {score: 59}, 'Peru': {score: 57}, 'Venezuela': {score: 42},
+            'Ecuador': {score: 55}, 'Bolivia': {score: 51}, 'Paraguay': {score: 54},
+            'Costa Rica': {score: 66}, 'Panama': {score: 63}, 'Cuba': {score: 52},
+            'Jamaica': {score: 56}, 'Ethiopia': {score: 41}, 'Tanzania': {score: 44},
+            'Uganda': {score: 46}, 'Sudan': {score: 38}, 'Algeria': {score: 54},
+            'Libya': {score: 40}, 'Zimbabwe': {score: 39}, 'Mozambique': {score: 42},
+            'Madagascar': {score: 40}, 'Cameroon': {score: 43}, 'Senegal': {score: 49},
+            'Mali': {score: 37}, 'Niger': {score: 35}, 'Chad': {score: 34},
+            'Central African Republic': {score: 32}, 'Congo': {score: 36},
+            'Democratic Republic of the Congo': {score: 33}, 'Angola': {score: 44},
+            'Zambia': {score: 45}, 'Malawi': {score: 41}, 'Botswana': {score: 57},
+            'Namibia': {score: 53}, 'Afghanistan': {score: 28}, 'Syria': {score: 31},
+            'Yemen': {score: 30}, 'Myanmar': {score: 42}, 'Cambodia': {score: 51},
+            'Laos': {score: 48}, 'Nepal': {score: 46}, 'Sri Lanka': {score: 55},
+            'Kazakhstan': {score: 61}, 'Uzbekistan': {score: 52}, 'Mongolia': {score: 56},
             'North Korea': {score: 25}
         };
 
@@ -145,6 +60,7 @@
             dragging: false,
             scrollWheelZoom: false,
             doubleClickZoom: false,
+            touchZoom: false,
             boxZoom: false,
             keyboard: false
         }).setView([20, 0], 2);
@@ -158,25 +74,15 @@
             return score > 80 ? '#1a9850' :
                    score > 60 ? '#91cf60' :
                    score > 40 ? '#fee08b' :
-                   score > 20 ? '#fc8d59' :
-                                '#d73027';
+                   score > 20 ? '#fc8d59' : '#d73027';
         }
 
         function normalizeCountryName(feature) {
-            let name = feature.properties.name || 
-                      feature.properties.ADMIN || 
-                      feature.properties.NAME ||
-                      feature.properties.admin;
-            
+            let name = feature.properties.name || feature.properties.ADMIN || 
+                      feature.properties.NAME || feature.properties.admin;
             if (name === 'Greenland' || name === 'Grønland' || 
-                feature.properties.iso_a2 === 'GL') {
-                return 'Greenland';
-            }
-            
-            if (name === 'United States' || name === 'USA') {
-                return 'United States of America';
-            }
-            
+                feature.properties.iso_a2 === 'GL') return 'Greenland';
+            if (name === 'United States' || name === 'USA') return 'United States of America';
             return name;
         }
 
@@ -184,7 +90,6 @@
             const countryName = normalizeCountryName(feature);
             const data = countryData[countryName];
             const score = data ? data.score : 50;
-            
             return {
                 fillColor: getColor(score),
                 weight: 1,
@@ -197,9 +102,7 @@
         fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
             .then(response => response.json())
             .then(data => {
-                L.geoJSON(data, {
-                    style: style
-                }).addTo(map);
+                L.geoJSON(data, { style: style }).addTo(map);
             });
     </script>
 </body>
