@@ -159,7 +159,7 @@
             border-radius: 10px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.2);
             z-index: 1000;
-            min-width: 200px;
+            min-width: 250px;
             display: none;
         }
         
@@ -170,6 +170,7 @@
         .info-box h4 {
             margin-bottom: 10px;
             color: #667eea;
+            font-size: 1.2em;
         }
         
         .info-box .score {
@@ -177,6 +178,11 @@
             font-weight: bold;
             color: #ff416c;
             margin: 10px 0;
+        }
+        
+        .info-box p {
+            margin: 5px 0;
+            color: #666;
         }
         
         .back-home {
@@ -227,7 +233,7 @@
 
     <div class="header">
         <h1 id="pageTitle">Harta Globală a Prosperității</h1>
-        <p id="pageSubtitle">Explorează indicatorii de prosperitate pe континенte</p>
+        <p id="pageSubtitle">Explorează indicatorii de prosperitate pe continente</p>
     </div>
 
     <div class="container">
@@ -270,6 +276,7 @@
             <div class="score" id="countryScore">--</div>
             <p id="countryRank">Rank: --</p>
             <p id="countryContinent">Continent: --</p>
+            <p id="countryNote" style="font-size: 0.85em; font-style: italic; margin-top: 10px;"></p>
         </div>
 
         <div class="back-home">
@@ -283,6 +290,7 @@
     <script>
         // Date demo pentru țări (scor de prosperitate 0-100)
         const countryData = {
+            'Greenland': {score: 85, continent: 'namerica', note: 'Teritoriu autonom al Danemarcei 🇩🇰'},
             'Norway': {score: 92, continent: 'europe'},
             'Denmark': {score: 91, continent: 'europe'},
             'Sweden': {score: 90, continent: 'europe'},
@@ -373,6 +381,7 @@
             'Central African Republic': {score: 32, continent: 'africa'},
             'Congo': {score: 36, continent: 'africa'},
             'Dem. Rep. Congo': {score: 33, continent: 'africa'},
+            'Democratic Republic of the Congo': {score: 33, continent: 'africa'},
             'Angola': {score: 44, continent: 'africa'},
             'Zambia': {score: 45, continent: 'africa'},
             'Malawi': {score: 41, continent: 'africa'},
@@ -412,9 +421,35 @@
                                 '#d73027';
         }
 
+        // Normalizare nume țări
+        function normalizeCountryName(feature) {
+            let name = feature.properties.name || 
+                      feature.properties.ADMIN || 
+                      feature.properties.NAME ||
+                      feature.properties.admin ||
+                      feature.properties.sovereignt;
+            
+            // Cazuri speciale
+            if (name === 'Greenland' || name === 'Grønland' || 
+                feature.properties.iso_a2 === 'GL' ||
+                feature.properties.su_a3 === 'GRL') {
+                return 'Greenland';
+            }
+            
+            if (name === 'United States' || name === 'USA') {
+                return 'United States of America';
+            }
+            
+            if (name === 'South Korea' || name === 'Republic of Korea') {
+                return 'South Korea';
+            }
+            
+            return name;
+        }
+
         // Style pentru fiecare țară
         function style(feature) {
-            const countryName = feature.properties.name || feature.properties.ADMIN;
+            const countryName = normalizeCountryName(feature);
             const data = countryData[countryName];
             const score = data ? data.score : 50;
             
@@ -437,15 +472,20 @@
             });
             layer.bringToFront();
 
-            const countryName = layer.feature.properties.name || layer.feature.properties.ADMIN;
+            const countryName = normalizeCountryName(layer.feature);
             const data = countryData[countryName];
             
             if (data) {
-                document.getElementById('countryName').textContent = countryName;
+                document.getElementById('countryName').textContent = countryName + 
+                    (countryName === 'Greenland' ? ' 🇬🇱' : '');
                 document.getElementById('countryScore').textContent = data.score;
                 document.getElementById('countryRank').textContent = `Rank: ${getRank(countryName)}`;
                 document.getElementById('countryContinent').textContent = `Continent: ${getContinentName(data.continent)}`;
+                document.getElementById('countryNote').textContent = data.note || '';
                 document.getElementById('infoBox').classList.add('show');
+            } else {
+                // Debug - pentru a vedea ce țări lipsesc
+                console.log('Country not found:', countryName, layer.feature.properties);
             }
         }
 
@@ -463,7 +503,7 @@
             });
         }
 
-        // Încarcă date GeoJSON (simplificat - folosim API pentru țări)
+        // Încarcă date GeoJSON
         fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
             .then(response => response.json())
             .then(data => {
@@ -495,7 +535,6 @@
 
         function filterByContinent() {
             const continent = document.getElementById('continentFilter').value;
-            // Implementare filtru - poate fi extinsă
             if (continent === 'all') {
                 map.setView([20, 0], 2);
             }
@@ -517,7 +556,6 @@
 
         function switchLanguage() {
             const lang = document.getElementById('langSwitch').value;
-            // Implementare schimbare limbă - poate fi extinsă
             console.log('Language switched to:', lang);
         }
     </script>
