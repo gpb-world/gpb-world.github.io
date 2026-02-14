@@ -28,9 +28,119 @@ function detectPage() {
 }
 
 function renderIndex() {
+  renderGovernanceBar();
+  renderPeaceBar();
   renderGlobalEconBar();
   renderOverviewCards();
   renderPillarCards();
+}
+
+function renderGovernanceBar() {
+  const container = document.getElementById('governance-bar');
+  if (!container) return;
+
+  const politics = Data.getAllPolitics();
+  const entries = Object.values(politics);
+  if (!entries.length) { container.innerHTML = ''; return; }
+
+  const regimes = { full_democracy: 0, flawed_democracy: 0, hybrid_regime: 0, authoritarian: 0 };
+  const systems = {};
+  entries.forEach(p => {
+    regimes[p.regime] = (regimes[p.regime] || 0) + 1;
+    systems[p.system] = (systems[p.system] || 0) + 1;
+  });
+
+  const total = entries.length;
+  const regimeColors = { full_democracy: '#2E7D32', flawed_democracy: '#66BB6A', hybrid_regime: '#FFA726', authoritarian: '#E53935' };
+  const regimeKeys = ['full_democracy', 'flawed_democracy', 'hybrid_regime', 'authoritarian'];
+
+  const barSegments = regimeKeys.map(k => {
+    const pct = (regimes[k] / total * 100).toFixed(1);
+    return `<div class="regime-seg" style="width:${pct}%;background:${regimeColors[k]}" title="${I18n.t('pol.regime.' + k)}: ${regimes[k]}"></div>`;
+  }).join('');
+
+  const legendItems = regimeKeys.map(k =>
+    `<div class="regime-legend-item"><span class="regime-dot" style="background:${regimeColors[k]}"></span>${I18n.t('pol.regime.' + k)}: <strong>${regimes[k]}</strong></div>`
+  ).join('');
+
+  // Top 3 government forms
+  const topSystems = Object.entries(systems).sort((a, b) => b[1] - a[1]).slice(0, 4);
+  const systemTags = topSystems.map(([k, v]) =>
+    `<span class="system-tag">${I18n.t('pol.system.' + k)} <strong>${v}</strong></span>`
+  ).join('');
+
+  const avgDemocracy = (entries.reduce((s, p) => s + p.democracy_score, 0) / total).toFixed(1);
+  const avgCorruption = Math.round(entries.reduce((s, p) => s + p.corruption_rank, 0) / total);
+  const avgPress = Math.round(entries.reduce((s, p) => s + p.press_freedom_rank, 0) / total);
+
+  container.innerHTML = `
+    <h3 class="global-section-title">${I18n.t('pol.title')}</h3>
+    <div class="governance-content">
+      <div class="regime-bar-wrap">
+        <div class="regime-bar">${barSegments}</div>
+        <div class="regime-legend">${legendItems}</div>
+      </div>
+      <div class="governance-stats">
+        <div class="gov-stat"><span class="gov-stat-value">${avgDemocracy}/10</span><span class="gov-stat-label">${I18n.t('pol.avg_democracy')}</span></div>
+        <div class="gov-stat"><span class="gov-stat-value">#${avgCorruption}</span><span class="gov-stat-label">${I18n.t('pol.avg_corruption')}</span></div>
+        <div class="gov-stat"><span class="gov-stat-value">#${avgPress}</span><span class="gov-stat-label">${I18n.t('pol.avg_press')}</span></div>
+      </div>
+      <div class="system-tags">${systemTags}</div>
+    </div>`;
+}
+
+function renderPeaceBar() {
+  const container = document.getElementById('peace-bar');
+  if (!container) return;
+
+  const politics = Data.getAllPolitics();
+  const countries = Data.getAllCountries();
+  const entries = Object.entries(politics);
+  if (!entries.length) { container.innerHTML = ''; return; }
+
+  const conflicts = { peace: [], tension: [], minor_conflict: [], major_conflict: [], war: [] };
+  entries.forEach(([id, p]) => {
+    conflicts[p.conflict_status] = conflicts[p.conflict_status] || [];
+    conflicts[p.conflict_status].push(id);
+  });
+
+  const statusColors = { peace: '#2E7D32', tension: '#FDD835', minor_conflict: '#FF9800', major_conflict: '#F44336', war: '#B71C1C' };
+  const statusIcons = { peace: '🕊️', tension: '⚠️', minor_conflict: '🔶', major_conflict: '🔴', war: '💥' };
+  const statusKeys = ['peace', 'tension', 'minor_conflict', 'major_conflict', 'war'];
+
+  const total = entries.length;
+  const atPeace = conflicts.peace.length;
+  const inConflict = total - atPeace;
+
+  // Avg security score from pillar data
+  const avgSecurity = Math.round(countries.reduce((s, c) => s + (c.scores.security || 0), 0) / countries.length);
+  const avgGovernance = Math.round(countries.reduce((s, c) => s + (c.scores.governance || 0), 0) / countries.length);
+
+  const statusItems = statusKeys.filter(k => conflicts[k].length > 0).map(k => {
+    const names = conflicts[k].map(id => {
+      const c = Data.getCountry(id);
+      return c ? I18n.getCountryName(c) : id;
+    });
+    const nameList = names.length <= 4 ? names.join(', ') : names.slice(0, 3).join(', ') + ` +${names.length - 3}`;
+    return `<div class="peace-status-row">
+      <span class="peace-icon">${statusIcons[k]}</span>
+      <span class="peace-label">${I18n.t('peace.status.' + k)}</span>
+      <strong class="peace-count">${conflicts[k].length}</strong>
+      <span class="peace-countries">${nameList}</span>
+    </div>`;
+  }).join('');
+
+  container.innerHTML = `
+    <h3 class="global-section-title">${I18n.t('peace.title')}</h3>
+    <div class="peace-content">
+      <div class="peace-headline">
+        <div class="peace-big-stat peace-good"><span class="peace-big-num">${atPeace}</span><span class="peace-big-label">${I18n.t('peace.at_peace')}</span></div>
+        <div class="peace-big-stat peace-bad"><span class="peace-big-num">${inConflict}</span><span class="peace-big-label">${I18n.t('peace.in_conflict')}</span></div>
+        <div class="peace-big-stat"><span class="peace-big-num">${avgSecurity}/100</span><span class="peace-big-label">${I18n.t('peace.avg_security')}</span></div>
+        <div class="peace-big-stat"><span class="peace-big-num">${avgGovernance}/100</span><span class="peace-big-label">${I18n.t('peace.avg_governance')}</span></div>
+      </div>
+      <div class="peace-breakdown">${statusItems}</div>
+    </div>`;
 }
 
 function renderGlobalEconBar() {

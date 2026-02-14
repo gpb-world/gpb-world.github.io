@@ -183,5 +183,32 @@
   "global.avg_gdp_capita": "Avg. GDP/Capita",
   "global.avg_inflation": "Avg. Inflation",
   "global.avg_unemployment": "Avg. Unemployment",
-  "global.avg_debt": "Avg. Public Debt"
+  "global.avg_debt": "Avg. Public Debt",
+
+  "pol.title": "Global Governance & Political Systems",
+  "pol.avg_democracy": "Avg. Democracy Score",
+  "pol.avg_corruption": "Avg. Corruption Rank",
+  "pol.avg_press": "Avg. Press Freedom Rank",
+  "pol.regime.full_democracy": "Full Democracy",
+  "pol.regime.flawed_democracy": "Flawed Democracy",
+  "pol.regime.hybrid_regime": "Hybrid Regime",
+  "pol.regime.authoritarian": "Authoritarian",
+  "pol.system.constitutional_monarchy": "Constitutional Monarchy",
+  "pol.system.parliamentary_republic": "Parliamentary Republic",
+  "pol.system.presidential_republic": "Presidential Republic",
+  "pol.system.semi_presidential_republic": "Semi-Presidential Republic",
+  "pol.system.one_party_state": "One-Party State",
+  "pol.system.absolute_monarchy": "Absolute Monarchy",
+  "pol.system.federal_republic": "Federal Republic",
+
+  "peace.title": "Peace & Stability Barometer",
+  "peace.at_peace": "At Peace",
+  "peace.in_conflict": "In Conflict",
+  "peace.avg_security": "Avg. Security Score",
+  "peace.avg_governance": "Avg. Justice & Governance",
+  "peace.status.peace": "Peace",
+  "peace.status.tension": "Tensions",
+  "peace.status.minor_conflict": "Minor Conflict",
+  "peace.status.major_conflict": "Major Conflict",
+  "peace.status.war": "War"
 }

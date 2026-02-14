@@ -1,0 +1,402 @@
+{
+  "norway": {
+    "system": "constitutional_monarchy",
+    "regime": "full_democracy",
+    "democracy_score": 9.81,
+    "conflict_status": "peace",
+    "corruption_rank": 4,
+    "press_freedom_rank": 1
+  },
+  "sweden": {
+    "system": "constitutional_monarchy",
+    "regime": "full_democracy",
+    "democracy_score": 9.39,
+    "conflict_status": "peace",
+    "corruption_rank": 6,
+    "press_freedom_rank": 3
+  },
+  "denmark": {
+    "system": "constitutional_monarchy",
+    "regime": "full_democracy",
+    "democracy_score": 9.37,
+    "conflict_status": "peace",
+    "corruption_rank": 1,
+    "press_freedom_rank": 2
+  },
+  "finland": {
+    "system": "parliamentary_republic",
+    "regime": "full_democracy",
+    "democracy_score": 9.30,
+    "conflict_status": "peace",
+    "corruption_rank": 2,
+    "press_freedom_rank": 5
+  },
+  "iceland": {
+    "system": "parliamentary_republic",
+    "regime": "full_democracy",
+    "democracy_score": 9.45,
+    "conflict_status": "peace",
+    "corruption_rank": 11,
+    "press_freedom_rank": 16
+  },
+  "germany": {
+    "system": "parliamentary_republic",
+    "regime": "full_democracy",
+    "democracy_score": 8.68,
+    "conflict_status": "peace",
+    "corruption_rank": 9,
+    "press_freedom_rank": 10
+  },
+  "netherlands": {
+    "system": "constitutional_monarchy",
+    "regime": "full_democracy",
+    "democracy_score": 9.00,
+    "conflict_status": "peace",
+    "corruption_rank": 8,
+    "press_freedom_rank": 4
+  },
+  "switzerland": {
+    "system": "parliamentary_republic",
+    "regime": "full_democracy",
+    "democracy_score": 9.14,
+    "conflict_status": "peace",
+    "corruption_rank": 7,
+    "press_freedom_rank": 12
+  },
+  "austria": {
+    "system": "parliamentary_republic",
+    "regime": "full_democracy",
+    "democracy_score": 8.41,
+    "conflict_status": "peace",
+    "corruption_rank": 13,
+    "press_freedom_rank": 15
+  },
+  "belgium": {
+    "system": "constitutional_monarchy",
+    "regime": "flawed_democracy",
+    "democracy_score": 7.93,
+    "conflict_status": "peace",
+    "corruption_rank": 15,
+    "press_freedom_rank": 14
+  },
+  "france": {
+    "system": "semi_presidential_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 7.99,
+    "conflict_status": "peace",
+    "corruption_rank": 20,
+    "press_freedom_rank": 21
+  },
+  "uk": {
+    "system": "constitutional_monarchy",
+    "regime": "full_democracy",
+    "democracy_score": 8.28,
+    "conflict_status": "peace",
+    "corruption_rank": 14,
+    "press_freedom_rank": 23
+  },
+  "spain": {
+    "system": "constitutional_monarchy",
+    "regime": "flawed_democracy",
+    "democracy_score": 7.97,
+    "conflict_status": "peace",
+    "corruption_rank": 35,
+    "press_freedom_rank": 30
+  },
+  "italy": {
+    "system": "parliamentary_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 7.69,
+    "conflict_status": "peace",
+    "corruption_rank": 42,
+    "press_freedom_rank": 41
+  },
+  "portugal": {
+    "system": "parliamentary_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 7.95,
+    "conflict_status": "peace",
+    "corruption_rank": 34,
+    "press_freedom_rank": 9
+  },
+  "ireland": {
+    "system": "parliamentary_republic",
+    "regime": "full_democracy",
+    "democracy_score": 9.19,
+    "conflict_status": "peace",
+    "corruption_rank": 10,
+    "press_freedom_rank": 8
+  },
+  "poland": {
+    "system": "parliamentary_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 6.82,
+    "conflict_status": "peace",
+    "corruption_rank": 47,
+    "press_freedom_rank": 47
+  },
+  "czechia": {
+    "system": "parliamentary_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 7.97,
+    "conflict_status": "peace",
+    "corruption_rank": 37,
+    "press_freedom_rank": 17
+  },
+  "greece": {
+    "system": "parliamentary_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 7.56,
+    "conflict_status": "peace",
+    "corruption_rank": 55,
+    "press_freedom_rank": 36
+  },
+  "romania": {
+    "system": "semi_presidential_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 6.64,
+    "conflict_status": "peace",
+    "corruption_rank": 63,
+    "press_freedom_rank": 49
+  },
+  "japan": {
+    "system": "constitutional_monarchy",
+    "regime": "full_democracy",
+    "democracy_score": 8.33,
+    "conflict_status": "peace",
+    "corruption_rank": 16,
+    "press_freedom_rank": 70
+  },
+  "south_korea": {
+    "system": "presidential_republic",
+    "regime": "full_democracy",
+    "democracy_score": 8.09,
+    "conflict_status": "peace",
+    "corruption_rank": 32,
+    "press_freedom_rank": 42
+  },
+  "china": {
+    "system": "one_party_state",
+    "regime": "authoritarian",
+    "democracy_score": 2.12,
+    "conflict_status": "peace",
+    "corruption_rank": 76,
+    "press_freedom_rank": 172
+  },
+  "india": {
+    "system": "parliamentary_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 7.18,
+    "conflict_status": "tension",
+    "corruption_rank": 93,
+    "press_freedom_rank": 159
+  },
+  "singapore": {
+    "system": "parliamentary_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 6.14,
+    "conflict_status": "peace",
+    "corruption_rank": 5,
+    "press_freedom_rank": 126
+  },
+  "israel": {
+    "system": "parliamentary_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 7.73,
+    "conflict_status": "major_conflict",
+    "corruption_rank": 36,
+    "press_freedom_rank": 97
+  },
+  "turkey": {
+    "system": "presidential_republic",
+    "regime": "hybrid_regime",
+    "democracy_score": 4.35,
+    "conflict_status": "tension",
+    "corruption_rank": 73,
+    "press_freedom_rank": 158
+  },
+  "saudi_arabia": {
+    "system": "absolute_monarchy",
+    "regime": "authoritarian",
+    "democracy_score": 1.82,
+    "conflict_status": "peace",
+    "corruption_rank": 52,
+    "press_freedom_rank": 170
+  },
+  "uae": {
+    "system": "constitutional_monarchy",
+    "regime": "authoritarian",
+    "democracy_score": 2.76,
+    "conflict_status": "peace",
+    "corruption_rank": 29,
+    "press_freedom_rank": 145
+  },
+  "indonesia": {
+    "system": "presidential_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 6.53,
+    "conflict_status": "peace",
+    "corruption_rank": 96,
+    "press_freedom_rank": 111
+  },
+  "usa": {
+    "system": "presidential_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 7.85,
+    "conflict_status": "peace",
+    "corruption_rank": 24,
+    "press_freedom_rank": 55
+  },
+  "canada": {
+    "system": "constitutional_monarchy",
+    "regime": "full_democracy",
+    "democracy_score": 8.88,
+    "conflict_status": "peace",
+    "corruption_rank": 17,
+    "press_freedom_rank": 14
+  },
+  "brazil": {
+    "system": "presidential_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 6.68,
+    "conflict_status": "peace",
+    "corruption_rank": 76,
+    "press_freedom_rank": 82
+  },
+  "mexico": {
+    "system": "presidential_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 5.82,
+    "conflict_status": "minor_conflict",
+    "corruption_rank": 120,
+    "press_freedom_rank": 121
+  },
+  "argentina": {
+    "system": "presidential_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 6.39,
+    "conflict_status": "peace",
+    "corruption_rank": 85,
+    "press_freedom_rank": 66
+  },
+  "chile": {
+    "system": "presidential_republic",
+    "regime": "full_democracy",
+    "democracy_score": 8.01,
+    "conflict_status": "peace",
+    "corruption_rank": 27,
+    "press_freedom_rank": 31
+  },
+  "colombia": {
+    "system": "presidential_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 6.46,
+    "conflict_status": "tension",
+    "corruption_rank": 91,
+    "press_freedom_rank": 129
+  },
+  "costa_rica": {
+    "system": "presidential_republic",
+    "regime": "full_democracy",
+    "democracy_score": 8.29,
+    "conflict_status": "peace",
+    "corruption_rank": 50,
+    "press_freedom_rank": 18
+  },
+  "south_africa": {
+    "system": "parliamentary_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 7.05,
+    "conflict_status": "peace",
+    "corruption_rank": 67,
+    "press_freedom_rank": 38
+  },
+  "nigeria": {
+    "system": "presidential_republic",
+    "regime": "hybrid_regime",
+    "democracy_score": 4.11,
+    "conflict_status": "tension",
+    "corruption_rank": 145,
+    "press_freedom_rank": 112
+  },
+  "kenya": {
+    "system": "presidential_republic",
+    "regime": "hybrid_regime",
+    "democracy_score": 5.08,
+    "conflict_status": "tension",
+    "corruption_rank": 126,
+    "press_freedom_rank": 102
+  },
+  "egypt": {
+    "system": "presidential_republic",
+    "regime": "authoritarian",
+    "democracy_score": 2.93,
+    "conflict_status": "tension",
+    "corruption_rank": 108,
+    "press_freedom_rank": 166
+  },
+  "ethiopia": {
+    "system": "parliamentary_republic",
+    "regime": "authoritarian",
+    "democracy_score": 3.27,
+    "conflict_status": "minor_conflict",
+    "corruption_rank": 98,
+    "press_freedom_rank": 130
+  },
+  "ghana": {
+    "system": "presidential_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 6.14,
+    "conflict_status": "peace",
+    "corruption_rank": 72,
+    "press_freedom_rank": 50
+  },
+  "morocco": {
+    "system": "constitutional_monarchy",
+    "regime": "hybrid_regime",
+    "democracy_score": 5.04,
+    "conflict_status": "minor_conflict",
+    "corruption_rank": 97,
+    "press_freedom_rank": 144
+  },
+  "australia": {
+    "system": "constitutional_monarchy",
+    "regime": "full_democracy",
+    "democracy_score": 8.71,
+    "conflict_status": "peace",
+    "corruption_rank": 12,
+    "press_freedom_rank": 27
+  },
+  "new_zealand": {
+    "system": "constitutional_monarchy",
+    "regime": "full_democracy",
+    "democracy_score": 9.61,
+    "conflict_status": "peace",
+    "corruption_rank": 3,
+    "press_freedom_rank": 13
+  },
+  "russia": {
+    "system": "semi_presidential_republic",
+    "regime": "authoritarian",
+    "democracy_score": 2.22,
+    "conflict_status": "war",
+    "corruption_rank": 141,
+    "press_freedom_rank": 164
+  },
+  "ukraine": {
+    "system": "semi_presidential_republic",
+    "regime": "hybrid_regime",
+    "democracy_score": 5.42,
+    "conflict_status": "war",
+    "corruption_rank": 104,
+    "press_freedom_rank": 61
+  },
+  "pakistan": {
+    "system": "parliamentary_republic",
+    "regime": "hybrid_regime",
+    "democracy_score": 4.31,
+    "conflict_status": "major_conflict",
+    "corruption_rank": 133,
+    "press_freedom_rank": 152
+  }
+}
