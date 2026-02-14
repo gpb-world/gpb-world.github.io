@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impressum - Global Prosperity Barometer</title>
+    <title>Country Profile - Global Prosperity Barometer</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="header-content">
             <a href="index.html" class="logo" data-i18n="site.title">Global Prosperity Barometer</a>
@@ -20,34 +21,21 @@
     </header>
 
     <div class="container page-content">
-        <a href="index.html" class="back-link">&larr; Back</a>
-        <h1 class="page-title" data-i18n="impressum.title">Impressum / Legal Notice</h1>
-
-        <div class="content-section">
-            <h2 data-i18n="impressum.provider">Provider</h2>
-            <p><strong data-i18n="impressum.provider.name">GPB World Initiative</strong><br>
-            <span data-i18n="impressum.provider.desc">Non-profit civic transparency platform</span></p>
-
-            <p><strong data-i18n="impressum.contact">Contact</strong><br>
-            Email: <a href="mailto:globaldata9@protonmail.com">globaldata9@protonmail.com</a></p>
-
-            <p><strong data-i18n="impressum.responsible">Responsible</strong><br>
-            <span data-i18n="impressum.responsible.name">Civic Data Team</span></p>
-        </div>
-
-        <div class="content-section">
-            <h2 data-i18n="impressum.liability.title">Liability for Content</h2>
-            <p data-i18n="impressum.liability.text">All data comes from publicly accessible sources (World Bank, Freedom House, UN, V-Dem). The platform has no political agenda.</p>
-        </div>
-
-        <div class="content-section">
-            <h2 data-i18n="impressum.privacy">Privacy</h2>
-            <p><span data-i18n="impressum.privacy.see">See:</span> <a href="privacy.html">Privacy Policy</a></p>
+        <div id="country-content">
+            <!-- Rendered by app.js -->
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="footer.about">About</h3>
+                <ul>
+                    <li><a href="about.html" data-i18n="footer.about.project">About the Project</a></li>
+                    <li><a href="methodology.html" data-i18n="footer.about.methodology">Methodology</a></li>
+                </ul>
+            </div>
             <div class="footer-section">
                 <h3 data-i18n="footer.legal">Legal</h3>
                 <ul>
@@ -65,6 +53,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
     <script src="js/data.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/app.js"></script>

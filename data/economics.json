@@ -1,0 +1,1302 @@
+{
+  "norway": {
+    "gdp": 579.3,
+    "gdp_per_capita": 106800,
+    "public_debt_pct": 40.9,
+    "revenue_pct_gdp": 54.2,
+    "expense_pct_gdp": 50.1,
+    "unemployment": 3.5,
+    "inflation": 3.2,
+    "gni_per_capita": 95510,
+    "revenue": {
+      "taxes": 54.2,
+      "social_contributions": 18.5,
+      "grants": 0.3,
+      "other": 27.0
+    },
+    "expenditure": {
+      "social_protection": 33.8,
+      "health": 18.6,
+      "education": 14.2,
+      "defense": 3.5,
+      "infrastructure": 8.8,
+      "public_services": 12.6,
+      "debt_service": 2.0,
+      "other": 6.5
+    }
+  },
+  "sweden": {
+    "gdp": 593.3,
+    "gdp_per_capita": 56900,
+    "public_debt_pct": 33.1,
+    "revenue_pct_gdp": 49.8,
+    "expense_pct_gdp": 49.2,
+    "unemployment": 7.5,
+    "inflation": 2.1,
+    "gni_per_capita": 61520,
+    "revenue": {
+      "taxes": 55.8,
+      "social_contributions": 22.0,
+      "grants": 0.4,
+      "other": 21.8
+    },
+    "expenditure": {
+      "social_protection": 36.2,
+      "health": 18.8,
+      "education": 15.0,
+      "defense": 3.8,
+      "infrastructure": 7.2,
+      "public_services": 11.8,
+      "debt_service": 1.4,
+      "other": 5.8
+    }
+  },
+  "denmark": {
+    "gdp": 404.2,
+    "gdp_per_capita": 68300,
+    "public_debt_pct": 29.3,
+    "revenue_pct_gdp": 52.5,
+    "expense_pct_gdp": 49.0,
+    "unemployment": 4.8,
+    "inflation": 2.0,
+    "gni_per_capita": 72200,
+    "revenue": {
+      "taxes": 63.5,
+      "social_contributions": 2.1,
+      "grants": 0.4,
+      "other": 34.0
+    },
+    "expenditure": {
+      "social_protection": 35.5,
+      "health": 17.5,
+      "education": 13.8,
+      "defense": 4.0,
+      "infrastructure": 6.8,
+      "public_services": 13.2,
+      "debt_service": 1.8,
+      "other": 7.4
+    }
+  },
+  "finland": {
+    "gdp": 300.5,
+    "gdp_per_capita": 54100,
+    "public_debt_pct": 75.8,
+    "revenue_pct_gdp": 53.2,
+    "expense_pct_gdp": 56.8,
+    "unemployment": 7.2,
+    "inflation": 1.8,
+    "gni_per_capita": 55900,
+    "revenue": {
+      "taxes": 52.4,
+      "social_contributions": 24.8,
+      "grants": 0.5,
+      "other": 22.3
+    },
+    "expenditure": {
+      "social_protection": 38.5,
+      "health": 16.8,
+      "education": 11.5,
+      "defense": 4.2,
+      "infrastructure": 7.4,
+      "public_services": 12.5,
+      "debt_service": 2.2,
+      "other": 6.9
+    }
+  },
+  "iceland": {
+    "gdp": 28.5,
+    "gdp_per_capita": 75600,
+    "public_debt_pct": 62.0,
+    "revenue_pct_gdp": 47.8,
+    "expense_pct_gdp": 45.5,
+    "unemployment": 3.4,
+    "inflation": 5.8,
+    "gni_per_capita": 72400,
+    "revenue": {
+      "taxes": 60.2,
+      "social_contributions": 6.5,
+      "grants": 0.2,
+      "other": 33.1
+    },
+    "expenditure": {
+      "social_protection": 30.2,
+      "health": 18.4,
+      "education": 16.8,
+      "defense": 0.3,
+      "infrastructure": 10.5,
+      "public_services": 14.0,
+      "debt_service": 3.8,
+      "other": 6.0
+    }
+  },
+  "germany": {
+    "gdp": 4456.1,
+    "gdp_per_capita": 52820,
+    "public_debt_pct": 63.7,
+    "revenue_pct_gdp": 46.3,
+    "expense_pct_gdp": 48.6,
+    "unemployment": 3.4,
+    "inflation": 2.5,
+    "gni_per_capita": 54030,
+    "revenue": {
+      "taxes": 48.2,
+      "social_contributions": 36.5,
+      "grants": 0.3,
+      "other": 15.0
+    },
+    "expenditure": {
+      "social_protection": 40.2,
+      "health": 16.4,
+      "education": 9.8,
+      "defense": 3.8,
+      "infrastructure": 7.5,
+      "public_services": 13.2,
+      "debt_service": 2.6,
+      "other": 6.5
+    }
+  },
+  "netherlands": {
+    "gdp": 1092.7,
+    "gdp_per_capita": 61770,
+    "public_debt_pct": 46.5,
+    "revenue_pct_gdp": 45.8,
+    "expense_pct_gdp": 44.2,
+    "unemployment": 3.6,
+    "inflation": 2.8,
+    "gni_per_capita": 58900,
+    "revenue": {
+      "taxes": 52.0,
+      "social_contributions": 30.8,
+      "grants": 0.4,
+      "other": 16.8
+    },
+    "expenditure": {
+      "social_protection": 35.0,
+      "health": 17.8,
+      "education": 11.5,
+      "defense": 3.6,
+      "infrastructure": 8.2,
+      "public_services": 13.5,
+      "debt_service": 2.4,
+      "other": 8.0
+    }
+  },
+  "switzerland": {
+    "gdp": 884.9,
+    "gdp_per_capita": 100600,
+    "public_debt_pct": 38.3,
+    "revenue_pct_gdp": 34.6,
+    "expense_pct_gdp": 33.8,
+    "unemployment": 2.1,
+    "inflation": 1.4,
+    "gni_per_capita": 93260,
+    "revenue": {
+      "taxes": 58.5,
+      "social_contributions": 24.2,
+      "grants": 0.1,
+      "other": 17.2
+    },
+    "expenditure": {
+      "social_protection": 36.5,
+      "health": 14.2,
+      "education": 15.8,
+      "defense": 2.8,
+      "infrastructure": 9.2,
+      "public_services": 12.0,
+      "debt_service": 1.8,
+      "other": 7.7
+    }
+  },
+  "austria": {
+    "gdp": 515.2,
+    "gdp_per_capita": 56800,
+    "public_debt_pct": 77.0,
+    "revenue_pct_gdp": 48.5,
+    "expense_pct_gdp": 51.2,
+    "unemployment": 5.1,
+    "inflation": 3.0,
+    "gni_per_capita": 56200,
+    "revenue": {
+      "taxes": 49.6,
+      "social_contributions": 33.0,
+      "grants": 0.4,
+      "other": 17.0
+    },
+    "expenditure": {
+      "social_protection": 38.8,
+      "health": 16.2,
+      "education": 10.2,
+      "defense": 1.8,
+      "infrastructure": 7.0,
+      "public_services": 13.8,
+      "debt_service": 3.5,
+      "other": 8.7
+    }
+  },
+  "belgium": {
+    "gdp": 624.2,
+    "gdp_per_capita": 53380,
+    "public_debt_pct": 105.2,
+    "revenue_pct_gdp": 50.6,
+    "expense_pct_gdp": 55.0,
+    "unemployment": 5.6,
+    "inflation": 2.3,
+    "gni_per_capita": 51800,
+    "revenue": {
+      "taxes": 48.5,
+      "social_contributions": 32.8,
+      "grants": 0.5,
+      "other": 18.2
+    },
+    "expenditure": {
+      "social_protection": 37.2,
+      "health": 15.5,
+      "education": 12.0,
+      "defense": 2.4,
+      "infrastructure": 5.8,
+      "public_services": 14.5,
+      "debt_service": 5.2,
+      "other": 7.4
+    }
+  },
+  "france": {
+    "gdp": 3049.0,
+    "gdp_per_capita": 44400,
+    "public_debt_pct": 111.8,
+    "revenue_pct_gdp": 52.4,
+    "expense_pct_gdp": 57.3,
+    "unemployment": 7.3,
+    "inflation": 2.4,
+    "gni_per_capita": 45280,
+    "revenue": {
+      "taxes": 44.8,
+      "social_contributions": 35.5,
+      "grants": 0.3,
+      "other": 19.4
+    },
+    "expenditure": {
+      "social_protection": 41.5,
+      "health": 15.8,
+      "education": 9.6,
+      "defense": 4.2,
+      "infrastructure": 6.5,
+      "public_services": 11.8,
+      "debt_service": 4.8,
+      "other": 5.8
+    }
+  },
+  "uk": {
+    "gdp": 3340.0,
+    "gdp_per_capita": 49100,
+    "public_debt_pct": 101.0,
+    "revenue_pct_gdp": 39.3,
+    "expense_pct_gdp": 44.5,
+    "unemployment": 4.2,
+    "inflation": 3.4,
+    "gni_per_capita": 48870,
+    "revenue": {
+      "taxes": 59.5,
+      "social_contributions": 19.5,
+      "grants": 0.2,
+      "other": 20.8
+    },
+    "expenditure": {
+      "social_protection": 35.8,
+      "health": 18.5,
+      "education": 11.2,
+      "defense": 5.2,
+      "infrastructure": 6.5,
+      "public_services": 10.8,
+      "debt_service": 6.5,
+      "other": 5.5
+    }
+  },
+  "spain": {
+    "gdp": 1580.5,
+    "gdp_per_capita": 33100,
+    "public_debt_pct": 107.5,
+    "revenue_pct_gdp": 39.2,
+    "expense_pct_gdp": 43.5,
+    "unemployment": 11.8,
+    "inflation": 3.1,
+    "gni_per_capita": 32400,
+    "revenue": {
+      "taxes": 53.2,
+      "social_contributions": 32.5,
+      "grants": 1.5,
+      "other": 12.8
+    },
+    "expenditure": {
+      "social_protection": 38.5,
+      "health": 15.2,
+      "education": 9.8,
+      "defense": 2.8,
+      "infrastructure": 5.5,
+      "public_services": 12.2,
+      "debt_service": 7.5,
+      "other": 8.5
+    }
+  },
+  "italy": {
+    "gdp": 2186.1,
+    "gdp_per_capita": 37000,
+    "public_debt_pct": 137.0,
+    "revenue_pct_gdp": 46.5,
+    "expense_pct_gdp": 51.0,
+    "unemployment": 7.6,
+    "inflation": 2.0,
+    "gni_per_capita": 36560,
+    "revenue": {
+      "taxes": 51.5,
+      "social_contributions": 29.8,
+      "grants": 0.8,
+      "other": 17.9
+    },
+    "expenditure": {
+      "social_protection": 40.5,
+      "health": 14.2,
+      "education": 8.2,
+      "defense": 3.2,
+      "infrastructure": 5.0,
+      "public_services": 11.5,
+      "debt_service": 8.8,
+      "other": 8.6
+    }
+  },
+  "portugal": {
+    "gdp": 287.1,
+    "gdp_per_capita": 27800,
+    "public_debt_pct": 99.1,
+    "revenue_pct_gdp": 44.0,
+    "expense_pct_gdp": 44.8,
+    "unemployment": 6.5,
+    "inflation": 2.6,
+    "gni_per_capita": 26500,
+    "revenue": {
+      "taxes": 52.8,
+      "social_contributions": 27.5,
+      "grants": 2.2,
+      "other": 17.5
+    },
+    "expenditure": {
+      "social_protection": 36.5,
+      "health": 14.0,
+      "education": 10.5,
+      "defense": 2.6,
+      "infrastructure": 6.2,
+      "public_services": 13.5,
+      "debt_service": 6.8,
+      "other": 9.9
+    }
+  },
+  "ireland": {
+    "gdp": 545.6,
+    "gdp_per_capita": 106000,
+    "public_debt_pct": 43.7,
+    "revenue_pct_gdp": 23.5,
+    "expense_pct_gdp": 21.2,
+    "unemployment": 4.3,
+    "inflation": 2.0,
+    "gni_per_capita": 66200,
+    "revenue": {
+      "taxes": 72.5,
+      "social_contributions": 13.8,
+      "grants": 0.5,
+      "other": 13.2
+    },
+    "expenditure": {
+      "social_protection": 30.5,
+      "health": 20.2,
+      "education": 13.0,
+      "defense": 1.2,
+      "infrastructure": 9.5,
+      "public_services": 14.0,
+      "debt_service": 3.8,
+      "other": 7.8
+    }
+  },
+  "poland": {
+    "gdp": 842.2,
+    "gdp_per_capita": 22200,
+    "public_debt_pct": 49.3,
+    "revenue_pct_gdp": 40.5,
+    "expense_pct_gdp": 44.2,
+    "unemployment": 2.8,
+    "inflation": 4.2,
+    "gni_per_capita": 19700,
+    "revenue": {
+      "taxes": 52.5,
+      "social_contributions": 30.2,
+      "grants": 3.8,
+      "other": 13.5
+    },
+    "expenditure": {
+      "social_protection": 35.0,
+      "health": 11.5,
+      "education": 11.0,
+      "defense": 4.5,
+      "infrastructure": 10.5,
+      "public_services": 12.5,
+      "debt_service": 4.2,
+      "other": 10.8
+    }
+  },
+  "czechia": {
+    "gdp": 330.5,
+    "gdp_per_capita": 30700,
+    "public_debt_pct": 44.0,
+    "revenue_pct_gdp": 40.8,
+    "expense_pct_gdp": 43.5,
+    "unemployment": 2.6,
+    "inflation": 2.5,
+    "gni_per_capita": 27800,
+    "revenue": {
+      "taxes": 47.5,
+      "social_contributions": 34.5,
+      "grants": 2.8,
+      "other": 15.2
+    },
+    "expenditure": {
+      "social_protection": 32.5,
+      "health": 15.8,
+      "education": 10.8,
+      "defense": 3.2,
+      "infrastructure": 11.0,
+      "public_services": 12.8,
+      "debt_service": 2.8,
+      "other": 11.1
+    }
+  },
+  "greece": {
+    "gdp": 238.2,
+    "gdp_per_capita": 22600,
+    "public_debt_pct": 161.9,
+    "revenue_pct_gdp": 49.5,
+    "expense_pct_gdp": 50.8,
+    "unemployment": 10.8,
+    "inflation": 2.8,
+    "gni_per_capita": 21800,
+    "revenue": {
+      "taxes": 52.8,
+      "social_contributions": 27.2,
+      "grants": 2.5,
+      "other": 17.5
+    },
+    "expenditure": {
+      "social_protection": 38.5,
+      "health": 11.0,
+      "education": 8.2,
+      "defense": 5.8,
+      "infrastructure": 5.5,
+      "public_services": 12.2,
+      "debt_service": 9.0,
+      "other": 9.8
+    }
+  },
+  "romania": {
+    "gdp": 351.0,
+    "gdp_per_capita": 18300,
+    "public_debt_pct": 52.0,
+    "revenue_pct_gdp": 33.5,
+    "expense_pct_gdp": 39.8,
+    "unemployment": 5.4,
+    "inflation": 5.8,
+    "gni_per_capita": 16200,
+    "revenue": {
+      "taxes": 50.2,
+      "social_contributions": 28.5,
+      "grants": 5.8,
+      "other": 15.5
+    },
+    "expenditure": {
+      "social_protection": 30.5,
+      "health": 12.0,
+      "education": 7.5,
+      "defense": 4.8,
+      "infrastructure": 12.5,
+      "public_services": 14.2,
+      "debt_service": 4.5,
+      "other": 14.0
+    }
+  },
+  "japan": {
+    "gdp": 4230.9,
+    "gdp_per_capita": 33950,
+    "public_debt_pct": 252.4,
+    "revenue_pct_gdp": 36.2,
+    "expense_pct_gdp": 42.5,
+    "unemployment": 2.5,
+    "inflation": 2.8,
+    "gni_per_capita": 42440,
+    "revenue": {
+      "taxes": 52.8,
+      "social_contributions": 34.5,
+      "grants": 0.1,
+      "other": 12.6
+    },
+    "expenditure": {
+      "social_protection": 38.5,
+      "health": 20.5,
+      "education": 7.8,
+      "defense": 4.8,
+      "infrastructure": 8.2,
+      "public_services": 8.0,
+      "debt_service": 7.5,
+      "other": 4.7
+    }
+  },
+  "south_korea": {
+    "gdp": 1712.8,
+    "gdp_per_capita": 33150,
+    "public_debt_pct": 54.3,
+    "revenue_pct_gdp": 35.2,
+    "expense_pct_gdp": 35.8,
+    "unemployment": 2.7,
+    "inflation": 2.5,
+    "gni_per_capita": 35990,
+    "revenue": {
+      "taxes": 55.2,
+      "social_contributions": 26.5,
+      "grants": 0.2,
+      "other": 18.1
+    },
+    "expenditure": {
+      "social_protection": 25.5,
+      "health": 15.2,
+      "education": 14.5,
+      "defense": 12.8,
+      "infrastructure": 10.5,
+      "public_services": 10.0,
+      "debt_service": 3.5,
+      "other": 8.0
+    }
+  },
+  "china": {
+    "gdp": 18530.0,
+    "gdp_per_capita": 13140,
+    "public_debt_pct": 83.6,
+    "revenue_pct_gdp": 27.2,
+    "expense_pct_gdp": 33.5,
+    "unemployment": 5.1,
+    "inflation": 0.3,
+    "gni_per_capita": 13400,
+    "revenue": {
+      "taxes": 68.5,
+      "social_contributions": 16.2,
+      "grants": 0.1,
+      "other": 15.2
+    },
+    "expenditure": {
+      "social_protection": 18.5,
+      "health": 10.2,
+      "education": 14.8,
+      "defense": 7.5,
+      "infrastructure": 22.5,
+      "public_services": 14.0,
+      "debt_service": 4.5,
+      "other": 8.0
+    }
+  },
+  "india": {
+    "gdp": 3730.0,
+    "gdp_per_capita": 2610,
+    "public_debt_pct": 83.0,
+    "revenue_pct_gdp": 19.5,
+    "expense_pct_gdp": 28.5,
+    "unemployment": 7.8,
+    "inflation": 4.8,
+    "gni_per_capita": 2540,
+    "revenue": {
+      "taxes": 62.5,
+      "social_contributions": 3.2,
+      "grants": 1.8,
+      "other": 32.5
+    },
+    "expenditure": {
+      "social_protection": 8.5,
+      "health": 5.2,
+      "education": 10.5,
+      "defense": 9.8,
+      "infrastructure": 18.5,
+      "public_services": 15.2,
+      "debt_service": 20.5,
+      "other": 11.8
+    }
+  },
+  "singapore": {
+    "gdp": 497.3,
+    "gdp_per_capita": 84500,
+    "public_debt_pct": 167.8,
+    "revenue_pct_gdp": 18.5,
+    "expense_pct_gdp": 16.5,
+    "unemployment": 2.0,
+    "inflation": 2.5,
+    "gni_per_capita": 67200,
+    "revenue": {
+      "taxes": 62.0,
+      "social_contributions": 5.2,
+      "grants": 0.1,
+      "other": 32.7
+    },
+    "expenditure": {
+      "social_protection": 14.5,
+      "health": 15.8,
+      "education": 18.5,
+      "defense": 19.2,
+      "infrastructure": 12.5,
+      "public_services": 10.0,
+      "debt_service": 2.5,
+      "other": 7.0
+    }
+  },
+  "israel": {
+    "gdp": 525.0,
+    "gdp_per_capita": 54700,
+    "public_debt_pct": 62.0,
+    "revenue_pct_gdp": 36.8,
+    "expense_pct_gdp": 39.5,
+    "unemployment": 3.8,
+    "inflation": 3.2,
+    "gni_per_capita": 52400,
+    "revenue": {
+      "taxes": 62.5,
+      "social_contributions": 14.5,
+      "grants": 3.5,
+      "other": 19.5
+    },
+    "expenditure": {
+      "social_protection": 24.5,
+      "health": 13.2,
+      "education": 14.5,
+      "defense": 15.5,
+      "infrastructure": 7.0,
+      "public_services": 12.5,
+      "debt_service": 5.8,
+      "other": 7.0
+    }
+  },
+  "turkey": {
+    "gdp": 1108.0,
+    "gdp_per_capita": 12800,
+    "public_debt_pct": 30.4,
+    "revenue_pct_gdp": 33.2,
+    "expense_pct_gdp": 36.5,
+    "unemployment": 9.5,
+    "inflation": 44.4,
+    "gni_per_capita": 11800,
+    "revenue": {
+      "taxes": 58.5,
+      "social_contributions": 25.8,
+      "grants": 0.5,
+      "other": 15.2
+    },
+    "expenditure": {
+      "social_protection": 25.0,
+      "health": 10.5,
+      "education": 10.8,
+      "defense": 5.2,
+      "infrastructure": 12.5,
+      "public_services": 14.0,
+      "debt_service": 10.5,
+      "other": 11.5
+    }
+  },
+  "saudi_arabia": {
+    "gdp": 1108.1,
+    "gdp_per_capita": 30450,
+    "public_debt_pct": 26.2,
+    "revenue_pct_gdp": 29.8,
+    "expense_pct_gdp": 32.5,
+    "unemployment": 4.9,
+    "inflation": 1.7,
+    "gni_per_capita": 27820,
+    "revenue": {
+      "taxes": 12.5,
+      "social_contributions": 5.2,
+      "grants": 0.1,
+      "other": 82.2
+    },
+    "expenditure": {
+      "social_protection": 18.5,
+      "health": 12.5,
+      "education": 18.0,
+      "defense": 22.5,
+      "infrastructure": 12.0,
+      "public_services": 10.5,
+      "debt_service": 2.5,
+      "other": 3.5
+    }
+  },
+  "uae": {
+    "gdp": 509.2,
+    "gdp_per_capita": 50600,
+    "public_debt_pct": 30.1,
+    "revenue_pct_gdp": 30.2,
+    "expense_pct_gdp": 28.5,
+    "unemployment": 2.9,
+    "inflation": 2.2,
+    "gni_per_capita": 45580,
+    "revenue": {
+      "taxes": 14.5,
+      "social_contributions": 4.8,
+      "grants": 0.2,
+      "other": 80.5
+    },
+    "expenditure": {
+      "social_protection": 16.5,
+      "health": 10.5,
+      "education": 15.0,
+      "defense": 18.5,
+      "infrastructure": 18.2,
+      "public_services": 12.5,
+      "debt_service": 2.8,
+      "other": 6.0
+    }
+  },
+  "indonesia": {
+    "gdp": 1417.4,
+    "gdp_per_capita": 5080,
+    "public_debt_pct": 39.2,
+    "revenue_pct_gdp": 14.8,
+    "expense_pct_gdp": 17.2,
+    "unemployment": 5.3,
+    "inflation": 3.0,
+    "gni_per_capita": 4580,
+    "revenue": {
+      "taxes": 68.5,
+      "social_contributions": 2.5,
+      "grants": 2.0,
+      "other": 27.0
+    },
+    "expenditure": {
+      "social_protection": 14.2,
+      "health": 8.5,
+      "education": 17.2,
+      "defense": 5.8,
+      "infrastructure": 15.5,
+      "public_services": 14.5,
+      "debt_service": 14.8,
+      "other": 9.5
+    }
+  },
+  "usa": {
+    "gdp": 28780.0,
+    "gdp_per_capita": 85370,
+    "public_debt_pct": 123.3,
+    "revenue_pct_gdp": 30.2,
+    "expense_pct_gdp": 36.5,
+    "unemployment": 4.0,
+    "inflation": 2.9,
+    "gni_per_capita": 80300,
+    "revenue": {
+      "taxes": 56.5,
+      "social_contributions": 26.2,
+      "grants": 0.1,
+      "other": 17.2
+    },
+    "expenditure": {
+      "social_protection": 32.5,
+      "health": 22.5,
+      "education": 5.8,
+      "defense": 12.5,
+      "infrastructure": 5.5,
+      "public_services": 8.8,
+      "debt_service": 8.2,
+      "other": 4.2
+    }
+  },
+  "canada": {
+    "gdp": 2140.0,
+    "gdp_per_capita": 54870,
+    "public_debt_pct": 106.0,
+    "revenue_pct_gdp": 40.5,
+    "expense_pct_gdp": 42.8,
+    "unemployment": 6.1,
+    "inflation": 2.5,
+    "gni_per_capita": 52960,
+    "revenue": {
+      "taxes": 55.0,
+      "social_contributions": 16.5,
+      "grants": 0.2,
+      "other": 28.3
+    },
+    "expenditure": {
+      "social_protection": 30.0,
+      "health": 19.5,
+      "education": 12.2,
+      "defense": 3.5,
+      "infrastructure": 8.8,
+      "public_services": 12.5,
+      "debt_service": 5.5,
+      "other": 8.0
+    }
+  },
+  "brazil": {
+    "gdp": 2173.7,
+    "gdp_per_capita": 10100,
+    "public_debt_pct": 74.4,
+    "revenue_pct_gdp": 32.5,
+    "expense_pct_gdp": 38.8,
+    "unemployment": 7.8,
+    "inflation": 4.5,
+    "gni_per_capita": 9370,
+    "revenue": {
+      "taxes": 55.2,
+      "social_contributions": 25.5,
+      "grants": 0.5,
+      "other": 18.8
+    },
+    "expenditure": {
+      "social_protection": 38.0,
+      "health": 10.5,
+      "education": 12.5,
+      "defense": 3.2,
+      "infrastructure": 5.5,
+      "public_services": 12.0,
+      "debt_service": 12.5,
+      "other": 5.8
+    }
+  },
+  "mexico": {
+    "gdp": 1789.0,
+    "gdp_per_capita": 13500,
+    "public_debt_pct": 52.5,
+    "revenue_pct_gdp": 24.5,
+    "expense_pct_gdp": 28.8,
+    "unemployment": 2.8,
+    "inflation": 4.2,
+    "gni_per_capita": 11950,
+    "revenue": {
+      "taxes": 52.5,
+      "social_contributions": 14.2,
+      "grants": 0.5,
+      "other": 32.8
+    },
+    "expenditure": {
+      "social_protection": 22.5,
+      "health": 11.2,
+      "education": 14.5,
+      "defense": 2.2,
+      "infrastructure": 10.0,
+      "public_services": 14.2,
+      "debt_service": 12.8,
+      "other": 12.6
+    }
+  },
+  "argentina": {
+    "gdp": 621.8,
+    "gdp_per_capita": 13500,
+    "public_debt_pct": 89.5,
+    "revenue_pct_gdp": 28.8,
+    "expense_pct_gdp": 33.5,
+    "unemployment": 6.8,
+    "inflation": 211.4,
+    "gni_per_capita": 12050,
+    "revenue": {
+      "taxes": 48.5,
+      "social_contributions": 22.8,
+      "grants": 0.5,
+      "other": 28.2
+    },
+    "expenditure": {
+      "social_protection": 42.5,
+      "health": 8.5,
+      "education": 10.2,
+      "defense": 2.2,
+      "infrastructure": 4.5,
+      "public_services": 10.5,
+      "debt_service": 14.8,
+      "other": 6.8
+    }
+  },
+  "chile": {
+    "gdp": 335.5,
+    "gdp_per_capita": 17100,
+    "public_debt_pct": 38.9,
+    "revenue_pct_gdp": 24.8,
+    "expense_pct_gdp": 27.5,
+    "unemployment": 8.2,
+    "inflation": 3.5,
+    "gni_per_capita": 16250,
+    "revenue": {
+      "taxes": 62.5,
+      "social_contributions": 8.5,
+      "grants": 0.5,
+      "other": 28.5
+    },
+    "expenditure": {
+      "social_protection": 28.5,
+      "health": 16.5,
+      "education": 18.5,
+      "defense": 4.2,
+      "infrastructure": 8.0,
+      "public_services": 12.5,
+      "debt_service": 4.0,
+      "other": 7.8
+    }
+  },
+  "colombia": {
+    "gdp": 363.8,
+    "gdp_per_capita": 7020,
+    "public_debt_pct": 54.8,
+    "revenue_pct_gdp": 28.5,
+    "expense_pct_gdp": 32.2,
+    "unemployment": 10.2,
+    "inflation": 6.8,
+    "gni_per_capita": 6530,
+    "revenue": {
+      "taxes": 58.5,
+      "social_contributions": 15.8,
+      "grants": 1.2,
+      "other": 24.5
+    },
+    "expenditure": {
+      "social_protection": 22.5,
+      "health": 14.5,
+      "education": 14.0,
+      "defense": 6.8,
+      "infrastructure": 8.5,
+      "public_services": 13.2,
+      "debt_service": 12.5,
+      "other": 8.0
+    }
+  },
+  "costa_rica": {
+    "gdp": 72.1,
+    "gdp_per_capita": 13700,
+    "public_debt_pct": 62.5,
+    "revenue_pct_gdp": 30.5,
+    "expense_pct_gdp": 33.2,
+    "unemployment": 8.5,
+    "inflation": 1.2,
+    "gni_per_capita": 12900,
+    "revenue": {
+      "taxes": 56.5,
+      "social_contributions": 22.5,
+      "grants": 1.5,
+      "other": 19.5
+    },
+    "expenditure": {
+      "social_protection": 25.5,
+      "health": 18.5,
+      "education": 18.0,
+      "defense": 0.0,
+      "infrastructure": 7.5,
+      "public_services": 14.0,
+      "debt_service": 9.5,
+      "other": 7.0
+    }
+  },
+  "south_africa": {
+    "gdp": 399.0,
+    "gdp_per_capita": 6600,
+    "public_debt_pct": 73.8,
+    "revenue_pct_gdp": 26.5,
+    "expense_pct_gdp": 32.8,
+    "unemployment": 32.8,
+    "inflation": 5.5,
+    "gni_per_capita": 6080,
+    "revenue": {
+      "taxes": 72.5,
+      "social_contributions": 2.2,
+      "grants": 1.8,
+      "other": 23.5
+    },
+    "expenditure": {
+      "social_protection": 28.5,
+      "health": 12.5,
+      "education": 18.5,
+      "defense": 3.2,
+      "infrastructure": 6.8,
+      "public_services": 12.0,
+      "debt_service": 12.5,
+      "other": 6.0
+    }
+  },
+  "nigeria": {
+    "gdp": 472.6,
+    "gdp_per_capita": 2140,
+    "public_debt_pct": 38.8,
+    "revenue_pct_gdp": 8.5,
+    "expense_pct_gdp": 12.0,
+    "unemployment": 33.3,
+    "inflation": 28.9,
+    "gni_per_capita": 2060,
+    "revenue": {
+      "taxes": 32.5,
+      "social_contributions": 1.5,
+      "grants": 5.5,
+      "other": 60.5
+    },
+    "expenditure": {
+      "social_protection": 5.5,
+      "health": 5.2,
+      "education": 8.5,
+      "defense": 10.5,
+      "infrastructure": 15.0,
+      "public_services": 18.5,
+      "debt_service": 28.5,
+      "other": 8.3
+    }
+  },
+  "kenya": {
+    "gdp": 113.0,
+    "gdp_per_capita": 2080,
+    "public_debt_pct": 70.2,
+    "revenue_pct_gdp": 17.2,
+    "expense_pct_gdp": 23.8,
+    "unemployment": 5.7,
+    "inflation": 6.8,
+    "gni_per_capita": 2010,
+    "revenue": {
+      "taxes": 66.5,
+      "social_contributions": 1.5,
+      "grants": 5.8,
+      "other": 26.2
+    },
+    "expenditure": {
+      "social_protection": 8.5,
+      "health": 7.5,
+      "education": 17.5,
+      "defense": 5.8,
+      "infrastructure": 14.5,
+      "public_services": 16.5,
+      "debt_service": 22.5,
+      "other": 7.2
+    }
+  },
+  "egypt": {
+    "gdp": 395.9,
+    "gdp_per_capita": 3700,
+    "public_debt_pct": 92.2,
+    "revenue_pct_gdp": 18.5,
+    "expense_pct_gdp": 24.8,
+    "unemployment": 7.0,
+    "inflation": 26.5,
+    "gni_per_capita": 3920,
+    "revenue": {
+      "taxes": 58.5,
+      "social_contributions": 6.2,
+      "grants": 4.5,
+      "other": 30.8
+    },
+    "expenditure": {
+      "social_protection": 18.5,
+      "health": 5.2,
+      "education": 10.5,
+      "defense": 5.8,
+      "infrastructure": 8.5,
+      "public_services": 15.5,
+      "debt_service": 28.5,
+      "other": 7.5
+    }
+  },
+  "ethiopia": {
+    "gdp": 156.1,
+    "gdp_per_capita": 1280,
+    "public_debt_pct": 43.5,
+    "revenue_pct_gdp": 10.2,
+    "expense_pct_gdp": 14.8,
+    "unemployment": 3.5,
+    "inflation": 22.5,
+    "gni_per_capita": 1020,
+    "revenue": {
+      "taxes": 48.5,
+      "social_contributions": 1.5,
+      "grants": 22.0,
+      "other": 28.0
+    },
+    "expenditure": {
+      "social_protection": 5.5,
+      "health": 6.5,
+      "education": 22.5,
+      "defense": 8.5,
+      "infrastructure": 18.5,
+      "public_services": 15.0,
+      "debt_service": 15.5,
+      "other": 8.0
+    }
+  },
+  "ghana": {
+    "gdp": 76.4,
+    "gdp_per_capita": 2350,
+    "public_debt_pct": 83.5,
+    "revenue_pct_gdp": 15.8,
+    "expense_pct_gdp": 22.5,
+    "unemployment": 4.7,
+    "inflation": 18.5,
+    "gni_per_capita": 2380,
+    "revenue": {
+      "taxes": 55.5,
+      "social_contributions": 2.5,
+      "grants": 8.5,
+      "other": 33.5
+    },
+    "expenditure": {
+      "social_protection": 6.5,
+      "health": 7.5,
+      "education": 18.5,
+      "defense": 3.5,
+      "infrastructure": 12.5,
+      "public_services": 16.5,
+      "debt_service": 25.5,
+      "other": 9.5
+    }
+  },
+  "morocco": {
+    "gdp": 141.1,
+    "gdp_per_capita": 3780,
+    "public_debt_pct": 69.5,
+    "revenue_pct_gdp": 27.5,
+    "expense_pct_gdp": 31.8,
+    "unemployment": 11.2,
+    "inflation": 3.2,
+    "gni_per_capita": 3560,
+    "revenue": {
+      "taxes": 62.5,
+      "social_contributions": 8.5,
+      "grants": 3.5,
+      "other": 25.5
+    },
+    "expenditure": {
+      "social_protection": 15.5,
+      "health": 6.5,
+      "education": 18.5,
+      "defense": 8.5,
+      "infrastructure": 14.5,
+      "public_services": 14.0,
+      "debt_service": 13.5,
+      "other": 9.0
+    }
+  },
+  "australia": {
+    "gdp": 1788.0,
+    "gdp_per_capita": 68400,
+    "public_debt_pct": 50.7,
+    "revenue_pct_gdp": 35.2,
+    "expense_pct_gdp": 37.5,
+    "unemployment": 4.1,
+    "inflation": 3.5,
+    "gni_per_capita": 62500,
+    "revenue": {
+      "taxes": 63.5,
+      "social_contributions": 0.0,
+      "grants": 0.2,
+      "other": 36.3
+    },
+    "expenditure": {
+      "social_protection": 32.0,
+      "health": 18.5,
+      "education": 13.5,
+      "defense": 5.0,
+      "infrastructure": 8.5,
+      "public_services": 11.5,
+      "debt_service": 3.5,
+      "other": 7.5
+    }
+  },
+  "new_zealand": {
+    "gdp": 252.8,
+    "gdp_per_capita": 48800,
+    "public_debt_pct": 44.2,
+    "revenue_pct_gdp": 38.5,
+    "expense_pct_gdp": 40.2,
+    "unemployment": 4.6,
+    "inflation": 3.2,
+    "gni_per_capita": 45600,
+    "revenue": {
+      "taxes": 64.5,
+      "social_contributions": 0.0,
+      "grants": 0.3,
+      "other": 35.2
+    },
+    "expenditure": {
+      "social_protection": 32.5,
+      "health": 18.5,
+      "education": 16.5,
+      "defense": 3.2,
+      "infrastructure": 7.5,
+      "public_services": 11.8,
+      "debt_service": 3.5,
+      "other": 6.5
+    }
+  },
+  "russia": {
+    "gdp": 2022.0,
+    "gdp_per_capita": 14250,
+    "public_debt_pct": 18.9,
+    "revenue_pct_gdp": 35.8,
+    "expense_pct_gdp": 37.2,
+    "unemployment": 2.4,
+    "inflation": 8.5,
+    "gni_per_capita": 12830,
+    "revenue": {
+      "taxes": 38.5,
+      "social_contributions": 18.5,
+      "grants": 0.2,
+      "other": 42.8
+    },
+    "expenditure": {
+      "social_protection": 22.5,
+      "health": 8.5,
+      "education": 8.2,
+      "defense": 18.5,
+      "infrastructure": 12.5,
+      "public_services": 14.0,
+      "debt_service": 3.5,
+      "other": 12.3
+    }
+  },
+  "ukraine": {
+    "gdp": 178.8,
+    "gdp_per_capita": 5070,
+    "public_debt_pct": 84.4,
+    "revenue_pct_gdp": 42.5,
+    "expense_pct_gdp": 58.0,
+    "unemployment": 14.8,
+    "inflation": 12.8,
+    "gni_per_capita": 4570,
+    "revenue": {
+      "taxes": 48.5,
+      "social_contributions": 20.5,
+      "grants": 18.5,
+      "other": 12.5
+    },
+    "expenditure": {
+      "social_protection": 15.5,
+      "health": 6.8,
+      "education": 8.5,
+      "defense": 35.5,
+      "infrastructure": 5.5,
+      "public_services": 10.2,
+      "debt_service": 8.5,
+      "other": 9.5
+    }
+  },
+  "pakistan": {
+    "gdp": 374.7,
+    "gdp_per_capita": 1570,
+    "public_debt_pct": 78.5,
+    "revenue_pct_gdp": 12.5,
+    "expense_pct_gdp": 19.8,
+    "unemployment": 6.3,
+    "inflation": 24.5,
+    "gni_per_capita": 1590,
+    "revenue": {
+      "taxes": 58.5,
+      "social_contributions": 1.5,
+      "grants": 8.5,
+      "other": 31.5
+    },
+    "expenditure": {
+      "social_protection": 5.5,
+      "health": 3.8,
+      "education": 8.5,
+      "defense": 15.5,
+      "infrastructure": 10.5,
+      "public_services": 14.5,
+      "debt_service": 32.5,
+      "other": 9.2
+    }
+  }
+}

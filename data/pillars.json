@@ -1,0 +1,98 @@
+[
+  {
+    "id": "governance",
+    "icon": "\ud83c\udfdb\ufe0f",
+    "color": "#1B5E20",
+    "name_key": "pillar.governance",
+    "desc_key": "pillar.governance.desc",
+    "sources": ["Freedom House", "V-Dem Institute", "World Bank Governance Indicators", "Transparency International"]
+  },
+  {
+    "id": "security",
+    "icon": "\ud83d\udd12",
+    "color": "#0D47A1",
+    "name_key": "pillar.security",
+    "desc_key": "pillar.security.desc",
+    "sources": ["Global Peace Index", "UNODC", "World Bank"]
+  },
+  {
+    "id": "education",
+    "icon": "\ud83c\udf93",
+    "color": "#E65100",
+    "name_key": "pillar.education",
+    "desc_key": "pillar.education.desc",
+    "sources": ["UNESCO", "World Bank EdStats", "OECD PISA"]
+  },
+  {
+    "id": "health",
+    "icon": "\ud83c\udfe5",
+    "color": "#B71C1C",
+    "name_key": "pillar.health",
+    "desc_key": "pillar.health.desc",
+    "sources": ["WHO", "World Bank Health Data", "Global Burden of Disease"]
+  },
+  {
+    "id": "environment",
+    "icon": "\ud83c\udf31",
+    "color": "#2E7D32",
+    "name_key": "pillar.environment",
+    "desc_key": "pillar.environment.desc",
+    "sources": ["Yale EPI", "UN Environment Programme", "Global Carbon Project"]
+  },
+  {
+    "id": "economy",
+    "icon": "\ud83d\udcbc",
+    "color": "#F57F17",
+    "name_key": "pillar.economy",
+    "desc_key": "pillar.economy.desc",
+    "sources": ["World Bank", "ILO", "IMF World Economic Outlook"]
+  },
+  {
+    "id": "inclusion",
+    "icon": "\ud83e\udd1d",
+    "color": "#6A1B9A",
+    "name_key": "pillar.inclusion",
+    "desc_key": "pillar.inclusion.desc",
+    "sources": ["World Values Survey", "UN Human Development Report", "Social Progress Index"]
+  },
+  {
+    "id": "infrastructure",
+    "icon": "\ud83c\udfd7\ufe0f",
+    "color": "#455A64",
+    "name_key": "pillar.infrastructure",
+    "desc_key": "pillar.infrastructure.desc",
+    "sources": ["World Bank Infrastructure Data", "ITU", "World Economic Forum"]
+  },
+  {
+    "id": "innovation",
+    "icon": "\ud83d\udca1",
+    "color": "#FF6F00",
+    "name_key": "pillar.innovation",
+    "desc_key": "pillar.innovation.desc",
+    "sources": ["WIPO Global Innovation Index", "UNESCO Science Report", "World Bank R&D Data"]
+  },
+  {
+    "id": "equity",
+    "icon": "\u2696\ufe0f",
+    "color": "#4E342E",
+    "name_key": "pillar.equity",
+    "desc_key": "pillar.equity.desc",
+    "sources": ["World Bank Poverty Data", "UNDP Inequality Data", "Gini Index"]
+  },
+  {
+    "id": "energy",
+    "icon": "\u26a1",
+    "color": "#F9A825",
+    "name_key": "pillar.energy",
+    "desc_key": "pillar.energy.desc",
+    "sources": ["IEA", "World Bank Energy Data", "IRENA"]
+  },
+  {
+    "id": "housing",
+    "icon": "\ud83c\udfe0",
+    "color": "#00838F",
+    "name_key": "pillar.housing",
+    "desc_key": "pillar.housing.desc",
+    "sources": ["UN-Habitat", "OECD Housing Data", "World Bank Urban Development"]
+  }
+]
