@@ -5,6 +5,9 @@
   "nav.about": "Über uns",
   "nav.methodology": "Methodik",
   "nav.data": "Daten",
+  "nav.countries": "Länder",
+  "nav.country_search": "Länder suchen...",
+  "nav.compare": "Vergleichen",
 
   "hero.title": "Globalen Wohlstand in Echtzeit überwachen",
   "hero.subtitle": "Umfassende Analyse von 12 grundlegenden Säulen in 196 Ländern, die den Fortschritt in Richtung nachhaltiger Entwicklung und menschlichem Wohlbefinden verfolgt",
@@ -12,9 +15,15 @@
   "overview.title": "Globale Übersicht",
   "overview.subtitle": "Schlüsselindikatoren, Stand Februar 2026",
 
-  "pillars.title": "Zwölf Säulen des Wohlstands",
+  "pillars.title": "Säulen des Wohlstands",
   "pillars.subtitle": "Detaillierte Analyse für jede Dimension erkunden",
   "pillars.explore": "Ranglisten erkunden",
+  "overview.top_countries": "Top-Länder nach Wohlstand & BIP",
+  "overview.rank": "#",
+  "overview.country": "Land",
+  "overview.score": "Punktzahl",
+  "overview.gdp_capita": "BIP/Kopf",
+  "overview.view_all": "Alle Rankings anzeigen",
   "pillars.global_avg": "Globaler Durchschnitt",
 
   "pillar.governance": "Regierungsführung",
@@ -42,6 +51,7 @@
   "pillar.housing": "Wohnen & Stadtentwicklung",
   "pillar.housing.desc": "Bezahlbares Wohnen, Stadtplanung und Lebensqualität",
 
+  "map.section_title": "Interaktive Karte der globalen Prosperität",
   "map.title": "Globaler Wohlstandsindex",
   "map.interactive": "Interaktive Karte",
   "map.click_details": "Klicken Sie auf Länder für Details",
@@ -209,5 +219,26 @@
   "peace.status.tension": "Spannungen",
   "peace.status.minor_conflict": "Geringer Konflikt",
   "peace.status.major_conflict": "Schwerer Konflikt",
-  "peace.status.war": "Krieg"
+  "peace.status.war": "Krieg",
+  "compare.title": "Länder vergleichen",
+  "compare.intro": "Wählen Sie 2 oder 3 Länder, um ihre Wohlstandsprofile nebeneinander zu vergleichen.",
+  "compare.select_hint": "Bitte wählen Sie mindestens 2 Länder aus.",
+  "compare.radar_title": "Säulenprofilvergleich",
+  "compare.pillars_title": "Säulenwerte",
+  "compare.econ_title": "Wirtschaftsindikatoren",
+  "compare.select_country": "Land auswählen",
+  "compare.add_country": "+ Land hinzufügen",
+  "compare.btn": "Vergleichen",
+
+  "trade.title": "Handel & Produktion",
+  "trade.exports": "Exporte",
+  "trade.imports": "Importe",
+  "trade.balance": "Handelsbilanz",
+  "trade.openness": "Handelsoffenheit (% BIP)",
+  "trade.top_exports": "Wichtigste Exportgüter",
+  "trade.global_title": "Globaler Handelsüberblick",
+  "trade.total_exports": "Weltexporte",
+  "trade.total_imports": "Weltimporte",
+  "trade.avg_openness": "Durchschn. Handelsoffenheit",
+  "trade.top_exporters": "Größte Exporteure"
 }

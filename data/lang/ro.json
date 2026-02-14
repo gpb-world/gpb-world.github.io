@@ -5,6 +5,9 @@
   "nav.about": "Despre",
   "nav.methodology": "Metodologie",
   "nav.data": "Date",
+  "nav.countries": "Țări",
+  "nav.country_search": "Caută țări...",
+  "nav.compare": "Compară",
 
   "hero.title": "Monitorizarea Prosperității Globale în Timp Real",
   "hero.subtitle": "Analiză cuprinzătoare a 12 piloni fundamentali în 196 de țări, urmărind progresul către dezvoltare durabilă și bunăstare umană",
@@ -12,9 +15,15 @@
   "overview.title": "Prezentare Globală",
   "overview.subtitle": "Indicatori cheie din februarie 2026",
 
-  "pillars.title": "Cei Doisprezece Piloni ai Prosperității",
+  "pillars.title": "Pilonii Prosperității",
   "pillars.subtitle": "Explorați analiza detaliată pentru fiecare dimensiune",
   "pillars.explore": "Explorează clasamentul",
+  "overview.top_countries": "Topul țărilor după prosperitate și PIB",
+  "overview.rank": "#",
+  "overview.country": "Țară",
+  "overview.score": "Scor",
+  "overview.gdp_capita": "PIB/Capita",
+  "overview.view_all": "Vezi clasamentul complet",
   "pillars.global_avg": "Media Globală",
 
   "pillar.governance": "Guvernanță",
@@ -42,6 +51,7 @@
   "pillar.housing": "Locuințe și Dezv. Urbană",
   "pillar.housing.desc": "Accesibilitatea locuințelor, planificare urbană și calitatea vieții",
 
+  "map.section_title": "Hartă interactivă a prosperității globale",
   "map.title": "Indicele Prosperității Globale",
   "map.interactive": "Hartă Interactivă",
   "map.click_details": "Faceți clic pe țări pentru detalii",
@@ -209,5 +219,26 @@
   "peace.status.tension": "Tensiuni",
   "peace.status.minor_conflict": "Conflict Minor",
   "peace.status.major_conflict": "Conflict Major",
-  "peace.status.war": "Război"
+  "peace.status.war": "Război",
+  "compare.title": "Compară țări",
+  "compare.intro": "Selectați 2 sau 3 țări pentru a compara profilurile lor de prosperitate.",
+  "compare.select_hint": "Selectați cel puțin 2 țări.",
+  "compare.radar_title": "Comparație profiluri",
+  "compare.pillars_title": "Scoruri piloni",
+  "compare.econ_title": "Indicatori economici",
+  "compare.select_country": "Selectează o țară",
+  "compare.add_country": "+ Adaugă țară",
+  "compare.btn": "Compară",
+
+  "trade.title": "Comerț și Producție",
+  "trade.exports": "Exporturi",
+  "trade.imports": "Importuri",
+  "trade.balance": "Balanța Comercială",
+  "trade.openness": "Deschidere Comercială (% PIB)",
+  "trade.top_exports": "Principalele Exporturi",
+  "trade.global_title": "Prezentare Generală a Comerțului Global",
+  "trade.total_exports": "Exporturi Mondiale",
+  "trade.total_imports": "Importuri Mondiale",
+  "trade.avg_openness": "Deschidere Comercială Medie",
+  "trade.top_exporters": "Principalii Exportatori"
 }

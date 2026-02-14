@@ -3,19 +3,28 @@
  * Detects page, renders dynamic content, orchestrates data + i18n
  */
 document.addEventListener('DOMContentLoaded', async () => {
-  await Data.init();
-  await I18n.init();
+  try {
+    await Data.init();
+    await I18n.init();
+  } catch (e) {
+    console.error('Init failed:', e);
+    return;
+  }
+
+  if (typeof CountrySelector !== 'undefined') CountrySelector.init();
 
   const page = detectPage();
   if (page === 'index') renderIndex();
   else if (page === 'country') renderCountry();
   else if (page === 'pillar') renderPillar();
+  else if (page === 'compare') renderCompare();
 
   // Re-render on language change
   document.addEventListener('gpb-lang-change', () => {
     if (page === 'index') renderIndex();
     else if (page === 'country') renderCountry();
     else if (page === 'pillar') renderPillar();
+    else if (page === 'compare') renderCompare();
   });
 });
 
@@ -23,6 +32,7 @@ function detectPage() {
   const path = window.location.pathname;
   if (path.includes('country.html')) return 'country';
   if (path.includes('pillar.html')) return 'pillar';
+  if (path.includes('compare.html')) return 'compare';
   if (path.includes('index.html') || path.endsWith('/')) return 'index';
   return 'index';
 }
@@ -32,6 +42,8 @@ function renderIndex() {
   renderPeaceBar();
   renderGlobalEconBar();
   renderOverviewCards();
+  renderTopCountries();
+  renderGlobalTrade();
   renderPillarCards();
 }
 
@@ -204,6 +216,107 @@ function renderOverviewCards() {
   container.innerHTML = html;
 }
 
+function renderTopCountries() {
+  const container = document.getElementById('top-countries-tile');
+  if (!container) return;
+
+  const ranking = Data.getRanking('overall').slice(0, 10);
+
+  function fmtK(v) { return v >= 1000 ? `$${(v/1000).toFixed(1)}K` : `$${v}`; }
+
+  const rows = ranking.map((r, i) => {
+    const econ = Data.getEconomics(r.id);
+    const gdpCap = econ ? fmtK(econ.gdp_per_capita) : '—';
+    const label = Data.getScoreLabel(r.score);
+    const name = I18n.getCountryName({ name: r.name, id: r.id });
+    return `<tr>
+      <td class="rank-num">${i + 1}</td>
+      <td><a href="country.html?id=${r.id}">${name}</a></td>
+      <td><div class="rank-bar-wrap"><div class="rank-bar score-${label}" style="width:${r.score}%"></div><span class="rank-score">${r.score}</span></div></td>
+      <td class="top-gdp-cell">${gdpCap}</td>
+    </tr>`;
+  }).join('');
+
+  container.innerHTML = `
+    <div class="top-countries-box">
+      <h3 class="top-countries-title">${I18n.t('overview.top_countries')}</h3>
+      <table class="ranking-table top-countries-table">
+        <thead>
+          <tr>
+            <th>${I18n.t('overview.rank')}</th>
+            <th>${I18n.t('overview.country')}</th>
+            <th>${I18n.t('overview.score')}</th>
+            <th>${I18n.t('overview.gdp_capita')}</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+      <div style="text-align:center;margin-top:1rem;">
+        <a href="pillar.html?id=overall" class="top-countries-link">${I18n.t('overview.view_all')} &rarr;</a>
+      </div>
+    </div>`;
+}
+
+function renderGlobalTrade() {
+  const container = document.getElementById('global-trade-tile');
+  if (!container) return;
+
+  const countries = Data.getAllCountries();
+  const allEcon = countries.map(c => Data.getEconomics(c.id)).filter(Boolean);
+  if (!allEcon.length) { container.innerHTML = ''; return; }
+
+  const totalExports = allEcon.reduce((s, e) => s + (e.exports || 0), 0);
+  const totalImports = allEcon.reduce((s, e) => s + (e.imports || 0), 0);
+  const avgOpenness = (allEcon.reduce((s, e) => s + (e.exports_pct_gdp || 0), 0) / allEcon.length).toFixed(1);
+
+  function fmtT(v) { return `$${(v/1000).toFixed(1)}T`; }
+
+  // Top 5 exporters
+  const sorted = allEcon.slice().sort((a, b) => (b.exports || 0) - (a.exports || 0)).slice(0, 5);
+  const topRows = sorted.map(e => {
+    const country = countries.find(c => Data.getEconomics(c.id) === e);
+    if (!country) return '';
+    const name = I18n.getCountryName(country);
+    const topExports = (e.top_exports || []).slice(0, 3).join(', ');
+    return `<tr>
+      <td><a href="country.html?id=${country.id}">${name}</a></td>
+      <td class="trade-val">$${e.exports.toFixed(0)}B</td>
+      <td class="trade-products">${topExports}</td>
+    </tr>`;
+  }).join('');
+
+  container.innerHTML = `
+    <div class="trade-tile-box">
+      <h3 class="trade-tile-title">${I18n.t('trade.global_title')}</h3>
+      <div class="trade-tile-stats">
+        <div class="trade-tile-stat">
+          <span class="trade-tile-icon">📦</span>
+          <span class="trade-tile-value">${fmtT(totalExports)}</span>
+          <span class="trade-tile-label">${I18n.t('trade.total_exports')}</span>
+        </div>
+        <div class="trade-tile-stat">
+          <span class="trade-tile-icon">🚢</span>
+          <span class="trade-tile-value">${fmtT(totalImports)}</span>
+          <span class="trade-tile-label">${I18n.t('trade.total_imports')}</span>
+        </div>
+        <div class="trade-tile-stat">
+          <span class="trade-tile-icon">🔄</span>
+          <span class="trade-tile-value">${avgOpenness}%</span>
+          <span class="trade-tile-label">${I18n.t('trade.avg_openness')}</span>
+        </div>
+      </div>
+      <h4 class="trade-top-title">${I18n.t('trade.top_exporters')}</h4>
+      <table class="ranking-table trade-top-table">
+        <thead><tr>
+          <th>${I18n.t('overview.country')}</th>
+          <th>${I18n.t('trade.exports')}</th>
+          <th>${I18n.t('trade.top_exports')}</th>
+        </tr></thead>
+        <tbody>${topRows}</tbody>
+      </table>
+    </div>`;
+}
+
 function renderPillarCards() {
   const container = document.getElementById('pillar-cards');
   if (!container) return;
@@ -327,6 +440,37 @@ function renderEconomicDashboard(country) {
     `<div class="econ-legend-item"><span class="econ-legend-dot" style="background:${expColors[i]}"></span>${I18n.t('econ.exp.' + k)}: ${econ.expenditure[k]}%</div>`
   ).join('');
 
+  // Trade section
+  let tradeHtml = '';
+  if (econ.exports != null) {
+    const balance = econ.trade_balance || (econ.exports - econ.imports);
+    const balanceSign = balance >= 0 ? '+' : '';
+    const balanceColor = balance >= 0 ? '#2E7D32' : '#E53935';
+    const topExports = (econ.top_exports || []).map(t => `<span class="trade-tag">${t}</span>`).join('');
+
+    tradeHtml = `
+    <h2 class="scores-heading">${I18n.t('trade.title')}</h2>
+    <div class="econ-metrics">
+      <div class="econ-metric">
+        <div class="econ-metric-label">${I18n.t('trade.exports')}</div>
+        <div class="econ-metric-value">${fmtB(econ.exports)}</div>
+      </div>
+      <div class="econ-metric">
+        <div class="econ-metric-label">${I18n.t('trade.imports')}</div>
+        <div class="econ-metric-value">${fmtB(econ.imports)}</div>
+      </div>
+      <div class="econ-metric">
+        <div class="econ-metric-label">${I18n.t('trade.balance')}</div>
+        <div class="econ-metric-value" style="color:${balanceColor}">${balanceSign}${fmtB(Math.abs(balance))}</div>
+      </div>
+      <div class="econ-metric">
+        <div class="econ-metric-label">${I18n.t('trade.openness')}</div>
+        <div class="econ-metric-value">${econ.exports_pct_gdp || '—'}%</div>
+      </div>
+    </div>
+    ${topExports ? `<div class="trade-tags-section"><span class="trade-tags-label">${I18n.t('trade.top_exports')}:</span> ${topExports}</div>` : ''}`;
+  }
+
   container.innerHTML = `
     <h2 class="scores-heading">${I18n.t('econ.title')}</h2>
     <div class="econ-metrics">${metricCards}</div>
@@ -341,7 +485,8 @@ function renderEconomicDashboard(country) {
         <canvas id="chart-expenditure"></canvas>
         <div class="econ-legend">${expLegend}</div>
       </div>
-    </div>`;
+    </div>
+    ${tradeHtml}`;
 
   // Create charts after DOM insertion
   if (typeof Chart !== 'undefined') {
@@ -450,4 +595,183 @@ function renderPillar() {
       <tbody>${rows}</tbody>
     </table>
     ${sourcesHtml}`;
+}
+
+// Track compare chart instances for cleanup
+let _compareCharts = [];
+
+function renderCompare() {
+  const container = document.getElementById('compare-content');
+  if (!container) return;
+
+  // Destroy old charts
+  _compareCharts.forEach(c => c.destroy());
+  _compareCharts = [];
+
+  const params = new URLSearchParams(window.location.search);
+  const ids = params.getAll('c').slice(0, 3);
+  const countries = Data.getAllCountries();
+  const lang = I18n.getLang();
+  const pillars = Data.getPillars();
+
+  const sorted = countries.slice().sort((a, b) =>
+    I18n.getCountryName(a).localeCompare(I18n.getCountryName(b), lang)
+  );
+
+  // Build picker selects
+  const selCount = 3;
+  const selectsHtml = Array.from({ length: selCount }, (_, i) => {
+    const sel = ids[i] || '';
+    const options = sorted.map(c => {
+      const name = I18n.getCountryName(c);
+      return `<option value="${c.id}" ${c.id === sel ? 'selected' : ''}>${name}</option>`;
+    }).join('');
+    return `<select id="compare-sel-${i}">
+      <option value="">${i < 2 ? I18n.t('compare.select_country') : I18n.t('compare.add_country')}</option>
+      ${options}
+    </select>`;
+  }).join('');
+
+  container.innerHTML = `
+    <a href="index.html" class="back-link">&larr; ${I18n.t('country.back')}</a>
+    <h1 class="page-title">${I18n.t('compare.title')}</h1>
+    <p class="page-intro">${I18n.t('compare.intro')}</p>
+    <div class="compare-picker">
+      ${selectsHtml}
+      <button class="compare-btn" id="compare-go">${I18n.t('compare.btn')}</button>
+    </div>
+    <div id="compare-results"></div>`;
+
+  document.getElementById('compare-go').addEventListener('click', () => {
+    const chosen = [];
+    for (let i = 0; i < selCount; i++) {
+      const v = document.getElementById(`compare-sel-${i}`).value;
+      if (v) chosen.push(v);
+    }
+    if (chosen.length < 2) return;
+    const url = 'compare.html?' + chosen.map(c => `c=${c}`).join('&');
+    window.location.href = url;
+  });
+
+  // If we have valid selections, render results
+  const selected = ids.map(id => Data.getCountry(id)).filter(Boolean);
+  if (selected.length < 2) {
+    document.getElementById('compare-results').innerHTML =
+      `<div class="compare-hint">${I18n.t('compare.select_hint')}</div>`;
+    return;
+  }
+
+  const compareColors = ['#009edb', '#e53935', '#2E7D32'];
+
+  // Radar chart
+  const radarHtml = `
+    <div class="compare-section">
+      <h2>${I18n.t('compare.radar_title')}</h2>
+      <div class="compare-radar-wrap"><canvas id="compare-radar"></canvas></div>
+    </div>`;
+
+  // Grouped pillar bars
+  const barsHtml = pillars.map(p => {
+    const bars = selected.map((c, i) => {
+      const score = c.scores[p.id] || 0;
+      const label = Data.getScoreLabel(score);
+      const name = I18n.getCountryName(c);
+      return `<div class="compare-bar-entry">
+        <span class="compare-bar-name">${name}</span>
+        <div class="compare-bar-track">
+          <div class="compare-bar-fill" style="width:${score}%;background:${compareColors[i]}"></div>
+        </div>
+        <span class="compare-bar-value">${score}</span>
+      </div>`;
+    }).join('');
+    return `<div class="compare-bar-row">
+      <div class="compare-bar-label">${p.icon} ${I18n.t(p.name_key)}</div>
+      <div class="compare-bar-group">${bars}</div>
+    </div>`;
+  }).join('');
+
+  // Economic comparison table
+  const econData = selected.map(c => ({ country: c, econ: Data.getEconomics(c.id) }));
+  const hasEcon = econData.some(d => d.econ);
+
+  function fmtB(v) { return v >= 1000 ? `$${(v/1000).toFixed(1)}T` : `$${v.toFixed(0)}B`; }
+  function fmtK(v) { return v >= 1000 ? `$${(v/1000).toFixed(1)}K` : `$${v.toFixed(0)}`; }
+
+  const econMetrics = [
+    { key: 'econ.gdp', fn: e => fmtB(e.gdp) },
+    { key: 'econ.gdp_per_capita', fn: e => fmtK(e.gdp_per_capita) },
+    { key: 'econ.public_debt', fn: e => `${e.public_debt_pct}%` },
+    { key: 'econ.unemployment', fn: e => `${e.unemployment}%` },
+    { key: 'econ.inflation', fn: e => `${e.inflation}%` },
+    { key: 'econ.gni_per_capita', fn: e => fmtK(e.gni_per_capita) },
+    { key: 'trade.exports', fn: e => e.exports != null ? fmtB(e.exports) : '—' },
+    { key: 'trade.imports', fn: e => e.imports != null ? fmtB(e.imports) : '—' },
+    { key: 'trade.balance', fn: e => e.trade_balance != null ? `${e.trade_balance >= 0 ? '+' : ''}${fmtB(Math.abs(e.trade_balance))}` : '—' }
+  ];
+
+  let econTableHtml = '';
+  if (hasEcon) {
+    const headerCols = selected.map(c => `<th>${I18n.getCountryName(c)}</th>`).join('');
+    const rows = econMetrics.map(m => {
+      const cells = econData.map(d => {
+        if (!d.econ) return '<td>-</td>';
+        return `<td>${m.fn(d.econ)}</td>`;
+      }).join('');
+      return `<tr><td><strong>${I18n.t(m.key)}</strong></td>${cells}</tr>`;
+    }).join('');
+
+    econTableHtml = `
+      <div class="compare-section">
+        <h2>${I18n.t('compare.econ_title')}</h2>
+        <table class="compare-econ-table">
+          <thead><tr><th></th>${headerCols}</tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>`;
+  }
+
+  document.getElementById('compare-results').innerHTML = `
+    ${radarHtml}
+    <div class="compare-section">
+      <h2>${I18n.t('compare.pillars_title')}</h2>
+      <div class="compare-bars">${barsHtml}</div>
+    </div>
+    ${econTableHtml}`;
+
+  // Draw radar chart
+  if (typeof Chart !== 'undefined') {
+    const radarCtx = document.getElementById('compare-radar');
+    if (radarCtx) {
+      const datasets = selected.map((c, i) => ({
+        label: I18n.getCountryName(c),
+        data: pillars.map(p => c.scores[p.id] || 0),
+        borderColor: compareColors[i],
+        backgroundColor: compareColors[i] + '22',
+        pointBackgroundColor: compareColors[i],
+        borderWidth: 2
+      }));
+
+      _compareCharts.push(new Chart(radarCtx, {
+        type: 'radar',
+        data: {
+          labels: pillars.map(p => I18n.t(p.name_key)),
+          datasets
+        },
+        options: {
+          responsive: true,
+          scales: {
+            r: {
+              beginAtZero: true,
+              max: 100,
+              ticks: { stepSize: 20, font: { size: 10 } },
+              pointLabels: { font: { size: 11 } }
+            }
+          },
+          plugins: {
+            legend: { position: 'bottom' }
+          }
+        }
+      }));
+    }
+  }
 }

@@ -5,6 +5,9 @@
   "nav.about": "О проекте",
   "nav.methodology": "Методология",
   "nav.data": "Данные",
+  "nav.countries": "Страны",
+  "nav.country_search": "Поиск стран...",
+  "nav.compare": "Сравнить",
 
   "hero.title": "Мониторинг глобального процветания в реальном времени",
   "hero.subtitle": "Комплексный анализ 12 фундаментальных опор в 196 странах, отслеживание прогресса в направлении устойчивого развития и благополучия человека",
@@ -12,9 +15,15 @@
   "overview.title": "Глобальный обзор",
   "overview.subtitle": "Ключевые показатели по состоянию на февраль 2026 года",
 
-  "pillars.title": "Двенадцать опор процветания",
+  "pillars.title": "Столпы процветания",
   "pillars.subtitle": "Изучите подробный анализ по каждому направлению",
   "pillars.explore": "Изучить рейтинги",
+  "overview.top_countries": "Лучшие страны по процветанию и ВВП",
+  "overview.rank": "#",
+  "overview.country": "Страна",
+  "overview.score": "Оценка",
+  "overview.gdp_capita": "ВВП/Душу",
+  "overview.view_all": "Показать полный рейтинг",
   "pillars.global_avg": "Среднемировой показатель",
 
   "pillar.governance": "Управление",
@@ -42,6 +51,7 @@
   "pillar.housing": "Жильё и городское развитие",
   "pillar.housing.desc": "Доступность жилья, градостроительство и качество городской среды",
 
+  "map.section_title": "Интерактивная карта глобального процветания",
   "map.title": "Индекс глобального процветания",
   "map.interactive": "Интерактивная карта",
   "map.click_details": "Нажмите на страну для подробностей",
@@ -209,5 +219,26 @@
   "peace.status.tension": "Напряжённость",
   "peace.status.minor_conflict": "Малый конфликт",
   "peace.status.major_conflict": "Крупный конфликт",
-  "peace.status.war": "Война"
+  "peace.status.war": "Война",
+  "compare.title": "Сравнение стран",
+  "compare.intro": "Выберите 2 или 3 страны для сравнения их профилей процветания.",
+  "compare.select_hint": "Выберите не менее 2 стран.",
+  "compare.radar_title": "Сравнение профилей",
+  "compare.pillars_title": "Оценки столпов",
+  "compare.econ_title": "Экономические показатели",
+  "compare.select_country": "Выберите страну",
+  "compare.add_country": "+ Добавить страну",
+  "compare.btn": "Сравнить",
+
+  "trade.title": "Торговля и производство",
+  "trade.exports": "Экспорт",
+  "trade.imports": "Импорт",
+  "trade.balance": "Торговый баланс",
+  "trade.openness": "Торговая открытость (% ВВП)",
+  "trade.top_exports": "Основные экспортные товары",
+  "trade.global_title": "Обзор мировой торговли",
+  "trade.total_exports": "Мировой экспорт",
+  "trade.total_imports": "Мировой импорт",
+  "trade.avg_openness": "Сред. торговая открытость",
+  "trade.top_exporters": "Крупнейшие экспортёры"
 }

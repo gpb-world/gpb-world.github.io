@@ -23,7 +23,17 @@
       "public_services": 12.6,
       "debt_service": 2.0,
       "other": 6.5
-    }
+    },
+    "exports": 168.5,
+    "imports": 105.2,
+    "trade_balance": 63.3,
+    "exports_pct_gdp": 29.1,
+    "top_exports": [
+      "Oil & Gas",
+      "Seafood",
+      "Metals",
+      "Chemicals"
+    ]
   },
   "sweden": {
     "gdp": 593.3,
@@ -49,7 +59,17 @@
       "public_services": 11.8,
       "debt_service": 1.4,
       "other": 5.8
-    }
+    },
+    "exports": 201.8,
+    "imports": 192.4,
+    "trade_balance": 9.4,
+    "exports_pct_gdp": 34.0,
+    "top_exports": [
+      "Machinery",
+      "Vehicles",
+      "Paper Products",
+      "Pharmaceuticals"
+    ]
   },
   "denmark": {
     "gdp": 404.2,
@@ -75,7 +95,17 @@
       "public_services": 13.2,
       "debt_service": 1.8,
       "other": 7.4
-    }
+    },
+    "exports": 136.7,
+    "imports": 118.3,
+    "trade_balance": 18.4,
+    "exports_pct_gdp": 33.8,
+    "top_exports": [
+      "Pharmaceuticals",
+      "Machinery",
+      "Food Products",
+      "Wind Turbines"
+    ]
   },
   "finland": {
     "gdp": 300.5,
@@ -101,7 +131,17 @@
       "public_services": 12.5,
       "debt_service": 2.2,
       "other": 6.9
-    }
+    },
+    "exports": 95.8,
+    "imports": 92.3,
+    "trade_balance": 3.5,
+    "exports_pct_gdp": 34.2,
+    "top_exports": [
+      "Paper & Pulp",
+      "Machinery",
+      "Electronics",
+      "Chemicals"
+    ]
   },
   "iceland": {
     "gdp": 28.5,
@@ -127,7 +167,17 @@
       "public_services": 14.0,
       "debt_service": 3.8,
       "other": 6.0
-    }
+    },
+    "exports": 10.2,
+    "imports": 11.8,
+    "trade_balance": -1.6,
+    "exports_pct_gdp": 37.5,
+    "top_exports": [
+      "Fish & Seafood",
+      "Aluminum",
+      "Tourism Services",
+      "Geothermal Tech"
+    ]
   },
   "germany": {
     "gdp": 4456.1,
@@ -153,7 +203,17 @@
       "public_services": 13.2,
       "debt_service": 2.6,
       "other": 6.5
-    }
+    },
+    "exports": 1689.4,
+    "imports": 1475.2,
+    "trade_balance": 214.2,
+    "exports_pct_gdp": 38.9,
+    "top_exports": [
+      "Vehicles",
+      "Machinery",
+      "Chemicals",
+      "Electronics"
+    ]
   },
   "netherlands": {
     "gdp": 1092.7,
@@ -179,7 +239,17 @@
       "public_services": 13.5,
       "debt_service": 2.4,
       "other": 8.0
-    }
+    },
+    "exports": 752.3,
+    "imports": 670.1,
+    "trade_balance": 82.2,
+    "exports_pct_gdp": 72.8,
+    "top_exports": [
+      "Machinery",
+      "Refined Petroleum",
+      "Chemicals",
+      "Food Products"
+    ]
   },
   "switzerland": {
     "gdp": 884.9,
@@ -205,7 +275,17 @@
       "public_services": 12.0,
       "debt_service": 1.8,
       "other": 7.7
-    }
+    },
+    "exports": 391.2,
+    "imports": 316.8,
+    "trade_balance": 74.4,
+    "exports_pct_gdp": 44.5,
+    "top_exports": [
+      "Pharmaceuticals",
+      "Watches",
+      "Machinery",
+      "Chemicals"
+    ]
   },
   "austria": {
     "gdp": 515.2,
@@ -231,7 +311,17 @@
       "public_services": 13.8,
       "debt_service": 3.5,
       "other": 8.7
-    }
+    },
+    "exports": 221.7,
+    "imports": 219.4,
+    "trade_balance": 2.3,
+    "exports_pct_gdp": 42.5,
+    "top_exports": [
+      "Machinery",
+      "Vehicles",
+      "Iron & Steel",
+      "Pharmaceuticals"
+    ]
   },
   "belgium": {
     "gdp": 624.2,
@@ -257,7 +347,17 @@
       "public_services": 14.5,
       "debt_service": 5.2,
       "other": 7.4
-    }
+    },
+    "exports": 425.8,
+    "imports": 415.2,
+    "trade_balance": 10.6,
+    "exports_pct_gdp": 70.4,
+    "top_exports": [
+      "Chemicals",
+      "Diamonds",
+      "Vehicles",
+      "Pharmaceuticals"
+    ]
   },
   "france": {
     "gdp": 3049.0,
@@ -283,7 +383,17 @@
       "public_services": 11.8,
       "debt_service": 4.8,
       "other": 5.8
-    }
+    },
+    "exports": 651.3,
+    "imports": 724.5,
+    "trade_balance": -73.2,
+    "exports_pct_gdp": 22.5,
+    "top_exports": [
+      "Aerospace",
+      "Vehicles",
+      "Pharmaceuticals",
+      "Wine & Spirits"
+    ]
   },
   "uk": {
     "gdp": 3340.0,
@@ -309,7 +419,17 @@
       "public_services": 10.8,
       "debt_service": 6.5,
       "other": 5.5
-    }
+    },
+    "exports": 504.2,
+    "imports": 636.8,
+    "trade_balance": -132.6,
+    "exports_pct_gdp": 15.3,
+    "top_exports": [
+      "Financial Services",
+      "Machinery",
+      "Vehicles",
+      "Pharmaceuticals"
+    ]
   },
   "spain": {
     "gdp": 1580.5,
@@ -335,7 +455,17 @@
       "public_services": 12.2,
       "debt_service": 7.5,
       "other": 8.5
-    }
+    },
+    "exports": 405.2,
+    "imports": 432.8,
+    "trade_balance": -27.6,
+    "exports_pct_gdp": 26.8,
+    "top_exports": [
+      "Vehicles",
+      "Food Products",
+      "Machinery",
+      "Chemicals"
+    ]
   },
   "italy": {
     "gdp": 2186.1,
@@ -361,7 +491,17 @@
       "public_services": 11.5,
       "debt_service": 8.8,
       "other": 8.6
-    }
+    },
+    "exports": 660.5,
+    "imports": 601.2,
+    "trade_balance": 59.3,
+    "exports_pct_gdp": 30.4,
+    "top_exports": [
+      "Machinery",
+      "Vehicles",
+      "Fashion & Textiles",
+      "Pharmaceuticals"
+    ]
   },
   "portugal": {
     "gdp": 287.1,
@@ -387,7 +527,17 @@
       "public_services": 13.5,
       "debt_service": 6.8,
       "other": 9.9
-    }
+    },
+    "exports": 92.7,
+    "imports": 103.5,
+    "trade_balance": -10.8,
+    "exports_pct_gdp": 32.1,
+    "top_exports": [
+      "Vehicles",
+      "Textiles",
+      "Cork Products",
+      "Machinery"
+    ]
   },
   "ireland": {
     "gdp": 545.6,
@@ -413,7 +563,17 @@
       "public_services": 14.0,
       "debt_service": 3.8,
       "other": 7.8
-    }
+    },
+    "exports": 425.6,
+    "imports": 137.8,
+    "trade_balance": 287.8,
+    "exports_pct_gdp": 78.2,
+    "top_exports": [
+      "Pharmaceuticals",
+      "Tech Services",
+      "Medical Devices",
+      "Chemicals"
+    ]
   },
   "poland": {
     "gdp": 842.2,
@@ -439,7 +599,17 @@
       "public_services": 12.5,
       "debt_service": 4.2,
       "other": 10.8
-    }
+    },
+    "exports": 353.8,
+    "imports": 338.5,
+    "trade_balance": 15.3,
+    "exports_pct_gdp": 44.8,
+    "top_exports": [
+      "Machinery",
+      "Vehicles",
+      "Electronics",
+      "Furniture"
+    ]
   },
   "czechia": {
     "gdp": 330.5,
@@ -465,7 +635,17 @@
       "public_services": 12.8,
       "debt_service": 2.8,
       "other": 11.1
-    }
+    },
+    "exports": 228.4,
+    "imports": 214.6,
+    "trade_balance": 13.8,
+    "exports_pct_gdp": 69.5,
+    "top_exports": [
+      "Vehicles",
+      "Machinery",
+      "Electronics",
+      "Iron & Steel"
+    ]
   },
   "greece": {
     "gdp": 238.2,
@@ -491,7 +671,17 @@
       "public_services": 12.2,
       "debt_service": 9.0,
       "other": 9.8
-    }
+    },
+    "exports": 63.2,
+    "imports": 82.4,
+    "trade_balance": -19.2,
+    "exports_pct_gdp": 27.1,
+    "top_exports": [
+      "Refined Petroleum",
+      "Food Products",
+      "Shipping Services",
+      "Aluminum"
+    ]
   },
   "romania": {
     "gdp": 351.0,
@@ -517,7 +707,17 @@
       "public_services": 14.2,
       "debt_service": 4.5,
       "other": 14.0
-    }
+    },
+    "exports": 95.2,
+    "imports": 116.8,
+    "trade_balance": -21.6,
+    "exports_pct_gdp": 30.2,
+    "top_exports": [
+      "Vehicles",
+      "Machinery",
+      "Electronics",
+      "Textiles"
+    ]
   },
   "japan": {
     "gdp": 4230.9,
@@ -543,7 +743,17 @@
       "public_services": 8.0,
       "debt_service": 7.5,
       "other": 4.7
-    }
+    },
+    "exports": 756.3,
+    "imports": 812.5,
+    "trade_balance": -56.2,
+    "exports_pct_gdp": 18.4,
+    "top_exports": [
+      "Vehicles",
+      "Electronics",
+      "Machinery",
+      "Semiconductors"
+    ]
   },
   "south_korea": {
     "gdp": 1712.8,
@@ -569,7 +779,17 @@
       "public_services": 10.0,
       "debt_service": 3.5,
       "other": 8.0
-    }
+    },
+    "exports": 683.5,
+    "imports": 632.4,
+    "trade_balance": 51.1,
+    "exports_pct_gdp": 38.5,
+    "top_exports": [
+      "Semiconductors",
+      "Vehicles",
+      "Ships",
+      "Electronics"
+    ]
   },
   "china": {
     "gdp": 18530.0,
@@ -595,7 +815,17 @@
       "public_services": 14.0,
       "debt_service": 4.5,
       "other": 8.0
-    }
+    },
+    "exports": 3593.6,
+    "imports": 2715.8,
+    "trade_balance": 877.8,
+    "exports_pct_gdp": 19.7,
+    "top_exports": [
+      "Electronics",
+      "Machinery",
+      "Textiles",
+      "Solar Panels"
+    ]
   },
   "india": {
     "gdp": 3730.0,
@@ -621,7 +851,17 @@
       "public_services": 15.2,
       "debt_service": 20.5,
       "other": 11.8
-    }
+    },
+    "exports": 453.2,
+    "imports": 714.8,
+    "trade_balance": -261.6,
+    "exports_pct_gdp": 12.5,
+    "top_exports": [
+      "IT Services",
+      "Refined Petroleum",
+      "Pharmaceuticals",
+      "Textiles"
+    ]
   },
   "singapore": {
     "gdp": 497.3,
@@ -647,7 +887,17 @@
       "public_services": 10.0,
       "debt_service": 2.5,
       "other": 7.0
-    }
+    },
+    "exports": 515.8,
+    "imports": 492.3,
+    "trade_balance": 23.5,
+    "exports_pct_gdp": 118.2,
+    "top_exports": [
+      "Electronics",
+      "Refined Petroleum",
+      "Chemicals",
+      "Financial Services"
+    ]
   },
   "israel": {
     "gdp": 525.0,
@@ -673,7 +923,17 @@
       "public_services": 12.5,
       "debt_service": 5.8,
       "other": 7.0
-    }
+    },
+    "exports": 65.8,
+    "imports": 86.2,
+    "trade_balance": -20.4,
+    "exports_pct_gdp": 12.8,
+    "top_exports": [
+      "Diamonds",
+      "Tech Services",
+      "Pharmaceuticals",
+      "Electronics"
+    ]
   },
   "turkey": {
     "gdp": 1108.0,
@@ -699,7 +959,17 @@
       "public_services": 14.0,
       "debt_service": 10.5,
       "other": 11.5
-    }
+    },
+    "exports": 261.4,
+    "imports": 346.2,
+    "trade_balance": -84.8,
+    "exports_pct_gdp": 24.2,
+    "top_exports": [
+      "Vehicles",
+      "Textiles",
+      "Iron & Steel",
+      "Machinery"
+    ]
   },
   "saudi_arabia": {
     "gdp": 1108.1,
@@ -725,7 +995,17 @@
       "public_services": 10.5,
       "debt_service": 2.5,
       "other": 3.5
-    }
+    },
+    "exports": 326.5,
+    "imports": 186.2,
+    "trade_balance": 140.3,
+    "exports_pct_gdp": 30.8,
+    "top_exports": [
+      "Crude Oil",
+      "Refined Petroleum",
+      "Chemicals",
+      "Plastics"
+    ]
   },
   "uae": {
     "gdp": 509.2,
@@ -751,7 +1031,17 @@
       "public_services": 12.5,
       "debt_service": 2.8,
       "other": 6.0
-    }
+    },
+    "exports": 424.3,
+    "imports": 352.8,
+    "trade_balance": 71.5,
+    "exports_pct_gdp": 81.2,
+    "top_exports": [
+      "Crude Oil",
+      "Refined Petroleum",
+      "Gold",
+      "Diamonds"
+    ]
   },
   "indonesia": {
     "gdp": 1417.4,
@@ -777,7 +1067,17 @@
       "public_services": 14.5,
       "debt_service": 14.8,
       "other": 9.5
-    }
+    },
+    "exports": 291.5,
+    "imports": 237.8,
+    "trade_balance": 53.7,
+    "exports_pct_gdp": 21.2,
+    "top_exports": [
+      "Palm Oil",
+      "Coal",
+      "Iron & Steel",
+      "Rubber"
+    ]
   },
   "usa": {
     "gdp": 28780.0,
@@ -803,7 +1103,17 @@
       "public_services": 8.8,
       "debt_service": 8.2,
       "other": 4.2
-    }
+    },
+    "exports": 2085.5,
+    "imports": 3278.2,
+    "trade_balance": -1192.7,
+    "exports_pct_gdp": 7.8,
+    "top_exports": [
+      "Refined Petroleum",
+      "Aircraft",
+      "Tech Services",
+      "Machinery"
+    ]
   },
   "canada": {
     "gdp": 2140.0,
@@ -829,7 +1139,17 @@
       "public_services": 12.5,
       "debt_service": 5.5,
       "other": 8.0
-    }
+    },
+    "exports": 597.8,
+    "imports": 572.1,
+    "trade_balance": 25.7,
+    "exports_pct_gdp": 28.5,
+    "top_exports": [
+      "Oil & Gas",
+      "Vehicles",
+      "Minerals",
+      "Wood Products"
+    ]
   },
   "brazil": {
     "gdp": 2173.7,
@@ -855,7 +1175,17 @@
       "public_services": 12.0,
       "debt_service": 12.5,
       "other": 5.8
-    }
+    },
+    "exports": 339.7,
+    "imports": 247.3,
+    "trade_balance": 92.4,
+    "exports_pct_gdp": 16.2,
+    "top_exports": [
+      "Soybeans",
+      "Iron Ore",
+      "Oil & Gas",
+      "Meat"
+    ]
   },
   "mexico": {
     "gdp": 1789.0,
@@ -881,7 +1211,17 @@
       "public_services": 14.2,
       "debt_service": 12.8,
       "other": 12.6
-    }
+    },
+    "exports": 593.4,
+    "imports": 558.6,
+    "trade_balance": 34.8,
+    "exports_pct_gdp": 38.5,
+    "top_exports": [
+      "Vehicles",
+      "Electronics",
+      "Oil & Gas",
+      "Machinery"
+    ]
   },
   "argentina": {
     "gdp": 621.8,
@@ -907,7 +1247,17 @@
       "public_services": 10.5,
       "debt_service": 14.8,
       "other": 6.8
-    }
+    },
+    "exports": 83.5,
+    "imports": 62.8,
+    "trade_balance": 20.7,
+    "exports_pct_gdp": 13.2,
+    "top_exports": [
+      "Soybeans",
+      "Vehicles",
+      "Corn",
+      "Beef"
+    ]
   },
   "chile": {
     "gdp": 335.5,
@@ -933,7 +1283,17 @@
       "public_services": 12.5,
       "debt_service": 4.0,
       "other": 7.8
-    }
+    },
+    "exports": 98.6,
+    "imports": 85.2,
+    "trade_balance": 13.4,
+    "exports_pct_gdp": 28.5,
+    "top_exports": [
+      "Copper",
+      "Lithium",
+      "Fruit",
+      "Seafood"
+    ]
   },
   "colombia": {
     "gdp": 363.8,
@@ -959,7 +1319,17 @@
       "public_services": 13.2,
       "debt_service": 12.5,
       "other": 8.0
-    }
+    },
+    "exports": 57.3,
+    "imports": 62.5,
+    "trade_balance": -5.2,
+    "exports_pct_gdp": 15.8,
+    "top_exports": [
+      "Oil & Gas",
+      "Coal",
+      "Coffee",
+      "Gold"
+    ]
   },
   "costa_rica": {
     "gdp": 72.1,
@@ -985,7 +1355,17 @@
       "public_services": 14.0,
       "debt_service": 9.5,
       "other": 7.0
-    }
+    },
+    "exports": 21.8,
+    "imports": 22.5,
+    "trade_balance": -0.7,
+    "exports_pct_gdp": 27.2,
+    "top_exports": [
+      "Medical Devices",
+      "Bananas",
+      "Electronics",
+      "Coffee"
+    ]
   },
   "south_africa": {
     "gdp": 399.0,
@@ -1011,7 +1391,17 @@
       "public_services": 12.0,
       "debt_service": 12.5,
       "other": 6.0
-    }
+    },
+    "exports": 108.3,
+    "imports": 104.8,
+    "trade_balance": 3.5,
+    "exports_pct_gdp": 27.8,
+    "top_exports": [
+      "Gold",
+      "Diamonds",
+      "Platinum",
+      "Vehicles"
+    ]
   },
   "nigeria": {
     "gdp": 472.6,
@@ -1037,7 +1427,17 @@
       "public_services": 18.5,
       "debt_service": 28.5,
       "other": 8.3
-    }
+    },
+    "exports": 52.8,
+    "imports": 44.5,
+    "trade_balance": 8.3,
+    "exports_pct_gdp": 11.2,
+    "top_exports": [
+      "Crude Oil",
+      "LNG",
+      "Cocoa",
+      "Rubber"
+    ]
   },
   "kenya": {
     "gdp": 113.0,
@@ -1063,7 +1463,17 @@
       "public_services": 16.5,
       "debt_service": 22.5,
       "other": 7.2
-    }
+    },
+    "exports": 8.2,
+    "imports": 19.8,
+    "trade_balance": -11.6,
+    "exports_pct_gdp": 6.8,
+    "top_exports": [
+      "Tea",
+      "Cut Flowers",
+      "Coffee",
+      "Textiles"
+    ]
   },
   "egypt": {
     "gdp": 395.9,
@@ -1089,7 +1499,17 @@
       "public_services": 15.5,
       "debt_service": 28.5,
       "other": 7.5
-    }
+    },
+    "exports": 42.8,
+    "imports": 78.5,
+    "trade_balance": -35.7,
+    "exports_pct_gdp": 10.2,
+    "top_exports": [
+      "Oil & Gas",
+      "Textiles",
+      "Chemicals",
+      "Food Products"
+    ]
   },
   "ethiopia": {
     "gdp": 156.1,
@@ -1115,7 +1535,17 @@
       "public_services": 15.0,
       "debt_service": 15.5,
       "other": 8.0
-    }
+    },
+    "exports": 4.1,
+    "imports": 15.8,
+    "trade_balance": -11.7,
+    "exports_pct_gdp": 3.2,
+    "top_exports": [
+      "Coffee",
+      "Sesame",
+      "Cut Flowers",
+      "Textiles"
+    ]
   },
   "ghana": {
     "gdp": 76.4,
@@ -1141,7 +1571,17 @@
       "public_services": 16.5,
       "debt_service": 25.5,
       "other": 9.5
-    }
+    },
+    "exports": 18.5,
+    "imports": 16.2,
+    "trade_balance": 2.3,
+    "exports_pct_gdp": 23.5,
+    "top_exports": [
+      "Gold",
+      "Cocoa",
+      "Oil & Gas",
+      "Timber"
+    ]
   },
   "morocco": {
     "gdp": 141.1,
@@ -1167,7 +1607,17 @@
       "public_services": 14.0,
       "debt_service": 13.5,
       "other": 9.0
-    }
+    },
+    "exports": 52.4,
+    "imports": 65.3,
+    "trade_balance": -12.9,
+    "exports_pct_gdp": 34.5,
+    "top_exports": [
+      "Vehicles",
+      "Phosphates",
+      "Textiles",
+      "Food Products"
+    ]
   },
   "australia": {
     "gdp": 1788.0,
@@ -1193,7 +1643,17 @@
       "public_services": 11.5,
       "debt_service": 3.5,
       "other": 7.5
-    }
+    },
+    "exports": 342.1,
+    "imports": 282.5,
+    "trade_balance": 59.6,
+    "exports_pct_gdp": 20.8,
+    "top_exports": [
+      "Iron Ore",
+      "Coal",
+      "LNG",
+      "Gold"
+    ]
   },
   "new_zealand": {
     "gdp": 252.8,
@@ -1219,7 +1679,17 @@
       "public_services": 11.8,
       "debt_service": 3.5,
       "other": 6.5
-    }
+    },
+    "exports": 48.3,
+    "imports": 52.1,
+    "trade_balance": -3.8,
+    "exports_pct_gdp": 20.2,
+    "top_exports": [
+      "Dairy Products",
+      "Meat",
+      "Wood",
+      "Wine"
+    ]
   },
   "russia": {
     "gdp": 2022.0,
@@ -1245,7 +1715,17 @@
       "public_services": 14.0,
       "debt_service": 3.5,
       "other": 12.3
-    }
+    },
+    "exports": 425.1,
+    "imports": 285.3,
+    "trade_balance": 139.8,
+    "exports_pct_gdp": 22.8,
+    "top_exports": [
+      "Oil & Gas",
+      "Metals",
+      "Wheat",
+      "Fertilizers"
+    ]
   },
   "ukraine": {
     "gdp": 178.8,
@@ -1271,7 +1751,17 @@
       "public_services": 10.2,
       "debt_service": 8.5,
       "other": 9.5
-    }
+    },
+    "exports": 41.2,
+    "imports": 55.8,
+    "trade_balance": -14.6,
+    "exports_pct_gdp": 24.5,
+    "top_exports": [
+      "Grain",
+      "Iron & Steel",
+      "Sunflower Oil",
+      "Machinery"
+    ]
   },
   "pakistan": {
     "gdp": 374.7,
@@ -1297,6 +1787,16 @@
       "public_services": 14.5,
       "debt_service": 32.5,
       "other": 9.2
-    }
+    },
+    "exports": 31.5,
+    "imports": 52.8,
+    "trade_balance": -21.3,
+    "exports_pct_gdp": 8.8,
+    "top_exports": [
+      "Textiles",
+      "Rice",
+      "Leather",
+      "Sports Goods"
+    ]
   }
 }

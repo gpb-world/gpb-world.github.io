@@ -5,6 +5,9 @@
   "nav.about": "关于",
   "nav.methodology": "方法论",
   "nav.data": "数据",
+  "nav.countries": "国家",
+  "nav.country_search": "搜索国家...",
+  "nav.compare": "比较",
 
   "hero.title": "实时监测全球繁荣状况",
   "hero.subtitle": "对196个国家的12个基本支柱进行综合分析，追踪可持续发展和人类福祉的进展",
@@ -12,9 +15,15 @@
   "overview.title": "全球概览",
   "overview.subtitle": "截至2026年2月的关键指标",
 
-  "pillars.title": "繁荣的十二大支柱",
+  "pillars.title": "繁荣支柱",
   "pillars.subtitle": "探索每个维度的详细分析",
   "pillars.explore": "探索排名",
+  "overview.top_countries": "繁荣与GDP排名前列的国家",
+  "overview.rank": "#",
+  "overview.country": "国家",
+  "overview.score": "得分",
+  "overview.gdp_capita": "人均GDP",
+  "overview.view_all": "查看完整排名",
   "pillars.global_avg": "全球平均",
 
   "pillar.governance": "治理",
@@ -42,6 +51,7 @@
   "pillar.housing": "住房与城市发展",
   "pillar.housing.desc": "住房可负担性、城市规划与宜居性",
 
+  "map.section_title": "全球繁荣互动地图",
   "map.title": "全球繁荣指数",
   "map.interactive": "交互式地图",
   "map.click_details": "点击国家查看详情",
@@ -209,5 +219,26 @@
   "peace.status.tension": "紧张局势",
   "peace.status.minor_conflict": "小规模冲突",
   "peace.status.major_conflict": "大规模冲突",
-  "peace.status.war": "战争"
+  "peace.status.war": "战争",
+  "compare.title": "国家比较",
+  "compare.intro": "选择2至3个国家，并排比较其繁荣概况。",
+  "compare.select_hint": "请至少选择2个国家。",
+  "compare.radar_title": "支柱概况比较",
+  "compare.pillars_title": "支柱得分",
+  "compare.econ_title": "经济指标",
+  "compare.select_country": "选择国家",
+  "compare.add_country": "+ 添加国家",
+  "compare.btn": "比较",
+
+  "trade.title": "贸易与生产",
+  "trade.exports": "出口",
+  "trade.imports": "进口",
+  "trade.balance": "贸易差额",
+  "trade.openness": "贸易开放度 (% GDP)",
+  "trade.top_exports": "主要出口商品",
+  "trade.global_title": "全球贸易概览",
+  "trade.total_exports": "世界出口总额",
+  "trade.total_imports": "世界进口总额",
+  "trade.avg_openness": "平均贸易开放度",
+  "trade.top_exporters": "主要出口国"
 }

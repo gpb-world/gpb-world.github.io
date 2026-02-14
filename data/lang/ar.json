@@ -5,6 +5,9 @@
   "nav.about": "حول المشروع",
   "nav.methodology": "المنهجية",
   "nav.data": "البيانات",
+  "nav.countries": "الدول",
+  "nav.country_search": "البحث عن دولة...",
+  "nav.compare": "مقارنة",
 
   "hero.title": "مراقبة الازدهار العالمي في الوقت الفعلي",
   "hero.subtitle": "تحليل شامل لـ 12 ركيزة أساسية عبر 196 دولة، لتتبع التقدم نحو التنمية المستدامة ورفاهية الإنسان",
@@ -12,9 +15,15 @@
   "overview.title": "نظرة عامة عالمية",
   "overview.subtitle": "المؤشرات الرئيسية حتى فبراير 2026",
 
-  "pillars.title": "الركائز الاثنتا عشرة للازدهار",
+  "pillars.title": "أركان الازدهار",
   "pillars.subtitle": "استكشف التحليل التفصيلي لكل بُعد",
   "pillars.explore": "استكشاف التصنيفات",
+  "overview.top_countries": "أفضل الدول حسب الازدهار والناتج المحلي",
+  "overview.rank": "#",
+  "overview.country": "الدولة",
+  "overview.score": "الدرجة",
+  "overview.gdp_capita": "الناتج/الفرد",
+  "overview.view_all": "عرض جميع التصنيفات",
   "pillars.global_avg": "المتوسط العالمي",
 
   "pillar.governance": "الحوكمة",
@@ -42,6 +51,7 @@
   "pillar.housing": "الإسكان والتنمية الحضرية",
   "pillar.housing.desc": "القدرة على تحمل تكاليف السكن والتخطيط الحضري وجودة الحياة",
 
+  "map.section_title": "خريطة تفاعلية للازدهار العالمي",
   "map.title": "مؤشر الازدهار العالمي",
   "map.interactive": "خريطة تفاعلية",
   "map.click_details": "انقر على الدول لمزيد من التفاصيل",
@@ -209,5 +219,26 @@
   "peace.status.tension": "توترات",
   "peace.status.minor_conflict": "نزاع محدود",
   "peace.status.major_conflict": "نزاع كبير",
-  "peace.status.war": "حرب"
+  "peace.status.war": "حرب",
+  "compare.title": "مقارنة الدول",
+  "compare.intro": "اختر دولتين أو 3 دول لمقارنة ملفات الازدهار جنبًا إلى جنب.",
+  "compare.select_hint": "يرجى اختيار دولتين على الأقل.",
+  "compare.radar_title": "مقارنة الملفات",
+  "compare.pillars_title": "درجات الأركان",
+  "compare.econ_title": "المؤشرات الاقتصادية",
+  "compare.select_country": "اختر دولة",
+  "compare.add_country": "+ إضافة دولة",
+  "compare.btn": "مقارنة",
+
+  "trade.title": "التجارة والإنتاج",
+  "trade.exports": "الصادرات",
+  "trade.imports": "الواردات",
+  "trade.balance": "الميزان التجاري",
+  "trade.openness": "الانفتاح التجاري (% GDP)",
+  "trade.top_exports": "أهم الصادرات",
+  "trade.global_title": "نظرة عامة على التجارة العالمية",
+  "trade.total_exports": "الصادرات العالمية",
+  "trade.total_imports": "الواردات العالمية",
+  "trade.avg_openness": "متوسط الانفتاح التجاري",
+  "trade.top_exporters": "أكبر المصدّرين"
 }

@@ -14,13 +14,17 @@ const Data = (() => {
     return resp.json();
   }
 
+  async function _loadSafe(url) {
+    try { return await _load(url); } catch(e) { console.warn('Optional data not loaded:', url); return null; }
+  }
+
   async function init() {
     if (!_countries || !_pillars) {
       const [countries, pillars, economics, politics] = await Promise.all([
         _load('data/countries.json'),
         _load('data/pillars.json'),
-        _load('data/economics.json'),
-        _load('data/politics.json')
+        _loadSafe('data/economics.json'),
+        _loadSafe('data/politics.json')
       ]);
       _countries = countries;
       _pillars = pillars;

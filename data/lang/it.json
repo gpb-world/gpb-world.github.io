@@ -5,6 +5,9 @@
   "nav.about": "Chi siamo",
   "nav.methodology": "Metodologia",
   "nav.data": "Dati",
+  "nav.countries": "Paesi",
+  "nav.country_search": "Cerca paesi...",
+  "nav.compare": "Confronta",
 
   "hero.title": "Monitoraggio della Prosperità Globale in Tempo Reale",
   "hero.subtitle": "Analisi approfondita di 12 pilastri fondamentali in 196 paesi, tracciando il progresso verso lo sviluppo sostenibile e il benessere umano",
@@ -12,9 +15,15 @@
   "overview.title": "Panoramica Globale",
   "overview.subtitle": "Indicatori chiave aggiornati a febbraio 2026",
 
-  "pillars.title": "Dodici Pilastri della Prosperità",
+  "pillars.title": "Pilastri della Prosperità",
   "pillars.subtitle": "Esplora l'analisi dettagliata per ogni dimensione",
   "pillars.explore": "Esplora le classifiche",
+  "overview.top_countries": "Migliori paesi per prosperità e PIL",
+  "overview.rank": "#",
+  "overview.country": "Paese",
+  "overview.score": "Punteggio",
+  "overview.gdp_capita": "PIL/Capita",
+  "overview.view_all": "Vedi classifica completa",
   "pillars.global_avg": "Media Globale",
 
   "pillar.governance": "Governance",
@@ -42,6 +51,7 @@
   "pillar.housing": "Edilizia e Svil. Urbano",
   "pillar.housing.desc": "Accessibilità abitativa, pianificazione urbana e vivibilità",
 
+  "map.section_title": "Mappa interattiva della prosperità globale",
   "map.title": "Indice di Prosperità Globale",
   "map.interactive": "Mappa Interattiva",
   "map.click_details": "Clicca sui paesi per i dettagli",
@@ -209,5 +219,26 @@
   "peace.status.tension": "Tensioni",
   "peace.status.minor_conflict": "Conflitto Minore",
   "peace.status.major_conflict": "Conflitto Maggiore",
-  "peace.status.war": "Guerra"
+  "peace.status.war": "Guerra",
+  "compare.title": "Confronta paesi",
+  "compare.intro": "Seleziona 2 o 3 paesi per confrontare i loro profili di prosperità fianco a fianco.",
+  "compare.select_hint": "Seleziona almeno 2 paesi.",
+  "compare.radar_title": "Confronto dei profili",
+  "compare.pillars_title": "Punteggi dei pilastri",
+  "compare.econ_title": "Indicatori economici",
+  "compare.select_country": "Seleziona un paese",
+  "compare.add_country": "+ Aggiungi paese",
+  "compare.btn": "Confronta",
+
+  "trade.title": "Commercio e Produzione",
+  "trade.exports": "Esportazioni",
+  "trade.imports": "Importazioni",
+  "trade.balance": "Bilancia Commerciale",
+  "trade.openness": "Apertura Commerciale (% PIL)",
+  "trade.top_exports": "Principali Esportazioni",
+  "trade.global_title": "Panoramica del Commercio Globale",
+  "trade.total_exports": "Esportazioni Mondiali",
+  "trade.total_imports": "Importazioni Mondiali",
+  "trade.avg_openness": "Apertura Commerciale Med.",
+  "trade.top_exporters": "Principali Esportatori"
 }

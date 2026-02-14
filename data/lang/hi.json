@@ -5,6 +5,9 @@
   "nav.about": "परिचय",
   "nav.methodology": "कार्यप्रणाली",
   "nav.data": "डेटा",
+  "nav.countries": "देश",
+  "nav.country_search": "देश खोजें...",
+  "nav.compare": "तुलना",
 
   "hero.title": "वैश्विक समृद्धि की वास्तविक समय में निगरानी",
   "hero.subtitle": "196 देशों में 12 मूलभूत स्तंभों का व्यापक विश्लेषण, सतत विकास और मानव कल्याण की दिशा में प्रगति की निगरानी",
@@ -12,9 +15,15 @@
   "overview.title": "वैश्विक अवलोकन",
   "overview.subtitle": "फरवरी 2026 तक के प्रमुख संकेतक",
 
-  "pillars.title": "समृद्धि के बारह स्तंभ",
+  "pillars.title": "समृद्धि के स्तंभ",
   "pillars.subtitle": "प्रत्येक आयाम का विस्तृत विश्लेषण देखें",
   "pillars.explore": "रैंकिंग देखें",
+  "overview.top_countries": "समृद्धि और GDP के अनुसार शीर्ष देश",
+  "overview.rank": "#",
+  "overview.country": "देश",
+  "overview.score": "स्कोर",
+  "overview.gdp_capita": "प्रति व्यक्ति GDP",
+  "overview.view_all": "पूरी रैंकिंग देखें",
   "pillars.global_avg": "वैश्विक औसत",
 
   "pillar.governance": "शासन",
@@ -42,6 +51,7 @@
   "pillar.housing": "आवास और शहरी विकास",
   "pillar.housing.desc": "आवास की सामर्थ्यता, शहरी नियोजन और रहने योग्यता",
 
+  "map.section_title": "वैश्विक समृद्धि का इंटरैक्टिव मानचित्र",
   "map.title": "वैश्विक समृद्धि सूचकांक",
   "map.interactive": "इंटरैक्टिव मानचित्र",
   "map.click_details": "विवरण के लिए देशों पर क्लिक करें",
@@ -209,5 +219,26 @@
   "peace.status.tension": "तनाव",
   "peace.status.minor_conflict": "लघु संघर्ष",
   "peace.status.major_conflict": "बड़ा संघर्ष",
-  "peace.status.war": "युद्ध"
+  "peace.status.war": "युद्ध",
+  "compare.title": "देशों की तुलना",
+  "compare.intro": "2 या 3 देशों का चयन करें और उनकी समृद्धि प्रोफाइल की तुलना करें।",
+  "compare.select_hint": "कृपया कम से कम 2 देश चुनें।",
+  "compare.radar_title": "स्तंभ प्रोफाइल तुलना",
+  "compare.pillars_title": "स्तंभ स्कोर",
+  "compare.econ_title": "आर्थिक संकेतक",
+  "compare.select_country": "देश चुनें",
+  "compare.add_country": "+ देश जोड़ें",
+  "compare.btn": "तुलना करें",
+
+  "trade.title": "व्यापार और उत्पादन",
+  "trade.exports": "निर्यात",
+  "trade.imports": "आयात",
+  "trade.balance": "व्यापार संतुलन",
+  "trade.openness": "व्यापार खुलापन (% GDP)",
+  "trade.top_exports": "शीर्ष निर्यात",
+  "trade.global_title": "वैश्विक व्यापार अवलोकन",
+  "trade.total_exports": "विश्व निर्यात",
+  "trade.total_imports": "विश्व आयात",
+  "trade.avg_openness": "औसत व्यापार खुलापन",
+  "trade.top_exporters": "शीर्ष निर्यातक"
 }

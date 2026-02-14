@@ -5,6 +5,9 @@
   "nav.about": "概要",
   "nav.methodology": "方法論",
   "nav.data": "データ",
+  "nav.countries": "国一覧",
+  "nav.country_search": "国を検索...",
+  "nav.compare": "比較",
 
   "hero.title": "世界の繁栄をリアルタイムで監視",
   "hero.subtitle": "196カ国にわたる12の基本的な柱を包括的に分析し、持続可能な開発と人間の福祉に向けた進捗を追跡します",
@@ -12,9 +15,15 @@
   "overview.title": "グローバル概要",
   "overview.subtitle": "2026年2月時点の主要指標",
 
-  "pillars.title": "繁栄の12の柱",
+  "pillars.title": "繁栄の柱",
   "pillars.subtitle": "各次元の詳細な分析を探索",
   "pillars.explore": "ランキングを探索",
+  "overview.top_countries": "繁栄とGDPによる上位国",
+  "overview.rank": "#",
+  "overview.country": "国",
+  "overview.score": "スコア",
+  "overview.gdp_capita": "一人当たりGDP",
+  "overview.view_all": "全ランキングを見る",
   "pillars.global_avg": "世界平均",
 
   "pillar.governance": "ガバナンス",
@@ -42,6 +51,7 @@
   "pillar.housing": "住宅・都市開発",
   "pillar.housing.desc": "住宅の手頃さ、都市計画、住みやすさ",
 
+  "map.section_title": "グローバル繁栄インタラクティブマップ",
   "map.title": "グローバル繁栄指数",
   "map.interactive": "インタラクティブマップ",
   "map.click_details": "国をクリックして詳細を表示",
@@ -209,5 +219,26 @@
   "peace.status.tension": "緊張",
   "peace.status.minor_conflict": "小規模紛争",
   "peace.status.major_conflict": "大規模紛争",
-  "peace.status.war": "戦争"
+  "peace.status.war": "戦争",
+  "compare.title": "国の比較",
+  "compare.intro": "2〜3か国を選択して繁栄プロファイルを並べて比較します。",
+  "compare.select_hint": "少なくとも2か国を選択してください。",
+  "compare.radar_title": "柱プロファイル比較",
+  "compare.pillars_title": "柱スコア",
+  "compare.econ_title": "経済指標",
+  "compare.select_country": "国を選択",
+  "compare.add_country": "+ 国を追加",
+  "compare.btn": "比較する",
+
+  "trade.title": "貿易と生産",
+  "trade.exports": "輸出",
+  "trade.imports": "輸入",
+  "trade.balance": "貿易収支",
+  "trade.openness": "貿易開放度 (% GDP)",
+  "trade.top_exports": "主要輸出品",
+  "trade.global_title": "世界貿易の概要",
+  "trade.total_exports": "世界の輸出額",
+  "trade.total_imports": "世界の輸入額",
+  "trade.avg_openness": "平均貿易開放度",
+  "trade.top_exporters": "主要輸出国"
 }
