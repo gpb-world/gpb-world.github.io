@@ -73,6 +73,7 @@
   "country.pillar_scores": "Puntuaciones por Pilar",
   "country.back": "Volver al panorama",
   "country.not_found": "País no encontrado",
+  "country.democracy": "Índice de democracia",
 
   "ranking.title": "Clasificaciones",
   "ranking.rank": "Posición",
@@ -240,5 +241,12 @@
   "trade.total_exports": "Exportaciones Mundiales",
   "trade.total_imports": "Importaciones Mundiales",
   "trade.avg_openness": "Apertura Comercial Prom.",
-  "trade.top_exporters": "Economías más abiertas al comercio"
+  "trade.top_exporters": "Economías más abiertas al comercio",
+
+  "satisfaction.title": "Satisfacción de vida",
+  "satisfaction.very_high": "Muy satisfecho",
+  "satisfaction.high": "Satisfecho",
+  "satisfaction.moderate": "Moderado",
+  "satisfaction.low": "Insatisfecho",
+  "satisfaction.very_low": "Muy insatisfecho"
 }

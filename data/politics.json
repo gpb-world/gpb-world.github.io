@@ -3,6 +3,7 @@
     "system": "constitutional_monarchy",
     "regime": "full_democracy",
     "democracy_score": 9.81,
+    "happiness_score": 7.3,
     "conflict_status": "peace",
     "corruption_rank": 4,
     "press_freedom_rank": 1
@@ -11,6 +12,7 @@
     "system": "constitutional_monarchy",
     "regime": "full_democracy",
     "democracy_score": 9.39,
+    "happiness_score": 7.3,
     "conflict_status": "peace",
     "corruption_rank": 6,
     "press_freedom_rank": 3
@@ -19,6 +21,7 @@
     "system": "constitutional_monarchy",
     "regime": "full_democracy",
     "democracy_score": 9.37,
+    "happiness_score": 7.6,
     "conflict_status": "peace",
     "corruption_rank": 1,
     "press_freedom_rank": 2
@@ -27,6 +30,7 @@
     "system": "parliamentary_republic",
     "regime": "full_democracy",
     "democracy_score": 9.30,
+    "happiness_score": 7.7,
     "conflict_status": "peace",
     "corruption_rank": 2,
     "press_freedom_rank": 5
@@ -35,6 +39,7 @@
     "system": "parliamentary_republic",
     "regime": "full_democracy",
     "democracy_score": 9.45,
+    "happiness_score": 7.5,
     "conflict_status": "peace",
     "corruption_rank": 11,
     "press_freedom_rank": 16
@@ -43,6 +48,7 @@
     "system": "parliamentary_republic",
     "regime": "full_democracy",
     "democracy_score": 8.68,
+    "happiness_score": 6.7,
     "conflict_status": "peace",
     "corruption_rank": 9,
     "press_freedom_rank": 10
@@ -51,6 +57,7 @@
     "system": "constitutional_monarchy",
     "regime": "full_democracy",
     "democracy_score": 9.00,
+    "happiness_score": 7.3,
     "conflict_status": "peace",
     "corruption_rank": 8,
     "press_freedom_rank": 4
@@ -59,6 +66,7 @@
     "system": "parliamentary_republic",
     "regime": "full_democracy",
     "democracy_score": 9.14,
+    "happiness_score": 7.1,
     "conflict_status": "peace",
     "corruption_rank": 7,
     "press_freedom_rank": 12
@@ -67,6 +75,7 @@
     "system": "parliamentary_republic",
     "regime": "full_democracy",
     "democracy_score": 8.41,
+    "happiness_score": 7.1,
     "conflict_status": "peace",
     "corruption_rank": 13,
     "press_freedom_rank": 15
@@ -75,6 +84,7 @@
     "system": "constitutional_monarchy",
     "regime": "flawed_democracy",
     "democracy_score": 7.93,
+    "happiness_score": 6.8,
     "conflict_status": "peace",
     "corruption_rank": 15,
     "press_freedom_rank": 14
@@ -83,6 +93,7 @@
     "system": "semi_presidential_republic",
     "regime": "flawed_democracy",
     "democracy_score": 7.99,
+    "happiness_score": 6.7,
     "conflict_status": "peace",
     "corruption_rank": 20,
     "press_freedom_rank": 21
@@ -91,6 +102,7 @@
     "system": "constitutional_monarchy",
     "regime": "full_democracy",
     "democracy_score": 8.28,
+    "happiness_score": 6.7,
     "conflict_status": "peace",
     "corruption_rank": 14,
     "press_freedom_rank": 23
@@ -99,6 +111,7 @@
     "system": "constitutional_monarchy",
     "regime": "flawed_democracy",
     "democracy_score": 7.97,
+    "happiness_score": 6.4,
     "conflict_status": "peace",
     "corruption_rank": 35,
     "press_freedom_rank": 30
@@ -107,6 +120,7 @@
     "system": "parliamentary_republic",
     "regime": "flawed_democracy",
     "democracy_score": 7.69,
+    "happiness_score": 6.3,
     "conflict_status": "peace",
     "corruption_rank": 42,
     "press_freedom_rank": 41
@@ -115,6 +129,7 @@
     "system": "parliamentary_republic",
     "regime": "flawed_democracy",
     "democracy_score": 7.95,
+    "happiness_score": 6.0,
     "conflict_status": "peace",
     "corruption_rank": 34,
     "press_freedom_rank": 9
@@ -123,6 +138,7 @@
     "system": "parliamentary_republic",
     "regime": "full_democracy",
     "democracy_score": 9.19,
+    "happiness_score": 6.9,
     "conflict_status": "peace",
     "corruption_rank": 10,
     "press_freedom_rank": 8
@@ -131,6 +147,7 @@
     "system": "parliamentary_republic",
     "regime": "flawed_democracy",
     "democracy_score": 6.82,
+    "happiness_score": 6.3,
     "conflict_status": "peace",
     "corruption_rank": 47,
     "press_freedom_rank": 47
@@ -139,6 +156,7 @@
     "system": "parliamentary_republic",
     "regime": "flawed_democracy",
     "democracy_score": 7.97,
+    "happiness_score": 6.8,
     "conflict_status": "peace",
     "corruption_rank": 37,
     "press_freedom_rank": 17
@@ -147,6 +165,7 @@
     "system": "parliamentary_republic",
     "regime": "flawed_democracy",
     "democracy_score": 7.56,
+    "happiness_score": 5.9,
     "conflict_status": "peace",
     "corruption_rank": 55,
     "press_freedom_rank": 36
@@ -155,6 +174,7 @@
     "system": "semi_presidential_republic",
     "regime": "flawed_democracy",
     "democracy_score": 6.64,
+    "happiness_score": 6.2,
     "conflict_status": "peace",
     "corruption_rank": 63,
     "press_freedom_rank": 49
@@ -163,6 +183,7 @@
     "system": "constitutional_monarchy",
     "regime": "full_democracy",
     "democracy_score": 8.33,
+    "happiness_score": 6.1,
     "conflict_status": "peace",
     "corruption_rank": 16,
     "press_freedom_rank": 70
@@ -171,6 +192,7 @@
     "system": "presidential_republic",
     "regime": "full_democracy",
     "democracy_score": 8.09,
+    "happiness_score": 5.9,
     "conflict_status": "peace",
     "corruption_rank": 32,
     "press_freedom_rank": 42
@@ -179,6 +201,7 @@
     "system": "one_party_state",
     "regime": "authoritarian",
     "democracy_score": 2.12,
+    "happiness_score": 6.0,
     "conflict_status": "peace",
     "corruption_rank": 76,
     "press_freedom_rank": 172
@@ -187,6 +210,7 @@
     "system": "parliamentary_republic",
     "regime": "flawed_democracy",
     "democracy_score": 7.18,
+    "happiness_score": 4.1,
     "conflict_status": "tension",
     "corruption_rank": 93,
     "press_freedom_rank": 159
@@ -195,6 +219,7 @@
     "system": "parliamentary_republic",
     "regime": "flawed_democracy",
     "democracy_score": 6.14,
+    "happiness_score": 6.5,
     "conflict_status": "peace",
     "corruption_rank": 5,
     "press_freedom_rank": 126
@@ -203,6 +228,7 @@
     "system": "parliamentary_republic",
     "regime": "flawed_democracy",
     "democracy_score": 7.73,
+    "happiness_score": 7.5,
     "conflict_status": "major_conflict",
     "corruption_rank": 36,
     "press_freedom_rank": 97
@@ -211,6 +237,7 @@
     "system": "presidential_republic",
     "regime": "hybrid_regime",
     "democracy_score": 4.35,
+    "happiness_score": 4.9,
     "conflict_status": "tension",
     "corruption_rank": 73,
     "press_freedom_rank": 158
@@ -219,6 +246,7 @@
     "system": "absolute_monarchy",
     "regime": "authoritarian",
     "democracy_score": 1.82,
+    "happiness_score": 6.5,
     "conflict_status": "peace",
     "corruption_rank": 52,
     "press_freedom_rank": 170
@@ -227,6 +255,7 @@
     "system": "constitutional_monarchy",
     "regime": "authoritarian",
     "democracy_score": 2.76,
+    "happiness_score": 7.0,
     "conflict_status": "peace",
     "corruption_rank": 29,
     "press_freedom_rank": 145
@@ -235,6 +264,7 @@
     "system": "presidential_republic",
     "regime": "flawed_democracy",
     "democracy_score": 6.53,
+    "happiness_score": 5.4,
     "conflict_status": "peace",
     "corruption_rank": 96,
     "press_freedom_rank": 111
@@ -243,6 +273,7 @@
     "system": "presidential_republic",
     "regime": "flawed_democracy",
     "democracy_score": 7.85,
+    "happiness_score": 6.7,
     "conflict_status": "peace",
     "corruption_rank": 24,
     "press_freedom_rank": 55
@@ -251,6 +282,7 @@
     "system": "constitutional_monarchy",
     "regime": "full_democracy",
     "democracy_score": 8.88,
+    "happiness_score": 6.7,
     "conflict_status": "peace",
     "corruption_rank": 17,
     "press_freedom_rank": 14
@@ -259,6 +291,7 @@
     "system": "presidential_republic",
     "regime": "flawed_democracy",
     "democracy_score": 6.68,
+    "happiness_score": 6.3,
     "conflict_status": "peace",
     "corruption_rank": 76,
     "press_freedom_rank": 82
@@ -267,6 +300,7 @@
     "system": "presidential_republic",
     "regime": "flawed_democracy",
     "democracy_score": 5.82,
+    "happiness_score": 6.3,
     "conflict_status": "minor_conflict",
     "corruption_rank": 120,
     "press_freedom_rank": 121
@@ -275,6 +309,7 @@
     "system": "presidential_republic",
     "regime": "flawed_democracy",
     "democracy_score": 6.39,
+    "happiness_score": 6.2,
     "conflict_status": "peace",
     "corruption_rank": 85,
     "press_freedom_rank": 66
@@ -283,6 +318,7 @@
     "system": "presidential_republic",
     "regime": "full_democracy",
     "democracy_score": 8.01,
+    "happiness_score": 6.2,
     "conflict_status": "peace",
     "corruption_rank": 27,
     "press_freedom_rank": 31
@@ -291,6 +327,7 @@
     "system": "presidential_republic",
     "regime": "flawed_democracy",
     "democracy_score": 6.46,
+    "happiness_score": 6.0,
     "conflict_status": "tension",
     "corruption_rank": 91,
     "press_freedom_rank": 129
@@ -299,6 +336,7 @@
     "system": "presidential_republic",
     "regime": "full_democracy",
     "democracy_score": 8.29,
+    "happiness_score": 7.0,
     "conflict_status": "peace",
     "corruption_rank": 50,
     "press_freedom_rank": 18
@@ -307,6 +345,7 @@
     "system": "parliamentary_republic",
     "regime": "flawed_democracy",
     "democracy_score": 7.05,
+    "happiness_score": 5.4,
     "conflict_status": "peace",
     "corruption_rank": 67,
     "press_freedom_rank": 38
@@ -315,6 +354,7 @@
     "system": "presidential_republic",
     "regime": "hybrid_regime",
     "democracy_score": 4.11,
+    "happiness_score": 4.4,
     "conflict_status": "tension",
     "corruption_rank": 145,
     "press_freedom_rank": 112
@@ -323,6 +363,7 @@
     "system": "presidential_republic",
     "regime": "hybrid_regime",
     "democracy_score": 5.08,
+    "happiness_score": 4.5,
     "conflict_status": "tension",
     "corruption_rank": 126,
     "press_freedom_rank": 102
@@ -331,6 +372,7 @@
     "system": "presidential_republic",
     "regime": "authoritarian",
     "democracy_score": 2.93,
+    "happiness_score": 4.2,
     "conflict_status": "tension",
     "corruption_rank": 108,
     "press_freedom_rank": 166
@@ -339,6 +381,7 @@
     "system": "parliamentary_republic",
     "regime": "authoritarian",
     "democracy_score": 3.27,
+    "happiness_score": 3.8,
     "conflict_status": "minor_conflict",
     "corruption_rank": 98,
     "press_freedom_rank": 130
@@ -347,6 +390,7 @@
     "system": "presidential_republic",
     "regime": "flawed_democracy",
     "democracy_score": 6.14,
+    "happiness_score": 4.6,
     "conflict_status": "peace",
     "corruption_rank": 72,
     "press_freedom_rank": 50
@@ -355,6 +399,7 @@
     "system": "constitutional_monarchy",
     "regime": "hybrid_regime",
     "democracy_score": 5.04,
+    "happiness_score": 5.1,
     "conflict_status": "minor_conflict",
     "corruption_rank": 97,
     "press_freedom_rank": 144
@@ -363,6 +408,7 @@
     "system": "constitutional_monarchy",
     "regime": "full_democracy",
     "democracy_score": 8.71,
+    "happiness_score": 7.1,
     "conflict_status": "peace",
     "corruption_rank": 12,
     "press_freedom_rank": 27
@@ -371,6 +417,7 @@
     "system": "constitutional_monarchy",
     "regime": "full_democracy",
     "democracy_score": 9.61,
+    "happiness_score": 7.0,
     "conflict_status": "peace",
     "corruption_rank": 3,
     "press_freedom_rank": 13
@@ -379,6 +426,7 @@
     "system": "semi_presidential_republic",
     "regime": "authoritarian",
     "democracy_score": 2.22,
+    "happiness_score": 5.7,
     "conflict_status": "war",
     "corruption_rank": 141,
     "press_freedom_rank": 164
@@ -387,6 +435,7 @@
     "system": "semi_presidential_republic",
     "regime": "hybrid_regime",
     "democracy_score": 5.42,
+    "happiness_score": 4.6,
     "conflict_status": "war",
     "corruption_rank": 104,
     "press_freedom_rank": 61
@@ -395,6 +444,7 @@
     "system": "parliamentary_republic",
     "regime": "hybrid_regime",
     "democracy_score": 4.31,
+    "happiness_score": 4.3,
     "conflict_status": "major_conflict",
     "corruption_rank": 133,
     "press_freedom_rank": 152

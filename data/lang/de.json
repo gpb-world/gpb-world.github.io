@@ -73,6 +73,7 @@
   "country.pillar_scores": "Säulenwerte",
   "country.back": "Zurück zur Übersicht",
   "country.not_found": "Land nicht gefunden",
+  "country.democracy": "Demokratie-Index",
 
   "ranking.title": "Ranglisten",
   "ranking.rank": "Rang",
@@ -240,5 +241,12 @@
   "trade.total_exports": "Weltexporte",
   "trade.total_imports": "Weltimporte",
   "trade.avg_openness": "Durchschn. Handelsoffenheit",
-  "trade.top_exporters": "Handelsoffenste Volkswirtschaften"
+  "trade.top_exporters": "Handelsoffenste Volkswirtschaften",
+
+  "satisfaction.title": "Lebenszufriedenheit",
+  "satisfaction.very_high": "Sehr zufrieden",
+  "satisfaction.high": "Zufrieden",
+  "satisfaction.moderate": "Mäßig",
+  "satisfaction.low": "Unzufrieden",
+  "satisfaction.very_low": "Sehr unzufrieden"
 }

@@ -471,9 +471,49 @@ function renderCountry() {
   const name = I18n.getCountryName(country);
   document.title = `${name} - Global Prosperity Barometer`;
 
+  const pol = Data.getPolitics(id);
+  let govHtml = '';
+  if (pol) {
+    const regimeColors = { full_democracy: '#2E7D32', flawed_democracy: '#66BB6A', hybrid_regime: '#FFA726', authoritarian: '#E53935' };
+    const statusIcons = { peace: '\uD83D\uDD4A\uFE0F', tension: '\u26A0\uFE0F', minor_conflict: '\uD83D\uDD36', major_conflict: '\uD83D\uDD34', war: '\uD83D\uDCA5' };
+    const regimeColor = regimeColors[pol.regime] || 'var(--dark-blue)';
+
+    // Life satisfaction meter
+    let satHtml = '';
+    if (pol.happiness_score != null) {
+      const h = pol.happiness_score;
+      let emoji, labelKey, satColor;
+      if (h >= 7.0)      { emoji = '\uD83D\uDE0A'; labelKey = 'satisfaction.very_high'; satColor = '#2E7D32'; }
+      else if (h >= 6.0)  { emoji = '\uD83D\uDE42'; labelKey = 'satisfaction.high'; satColor = '#66BB6A'; }
+      else if (h >= 5.0)  { emoji = '\uD83D\uDE10'; labelKey = 'satisfaction.moderate'; satColor = '#FFA726'; }
+      else if (h >= 4.0)  { emoji = '\uD83D\uDE1F'; labelKey = 'satisfaction.low'; satColor = '#E53935'; }
+      else                 { emoji = '\uD83D\uDE1E'; labelKey = 'satisfaction.very_low'; satColor = '#B71C1C'; }
+      const pct = Math.round((h / 8) * 100);
+      satHtml = `
+      <div class="satisfaction-meter">
+        <span class="sat-emoji">${emoji}</span>
+        <div class="sat-bar-wrap">
+          <div class="sat-bar" style="width:${pct}%;background:${satColor}"></div>
+        </div>
+        <span class="sat-label" style="color:${satColor}">${I18n.t(labelKey)}</span>
+        <span class="sat-score">${h}/10</span>
+      </div>`;
+    }
+
+    govHtml = `
+    <div class="country-gov-bar">
+      <span class="gov-tag" style="border-color:${regimeColor};color:${regimeColor}">${I18n.t('pol.regime.' + pol.regime)}</span>
+      <span class="gov-tag">${I18n.t('pol.system.' + pol.system)}</span>
+      <span class="gov-tag">${I18n.t('country.democracy')}: ${pol.democracy_score}/10</span>
+      <span class="gov-tag">${statusIcons[pol.conflict_status] || ''} ${I18n.t('peace.status.' + pol.conflict_status)}</span>
+    </div>
+    ${satHtml}`;
+  }
+
   container.innerHTML = `
     <a href="index.html" class="back-link">&larr; ${I18n.t('country.back')}</a>
     <h1 class="country-name">${name}</h1>
+    ${govHtml}
     <div class="country-meta">
       <div class="meta-card">
         <div class="meta-label">${I18n.t('country.overall')}</div>

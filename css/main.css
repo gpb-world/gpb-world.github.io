@@ -454,7 +454,69 @@ body {
     font-size: 2.2rem;
     font-weight: 400;
     color: var(--dark-blue);
+    margin-bottom: 0.75rem;
+}
+
+/* Country Governance Bar */
+.country-gov-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     margin-bottom: 1.5rem;
+}
+
+.gov-tag {
+    display: inline-block;
+    background: var(--bg-light);
+    padding: 0.35rem 0.85rem;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    border: 1px solid var(--border-gray);
+}
+
+/* Satisfaction Meter */
+.satisfaction-meter {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+    padding: 0.6rem 1rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+    border: 1px solid var(--border-gray);
+}
+
+.sat-emoji {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.sat-bar-wrap {
+    flex: 1;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    min-width: 80px;
+}
+
+.sat-bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.sat-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.sat-score {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    white-space: nowrap;
 }
 
 .country-meta {

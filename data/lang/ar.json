@@ -73,6 +73,7 @@
   "country.pillar_scores": "درجات الركائز",
   "country.back": "العودة إلى النظرة العامة",
   "country.not_found": "الدولة غير موجودة",
+  "country.democracy": "مؤشر الديمقراطية",
 
   "ranking.title": "التصنيفات",
   "ranking.rank": "الترتيب",
@@ -240,5 +241,12 @@
   "trade.total_exports": "الصادرات العالمية",
   "trade.total_imports": "الواردات العالمية",
   "trade.avg_openness": "متوسط الانفتاح التجاري",
-  "trade.top_exporters": "أكثر الاقتصادات انفتاحاً تجارياً"
+  "trade.top_exporters": "أكثر الاقتصادات انفتاحاً تجارياً",
+
+  "satisfaction.title": "الرضا عن الحياة",
+  "satisfaction.very_high": "راضٍ جداً",
+  "satisfaction.high": "راضٍ",
+  "satisfaction.moderate": "معتدل",
+  "satisfaction.low": "غير راضٍ",
+  "satisfaction.very_low": "غير راضٍ جداً"
 }

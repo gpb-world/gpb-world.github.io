@@ -73,6 +73,7 @@
   "country.pillar_scores": "柱別スコア",
   "country.back": "概要に戻る",
   "country.not_found": "国が見つかりません",
+  "country.democracy": "民主主義指数",
 
   "ranking.title": "ランキング",
   "ranking.rank": "順位",
@@ -240,5 +241,12 @@
   "trade.total_exports": "世界の輸出額",
   "trade.total_imports": "世界の輸入額",
   "trade.avg_openness": "平均貿易開放度",
-  "trade.top_exporters": "最も貿易開放的な経済"
+  "trade.top_exporters": "最も貿易開放的な経済",
+
+  "satisfaction.title": "生活満足度",
+  "satisfaction.very_high": "非常に満足",
+  "satisfaction.high": "満足",
+  "satisfaction.moderate": "普通",
+  "satisfaction.low": "不満",
+  "satisfaction.very_low": "非常に不満"
 }

@@ -56,18 +56,23 @@
         fillOpacity: 0.8
       }).addTo(map);
 
-      const isInIframe = window.parent !== window;
-      const detailLink = isInIframe
-        ? `<a href="country.html?id=${country.id}" target="_blank" style="color:#009edb;font-size:12px;">${I18n.t('map.popup.details')} &rarr;</a>`
-        : `<a href="country.html?id=${country.id}" style="color:#009edb;font-size:12px;">${I18n.t('map.popup.details')} &rarr;</a>`;
+      // Hover tooltip: country name + score
+      circle.bindTooltip(`<strong>${name}</strong> — ${overall}/100`, {
+        direction: 'top',
+        offset: [0, -10],
+        className: 'country-tooltip'
+      });
 
-      circle.bindPopup(`
-        <div style="font-family:'Segoe UI',Arial,sans-serif;">
-          <h3 style="margin:0 0 8px 0;color:#009edb;font-size:16px;">${name}</h3>
-          <p style="margin:4px 0;font-size:13px;"><strong>${I18n.t('map.popup.score')}:</strong> ${overall}/100</p>
-          <p style="margin:4px 0;font-size:12px;color:#555;">${I18n.t('map.popup.ranking')}: ${getScoreCategory(overall)}</p>
-          <p style="margin:8px 0 0;">${detailLink}</p>
-        </div>`);
+      // Click: navigate to country page
+      const isInIframe = window.parent !== window;
+      circle.on('click', () => {
+        const url = `country.html?id=${country.id}`;
+        if (isInIframe) {
+          window.open(url, '_blank');
+        } else {
+          window.location.href = url;
+        }
+      });
 
       markers.push(circle);
     });

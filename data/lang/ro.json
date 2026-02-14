@@ -73,6 +73,7 @@
   "country.pillar_scores": "Scoruri pe Piloni",
   "country.back": "Înapoi la prezentare",
   "country.not_found": "Țara nu a fost găsită",
+  "country.democracy": "Scor democrație",
 
   "ranking.title": "Clasamente",
   "ranking.rank": "Loc",
@@ -240,5 +241,12 @@
   "trade.total_exports": "Exporturi Mondiale",
   "trade.total_imports": "Importuri Mondiale",
   "trade.avg_openness": "Deschidere Comercială Medie",
-  "trade.top_exporters": "Cele mai deschise economii comerciale"
+  "trade.top_exporters": "Cele mai deschise economii comerciale",
+
+  "satisfaction.title": "Satisfacția vieții",
+  "satisfaction.very_high": "Foarte satisfăcut",
+  "satisfaction.high": "Satisfăcut",
+  "satisfaction.moderate": "Moderat",
+  "satisfaction.low": "Nesatisfăcut",
+  "satisfaction.very_low": "Foarte nesatisfăcut"
 }

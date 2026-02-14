@@ -73,6 +73,7 @@
   "country.pillar_scores": "Punteggi per Pilastro",
   "country.back": "Torna al panorama",
   "country.not_found": "Paese non trovato",
+  "country.democracy": "Indice di democrazia",
 
   "ranking.title": "Classifiche",
   "ranking.rank": "Posizione",
@@ -240,5 +241,12 @@
   "trade.total_exports": "Esportazioni Mondiali",
   "trade.total_imports": "Importazioni Mondiali",
   "trade.avg_openness": "Apertura Commerciale Med.",
-  "trade.top_exporters": "Economie più aperte al commercio"
+  "trade.top_exporters": "Economie più aperte al commercio",
+
+  "satisfaction.title": "Soddisfazione di vita",
+  "satisfaction.very_high": "Molto soddisfatto",
+  "satisfaction.high": "Soddisfatto",
+  "satisfaction.moderate": "Moderato",
+  "satisfaction.low": "Insoddisfatto",
+  "satisfaction.very_low": "Molto insoddisfatto"
 }

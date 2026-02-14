@@ -73,6 +73,7 @@
   "country.pillar_scores": "स्तंभ स्कोर",
   "country.back": "अवलोकन पर वापस जाएँ",
   "country.not_found": "देश नहीं मिला",
+  "country.democracy": "लोकतंत्र सूचकांक",
 
   "ranking.title": "रैंकिंग",
   "ranking.rank": "रैंक",
@@ -240,5 +241,12 @@
   "trade.total_exports": "विश्व निर्यात",
   "trade.total_imports": "विश्व आयात",
   "trade.avg_openness": "औसत व्यापार खुलापन",
-  "trade.top_exporters": "सबसे व्यापार-खुली अर्थव्यवस्थाएँ"
+  "trade.top_exporters": "सबसे व्यापार-खुली अर्थव्यवस्थाएँ",
+
+  "satisfaction.title": "जीवन संतुष्टि",
+  "satisfaction.very_high": "बहुत संतुष्ट",
+  "satisfaction.high": "संतुष्ट",
+  "satisfaction.moderate": "सामान्य",
+  "satisfaction.low": "असंतुष्ट",
+  "satisfaction.very_low": "बहुत असंतुष्ट"
 }

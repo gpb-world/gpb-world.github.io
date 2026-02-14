@@ -73,6 +73,7 @@
   "country.pillar_scores": "支柱评分",
   "country.back": "返回概览",
   "country.not_found": "未找到该国家",
+  "country.democracy": "民主指数",
 
   "ranking.title": "排名",
   "ranking.rank": "排名",
@@ -240,5 +241,12 @@
   "trade.total_exports": "世界出口总额",
   "trade.total_imports": "世界进口总额",
   "trade.avg_openness": "平均贸易开放度",
-  "trade.top_exporters": "贸易最开放的经济体"
+  "trade.top_exporters": "贸易最开放的经济体",
+
+  "satisfaction.title": "生活满意度",
+  "satisfaction.very_high": "非常满意",
+  "satisfaction.high": "满意",
+  "satisfaction.moderate": "一般",
+  "satisfaction.low": "不满意",
+  "satisfaction.very_low": "非常不满意"
 }

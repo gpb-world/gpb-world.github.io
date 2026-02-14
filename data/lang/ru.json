@@ -73,6 +73,7 @@
   "country.pillar_scores": "Оценки по опорам",
   "country.back": "Вернуться к обзору",
   "country.not_found": "Страна не найдена",
+  "country.democracy": "Индекс демократии",
 
   "ranking.title": "Рейтинги",
   "ranking.rank": "Место",
@@ -240,5 +241,12 @@
   "trade.total_exports": "Мировой экспорт",
   "trade.total_imports": "Мировой импорт",
   "trade.avg_openness": "Сред. торговая открытость",
-  "trade.top_exporters": "Наиболее открытые экономики"
+  "trade.top_exporters": "Наиболее открытые экономики",
+
+  "satisfaction.title": "Удовлетворённость жизнью",
+  "satisfaction.very_high": "Очень доволен",
+  "satisfaction.high": "Доволен",
+  "satisfaction.moderate": "Умеренно",
+  "satisfaction.low": "Недоволен",
+  "satisfaction.very_low": "Очень недоволен"
 }
