@@ -301,13 +301,34 @@ body {
     text-align: center;
 }
 
+/* Overview Tiles Row */
+.overview-tiles-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+/* Tile Link (clickable overview tiles) */
+.tile-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+.tile-link:hover {
+    box-shadow: 0 4px 16px rgba(0,94,135,0.12);
+    transform: translateY(-2px);
+}
+
 /* Top Countries Tile */
 .top-countries-box {
-    margin-top: 2rem;
     background: var(--white);
     border: 1px solid var(--border-gray);
     border-radius: 8px;
     padding: 1.5rem 2rem;
+    height: 100%;
 }
 
 .top-countries-title {
@@ -833,11 +854,11 @@ body {
 
 /* ===== Global Trade Tile ===== */
 .trade-tile-box {
-    margin-top: 2rem;
     background: var(--white);
     border: 1px solid var(--border-gray);
     border-radius: 8px;
     padding: 1.5rem 2rem;
+    height: 100%;
 }
 
 .trade-tile-title {
@@ -1233,7 +1254,8 @@ body {
         flex-wrap: wrap;
     }
 
-    .cards-grid {
+    .cards-grid,
+    .overview-tiles-row {
         grid-template-columns: 1fr;
     }
 
