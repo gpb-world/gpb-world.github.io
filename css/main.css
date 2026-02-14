@@ -301,58 +301,11 @@ body {
     text-align: center;
 }
 
-/* Overview Tiles Row */
-.overview-tiles-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.25rem;
-    margin-top: 1.5rem;
-}
-
-/* Tile Link (clickable overview tiles) */
-.tile-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    transition: box-shadow 0.2s, transform 0.2s;
-    cursor: pointer;
-}
-.tile-link:hover {
-    box-shadow: 0 4px 16px rgba(0,94,135,0.12);
-    transform: translateY(-2px);
-}
-
-/* Top Countries Tile */
-.top-countries-box {
-    background: var(--white);
-    border: 1px solid var(--border-gray);
-    border-radius: 8px;
-    padding: 1.5rem 2rem;
-    height: 100%;
-}
-
-.top-countries-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--dark-blue);
-    margin-bottom: 1rem;
-}
-
+/* Top Countries Table (prosperity page) */
 .top-countries-table .top-gdp-cell {
     font-weight: 600;
     color: var(--dark-blue);
     white-space: nowrap;
-}
-
-.top-countries-link {
-    color: var(--un-blue);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.top-countries-link:hover {
-    text-decoration: underline;
 }
 
 .card-link {
@@ -852,22 +805,7 @@ body {
     flex-shrink: 0;
 }
 
-/* ===== Global Trade Tile ===== */
-.trade-tile-box {
-    background: var(--white);
-    border: 1px solid var(--border-gray);
-    border-radius: 8px;
-    padding: 1.5rem 2rem;
-    height: 100%;
-}
-
-.trade-tile-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--dark-blue);
-    margin-bottom: 1rem;
-}
-
+/* ===== Trade Stats (used on trade detail page) ===== */
 .trade-tile-stats {
     display: flex;
     justify-content: space-around;
@@ -1254,8 +1192,7 @@ body {
         flex-wrap: wrap;
     }
 
-    .cards-grid,
-    .overview-tiles-row {
+    .cards-grid {
         grid-template-columns: 1fr;
     }
 

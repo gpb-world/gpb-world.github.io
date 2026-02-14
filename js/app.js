@@ -203,6 +203,9 @@ function renderOverviewCards() {
   const container = document.getElementById('overview-cards');
   if (!container) return;
 
+  // Remove previously rendered pillar cards (keep tile placeholders)
+  container.querySelectorAll('.overview-pillar-card').forEach(el => el.remove());
+
   const avgs = Data.getGlobalAverages();
   const pillars = Data.getPillars();
 
@@ -210,7 +213,7 @@ function renderOverviewCards() {
   const html = pillars.slice(0, 6).map(p => {
     const avg = avgs[p.id] || 0;
     return `
-      <a href="pillar.html?id=${p.id}" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid ${p.color}">
+      <a href="pillar.html?id=${p.id}" class="card overview-card overview-pillar-card" style="text-decoration:none;color:inherit;border-left:4px solid ${p.color}">
         <div class="card-icon">${p.icon}</div>
         <h3 class="card-title">${I18n.t(p.name_key)}</h3>
         <div class="card-value">${avg}/100</div>
@@ -219,47 +222,31 @@ function renderOverviewCards() {
       </a>`;
   }).join('');
 
-  container.innerHTML = html;
+  // Insert pillar cards at the beginning, before tile placeholders
+  container.insertAdjacentHTML('afterbegin', html);
 }
 
 function renderTopCountries() {
   const container = document.getElementById('top-countries-tile');
   if (!container) return;
 
-  const ranking = Data.getRanking('overall').slice(0, 10);
+  const countries = Data.getAllCountries();
+  const allEcon = countries.map(c => ({ country: c, econ: Data.getEconomics(c.id) })).filter(d => d.econ);
+  if (!allEcon.length) { container.innerHTML = ''; return; }
 
-  function fmtK(v) { return v >= 1000 ? `$${(v/1000).toFixed(1)}K` : `$${v}`; }
+  function fmtB(v) { return v >= 1000 ? `$${(v/1000).toFixed(1)}T` : `$${v.toFixed(0)}B`; }
 
-  const rows = ranking.map((r, i) => {
-    const econ = Data.getEconomics(r.id);
-    const gdpCap = econ ? fmtK(econ.gdp_per_capita) : '—';
-    const label = Data.getScoreLabel(r.score);
-    const name = I18n.getCountryName({ name: r.name, id: r.id });
-    return `<tr>
-      <td class="rank-num">${i + 1}</td>
-      <td>${name}</td>
-      <td><div class="rank-bar-wrap"><div class="rank-bar score-${label}" style="width:${r.score}%"></div><span class="rank-score">${r.score}</span></div></td>
-      <td class="top-gdp-cell">${gdpCap}</td>
-    </tr>`;
-  }).join('');
+  const totalGdp = allEcon.reduce((s, d) => s + d.econ.gdp, 0);
+  const top5 = allEcon.sort((a, b) => b.econ.gdp - a.econ.gdp).slice(0, 5);
+  const topList = top5.map(d => I18n.getCountryName(d.country)).join(', ');
 
   container.innerHTML = `
-    <a href="prosperity.html" class="top-countries-box tile-link">
-      <h3 class="top-countries-title">${I18n.t('overview.top_countries')}</h3>
-      <table class="ranking-table top-countries-table">
-        <thead>
-          <tr>
-            <th>${I18n.t('overview.rank')}</th>
-            <th>${I18n.t('overview.country')}</th>
-            <th>${I18n.t('overview.score')}</th>
-            <th>${I18n.t('overview.gdp_capita')}</th>
-          </tr>
-        </thead>
-        <tbody>${rows}</tbody>
-      </table>
-      <div style="text-align:center;margin-top:1rem;">
-        <span class="top-countries-link">${I18n.t('overview.view_all')} &rarr;</span>
-      </div>
+    <a href="prosperity.html" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid #009edb">
+      <div class="card-icon">💰</div>
+      <h3 class="card-title">${I18n.t('overview.top_countries')}</h3>
+      <div class="card-value">${fmtB(totalGdp)}</div>
+      <p class="card-description">${topList}</p>
+      <span class="card-link">${I18n.t('overview.view_all')} &rarr;</span>
     </a>`;
 }
 
@@ -272,56 +259,17 @@ function renderGlobalTrade() {
   if (!allEcon.length) { container.innerHTML = ''; return; }
 
   const totalExports = allEcon.reduce((s, e) => s + (e.exports || 0), 0);
-  const totalImports = allEcon.reduce((s, e) => s + (e.imports || 0), 0);
-  const avgOpenness = (allEcon.reduce((s, e) => s + (e.exports_pct_gdp || 0), 0) / allEcon.length).toFixed(1);
-
   function fmtT(v) { return `$${(v/1000).toFixed(1)}T`; }
 
-  // Top 5 most trade-open economies (by exports % GDP)
-  const withCountry = allEcon.map(e => {
-    const country = countries.find(c => Data.getEconomics(c.id) === e);
-    return { e, country };
-  }).filter(d => d.country && d.e.exports_pct_gdp);
-  const sorted = withCountry.sort((a, b) => b.e.exports_pct_gdp - a.e.exports_pct_gdp).slice(0, 5);
-  const topRows = sorted.map(d => {
-    const name = I18n.getCountryName(d.country);
-    const topExports = (d.e.top_exports || []).slice(0, 3).join(', ');
-    return `<tr>
-      <td>${name}</td>
-      <td class="trade-val">${d.e.exports_pct_gdp}%</td>
-      <td class="trade-products">${topExports}</td>
-    </tr>`;
-  }).join('');
+  const avgOpenness = (allEcon.reduce((s, e) => s + (e.exports_pct_gdp || 0), 0) / allEcon.length).toFixed(1);
 
   container.innerHTML = `
-    <a href="trade.html" class="trade-tile-box tile-link">
-      <h3 class="trade-tile-title">${I18n.t('trade.global_title')}</h3>
-      <div class="trade-tile-stats">
-        <div class="trade-tile-stat">
-          <span class="trade-tile-icon">📦</span>
-          <span class="trade-tile-value">${fmtT(totalExports)}</span>
-          <span class="trade-tile-label">${I18n.t('trade.total_exports')}</span>
-        </div>
-        <div class="trade-tile-stat">
-          <span class="trade-tile-icon">🚢</span>
-          <span class="trade-tile-value">${fmtT(totalImports)}</span>
-          <span class="trade-tile-label">${I18n.t('trade.total_imports')}</span>
-        </div>
-        <div class="trade-tile-stat">
-          <span class="trade-tile-icon">🔄</span>
-          <span class="trade-tile-value">${avgOpenness}%</span>
-          <span class="trade-tile-label">${I18n.t('trade.avg_openness')}</span>
-        </div>
-      </div>
-      <h4 class="trade-top-title">${I18n.t('trade.top_exporters')}</h4>
-      <table class="ranking-table trade-top-table">
-        <thead><tr>
-          <th>${I18n.t('overview.country')}</th>
-          <th>${I18n.t('trade.openness')}</th>
-          <th>${I18n.t('trade.top_exports')}</th>
-        </tr></thead>
-        <tbody>${topRows}</tbody>
-      </table>
+    <a href="trade.html" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid #2E7D32">
+      <div class="card-icon">🚢</div>
+      <h3 class="card-title">${I18n.t('trade.global_title')}</h3>
+      <div class="card-value">${fmtT(totalExports)}</div>
+      <p class="card-description">${I18n.t('trade.avg_openness')}: ${avgOpenness}%</p>
+      <span class="card-link">${I18n.t('overview.view_all')} &rarr;</span>
     </a>`;
 }
 
@@ -330,19 +278,19 @@ function renderProsperityPage() {
   if (!container) return;
 
   const countries = Data.getAllCountries();
-  const allEcon = countries.map(c => Data.getEconomics(c.id)).filter(Boolean);
-  const ranking = Data.getRanking('overall');
+  const withEcon = countries.map(c => ({ country: c, econ: Data.getEconomics(c.id) })).filter(d => d.econ);
+  if (!withEcon.length) { container.innerHTML = ''; return; }
 
   function fmtB(v) { return v >= 1000 ? `$${(v/1000).toFixed(1)}T` : `$${v.toFixed(0)}B`; }
   function fmtK(v) { return v >= 1000 ? `$${(v/1000).toFixed(1)}K` : `$${v}`; }
 
   // Summary stats
-  const n = allEcon.length;
-  const totalGdp = allEcon.reduce((s, e) => s + e.gdp, 0);
-  const avgGdpCap = Math.round(allEcon.reduce((s, e) => s + e.gdp_per_capita, 0) / n);
-  const avgInflation = (allEcon.reduce((s, e) => s + e.inflation, 0) / n).toFixed(1);
-  const avgUnemployment = (allEcon.reduce((s, e) => s + e.unemployment, 0) / n).toFixed(1);
-  const avgDebt = (allEcon.reduce((s, e) => s + e.public_debt_pct, 0) / n).toFixed(1);
+  const n = withEcon.length;
+  const totalGdp = withEcon.reduce((s, d) => s + d.econ.gdp, 0);
+  const avgGdpCap = Math.round(withEcon.reduce((s, d) => s + d.econ.gdp_per_capita, 0) / n);
+  const avgInflation = (withEcon.reduce((s, d) => s + d.econ.inflation, 0) / n).toFixed(1);
+  const avgUnemployment = (withEcon.reduce((s, d) => s + d.econ.unemployment, 0) / n).toFixed(1);
+  const avgDebt = (withEcon.reduce((s, d) => s + d.econ.public_debt_pct, 0) / n).toFixed(1);
 
   const statsHtml = [
     { icon: '\uD83C\uDF0D', value: fmtB(totalGdp), key: 'global.gdp_total' },
@@ -357,23 +305,20 @@ function renderProsperityPage() {
       <span class="trade-tile-label">${I18n.t(m.key)}</span>
     </div>`).join('');
 
-  // Full ranking table
-  const rows = ranking.map((r, i) => {
-    const econ = Data.getEconomics(r.id);
-    const gdpCap = econ ? fmtK(econ.gdp_per_capita) : '\u2014';
-    const gdp = econ ? fmtB(econ.gdp) : '\u2014';
-    const debt = econ ? `${econ.public_debt_pct}%` : '\u2014';
-    const unemp = econ ? `${econ.unemployment}%` : '\u2014';
-    const label = Data.getScoreLabel(r.score);
-    const name = I18n.getCountryName({ name: r.name, id: r.id });
+  // Rank by GDP descending
+  const sorted = withEcon.sort((a, b) => b.econ.gdp - a.econ.gdp);
+
+  const rows = sorted.map((d, i) => {
+    const e = d.econ;
+    const name = I18n.getCountryName(d.country);
     return `<tr>
       <td class="rank-num">${i + 1}</td>
-      <td><a href="country.html?id=${r.id}">${name}</a></td>
-      <td><div class="rank-bar-wrap"><div class="rank-bar score-${label}" style="width:${r.score}%"></div><span class="rank-score">${r.score}</span></div></td>
-      <td class="top-gdp-cell">${gdpCap}</td>
-      <td>${gdp}</td>
-      <td>${debt}</td>
-      <td>${unemp}</td>
+      <td><a href="country.html?id=${d.country.id}">${name}</a></td>
+      <td class="top-gdp-cell">${fmtB(e.gdp)}</td>
+      <td>${fmtK(e.gdp_per_capita)}</td>
+      <td>${e.public_debt_pct}%</td>
+      <td>${e.unemployment}%</td>
+      <td>${e.inflation}%</td>
     </tr>`;
   }).join('');
 
@@ -388,11 +333,11 @@ function renderProsperityPage() {
         <tr>
           <th>${I18n.t('overview.rank')}</th>
           <th>${I18n.t('overview.country')}</th>
-          <th>${I18n.t('overview.score')}</th>
-          <th>${I18n.t('overview.gdp_capita')}</th>
           <th>GDP</th>
+          <th>${I18n.t('overview.gdp_capita')}</th>
           <th>${I18n.t('econ.public_debt')}</th>
           <th>${I18n.t('econ.unemployment')}</th>
+          <th>${I18n.t('econ.inflation')}</th>
         </tr>
       </thead>
       <tbody>${rows}</tbody>
