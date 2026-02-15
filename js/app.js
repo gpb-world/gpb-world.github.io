@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   else if (page === 'country') renderCountry();
   else if (page === 'pillar') renderPillar();
   else if (page === 'compare') renderCompare();
+  else if (page === 'quiz') renderQuiz();
   else if (page === 'prosperity') renderProsperityPage();
   else if (page === 'trade') renderTradePage();
 
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     else if (page === 'country') renderCountry();
     else if (page === 'pillar') renderPillar();
     else if (page === 'compare') renderCompare();
+    else if (page === 'quiz') renderQuiz();
     else if (page === 'prosperity') renderProsperityPage();
     else if (page === 'trade') renderTradePage();
   });
@@ -37,6 +39,7 @@ function detectPage() {
   if (path.includes('country.html')) return 'country';
   if (path.includes('pillar.html')) return 'pillar';
   if (path.includes('compare.html')) return 'compare';
+  if (path.includes('quiz.html')) return 'quiz';
   if (path.includes('prosperity.html')) return 'prosperity';
   if (path.includes('trade.html')) return 'trade';
   if (path.includes('index.html') || path.endsWith('/')) return 'index';
@@ -234,6 +237,14 @@ function renderGlobalEconBar() {
     </div>`;
 }
 
+function scoreColor(score) {
+  if (score >= 80) return '#2E7D32';
+  if (score >= 60) return '#66BB6A';
+  if (score >= 40) return '#FFA726';
+  if (score >= 20) return '#E53935';
+  return '#B71C1C';
+}
+
 function renderOverviewCards() {
   const container = document.getElementById('overview-cards');
   if (!container) return;
@@ -248,10 +259,10 @@ function renderOverviewCards() {
   const html = pillars.slice(0, 6).map(p => {
     const avg = avgs[p.id] || 0;
     return `
-      <a href="pillar.html?id=${p.id}" class="card overview-card overview-pillar-card" style="text-decoration:none;color:inherit;border-left:4px solid ${p.color}">
+      <a href="pillar.html?id=${p.id}" class="card overview-card overview-pillar-card" style="text-decoration:none;color:inherit;border-left:4px solid ${scoreColor(avg)}">
         <div class="card-icon">${p.icon}</div>
         <h3 class="card-title">${I18n.t(p.name_key)}</h3>
-        <div class="card-value">${avg}/100</div>
+        <div class="card-value" style="color:${scoreColor(avg)}">${avg}/100</div>
         <p class="card-description">${I18n.t(p.desc_key)}</p>
         <span class="card-link">${I18n.t('pillars.explore')} &rarr;</span>
       </a>`;
@@ -461,11 +472,11 @@ function renderPillarCards() {
   const html = pillars.map(p => {
     const avg = avgs[p.id] || 0;
     return `
-      <a href="pillar.html?id=${p.id}" class="card pillar-card" style="text-decoration:none;color:inherit;border-left:4px solid ${p.color}">
+      <a href="pillar.html?id=${p.id}" class="card pillar-card" style="text-decoration:none;color:inherit;border-left:4px solid ${scoreColor(avg)}">
         <div class="card-icon">${p.icon}</div>
         <h3 class="card-title">${I18n.t(p.name_key)}</h3>
         <p class="card-description">${I18n.t(p.desc_key)}</p>
-        <div class="card-avg"><span class="avg-label">${I18n.t('pillars.global_avg')}:</span> <strong>${avg}</strong>/100</div>
+        <div class="card-avg"><span class="avg-label">${I18n.t('pillars.global_avg')}:</span> <strong style="color:${scoreColor(avg)}">${avg}</strong>/100</div>
       </a>`;
   }).join('');
 
@@ -692,7 +703,7 @@ function renderEconomicDashboard(country) {
 
     tradeHtml = `
     <h2 class="scores-heading">${I18n.t('trade.title')}</h2>
-    <div class="econ-metrics">
+    <div class="econ-metrics econ-metrics-4">
       <div class="econ-metric">
         <div class="econ-metric-label">${I18n.t('trade.exports')}</div>
         <div class="econ-metric-value">${fmtB(econ.exports)}</div>
@@ -1016,4 +1027,368 @@ function renderCompare() {
       }));
     }
   }
+}
+
+// ===== Quiz =====
+let _quizState = null;
+
+function renderQuiz() {
+  const container = document.getElementById('quiz-content');
+  if (!container) return;
+
+  document.title = `${I18n.t('quiz.title')} - Global Prosperity Barometer`;
+
+  // If quiz is in progress and we're just re-rendering for language change, re-render current state
+  if (_quizState && _quizState.started) {
+    if (_quizState.finished) {
+      _renderQuizResults(container);
+    } else {
+      _renderQuizQuestion(container);
+    }
+    return;
+  }
+
+  // Start screen
+  container.innerHTML = `
+    <div class="quiz-container">
+      <div class="quiz-start">
+        <div class="quiz-start-icon">🌍</div>
+        <h1>${I18n.t('quiz.title')}</h1>
+        <p>${I18n.t('quiz.subtitle')}</p>
+        <button class="quiz-start-btn" id="quiz-start-btn">${I18n.t('quiz.start')}</button>
+      </div>
+    </div>`;
+
+  document.getElementById('quiz-start-btn').addEventListener('click', () => {
+    _quizState = {
+      questions: _generateQuizQuestions(),
+      currentIndex: 0,
+      score: 0,
+      started: true,
+      finished: false,
+      answered: false
+    };
+    _renderQuizQuestion(container);
+  });
+}
+
+function _tpl(str, ...args) {
+  return args.reduce((s, v, i) => s.replace(`{${i}}`, v), str);
+}
+
+function _shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function _pickRandom(arr, n) {
+  return _shuffle(arr).slice(0, n);
+}
+
+function _generateQuizQuestions() {
+  const countries = Data.getAllCountries();
+  const politics = Data.getAllPolitics();
+  const countryIds = countries.map(c => c.id).filter(id => politics[id]);
+
+  const generators = [
+    _genHighestDemocracy,
+    _genLowestDemocracy,
+    _genGovSystem,
+    _genRegimeType,
+    _genHigherGdp,
+    _genHappierCountry,
+    _genLowestCorruption,
+    _genBestPress,
+    _genConflictStatus
+  ];
+
+  const questions = [];
+  const shuffledGens = _shuffle(generators);
+
+  // First pass: one of each type
+  for (const gen of shuffledGens) {
+    if (questions.length >= 10) break;
+    const q = gen(countries, politics, countryIds);
+    if (q) questions.push(q);
+  }
+
+  // Fill remaining with random types
+  let attempts = 0;
+  while (questions.length < 10 && attempts < 30) {
+    const gen = generators[Math.floor(Math.random() * generators.length)];
+    const q = gen(countries, politics, countryIds);
+    if (q) questions.push(q);
+    attempts++;
+  }
+
+  return _shuffle(questions.slice(0, 10));
+}
+
+function _genHighestDemocracy(countries, politics, ids) {
+  const picked = _pickRandom(ids, 4);
+  const scored = picked.map(id => ({ id, score: politics[id].democracy_score }));
+  scored.sort((a, b) => b.score - a.score);
+  const correct = scored[0];
+  const country = Data.getCountry(correct.id);
+  return {
+    question: I18n.t('quiz.q.highest_democracy'),
+    options: _shuffle(scored.map(s => ({
+      text: I18n.getCountryName(Data.getCountry(s.id)),
+      correct: s.id === correct.id
+    }))),
+    fact: `${I18n.getCountryName(country)}: ${correct.score}/10`
+  };
+}
+
+function _genLowestDemocracy(countries, politics, ids) {
+  const picked = _pickRandom(ids, 4);
+  const scored = picked.map(id => ({ id, score: politics[id].democracy_score }));
+  scored.sort((a, b) => a.score - b.score);
+  const correct = scored[0];
+  const country = Data.getCountry(correct.id);
+  return {
+    question: I18n.t('quiz.q.lowest_democracy'),
+    options: _shuffle(scored.map(s => ({
+      text: I18n.getCountryName(Data.getCountry(s.id)),
+      correct: s.id === correct.id
+    }))),
+    fact: `${I18n.getCountryName(country)}: ${correct.score}/10`
+  };
+}
+
+function _genGovSystem(countries, politics, ids) {
+  const id = _pickRandom(ids, 1)[0];
+  const pol = politics[id];
+  const country = Data.getCountry(id);
+  const correctSystem = pol.system;
+  const allSystems = ['constitutional_monarchy', 'parliamentary_republic', 'presidential_republic', 'semi_presidential_republic', 'one_party_state', 'absolute_monarchy', 'federal_republic'];
+  const others = _pickRandom(allSystems.filter(s => s !== correctSystem), 3);
+  const options = _shuffle([correctSystem, ...others]).map(s => ({
+    text: I18n.t('pol.system.' + s),
+    correct: s === correctSystem
+  }));
+  return {
+    question: _tpl(I18n.t('quiz.q.gov_system'), I18n.getCountryName(country)),
+    options,
+    fact: I18n.t('pol.system.' + correctSystem)
+  };
+}
+
+function _genRegimeType(countries, politics, ids) {
+  const regimes = ['full_democracy', 'flawed_democracy', 'hybrid_regime', 'authoritarian'];
+  const regime = regimes[Math.floor(Math.random() * regimes.length)];
+  const matching = ids.filter(id => politics[id].regime === regime);
+  const nonMatching = ids.filter(id => politics[id].regime !== regime);
+  if (matching.length < 1 || nonMatching.length < 3) return null;
+  const correct = _pickRandom(matching, 1)[0];
+  const wrongs = _pickRandom(nonMatching, 3);
+  const options = _shuffle([correct, ...wrongs]).map(id => ({
+    text: I18n.getCountryName(Data.getCountry(id)),
+    correct: id === correct
+  }));
+  return {
+    question: _tpl(I18n.t('quiz.q.is_regime'), I18n.t('pol.regime.' + regime)),
+    options,
+    fact: I18n.getCountryName(Data.getCountry(correct)) + ' — ' + I18n.t('pol.regime.' + regime)
+  };
+}
+
+function _genHigherGdp(countries, politics, ids) {
+  const withEcon = ids.filter(id => Data.getEconomics(id));
+  if (withEcon.length < 4) return null;
+  const picked = _pickRandom(withEcon, 4);
+  const scored = picked.map(id => ({ id, gdp: Data.getEconomics(id).gdp_per_capita }));
+  scored.sort((a, b) => b.gdp - a.gdp);
+  const correct = scored[0];
+  const country = Data.getCountry(correct.id);
+  const fmtK = v => v >= 1000 ? `$${(v/1000).toFixed(1)}K` : `$${v}`;
+  return {
+    question: I18n.t('quiz.q.higher_gdp'),
+    options: _shuffle(scored.map(s => ({
+      text: I18n.getCountryName(Data.getCountry(s.id)),
+      correct: s.id === correct.id
+    }))),
+    fact: `${I18n.getCountryName(country)}: ${fmtK(correct.gdp)}`
+  };
+}
+
+function _genHappierCountry(countries, politics, ids) {
+  const withHappiness = ids.filter(id => politics[id].happiness_score != null);
+  if (withHappiness.length < 4) return null;
+  const picked = _pickRandom(withHappiness, 4);
+  const scored = picked.map(id => ({ id, score: politics[id].happiness_score }));
+  scored.sort((a, b) => b.score - a.score);
+  const correct = scored[0];
+  const country = Data.getCountry(correct.id);
+  return {
+    question: I18n.t('quiz.q.happier'),
+    options: _shuffle(scored.map(s => ({
+      text: I18n.getCountryName(Data.getCountry(s.id)),
+      correct: s.id === correct.id
+    }))),
+    fact: `${I18n.getCountryName(country)}: ${correct.score}/10`
+  };
+}
+
+function _genLowestCorruption(countries, politics, ids) {
+  const withCorruption = ids.filter(id => politics[id].corruption_rank != null);
+  if (withCorruption.length < 4) return null;
+  const picked = _pickRandom(withCorruption, 4);
+  const scored = picked.map(id => ({ id, rank: politics[id].corruption_rank }));
+  scored.sort((a, b) => a.rank - b.rank);
+  const correct = scored[0];
+  const country = Data.getCountry(correct.id);
+  return {
+    question: I18n.t('quiz.q.lowest_corruption'),
+    options: _shuffle(scored.map(s => ({
+      text: I18n.getCountryName(Data.getCountry(s.id)),
+      correct: s.id === correct.id
+    }))),
+    fact: `${I18n.getCountryName(country)}: #${correct.rank}`
+  };
+}
+
+function _genBestPress(countries, politics, ids) {
+  const withPress = ids.filter(id => politics[id].press_freedom_rank != null);
+  if (withPress.length < 4) return null;
+  const picked = _pickRandom(withPress, 4);
+  const scored = picked.map(id => ({ id, rank: politics[id].press_freedom_rank }));
+  scored.sort((a, b) => a.rank - b.rank);
+  const correct = scored[0];
+  const country = Data.getCountry(correct.id);
+  return {
+    question: I18n.t('quiz.q.best_press'),
+    options: _shuffle(scored.map(s => ({
+      text: I18n.getCountryName(Data.getCountry(s.id)),
+      correct: s.id === correct.id
+    }))),
+    fact: `${I18n.getCountryName(country)}: #${correct.rank}`
+  };
+}
+
+function _genConflictStatus(countries, politics, ids) {
+  const id = _pickRandom(ids, 1)[0];
+  const pol = politics[id];
+  const country = Data.getCountry(id);
+  const correctStatus = pol.conflict_status;
+  const allStatuses = ['peace', 'tension', 'minor_conflict', 'major_conflict', 'war'];
+  const others = _pickRandom(allStatuses.filter(s => s !== correctStatus), 3);
+  const options = _shuffle([correctStatus, ...others]).map(s => ({
+    text: I18n.t('peace.status.' + s),
+    correct: s === correctStatus
+  }));
+  return {
+    question: _tpl(I18n.t('quiz.q.conflict_status'), I18n.getCountryName(country)),
+    options,
+    fact: I18n.t('peace.status.' + correctStatus)
+  };
+}
+
+function _renderQuizQuestion(container) {
+  const s = _quizState;
+  const q = s.questions[s.currentIndex];
+  const progress = ((s.currentIndex) / s.questions.length * 100).toFixed(0);
+
+  container.innerHTML = `
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <span class="quiz-progress-text">${_tpl(I18n.t('quiz.question_of'), s.currentIndex + 1, s.questions.length)}</span>
+        <span class="quiz-score-display">${_tpl(I18n.t('quiz.score'), s.score)}</span>
+      </div>
+      <div class="quiz-progress"><div class="quiz-progress-fill" style="width:${progress}%"></div></div>
+      <div class="quiz-question">${q.question}</div>
+      <div class="quiz-options">
+        ${q.options.map((opt, i) => `<button class="quiz-option" data-idx="${i}">${opt.text}</button>`).join('')}
+      </div>
+      <div id="quiz-feedback-area"></div>
+    </div>`;
+
+  s.answered = false;
+
+  container.querySelectorAll('.quiz-option').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (s.answered) return;
+      s.answered = true;
+      const idx = parseInt(btn.dataset.idx);
+      const isCorrect = q.options[idx].correct;
+
+      if (isCorrect) s.score++;
+
+      // Highlight answers
+      container.querySelectorAll('.quiz-option').forEach((b, i) => {
+        b.classList.add('disabled');
+        if (q.options[i].correct) b.classList.add('correct');
+        if (i === idx && !isCorrect) b.classList.add('wrong');
+      });
+
+      // Show feedback
+      const feedbackArea = document.getElementById('quiz-feedback-area');
+      feedbackArea.innerHTML = `
+        <div class="quiz-feedback ${isCorrect ? 'correct' : 'wrong'}">
+          <strong>${isCorrect ? I18n.t('quiz.correct') : I18n.t('quiz.wrong')}</strong> ${q.fact}
+        </div>
+        <button class="quiz-next-btn" id="quiz-next-btn">${
+          s.currentIndex < s.questions.length - 1 ? I18n.t('quiz.next') : I18n.t('quiz.results_title')
+        }</button>`;
+
+      document.getElementById('quiz-next-btn').addEventListener('click', () => {
+        s.currentIndex++;
+        if (s.currentIndex >= s.questions.length) {
+          s.finished = true;
+          _renderQuizResults(container);
+        } else {
+          _renderQuizQuestion(container);
+        }
+      });
+    });
+  });
+}
+
+function _renderQuizResults(container) {
+  const s = _quizState;
+  const score = s.score;
+  const total = s.questions.length;
+
+  let emoji, ratingKey;
+  if (score === total)     { emoji = '🏆'; ratingKey = 'quiz.rating.expert'; }
+  else if (score >= 7)     { emoji = '🌟'; ratingKey = 'quiz.rating.great'; }
+  else if (score >= 4)     { emoji = '👍'; ratingKey = 'quiz.rating.good'; }
+  else                     { emoji = '🌱'; ratingKey = 'quiz.rating.learning'; }
+
+  container.innerHTML = `
+    <div class="quiz-container">
+      <div class="quiz-results">
+        <h1>${I18n.t('quiz.results_title')}</h1>
+        <div class="quiz-score-big">${score}/${total}</div>
+        <div class="quiz-score-label">${I18n.t('quiz.your_score')}</div>
+        <div class="quiz-rating">
+          <span class="quiz-rating-emoji">${emoji}</span>
+          ${I18n.t(ratingKey)}
+        </div>
+        <div class="quiz-actions">
+          <button class="quiz-play-again" id="quiz-replay">${I18n.t('quiz.play_again')}</button>
+          <button class="quiz-share-btn" id="quiz-share">${I18n.t('quiz.share')}</button>
+        </div>
+      </div>
+    </div>`;
+
+  document.getElementById('quiz-replay').addEventListener('click', () => {
+    _quizState = null;
+    renderQuiz();
+  });
+
+  document.getElementById('quiz-share').addEventListener('click', () => {
+    const text = _tpl(I18n.t('quiz.share_text'), score) + ' 🌍 https://gpb-world.github.io/quiz.html';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById('quiz-share');
+        btn.textContent = I18n.t('quiz.copied');
+        setTimeout(() => { btn.textContent = I18n.t('quiz.share'); }, 2000);
+      });
+    }
+  });
 }
