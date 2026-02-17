@@ -291,16 +291,11 @@ body {
 
 /* Global Economic Pulse */
 .econ-content { display: flex; flex-direction: column; gap: 1rem; }
-.econ-headline { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
-.econ-big-stat { display: flex; flex-direction: column; align-items: center; padding: 0.75rem 1.25rem; border-radius: 8px; background: var(--bg-light); min-width: 100px; }
+.econ-headline { display: flex; justify-content: center; gap: 1rem; flex-wrap: nowrap; }
+.econ-big-stat { display: flex; flex-direction: column; align-items: center; padding: 0.75rem 1rem; border-radius: 8px; background: var(--bg-light); flex: 1; min-width: 0; }
 .econ-icon { font-size: 1.3rem; }
-.econ-big-num { font-size: 1.6rem; font-weight: 700; color: var(--dark-blue); }
-.econ-big-label { font-size: 0.72rem; color: var(--text-gray); text-transform: uppercase; text-align: center; }
-
-@media (max-width: 768px) {
-    .econ-headline { gap: 0.75rem; }
-    .econ-big-stat { min-width: 80px; padding: 0.5rem 0.75rem; }
-}
+.econ-big-num { font-size: clamp(1rem, 2vw, 1.6rem); font-weight: 700; color: var(--dark-blue); white-space: nowrap; }
+.econ-big-label { font-size: clamp(0.55rem, 1vw, 0.72rem); color: var(--text-gray); text-transform: uppercase; text-align: center; }
 
 /* Top Countries Table (prosperity page) */
 .top-countries-table .top-gdp-cell {
