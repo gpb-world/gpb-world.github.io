@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     bar.style.top = header.offsetHeight + 'px';
     bar.innerHTML = `<a href="${backLink.getAttribute('href')}">${backLink.innerHTML}</a>`;
     document.body.appendChild(bar);
+    backLink.style.display = 'none';
     // Add padding so content doesn't hide behind fixed bar
     const content = document.querySelector('.page-content');
     if (content) content.style.paddingTop = (header.offsetHeight + bar.offsetHeight) + 'px';
