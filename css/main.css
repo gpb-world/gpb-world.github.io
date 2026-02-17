@@ -150,7 +150,17 @@ body {
 }
 
 .grid-5 {
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    overflow-x: auto;
+    gap: 1.25rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+}
+
+.grid-5 > div {
+    flex: 0 0 200px;
+    scroll-snap-align: start;
 }
 
 .card {
@@ -1688,9 +1698,6 @@ body {
 
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
-    .grid-5 {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 @media (max-width: 768px) {
@@ -1722,10 +1729,6 @@ body {
 
     .grid-4x2,
     .grid-4x3 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .grid-5 {
         grid-template-columns: repeat(2, 1fr);
     }
 

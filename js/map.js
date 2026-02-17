@@ -22,11 +22,11 @@
   let markers = [];
 
   function getColor(score) {
-    if (score >= 80) return '#006d2c';
-    if (score >= 60) return '#31a354';
-    if (score >= 40) return '#74c476';
-    if (score >= 20) return '#bae4b3';
-    return '#edf8e9';
+    if (score >= 80) return '#2e7d32';
+    if (score >= 60) return '#8bc34a';
+    if (score >= 40) return '#ffc107';
+    if (score >= 20) return '#ff9800';
+    return '#d32f2f';
   }
 
   function getScoreCategory(score) {
