@@ -347,6 +347,13 @@ body {
     color: var(--un-blue);
 }
 
+.pillar-card {
+    display: flex;
+    flex-direction: column;
+}
+.pillar-card .card-description {
+    flex: 1;
+}
 .card-avg {
     margin-top: 0.6rem;
     padding-top: 0.5rem;
