@@ -782,6 +782,7 @@ function renderPillarCards() {
         <h3 class="card-title">${I18n.t(p.name_key)}</h3>
         <p class="card-description">${I18n.t(p.desc_key)}</p>
         <div class="card-avg"><span class="avg-label">${I18n.t('pillars.global_avg')}:</span> <strong style="color:${scoreColor(avg)}">${avg}</strong>/100</div>
+        <span class="card-link">${I18n.t('pillars.explore')} &rarr;</span>
       </a>`;
   }).join('');
 
