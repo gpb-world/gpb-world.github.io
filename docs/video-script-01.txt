@@ -13,7 +13,7 @@ VISUAL: World map slowly rotating, countries lighting up with colors
 
 VOICEOVER:
 "What makes a country truly prosperous? It's not just money.
-We analyzed 100 countries across 12 dimensions — from governance
+We analyzed 125 countries across 12 dimensions — from governance
 and security to education, health, innovation, and housing.
 Each country scored 0 to 100. Here are the top 10 most
 prosperous countries in 2026."
@@ -194,7 +194,7 @@ top ten. Housing is a weakness even for the richest nations.
 And Singapore proves that geography doesn't determine destiny.
 
 These rankings are based on real data from the World Bank,
-United Nations, Freedom House, and more — covering 100 countries
+United Nations, Freedom House, and more — covering 125 countries
 across 12 pillars of prosperity.
 
 Explore the full rankings, compare any two countries, or test
@@ -222,7 +222,7 @@ VIDEO DESCRIPTION (for YouTube):
 
 Top 10 Most Prosperous Countries in 2026 — ranked by data, not opinion.
 
-We analyzed 100 countries across 12 dimensions: governance, security,
+We analyzed 125 countries across 12 dimensions: governance, security,
 education, health, environment, economy, inclusion, infrastructure,
 innovation, equity, energy, and housing.
 

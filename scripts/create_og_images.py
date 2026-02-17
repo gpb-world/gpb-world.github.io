@@ -112,7 +112,7 @@ def create_quiz_preview():
     # Description
     font_desc = ImageFont.truetype(FONT_REG, 24)
     center_text(draw, 'Democracy  |  GDP  |  Corruption  |  Press Freedom', font_desc, 340, LIGHT_GRAY)
-    center_text(draw, '100 countries  |  Real data  |  10 questions', font_desc, 380, (170, 200, 220))
+    center_text(draw, '125 countries  |  Real data  |  10 questions', font_desc, 380, (170, 200, 220))
 
     # Globe
     draw_globe_circle(draw, W // 2, 480, 45)

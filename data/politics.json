@@ -998,5 +998,255 @@
     "corruption_rank": 137,
     "press_freedom_rank": 99,
     "rule_of_law": 0.40
+  },
+  "sudan": {
+    "system": "federal_republic",
+    "regime": "authoritarian",
+    "democracy_score": 1.3,
+    "happiness_score": 3.5,
+    "conflict_status": "war",
+    "corruption_rank": 162,
+    "press_freedom_rank": 148,
+    "rule_of_law": 0.15
+  },
+  "yemen": {
+    "system": "presidential_republic",
+    "regime": "authoritarian",
+    "democracy_score": 1.6,
+    "happiness_score": 3.3,
+    "conflict_status": "war",
+    "corruption_rank": 176,
+    "press_freedom_rank": 169,
+    "rule_of_law": 0.14
+  },
+  "syria": {
+    "system": "presidential_republic",
+    "regime": "authoritarian",
+    "democracy_score": 1.4,
+    "happiness_score": 3.0,
+    "conflict_status": "war",
+    "corruption_rank": 174,
+    "press_freedom_rank": 175,
+    "rule_of_law": 0.13
+  },
+  "somalia": {
+    "system": "federal_republic",
+    "regime": "authoritarian",
+    "democracy_score": 1.0,
+    "happiness_score": 3.2,
+    "conflict_status": "war",
+    "corruption_rank": 180,
+    "press_freedom_rank": 140,
+    "rule_of_law": 0.10
+  },
+  "afghanistan": {
+    "system": "theocratic_republic",
+    "regime": "authoritarian",
+    "democracy_score": 0.3,
+    "happiness_score": 2.4,
+    "conflict_status": "major_conflict",
+    "corruption_rank": 172,
+    "press_freedom_rank": 178,
+    "rule_of_law": 0.12
+  },
+  "libya": {
+    "system": "presidential_republic",
+    "regime": "authoritarian",
+    "democracy_score": 2.0,
+    "happiness_score": 5.0,
+    "conflict_status": "major_conflict",
+    "corruption_rank": 170,
+    "press_freedom_rank": 143,
+    "rule_of_law": 0.19
+  },
+  "algeria": {
+    "system": "presidential_republic",
+    "regime": "authoritarian",
+    "democracy_score": 3.7,
+    "happiness_score": 5.4,
+    "conflict_status": "peace",
+    "corruption_rank": 104,
+    "press_freedom_rank": 136,
+    "rule_of_law": 0.38
+  },
+  "zimbabwe": {
+    "system": "presidential_republic",
+    "regime": "authoritarian",
+    "democracy_score": 2.6,
+    "happiness_score": 3.7,
+    "conflict_status": "tension",
+    "corruption_rank": 157,
+    "press_freedom_rank": 137,
+    "rule_of_law": 0.25
+  },
+  "mali": {
+    "system": "presidential_republic",
+    "regime": "authoritarian",
+    "democracy_score": 2.2,
+    "happiness_score": 4.2,
+    "conflict_status": "war",
+    "corruption_rank": 140,
+    "press_freedom_rank": 112,
+    "rule_of_law": 0.22
+  },
+  "madagascar": {
+    "system": "semi_presidential_republic",
+    "regime": "hybrid_regime",
+    "democracy_score": 3.9,
+    "happiness_score": 4.0,
+    "conflict_status": "tension",
+    "corruption_rank": 142,
+    "press_freedom_rank": 57,
+    "rule_of_law": 0.30
+  },
+  "bulgaria": {
+    "system": "parliamentary_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 6.6,
+    "happiness_score": 5.5,
+    "conflict_status": "peace",
+    "corruption_rank": 67,
+    "press_freedom_rank": 59,
+    "rule_of_law": 0.55
+  },
+  "slovenia": {
+    "system": "parliamentary_republic",
+    "regime": "full_democracy",
+    "democracy_score": 7.8,
+    "happiness_score": 6.5,
+    "conflict_status": "peace",
+    "corruption_rank": 41,
+    "press_freedom_rank": 14,
+    "rule_of_law": 0.70
+  },
+  "bosnia": {
+    "system": "parliamentary_republic",
+    "regime": "hybrid_regime",
+    "democracy_score": 4.9,
+    "happiness_score": 5.6,
+    "conflict_status": "tension",
+    "corruption_rank": 110,
+    "press_freedom_rank": 64,
+    "rule_of_law": 0.40
+  },
+  "belarus": {
+    "system": "presidential_republic",
+    "regime": "authoritarian",
+    "democracy_score": 1.5,
+    "happiness_score": 5.5,
+    "conflict_status": "tension",
+    "corruption_rank": 98,
+    "press_freedom_rank": 157,
+    "rule_of_law": 0.30
+  },
+  "moldova": {
+    "system": "parliamentary_republic",
+    "regime": "hybrid_regime",
+    "democracy_score": 5.6,
+    "happiness_score": 5.3,
+    "conflict_status": "tension",
+    "corruption_rank": 91,
+    "press_freedom_rank": 28,
+    "rule_of_law": 0.44
+  },
+  "panama": {
+    "system": "presidential_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 6.7,
+    "happiness_score": 6.2,
+    "conflict_status": "peace",
+    "corruption_rank": 101,
+    "press_freedom_rank": 84,
+    "rule_of_law": 0.48
+  },
+  "el_salvador": {
+    "system": "presidential_republic",
+    "regime": "hybrid_regime",
+    "democracy_score": 4.6,
+    "happiness_score": 6.4,
+    "conflict_status": "tension",
+    "corruption_rank": 115,
+    "press_freedom_rank": 133,
+    "rule_of_law": 0.35
+  },
+  "haiti": {
+    "system": "semi_presidential_republic",
+    "regime": "authoritarian",
+    "democracy_score": 2.0,
+    "happiness_score": 3.6,
+    "conflict_status": "major_conflict",
+    "corruption_rank": 171,
+    "press_freedom_rank": 93,
+    "rule_of_law": 0.16
+  },
+  "trinidad_tobago": {
+    "system": "parliamentary_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 6.9,
+    "happiness_score": 5.7,
+    "conflict_status": "tension",
+    "corruption_rank": 77,
+    "press_freedom_rank": 24,
+    "rule_of_law": 0.52
+  },
+  "uzbekistan": {
+    "system": "presidential_republic",
+    "regime": "authoritarian",
+    "democracy_score": 2.1,
+    "happiness_score": 6.0,
+    "conflict_status": "peace",
+    "corruption_rank": 126,
+    "press_freedom_rank": 156,
+    "rule_of_law": 0.35
+  },
+  "mongolia": {
+    "system": "semi_presidential_republic",
+    "regime": "flawed_democracy",
+    "democracy_score": 6.4,
+    "happiness_score": 5.0,
+    "conflict_status": "peace",
+    "corruption_rank": 116,
+    "press_freedom_rank": 69,
+    "rule_of_law": 0.46
+  },
+  "laos": {
+    "system": "one_party_state",
+    "regime": "authoritarian",
+    "democracy_score": 2.0,
+    "happiness_score": 5.0,
+    "conflict_status": "peace",
+    "corruption_rank": 136,
+    "press_freedom_rank": 161,
+    "rule_of_law": 0.30
+  },
+  "fiji": {
+    "system": "parliamentary_republic",
+    "regime": "hybrid_regime",
+    "democracy_score": 5.6,
+    "happiness_score": 5.5,
+    "conflict_status": "peace",
+    "corruption_rank": 85,
+    "press_freedom_rank": 55,
+    "rule_of_law": 0.45
+  },
+  "nicaragua": {
+    "system": "presidential_republic",
+    "regime": "authoritarian",
+    "democracy_score": 2.6,
+    "happiness_score": 6.0,
+    "conflict_status": "tension",
+    "corruption_rank": 152,
+    "press_freedom_rank": 163,
+    "rule_of_law": 0.28
+  },
+  "north_korea": {
+    "system": "one_party_state",
+    "regime": "authoritarian",
+    "democracy_score": 1.1,
+    "happiness_score": 3.0,
+    "conflict_status": "peace",
+    "corruption_rank": 175,
+    "press_freedom_rank": 180,
+    "rule_of_law": 0.08
   }
 }

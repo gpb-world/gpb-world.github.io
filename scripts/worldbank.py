@@ -60,7 +60,7 @@ def _most_recent_value(records):
 
 
 def fetch_all(country_ids=None):
-    """Fetch all indicators for the given countries (or all 100).
+    """Fetch all indicators for the given countries (or all 125).
 
     Returns: dict[country_id, dict[field, (converted_value, year)]]
     """

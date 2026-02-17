@@ -24,7 +24,7 @@ Step 2: Build Karma (Day 1–2)
 Step 3: Post on r/dataisbeautiful (Day 3)
 - Go to reddit.com/r/dataisbeautiful
 - Click "Create Post" → choose "Link" post type
-- Title: I built an open-data dashboard tracking prosperity across 100 countries — no cookies, no tracking, just data
+- Title: I built an open-data dashboard tracking prosperity across 125 countries — no cookies, no tracking, just data
 - URL: https://gpb-world.github.io
 - Click Post
 - Immediately add a comment with the full body text (see docs/launch-posts.md)
@@ -55,7 +55,7 @@ Step 1: Create an Account
 
 Step 2: Post as "Show HN" (Day 7–8)
 - Click "submit" in the top menu
-- Title: Show HN: Open-data prosperity barometer – 100 countries, 12 pillars, no tracking
+- Title: Show HN: Open-data prosperity barometer – 125 countries, 12 pillars, no tracking
 - URL: https://gpb-world.github.io
 - Leave "text" field empty
 - Click Submit

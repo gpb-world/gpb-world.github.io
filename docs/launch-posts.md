@@ -2,12 +2,12 @@
 
 ## 1. Reddit — r/dataisbeautiful
 
-**Title:** `I built an open-data dashboard tracking prosperity across 100 countries — no cookies, no tracking, just data`
+**Title:** `I built an open-data dashboard tracking prosperity across 125 countries — no cookies, no tracking, just data`
 
 **Body:**
 
 Been working on the Global Prosperity Barometer — an open-data platform that scores
-100 countries across 12 dimensions: governance, security, education, health, economy,
+125 countries across 12 dimensions: governance, security, education, health, economy,
 environment, and more.
 
 Each country gets a 0-100 score per pillar, based on public data from the World Bank,
@@ -42,7 +42,7 @@ I made a 10-question quiz that tests your knowledge of global prosperity — dem
 scores, GDP per capita, corruption rankings, press freedom, government systems, and
 conflict status.
 
-All questions are generated from real data on 100 countries (World Bank, Freedom House,
+All questions are generated from real data on 125 countries (World Bank, Freedom House,
 V-Dem, UN sources). Every time you play, the questions are different.
 
 I was surprised how often I got the corruption and press freedom rankings wrong — some
@@ -59,11 +59,11 @@ Curious how others score — I averaged about 7/10 on my own data.
 
 ## 3. Hacker News — Show HN
 
-**Title:** `Show HN: Open-data prosperity barometer – 100 countries, 12 pillars, no tracking`
+**Title:** `Show HN: Open-data prosperity barometer – 125 countries, 12 pillars, no tracking`
 
 **Body:**
 
-I built an open-data platform that tracks prosperity indicators across 100 countries,
+I built an open-data platform that tracks prosperity indicators across 125 countries,
 scoring each on 12 dimensions (governance, security, health, education, economy, etc.)
 using data from the World Bank, UN, Freedom House, and V-Dem Institute.
 
