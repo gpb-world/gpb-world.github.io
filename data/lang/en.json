@@ -9,7 +9,7 @@
   "nav.country_search": "Search countries...",
   "nav.compare": "Compare",
 
-  "hero.title": "Monitoring World Progress in Real-Time",
+  "hero.title": "Monitoring World Prosperity in Real-Time",
   "hero.subtitle": "Comprehensive analysis of 12 fundamental pillars across 125 countries and growing, tracking progress toward sustainable development and human wellbeing",
 
   "overview.title": "World Overview",
@@ -64,8 +64,8 @@
   "pillar.housing": "Housing & Urban Dev.",
   "pillar.housing.desc": "Housing affordability, urban planning, and livability",
 
-  "map.section_title": "Interactive Map of World Progress",
-  "map.title": "World Progress Index",
+  "map.section_title": "Interactive Map of World Prosperity",
+  "map.title": "World Prosperity Index",
   "map.interactive": "Interactive Map",
   "map.click_details": "Click on countries for details",
   "map.data_date": "Data as of February 2026",
