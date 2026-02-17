@@ -215,6 +215,13 @@ body {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+.card-podium {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--dark-blue);
+    margin: 0.4rem 0;
+    flex: 1;
+}
 .overview-card {
     display: flex;
     flex-direction: column;
