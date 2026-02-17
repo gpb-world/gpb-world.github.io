@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   else if (page === 'quiz') renderQuiz();
   else if (page === 'prosperity') renderProsperityPage();
   else if (page === 'trade') renderTradePage();
+  else if (page === 'press-freedom') renderPressFreedomPage();
+  else if (page === 'life-satisfaction') renderLifeSatisfactionPage();
+  else if (page === 'rule-of-law') renderRuleOfLawPage();
 
   // Re-render on language change
   document.addEventListener('gpb-lang-change', () => {
@@ -31,6 +34,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     else if (page === 'quiz') renderQuiz();
     else if (page === 'prosperity') renderProsperityPage();
     else if (page === 'trade') renderTradePage();
+    else if (page === 'press-freedom') renderPressFreedomPage();
+    else if (page === 'life-satisfaction') renderLifeSatisfactionPage();
+    else if (page === 'rule-of-law') renderRuleOfLawPage();
   });
 });
 
@@ -96,6 +102,9 @@ function detectPage() {
   if (path.includes('quiz.html')) return 'quiz';
   if (path.includes('prosperity.html')) return 'prosperity';
   if (path.includes('trade.html')) return 'trade';
+  if (path.includes('press-freedom.html')) return 'press-freedom';
+  if (path.includes('life-satisfaction.html')) return 'life-satisfaction';
+  if (path.includes('rule-of-law.html')) return 'rule-of-law';
   if (path.includes('index.html') || path.endsWith('/')) return 'index';
   return 'index';
 }
@@ -347,12 +356,16 @@ function renderGlobalTrade() {
 
   const avgOpenness = (allEcon.reduce((s, e) => s + (e.exports_pct_gdp || 0), 0) / allEcon.length).toFixed(1);
 
+  const top3 = countries.map(c => ({ country: c, econ: Data.getEconomics(c.id) })).filter(d => d.econ)
+    .sort((a, b) => (b.econ.exports_pct_gdp || 0) - (a.econ.exports_pct_gdp || 0)).slice(0, 3);
+  const topList = top3.map(d => I18n.getCountryName(d.country)).join(', ');
+
   container.innerHTML = `
     <a href="trade.html" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid #2E7D32">
       <div class="card-icon">🚢</div>
-      <h3 class="card-title">${I18n.t('trade.global_title')}</h3>
+      <h3 class="card-title">${I18n.t('overview.top_trade')}</h3>
       <div class="card-value">${fmtT(totalExports)}</div>
-      <p class="card-description">${I18n.t('trade.avg_openness')}: ${avgOpenness}%</p>
+      <p class="card-description">${topList}</p>
       <span class="card-link">${I18n.t('overview.view_all')} &rarr;</span>
     </a>`;
 }
@@ -373,9 +386,9 @@ function renderPressFreedom() {
   }).join(', ');
 
   container.innerHTML = `
-    <a href="pillar.html?id=governance" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid #7B1FA2">
+    <a href="press-freedom.html" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid #7B1FA2">
       <div class="card-icon">📰</div>
-      <h3 class="card-title">${I18n.t('press.title')}</h3>
+      <h3 class="card-title">${I18n.t('overview.top_press')}</h3>
       <div class="card-value">#${avgRank} avg</div>
       <p class="card-description">${topList}</p>
       <span class="card-link">${I18n.t('overview.view_all')} &rarr;</span>
@@ -398,9 +411,9 @@ function renderLifeSatisfaction() {
   }).join(', ');
 
   container.innerHTML = `
-    <a href="pillar.html?id=inclusion" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid #FF8F00">
+    <a href="life-satisfaction.html" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid #FF8F00">
       <div class="card-icon">😊</div>
-      <h3 class="card-title">${I18n.t('satisfaction.title')}</h3>
+      <h3 class="card-title">${I18n.t('overview.top_satisfaction')}</h3>
       <div class="card-value">${avgScore}/10</div>
       <p class="card-description">${topList}</p>
       <span class="card-link">${I18n.t('overview.view_all')} &rarr;</span>
@@ -423,9 +436,9 @@ function renderRuleOfLaw() {
   }).join(', ');
 
   container.innerHTML = `
-    <a href="pillar.html?id=governance" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid #1565C0">
+    <a href="rule-of-law.html" class="card overview-card" style="text-decoration:none;color:inherit;border-left:4px solid #1565C0">
       <div class="card-icon">⚖️</div>
-      <h3 class="card-title">${I18n.t('justice.title')}</h3>
+      <h3 class="card-title">${I18n.t('overview.top_rule_of_law')}</h3>
       <div class="card-value">${avgScore}</div>
       <p class="card-description">${topList}</p>
       <span class="card-link">${I18n.t('overview.view_all')} &rarr;</span>
@@ -569,6 +582,188 @@ function renderTradePage() {
           <th>${I18n.t('trade.imports')}</th>
           <th>${I18n.t('trade.balance')}</th>
           <th>${I18n.t('trade.top_exports')}</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+function renderPressFreedomPage() {
+  const container = document.getElementById('press-freedom-content');
+  if (!container) return;
+
+  const countries = Data.getAllCountries();
+  const politics = Data.getAllPolitics();
+  const entries = Object.entries(politics).filter(([, p]) => p.press_freedom_rank != null);
+  if (!entries.length) { container.innerHTML = ''; return; }
+
+  const n = entries.length;
+  const avgRank = Math.round(entries.reduce((s, [, p]) => s + p.press_freedom_rank, 0) / n);
+  const bestRank = Math.min(...entries.map(([, p]) => p.press_freedom_rank));
+  const avgDemocracy = (entries.reduce((s, [, p]) => s + p.democracy_score, 0) / n).toFixed(1);
+
+  const statsHtml = [
+    { icon: '📰', value: `${n}`, key: 'overview.countries_tracked' },
+    { icon: '📊', value: `#${avgRank}`, key: 'overview.avg_rank' },
+    { icon: '🏆', value: `#${bestRank}`, key: 'overview.best_rank' },
+    { icon: '🗳️', value: `${avgDemocracy}/10`, key: 'pol.avg_democracy' }
+  ].map(m => `
+    <div class="trade-tile-stat">
+      <span class="trade-tile-icon">${m.icon}</span>
+      <span class="trade-tile-value">${m.value}</span>
+      <span class="trade-tile-label">${I18n.t(m.key)}</span>
+    </div>`).join('');
+
+  const sorted = entries.sort((a, b) => a[1].press_freedom_rank - b[1].press_freedom_rank);
+
+  const rows = sorted.map(([id, p], i) => {
+    const c = Data.getCountry(id);
+    const name = c ? I18n.getCountryName(c) : id;
+    return `<tr>
+      <td class="rank-num">${i + 1}</td>
+      <td><a href="country.html?id=${id}">${name}</a></td>
+      <td><strong>#${p.press_freedom_rank}</strong></td>
+      <td>${p.democracy_score}/10</td>
+      <td>${I18n.t('pol.regime.' + p.regime)}</td>
+    </tr>`;
+  }).join('');
+
+  document.title = `${I18n.t('overview.top_press')} - Global Prosperity Barometer`;
+
+  container.innerHTML = `
+    <a href="index.html" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
+    <h1>${I18n.t('overview.top_press')}</h1>
+    <div class="trade-tile-stats" style="margin:1.5rem 0">${statsHtml}</div>
+    <table class="ranking-table">
+      <thead>
+        <tr>
+          <th>${I18n.t('overview.rank')}</th>
+          <th>${I18n.t('overview.country')}</th>
+          <th>${I18n.t('press.title')}</th>
+          <th>${I18n.t('country.democracy')}</th>
+          <th>${I18n.t('overview.regime_type')}</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+function renderLifeSatisfactionPage() {
+  const container = document.getElementById('life-satisfaction-content');
+  if (!container) return;
+
+  const countries = Data.getAllCountries();
+  const politics = Data.getAllPolitics();
+  const entries = Object.entries(politics).filter(([, p]) => p.happiness_score != null);
+  if (!entries.length) { container.innerHTML = ''; return; }
+
+  const n = entries.length;
+  const avgScore = (entries.reduce((s, [, p]) => s + p.happiness_score, 0) / n).toFixed(1);
+  const bestScore = Math.max(...entries.map(([, p]) => p.happiness_score)).toFixed(1);
+
+  function fmtK(v) { return v >= 1000 ? `$${(v/1000).toFixed(1)}K` : `$${v}`; }
+
+  const statsHtml = [
+    { icon: '😊', value: `${n}`, key: 'overview.countries_tracked' },
+    { icon: '📊', value: `${avgScore}/10`, key: 'overview.avg_score' },
+    { icon: '🏆', value: `${bestScore}/10`, key: 'overview.best_score' }
+  ].map(m => `
+    <div class="trade-tile-stat">
+      <span class="trade-tile-icon">${m.icon}</span>
+      <span class="trade-tile-value">${m.value}</span>
+      <span class="trade-tile-label">${I18n.t(m.key)}</span>
+    </div>`).join('');
+
+  const sorted = entries.sort((a, b) => b[1].happiness_score - a[1].happiness_score);
+
+  const rows = sorted.map(([id, p], i) => {
+    const c = Data.getCountry(id);
+    const name = c ? I18n.getCountryName(c) : id;
+    const econ = Data.getEconomics(id);
+    const gdpCap = econ ? fmtK(econ.gdp_per_capita) : '—';
+    return `<tr>
+      <td class="rank-num">${i + 1}</td>
+      <td><a href="country.html?id=${id}">${name}</a></td>
+      <td><strong>${p.happiness_score}/10</strong></td>
+      <td>${gdpCap}</td>
+      <td>${I18n.t('pol.regime.' + p.regime)}</td>
+    </tr>`;
+  }).join('');
+
+  document.title = `${I18n.t('overview.top_satisfaction')} - Global Prosperity Barometer`;
+
+  container.innerHTML = `
+    <a href="index.html" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
+    <h1>${I18n.t('overview.top_satisfaction')}</h1>
+    <div class="trade-tile-stats" style="margin:1.5rem 0">${statsHtml}</div>
+    <table class="ranking-table">
+      <thead>
+        <tr>
+          <th>${I18n.t('overview.rank')}</th>
+          <th>${I18n.t('overview.country')}</th>
+          <th>${I18n.t('satisfaction.title')}</th>
+          <th>${I18n.t('overview.gdp_capita')}</th>
+          <th>${I18n.t('overview.regime_type')}</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+function renderRuleOfLawPage() {
+  const container = document.getElementById('rule-of-law-content');
+  if (!container) return;
+
+  const countries = Data.getAllCountries();
+  const politics = Data.getAllPolitics();
+  const entries = Object.entries(politics).filter(([, p]) => p.rule_of_law != null);
+  if (!entries.length) { container.innerHTML = ''; return; }
+
+  const n = entries.length;
+  const avgScore = (entries.reduce((s, [, p]) => s + p.rule_of_law, 0) / n).toFixed(2);
+  const bestScore = Math.max(...entries.map(([, p]) => p.rule_of_law)).toFixed(2);
+  const avgCorruption = Math.round(entries.reduce((s, [, p]) => s + p.corruption_rank, 0) / n);
+
+  const statsHtml = [
+    { icon: '⚖️', value: `${n}`, key: 'overview.countries_tracked' },
+    { icon: '📊', value: avgScore, key: 'overview.avg_score' },
+    { icon: '🏆', value: bestScore, key: 'overview.best_score' },
+    { icon: '✨', value: `#${avgCorruption}`, key: 'pol.avg_corruption' }
+  ].map(m => `
+    <div class="trade-tile-stat">
+      <span class="trade-tile-icon">${m.icon}</span>
+      <span class="trade-tile-value">${m.value}</span>
+      <span class="trade-tile-label">${I18n.t(m.key)}</span>
+    </div>`).join('');
+
+  const sorted = entries.sort((a, b) => b[1].rule_of_law - a[1].rule_of_law);
+
+  const rows = sorted.map(([id, p], i) => {
+    const c = Data.getCountry(id);
+    const name = c ? I18n.getCountryName(c) : id;
+    return `<tr>
+      <td class="rank-num">${i + 1}</td>
+      <td><a href="country.html?id=${id}">${name}</a></td>
+      <td><strong>${p.rule_of_law.toFixed(2)}</strong></td>
+      <td>#${p.corruption_rank}</td>
+      <td>${p.democracy_score}/10</td>
+    </tr>`;
+  }).join('');
+
+  document.title = `${I18n.t('overview.top_rule_of_law')} - Global Prosperity Barometer`;
+
+  container.innerHTML = `
+    <a href="index.html" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
+    <h1>${I18n.t('overview.top_rule_of_law')}</h1>
+    <div class="trade-tile-stats" style="margin:1.5rem 0">${statsHtml}</div>
+    <table class="ranking-table">
+      <thead>
+        <tr>
+          <th>${I18n.t('overview.rank')}</th>
+          <th>${I18n.t('overview.country')}</th>
+          <th>${I18n.t('justice.title')}</th>
+          <th>${I18n.t('corruption.title')}</th>
+          <th>${I18n.t('country.democracy')}</th>
         </tr>
       </thead>
       <tbody>${rows}</tbody>
