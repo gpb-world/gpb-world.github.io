@@ -393,7 +393,8 @@ body {
     font-weight: 500;
 }
 .back-bar {
-    position: fixed;
+    position: sticky;
+    top: var(--header-h, 56px);
     left: 0;
     right: 0;
     background: var(--white);
