@@ -203,7 +203,7 @@ function _buildCountrySummary(country, overall, rank, totalCountries) {
   const globalAvgs = Data.getGlobalAverages();
   const pillars = Data.getPillars();
 
-  lines.push(`<div class="summary-line"><span class="summary-icon">📊</span> ${_tpl(I18n.t('summary.country.ranked'), '<strong>' + rank + '</strong>', '<strong>' + totalCountries + '</strong>', '<strong>' + overall + '</strong>')} ${I18n.t('summary.country.score_label.' + Data.getScoreLabel(overall))}</div>`);
+  lines.push(`<div class="summary-line"><span class="summary-icon">📊</span><span class="summary-text">${_tpl(I18n.t('summary.country.ranked'), '<strong>' + rank + '</strong>', '<strong>' + totalCountries + '</strong>', '<strong>' + overall + '</strong>')} ${I18n.t('summary.country.score_label.' + Data.getScoreLabel(overall))}</span></div>`);
 
   const diffs = pillars.map(p => ({
     name: I18n.t(p.name_key),
@@ -213,18 +213,18 @@ function _buildCountrySummary(country, overall, rank, totalCountries) {
 
   const strengths = diffs.filter(d => d.diff > 5).slice(0, 3);
   if (strengths.length) {
-    lines.push(`<div class="summary-line"><span class="summary-icon">✅</span> ${_tpl(I18n.t('summary.country.strengths'), '<strong>' + _formatList(strengths.map(s => s.name)) + '</strong>')}</div>`);
+    lines.push(`<div class="summary-line"><span class="summary-icon">✅</span><span class="summary-text">${_tpl(I18n.t('summary.country.strengths'), '<strong>' + _formatList(strengths.map(s => s.name)) + '</strong>')}</span></div>`);
   }
   const weaknesses = diffs.filter(d => d.diff < -5).sort((a, b) => a.diff - b.diff).slice(0, 3);
   if (weaknesses.length) {
-    lines.push(`<div class="summary-line"><span class="summary-icon">⚠️</span> ${_tpl(I18n.t('summary.country.weaknesses'), '<strong>' + _formatList(weaknesses.map(w => w.name)) + '</strong>')}</div>`);
+    lines.push(`<div class="summary-line"><span class="summary-icon">⚠️</span><span class="summary-text">${_tpl(I18n.t('summary.country.weaknesses'), '<strong>' + _formatList(weaknesses.map(w => w.name)) + '</strong>')}</span></div>`);
   }
 
   const pol = Data.getPolitics(country.id);
   if (pol) {
-    lines.push(`<div class="summary-line"><span class="summary-icon">🏛️</span> ${_tpl(I18n.t('summary.country.regime_info'), '<strong>' + I18n.t('pol.regime.' + pol.regime) + '</strong>', '<strong>' + pol.democracy_score + '</strong>')}</div>`);
+    lines.push(`<div class="summary-line"><span class="summary-icon">🏛️</span><span class="summary-text">${_tpl(I18n.t('summary.country.regime_info'), '<strong>' + I18n.t('pol.regime.' + pol.regime) + '</strong>', '<strong>' + pol.democracy_score + '</strong>')}</span></div>`);
     if (pol.conflict_status && pol.conflict_status !== 'peace') {
-      lines.push(`<div class="summary-line"><span class="summary-icon">🔴</span> ${_tpl(I18n.t('summary.country.conflict'), '<strong>' + I18n.t('peace.status.' + pol.conflict_status) + '</strong>')}</div>`);
+      lines.push(`<div class="summary-line"><span class="summary-icon">🔴</span><span class="summary-text">${_tpl(I18n.t('summary.country.conflict'), '<strong>' + I18n.t('peace.status.' + pol.conflict_status) + '</strong>')}</span></div>`);
     }
   }
 
@@ -233,7 +233,7 @@ function _buildCountrySummary(country, overall, rank, totalCountries) {
     const gdpCap = econ.gdp_per_capita >= 1000
       ? '$' + (econ.gdp_per_capita / 1000).toFixed(1) + 'K'
       : '$' + econ.gdp_per_capita;
-    lines.push(`<div class="summary-line"><span class="summary-icon">💰</span> ${_tpl(I18n.t('summary.country.econ_highlight'), '<strong>' + gdpCap + '</strong>', '<strong>' + econ.unemployment + '</strong>', '<strong>' + econ.inflation + '</strong>')}</div>`);
+    lines.push(`<div class="summary-line"><span class="summary-icon">💰</span><span class="summary-text">${_tpl(I18n.t('summary.country.econ_highlight'), '<strong>' + gdpCap + '</strong>', '<strong>' + econ.unemployment + '</strong>', '<strong>' + econ.inflation + '</strong>')}</span></div>`);
   }
 
   return lines.join('');
