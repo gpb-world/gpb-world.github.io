@@ -540,5 +540,7 @@
   "desc.fertility": "Average number of children born per woman over her lifetime. A rate of 2.1 is considered replacement level.",
   "desc.infant_mortality": "Number of deaths of infants under one year old per 1,000 live births.",
   "country.top_pillar": "Strongest Pillar",
-  "country.bottom_pillar": "Weakest Pillar"
+  "country.bottom_pillar": "Weakest Pillar",
+  "demo.health_title": "Fertility & Infant Mortality",
+  "demo.infant_mortality_short": "Infant Mort."
 }

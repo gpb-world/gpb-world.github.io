@@ -534,5 +534,7 @@
   "desc.fertility": "Numero medio di figli per donna. Un tasso di 2,1 è considerato il livello di sostituzione.",
   "desc.infant_mortality": "Numero di decessi di bambini sotto un anno per 1.000 nati vivi.",
   "country.top_pillar": "Pilastro più forte",
-  "country.bottom_pillar": "Pilastro più debole"
+  "country.bottom_pillar": "Pilastro più debole",
+  "demo.health_title": "Fecondità & Mortalità infantile",
+  "demo.infant_mortality_short": "Mort. infantile"
 }

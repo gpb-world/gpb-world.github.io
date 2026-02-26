@@ -534,5 +534,7 @@
   "desc.fertility": "Среднее количество детей на женщину. Коэффициент 2,1 считается уровнем замещения.",
   "desc.infant_mortality": "Количество смертей детей до года на 1 000 родов.",
   "country.top_pillar": "Сильнейший столп",
-  "country.bottom_pillar": "Слабейший столп"
+  "country.bottom_pillar": "Слабейший столп",
+  "demo.health_title": "Рождаемость и младенческая смертность",
+  "demo.infant_mortality_short": "Млад. смертн."
 }

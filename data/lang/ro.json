@@ -534,5 +534,7 @@
   "desc.fertility": "Numărul mediu de copii pe femeie. O rată de 2,1 este considerată nivelul de înlocuire.",
   "desc.infant_mortality": "Numărul deceselor copiilor sub un an la 1.000 de nașteri vii.",
   "country.top_pillar": "Cel mai puternic pilon",
-  "country.bottom_pillar": "Cel mai slab pilon"
+  "country.bottom_pillar": "Cel mai slab pilon",
+  "demo.health_title": "Fertilitate & Mortalitate infantilă",
+  "demo.infant_mortality_short": "Mort. infantilă"
 }

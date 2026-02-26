@@ -534,5 +534,7 @@
   "desc.fertility": "प्रति महिला औसत बच्चों की संख्या। 2.1 को प्रतिस्थापन स्तर माना जाता है।",
   "desc.infant_mortality": "प्रति 1,000 जीवित जन्मों में एक वर्ष से कम आयु के शिशुओं की मृत्यु संख्या।",
   "country.top_pillar": "सबसे मजबूत स्तंभ",
-  "country.bottom_pillar": "सबसे कमजोर स्तंभ"
+  "country.bottom_pillar": "सबसे कमजोर स्तंभ",
+  "demo.health_title": "प्रजनन और शिशु मृत्यु दर",
+  "demo.infant_mortality_short": "शिशु मृत्यु"
 }

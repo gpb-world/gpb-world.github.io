@@ -534,5 +534,7 @@
   "desc.fertility": "متوسط عدد الأطفال لكل امرأة. معدل 2.1 يعتبر مستوى الإحلال.",
   "desc.infant_mortality": "عدد وفيات الرضع دون سن العام لكل 1,000 ولادة حية.",
   "country.top_pillar": "أقوى ركيزة",
-  "country.bottom_pillar": "أضعف ركيزة"
+  "country.bottom_pillar": "أضعف ركيزة",
+  "demo.health_title": "الخصوبة ووفيات الرضع",
+  "demo.infant_mortality_short": "وفيات الرضع"
 }

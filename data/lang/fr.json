@@ -534,5 +534,7 @@
   "desc.fertility": "Nombre moyen d'enfants par femme. Un taux de 2,1 est considéré comme le seuil de remplacement.",
   "desc.infant_mortality": "Nombre de décès de nourrissons de moins d'un an pour 1 000 naissances vivantes.",
   "country.top_pillar": "Pilier le plus fort",
-  "country.bottom_pillar": "Pilier le plus faible"
+  "country.bottom_pillar": "Pilier le plus faible",
+  "demo.health_title": "Fécondité & Mortalité infantile",
+  "demo.infant_mortality_short": "Mort. infantile"
 }

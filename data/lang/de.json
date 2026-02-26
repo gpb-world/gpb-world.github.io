@@ -534,5 +534,7 @@
   "desc.fertility": "Durchschnittliche Anzahl der Kinder pro Frau. Eine Rate von 2,1 gilt als Bestandserhaltungsniveau.",
   "desc.infant_mortality": "Anzahl der Todesfälle von Säuglingen unter einem Jahr pro 1.000 Lebendgeburten.",
   "country.top_pillar": "Stärkste Säule",
-  "country.bottom_pillar": "Schwächste Säule"
+  "country.bottom_pillar": "Schwächste Säule",
+  "demo.health_title": "Fruchtbarkeit & Säuglingssterblichkeit",
+  "demo.infant_mortality_short": "Säugl.-Sterbl."
 }

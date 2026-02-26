@@ -534,5 +534,7 @@
   "desc.fertility": "每位妇女的平均生育孩子数。2.1被视为更替水平。",
   "desc.infant_mortality": "每1,000名活产婴儿中不到一岁的死亡人数。",
   "country.top_pillar": "最强支柱",
-  "country.bottom_pillar": "最弱支柱"
+  "country.bottom_pillar": "最弱支柱",
+  "demo.health_title": "生育率与婴儿死亡率",
+  "demo.infant_mortality_short": "婴儿死亡率"
 }

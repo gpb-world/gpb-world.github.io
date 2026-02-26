@@ -1285,16 +1285,10 @@ function renderDemographicsSection(country) {
       <div class="econ-legend-item"><span class="econ-legend-dot" style="background:#EC407A"></span>${I18n.t('demo.female')}: ${demo.life_exp_female} ${I18n.t('demo.years')}</div>
     </div>`;
 
-  const extraMetrics = `
-    <div class="econ-metrics demo-metrics-extra">
-      <div class="econ-metric">
-        <div class="econ-metric-label">${I18n.t('demo.fertility')}</div>
-        <div class="econ-metric-value">${demo.fertility_rate.toFixed(2)} ${infoBtn('desc.fertility')}</div>
-      </div>
-      <div class="econ-metric">
-        <div class="econ-metric-label">${I18n.t('demo.infant_mortality')}</div>
-        <div class="econ-metric-value">${demo.infant_mortality.toFixed(1)} ${infoBtn('desc.infant_mortality')}</div>
-      </div>
+  const fertilityLegend = `
+    <div class="econ-legend">
+      <div class="econ-legend-item"><span class="econ-legend-dot" style="background:#FF7043"></span>${I18n.t('demo.fertility')}: ${demo.fertility_rate.toFixed(2)} ${infoBtn('desc.fertility')}</div>
+      <div class="econ-legend-item"><span class="econ-legend-dot" style="background:#78909C"></span>${I18n.t('demo.infant_mortality_short')}: ${demo.infant_mortality.toFixed(1)} ${infoBtn('desc.infant_mortality')}</div>
     </div>`;
 
   container.innerHTML = `
@@ -1313,14 +1307,18 @@ function renderDemographicsSection(country) {
           <div class="econ-legend" id="legend-urban-rural"></div>
         </div>
       </div>
-      <div class="econ-charts demo-charts-bottom">
+      <div class="econ-charts">
         <div class="econ-chart-box">
           <h3>${I18n.t('demo.life_exp_title')}</h3>
           <canvas id="chart-life-exp"></canvas>
           ${lifeExpLegend}
         </div>
+        <div class="econ-chart-box">
+          <h3>${I18n.t('demo.health_title')}</h3>
+          <canvas id="chart-fertility-mortality"></canvas>
+          ${fertilityLegend}
+        </div>
       </div>
-      ${extraMetrics}
     </div>`;
 
   // Charts
@@ -1371,6 +1369,24 @@ function renderDemographicsSection(country) {
           responsive: true,
           plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `${ctx.parsed.x} ${I18n.t('demo.years')}` } } },
           scales: { x: { min: 0, max: 100, ticks: { callback: v => v + ' ' + I18n.t('demo.yr_abbr') } }, y: { grid: { display: false } } }
+        }
+      }));
+    }
+
+    // Fertility & Infant Mortality horizontal bar
+    const fmCtx = document.getElementById('chart-fertility-mortality');
+    if (fmCtx) {
+      _demoCharts.push(new Chart(fmCtx, {
+        type: 'bar',
+        data: {
+          labels: [I18n.t('demo.fertility'), I18n.t('demo.infant_mortality_short')],
+          datasets: [{ data: [demo.fertility_rate, demo.infant_mortality], backgroundColor: ['#FF7043', '#78909C'], borderRadius: 4, barThickness: 36 }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `${ctx.parsed.x}` } } },
+          scales: { x: { min: 0, grid: { color: 'rgba(0,0,0,0.05)' } }, y: { grid: { display: false } } }
         }
       }));
     }

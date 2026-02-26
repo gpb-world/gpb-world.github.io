@@ -534,5 +534,7 @@
   "desc.fertility": "Número promedio de hijos por mujer. Una tasa de 2,1 se considera nivel de reemplazo.",
   "desc.infant_mortality": "Número de muertes de menores de un año por cada 1.000 nacidos vivos.",
   "country.top_pillar": "Pilar más fuerte",
-  "country.bottom_pillar": "Pilar más débil"
+  "country.bottom_pillar": "Pilar más débil",
+  "demo.health_title": "Fecundidad & Mortalidad infantil",
+  "demo.infant_mortality_short": "Mort. infantil"
 }
