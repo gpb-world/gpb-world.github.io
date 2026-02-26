@@ -1,23 +1,18 @@
 {
   "site.title": "Barometrul Mondial",
   "site.subtitle": "2026",
-
   "nav.about": "Despre",
   "nav.methodology": "Metodologie",
   "nav.data": "Date",
   "nav.countries": "Țări",
   "nav.country_search": "Caută țări...",
   "nav.compare": "Compară",
-
   "hero.title": "Monitorizarea Prosperității Mondiale în Timp Real",
   "hero.subtitle": "Analiză cuprinzătoare a 12 piloni fundamentali în 160 de țări și în creștere, urmărind progresul către dezvoltare durabilă și bunăstare umană",
-
   "overview.title": "Prezentare Mondială",
   "overview.subtitle": "Indicatori cheie din februarie 2026",
-
   "rankings.title": "Clasamente Mondiale",
   "rankings.subtitle": "Topul țărilor după indicatori cheie",
-
   "pillars.title": "Pilonii Prosperității",
   "pillars.subtitle": "Explorați analiza detaliată pentru fiecare dimensiune",
   "pillars.explore": "Explorează clasamentul",
@@ -38,7 +33,6 @@
   "overview.best_score": "Cel mai bun scor",
   "overview.regime_type": "Tip de regim",
   "pillars.global_avg": "Media Mondială",
-
   "pillar.governance": "Guvernanță",
   "pillar.governance.desc": "Democrație, statul de drept și eficiența instituțională",
   "pillar.security": "Securitate și Siguranță",
@@ -63,7 +57,6 @@
   "pillar.energy.desc": "Acces la energie, sustenabilitate și gestionarea resurselor",
   "pillar.housing": "Locuințe și Dezv. Urbană",
   "pillar.housing.desc": "Accesibilitatea locuințelor, planificare urbană și calitatea vieții",
-
   "map.section_title": "Hartă interactivă a prosperității mondiale",
   "map.title": "Indicele Prosperității Mondiale",
   "map.interactive": "Hartă Interactivă",
@@ -79,7 +72,6 @@
   "map.popup.score": "Scor de Prosperitate",
   "map.popup.ranking": "Clasament",
   "map.popup.details": "Vezi detalii",
-
   "country.title": "Profil de Țară",
   "country.overall": "Scor General",
   "country.rank": "Clasament Mondial",
@@ -87,7 +79,6 @@
   "country.back": "Înapoi",
   "country.not_found": "Țara nu a fost găsită",
   "country.democracy": "Scor democrație",
-
   "ranking.title": "Clasamente",
   "ranking.rank": "Loc",
   "ranking.country": "Țară",
@@ -95,7 +86,6 @@
   "ranking.all_pillars": "General",
   "ranking.back": "Înapoi",
   "ranking.sources": "Surse de Date",
-
   "about.title": "Despre Proiect",
   "about.intro": "Barometrul Mondial (WB) este o platformă civică cu date deschise care monitorizează și vizualizează indicatorii de prosperitate din țările lumii.",
   "about.mission.title": "Misiunea Noastră",
@@ -106,7 +96,6 @@
   "about.open.text": "Toate datele provin din surse accesibile public, inclusiv Banca Mondială, Națiunile Unite, Freedom House, Institutul V-Dem și altele. Nu colectăm date personale de la vizitatori.",
   "about.contact.title": "Contact",
   "about.contact.text": "Întrebări sau feedback? Contactați-ne la",
-
   "methodology.title": "Metodologie",
   "methodology.intro": "Cum calculăm scorurile de prosperitate",
   "methodology.scoring.title": "Sistem de Evaluare",
@@ -117,7 +106,6 @@
   "methodology.update.text": "Scorurile sunt actualizate pe măsură ce devin disponibile date noi de la organizațiile sursă, de obicei anual. Platforma reflectă cele mai recente date disponibile.",
   "methodology.limitations.title": "Limitări",
   "methodology.limitations.text": "Niciun indice nu poate surprinde pe deplin complexitatea prosperității naționale. Scorurile noastre ar trebui privite ca indicatori aproximativi bazați pe datele disponibile, nu ca clasamente definitive.",
-
   "impressum.title": "Notă Juridică",
   "impressum.provider": "Furnizor",
   "impressum.provider.name": "Inițiativa WB World",
@@ -129,7 +117,6 @@
   "impressum.liability.text": "Toate datele provin din surse accesibile public (Banca Mondială, Freedom House, ONU, V-Dem). Platforma nu are nicio agendă politică.",
   "impressum.privacy": "Confidențialitate",
   "impressum.privacy.see": "Vezi:",
-
   "privacy.title": "Politica de Confidențialitate",
   "privacy.highlight": "NU colectăm date personale. Fără cookie-uri. Fără urmărire.",
   "privacy.collection.title": "1. Colectarea Datelor",
@@ -149,7 +136,6 @@
   "privacy.rights.text": "Deoarece nu colectăm date personale, nu există nimic de dezvăluit, corectat sau șters.",
   "privacy.contact.title": "5. Contact",
   "privacy.updated": "Ultima actualizare: februarie 2026",
-
   "footer.about": "Despre",
   "footer.about.project": "Despre Proiect",
   "footer.about.methodology": "Metodologie",
@@ -161,13 +147,12 @@
   "footer.contact": "Contact",
   "footer.email": "E-mail",
   "footer.copyright": "© 2026 Barometrul Mondial | Platformă de Date Deschise",
-  "footer.support": "\u2615 Cumpără-mi o cafea",
+  "footer.support": "☕ Cumpără-mi o cafea",
   "about.support.title": "Sprijină proiectul",
   "about.support.text": "World Barometer este gratuit, deschis și independent. Dacă îl consideri util, poți sprijini dezvoltarea sa.",
   "share.label": "Distribuie",
   "share.home_text": "World Barometer — Date deschise despre 160 de țări pe 12 dimensiuni ale prosperității.",
   "share.country_text": "World Barometer",
-
   "lang.en": "English",
   "lang.ro": "Română",
   "lang.de": "Deutsch",
@@ -180,13 +165,11 @@
   "lang.ja": "日本語",
   "lang.hi": "हिन्दी",
   "lang.it": "Italiano",
-
   "score.high": "Ridicat",
   "score.above_avg": "Peste Medie",
   "score.average": "Mediu",
   "score.below_avg": "Sub Medie",
   "score.low": "Scăzut",
-
   "econ.title": "Prezentare Economică",
   "econ.gdp": "PIB",
   "econ.gdp_per_capita": "PIB pe Cap de Locuitor",
@@ -208,14 +191,12 @@
   "econ.exp.public_services": "Servicii Publice",
   "econ.exp.debt_service": "Serviciul Datoriei",
   "econ.exp.other": "Altele",
-
   "global.econ_title": "Economia Mondială",
   "global.gdp_total": "PIB Mondial",
   "global.avg_gdp_capita": "PIB/Locuitor Mediu",
   "global.avg_inflation": "Inflație Medie",
   "global.avg_unemployment": "Șomaj Mediu",
   "global.avg_debt": "Datorie Publică Medie",
-
   "pol.title": "Guvernanță Mondială și Sisteme Politice",
   "pol.avg_democracy": "Scor Mediu al Democrației",
   "pol.avg_corruption": "Clasament Mediu al Corupției",
@@ -250,7 +231,6 @@
   "compare.select_country": "Selectează o țară",
   "compare.add_country": "+ Adaugă țară",
   "compare.btn": "Compară",
-
   "trade.title": "Comerț și Producție",
   "trade.exports": "Exporturi",
   "trade.imports": "Importuri",
@@ -262,35 +242,30 @@
   "trade.total_imports": "Importuri Mondiale",
   "trade.avg_openness": "Deschidere Comercială Medie",
   "trade.top_exporters": "Cele mai deschise economii comerciale",
-
   "satisfaction.title": "Satisfacția vieții",
   "satisfaction.very_high": "Foarte satisfăcut",
   "satisfaction.high": "Satisfăcut",
   "satisfaction.moderate": "Moderat",
   "satisfaction.low": "Nesatisfăcut",
   "satisfaction.very_low": "Foarte nesatisfăcut",
-
   "corruption.title": "Nivel de corupție",
   "corruption.very_clean": "Foarte curat",
   "corruption.clean": "Curat",
   "corruption.moderate": "Moderat",
   "corruption.corrupt": "Corupt",
   "corruption.very_corrupt": "Foarte corupt",
-
   "justice.title": "Statul de drept",
   "justice.very_strong": "Foarte puternic",
   "justice.strong": "Puternic",
   "justice.moderate": "Moderat",
   "justice.weak": "Slab",
   "justice.very_weak": "Foarte slab",
-
   "press.title": "Libertatea de exprimare",
   "press.very_free": "Foarte liberă",
   "press.free": "Liberă",
   "press.moderate": "Moderată",
   "press.restricted": "Restrânsă",
   "press.very_restricted": "Foarte restrânsă",
-
   "nav.quiz": "Quiz",
   "quiz.title": "Quiz despre Prosperitate",
   "quiz.subtitle": "Testează-ți cunoștințele despre prosperitatea mondială",
@@ -319,7 +294,6 @@
   "quiz.q.lowest_corruption": "Care țară are cea mai scăzută corupție?",
   "quiz.q.best_press": "Care țară are cea mai bună libertate a presei?",
   "quiz.q.conflict_status": "Care este starea de conflict a {0}?",
-
   "desc.satisfaction": "Scorul de satisfacție a vieții din Raportul Mondial al Fericirii, măsurând bunăstarea subiectivă pe o scară de la 0 la 10.",
   "desc.corruption": "Clasamentul Indicelui Percepției Corupției de la Transparency International. Un rang mai mic înseamnă mai puțină corupție percepută.",
   "desc.rule_of_law": "Indicele Statului de Drept al World Justice Project, măsurând responsabilitatea, guvernarea deschisă și accesul la justiție. Scara 0–1.",
@@ -346,7 +320,6 @@
   "desc.exp.public_services": "Administrație guvernamentală generală, poliție, instanțe și ordine publică.",
   "desc.exp.debt_service": "Plăți de dobândă și principal pentru obligațiile datoriei publice.",
   "desc.exp.other": "Alte cheltuieli guvernamentale neclasificate în categoriile de mai sus.",
-
   "export.aerospace": "Aerospațial",
   "export.agricultural_products": "Produse agricole",
   "export.aircraft": "Aeronave",
@@ -508,7 +481,6 @@
   "export.wood": "Lemn",
   "export.wood_products": "Produse din lemn",
   "export.zinc": "Zinc",
-
   "summary.list_separator": ", ",
   "summary.list_last_separator": " și ",
   "summary.country.ranked": "Clasată pe locul #{0} din {1} țări, cu un scor general de {2}/100.",
@@ -531,5 +503,34 @@
   "desc.global_gdp_capita": "PIB-ul mediu pe persoană în toate țările monitorizate.",
   "desc.global_inflation": "Creșterea medie anuală a prețurilor de consum în toate țările monitorizate.",
   "desc.global_unemployment": "Procentul mediu al forței de muncă fără loc de muncă în toate țările monitorizate.",
-  "desc.global_debt": "Datoria publică medie ca procent din PIB în toate țările monitorizate."
+  "desc.global_debt": "Datoria publică medie ca procent din PIB în toate țările monitorizate.",
+  "demo.title": "Demografie",
+  "demo.population": "Populație",
+  "demo.pop_growth": "Creștere demografică",
+  "demo.median_age": "Vârsta mediană",
+  "demo.life_exp": "Speranța de viață",
+  "demo.literacy": "Rata de alfabetizare",
+  "demo.density": "Densitatea pop.",
+  "demo.years": "ani",
+  "demo.yr_abbr": "ani",
+  "demo.age_dist_title": "Distribuția pe vârste",
+  "demo.age_0_14": "0–14 ani",
+  "demo.age_15_64": "15–64 ani",
+  "demo.age_65_plus": "65+ ani",
+  "demo.urban_rural_title": "Urban vs Rural",
+  "demo.urban": "Urban",
+  "demo.rural": "Rural",
+  "demo.life_exp_title": "Speranța de viață pe gen",
+  "demo.male": "Masculin",
+  "demo.female": "Feminin",
+  "demo.fertility": "Rata fertilității",
+  "demo.infant_mortality": "Mortalitate infantilă (la 1.000)",
+  "desc.population": "Numărul total de persoane care trăiesc în țară, bazat pe ultimul recensământ sau estimare ONU.",
+  "desc.pop_growth": "Schimbarea procentuală anuală a populației. Valorile negative indică un declin demografic.",
+  "desc.median_age": "Vârsta care împarte populația în două jumătăți egale. O vârstă mediană mai mare indică o societate îmbătrânită.",
+  "desc.life_exp": "Numărul mediu de ani pe care un nou-născut se așteaptă să trăiască.",
+  "desc.literacy": "Procentul persoanelor de 15 ani și peste care știu să citească și să scrie. Bazat pe datele UNESCO.",
+  "desc.density": "Numărul mediu de persoane pe kilometru pătrat de suprafață.",
+  "desc.fertility": "Numărul mediu de copii pe femeie. O rată de 2,1 este considerată nivelul de înlocuire.",
+  "desc.infant_mortality": "Numărul deceselor copiilor sub un an la 1.000 de nașteri vii."
 }

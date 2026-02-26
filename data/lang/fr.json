@@ -1,23 +1,18 @@
 {
   "site.title": "Baromètre Mondial",
   "site.subtitle": "2026",
-
   "nav.about": "À propos",
   "nav.methodology": "Méthodologie",
   "nav.data": "Données",
   "nav.countries": "Pays",
   "nav.country_search": "Rechercher un pays...",
   "nav.compare": "Comparer",
-
   "hero.title": "Suivi de la Prospérité Mondiale en Temps Réel",
   "hero.subtitle": "Analyse approfondie de 12 piliers fondamentaux dans 160 pays et en expansion, suivant les progrès vers le développement durable et le bien-être humain",
-
   "overview.title": "Aperçu Mondial",
   "overview.subtitle": "Indicateurs clés en date de février 2026",
-
   "rankings.title": "Classements Mondiaux",
   "rankings.subtitle": "Principaux pays par indicateurs clés",
-
   "pillars.title": "Piliers de la Prospérité",
   "pillars.subtitle": "Explorez l'analyse détaillée pour chaque dimension",
   "pillars.explore": "Explorer les classements",
@@ -38,7 +33,6 @@
   "overview.best_score": "Meilleur score",
   "overview.regime_type": "Type de régime",
   "pillars.global_avg": "Moyenne Mondiale",
-
   "pillar.governance": "Gouvernance",
   "pillar.governance.desc": "Démocratie, état de droit et efficacité institutionnelle",
   "pillar.security": "Sécurité et Sûreté",
@@ -63,7 +57,6 @@
   "pillar.energy.desc": "Accès à l'énergie, durabilité et gestion des ressources",
   "pillar.housing": "Logement et Dév. Urbain",
   "pillar.housing.desc": "Accessibilité du logement, urbanisme et qualité de vie",
-
   "map.section_title": "Carte interactive de la prospérité mondiale",
   "map.title": "Indice de Prospérité Mondiale",
   "map.interactive": "Carte Interactive",
@@ -79,7 +72,6 @@
   "map.popup.score": "Score de Prospérité",
   "map.popup.ranking": "Classement",
   "map.popup.details": "Voir les détails",
-
   "country.title": "Profil du Pays",
   "country.overall": "Score Mondial",
   "country.rank": "Classement Mondial",
@@ -87,7 +79,6 @@
   "country.back": "Retour",
   "country.not_found": "Pays non trouvé",
   "country.democracy": "Score de démocratie",
-
   "ranking.title": "Classements",
   "ranking.rank": "Rang",
   "ranking.country": "Pays",
@@ -95,7 +86,6 @@
   "ranking.all_pillars": "Mondial",
   "ranking.back": "Retour",
   "ranking.sources": "Sources de Données",
-
   "about.title": "À propos du Projet",
   "about.intro": "Le Baromètre Mondial (WB) est une plateforme civique de données ouvertes qui surveille et visualise les indicateurs de prospérité dans les pays du monde entier.",
   "about.mission.title": "Notre Mission",
@@ -106,7 +96,6 @@
   "about.open.text": "Toutes les données proviennent de sources publiquement accessibles, notamment la Banque Mondiale, les Nations Unies, Freedom House, l'Institut V-Dem et d'autres. Nous ne collectons aucune donnée personnelle auprès des visiteurs.",
   "about.contact.title": "Contact",
   "about.contact.text": "Questions ou commentaires ? Contactez-nous à",
-
   "methodology.title": "Méthodologie",
   "methodology.intro": "Comment nous calculons les scores de prospérité",
   "methodology.scoring.title": "Système de Notation",
@@ -117,7 +106,6 @@
   "methodology.update.text": "Les scores sont mis à jour au fur et à mesure que de nouvelles données sont disponibles auprès des organisations sources, généralement sur une base annuelle. La plateforme reflète les données les plus récentes disponibles.",
   "methodology.limitations.title": "Limites",
   "methodology.limitations.text": "Aucun indice ne peut saisir pleinement la complexité de la prospérité nationale. Nos scores doivent être considérés comme des indicateurs approximatifs basés sur les données disponibles, et non comme des classements définitifs.",
-
   "impressum.title": "Mentions Légales",
   "impressum.provider": "Éditeur",
   "impressum.provider.name": "Initiative WB World",
@@ -129,7 +117,6 @@
   "impressum.liability.text": "Toutes les données proviennent de sources publiquement accessibles (Banque Mondiale, Freedom House, ONU, V-Dem). La plateforme n'a aucun agenda politique.",
   "impressum.privacy": "Confidentialité",
   "impressum.privacy.see": "Voir :",
-
   "privacy.title": "Politique de Confidentialité",
   "privacy.highlight": "Nous ne collectons AUCUNE donnée personnelle. Pas de cookies. Pas de suivi.",
   "privacy.collection.title": "1. Collecte de Données",
@@ -149,7 +136,6 @@
   "privacy.rights.text": "Puisque nous ne collectons aucune donnée personnelle, il n'y a rien à divulguer, corriger ou supprimer.",
   "privacy.contact.title": "5. Contact",
   "privacy.updated": "Dernière mise à jour : février 2026",
-
   "footer.about": "À propos",
   "footer.about.project": "À propos du Projet",
   "footer.about.methodology": "Méthodologie",
@@ -161,13 +147,12 @@
   "footer.contact": "Contact",
   "footer.email": "E-mail",
   "footer.copyright": "© 2026 Baromètre Mondial | Plateforme de Données Ouvertes",
-  "footer.support": "\u2615 Offrez-moi un café",
+  "footer.support": "☕ Offrez-moi un café",
   "about.support.title": "Soutenir ce projet",
   "about.support.text": "Le World Barometer est gratuit, ouvert et indépendant. Si vous le trouvez utile, vous pouvez soutenir son développement.",
   "share.label": "Partager",
   "share.home_text": "World Barometer — Données ouvertes sur 160 pays à travers 12 piliers de prospérité.",
   "share.country_text": "World Barometer",
-
   "lang.en": "English",
   "lang.ro": "Română",
   "lang.de": "Deutsch",
@@ -180,13 +165,11 @@
   "lang.ja": "日本語",
   "lang.hi": "हिन्दी",
   "lang.it": "Italiano",
-
   "score.high": "Élevé",
   "score.above_avg": "Au-dessus de la Moyenne",
   "score.average": "Moyen",
   "score.below_avg": "En dessous de la Moyenne",
   "score.low": "Faible",
-
   "econ.title": "Aperçu Économique",
   "econ.gdp": "PIB",
   "econ.gdp_per_capita": "PIB par Habitant",
@@ -208,14 +191,12 @@
   "econ.exp.public_services": "Services Publics",
   "econ.exp.debt_service": "Service de la Dette",
   "econ.exp.other": "Autres",
-
   "global.econ_title": "Économie Mondiale",
   "global.gdp_total": "PIB Mondial",
   "global.avg_gdp_capita": "PIB/Habitant Moy.",
   "global.avg_inflation": "Inflation Moy.",
   "global.avg_unemployment": "Chômage Moy.",
   "global.avg_debt": "Dette Publique Moy.",
-
   "pol.title": "Gouvernance Mondiale et Systèmes Politiques",
   "pol.avg_democracy": "Score Moyen de Démocratie",
   "pol.avg_corruption": "Classement Moyen de Corruption",
@@ -250,7 +231,6 @@
   "compare.select_country": "Sélectionner un pays",
   "compare.add_country": "+ Ajouter un pays",
   "compare.btn": "Comparer",
-
   "trade.title": "Commerce & Production",
   "trade.exports": "Exportations",
   "trade.imports": "Importations",
@@ -262,35 +242,30 @@
   "trade.total_imports": "Importations Mondiales",
   "trade.avg_openness": "Ouverture Commerciale Moy.",
   "trade.top_exporters": "Économies les plus ouvertes au commerce",
-
   "satisfaction.title": "Satisfaction de vie",
   "satisfaction.very_high": "Très satisfait",
   "satisfaction.high": "Satisfait",
   "satisfaction.moderate": "Modéré",
   "satisfaction.low": "Insatisfait",
   "satisfaction.very_low": "Très insatisfait",
-
   "corruption.title": "Niveau de corruption",
   "corruption.very_clean": "Très propre",
   "corruption.clean": "Propre",
   "corruption.moderate": "Modéré",
   "corruption.corrupt": "Corrompu",
   "corruption.very_corrupt": "Très corrompu",
-
   "justice.title": "État de droit",
   "justice.very_strong": "Très fort",
   "justice.strong": "Fort",
   "justice.moderate": "Modéré",
   "justice.weak": "Faible",
   "justice.very_weak": "Très faible",
-
   "press.title": "Liberté d'expression",
   "press.very_free": "Très libre",
   "press.free": "Libre",
   "press.moderate": "Modéré",
   "press.restricted": "Restreint",
   "press.very_restricted": "Très restreint",
-
   "nav.quiz": "Quiz",
   "quiz.title": "Quiz sur la Prospérité",
   "quiz.subtitle": "Testez vos connaissances sur la prospérité mondiale",
@@ -319,7 +294,6 @@
   "quiz.q.lowest_corruption": "Quel pays a le moins de corruption ?",
   "quiz.q.best_press": "Quel pays a la meilleure liberté de la presse ?",
   "quiz.q.conflict_status": "Quel est le statut de conflit de {0} ?",
-
   "desc.satisfaction": "Score de satisfaction de vie du Rapport mondial sur le bonheur, mesurant le bien-être subjectif sur une échelle de 0 à 10.",
   "desc.corruption": "Classement de l'Indice de perception de la corruption de Transparency International. Un rang plus bas signifie moins de corruption perçue.",
   "desc.rule_of_law": "Indice de l'État de droit du World Justice Project, mesurant la responsabilité, la gouvernance ouverte et l'accès à la justice. Échelle 0–1.",
@@ -346,7 +320,6 @@
   "desc.exp.public_services": "Administration publique générale, police, tribunaux et ordre public.",
   "desc.exp.debt_service": "Paiements d'intérêts et de principal sur la dette publique.",
   "desc.exp.other": "Autres dépenses publiques non classées dans les catégories ci-dessus.",
-
   "export.aerospace": "Aérospatiale",
   "export.agricultural_products": "Produits agricoles",
   "export.aircraft": "Aéronefs",
@@ -508,7 +481,6 @@
   "export.wood": "Bois",
   "export.wood_products": "Produits en bois",
   "export.zinc": "Zinc",
-
   "summary.list_separator": ", ",
   "summary.list_last_separator": " et ",
   "summary.country.ranked": "Classé #{0} sur {1} pays avec un score global de {2}/100.",
@@ -531,5 +503,34 @@
   "desc.global_gdp_capita": "PIB moyen par habitant dans l'ensemble des pays suivis.",
   "desc.global_inflation": "Hausse annuelle moyenne des prix à la consommation dans l'ensemble des pays suivis.",
   "desc.global_unemployment": "Part moyenne de la population active sans emploi dans l'ensemble des pays suivis.",
-  "desc.global_debt": "Dette publique moyenne en pourcentage du PIB dans l'ensemble des pays suivis."
+  "desc.global_debt": "Dette publique moyenne en pourcentage du PIB dans l'ensemble des pays suivis.",
+  "demo.title": "Démographie",
+  "demo.population": "Population",
+  "demo.pop_growth": "Croissance démographique",
+  "demo.median_age": "Âge médian",
+  "demo.life_exp": "Espérance de vie",
+  "demo.literacy": "Taux d'alphabétisation",
+  "demo.density": "Densité de pop.",
+  "demo.years": "ans",
+  "demo.yr_abbr": "ans",
+  "demo.age_dist_title": "Répartition par âge",
+  "demo.age_0_14": "0–14 ans",
+  "demo.age_15_64": "15–64 ans",
+  "demo.age_65_plus": "65+ ans",
+  "demo.urban_rural_title": "Urbain vs Rural",
+  "demo.urban": "Urbain",
+  "demo.rural": "Rural",
+  "demo.life_exp_title": "Espérance de vie par genre",
+  "demo.male": "Homme",
+  "demo.female": "Femme",
+  "demo.fertility": "Taux de fécondité",
+  "demo.infant_mortality": "Mortalité infantile (pour 1 000)",
+  "desc.population": "Nombre total de personnes vivant dans le pays, basé sur le dernier recensement ou estimation de l'ONU.",
+  "desc.pop_growth": "Variation annuelle en pourcentage de la population. Les valeurs négatives indiquent un déclin démographique.",
+  "desc.median_age": "L'âge qui divise la population en deux moitiés égales. Un âge médian plus élevé indique une société vieillissante.",
+  "desc.life_exp": "Nombre moyen d'années qu'un nouveau-né devrait vivre.",
+  "desc.literacy": "Pourcentage de personnes de 15 ans et plus sachant lire et écrire. Basé sur les données de l'UNESCO.",
+  "desc.density": "Nombre moyen de personnes par kilomètre carré de superficie.",
+  "desc.fertility": "Nombre moyen d'enfants par femme. Un taux de 2,1 est considéré comme le seuil de remplacement.",
+  "desc.infant_mortality": "Nombre de décès de nourrissons de moins d'un an pour 1 000 naissances vivantes."
 }

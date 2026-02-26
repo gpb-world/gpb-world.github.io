@@ -1,23 +1,18 @@
 {
   "site.title": "世界晴雨表",
   "site.subtitle": "2026",
-
   "nav.about": "关于",
   "nav.methodology": "方法论",
   "nav.data": "数据",
   "nav.countries": "国家",
   "nav.country_search": "搜索国家...",
   "nav.compare": "比较",
-
   "hero.title": "实时监测世界繁荣状况",
   "hero.subtitle": "对160个国家且持续增加的12个基本支柱进行综合分析，追踪可持续发展和人类福祉的进展",
-
   "overview.title": "世界概览",
   "overview.subtitle": "截至2026年2月的关键指标",
-
   "rankings.title": "世界排名",
   "rankings.subtitle": "按关键指标排名的领先国家",
-
   "pillars.title": "繁荣支柱",
   "pillars.subtitle": "探索每个维度的详细分析",
   "pillars.explore": "探索排名",
@@ -38,7 +33,6 @@
   "overview.best_score": "最高分数",
   "overview.regime_type": "政权类型",
   "pillars.global_avg": "世界平均",
-
   "pillar.governance": "治理",
   "pillar.governance.desc": "民主、法治和制度效能",
   "pillar.security": "安全与保障",
@@ -63,7 +57,6 @@
   "pillar.energy.desc": "能源获取、可持续性与资源管理",
   "pillar.housing": "住房与城市发展",
   "pillar.housing.desc": "住房可负担性、城市规划与宜居性",
-
   "map.section_title": "世界繁荣互动地图",
   "map.title": "世界繁荣指数",
   "map.interactive": "交互式地图",
@@ -79,7 +72,6 @@
   "map.popup.score": "繁荣评分",
   "map.popup.ranking": "排名",
   "map.popup.details": "查看详情",
-
   "country.title": "国家概况",
   "country.overall": "总体评分",
   "country.rank": "世界排名",
@@ -87,7 +79,6 @@
   "country.back": "返回",
   "country.not_found": "未找到该国家",
   "country.democracy": "民主指数",
-
   "ranking.title": "排名",
   "ranking.rank": "排名",
   "ranking.country": "国家",
@@ -95,7 +86,6 @@
   "ranking.all_pillars": "总体",
   "ranking.back": "返回",
   "ranking.sources": "数据来源",
-
   "about.title": "关于本项目",
   "about.intro": "世界晴雨表（WB）是一个开放数据公民平台，用于监测和可视化全球各国的繁荣指标。",
   "about.mission.title": "我们的使命",
@@ -106,7 +96,6 @@
   "about.open.text": "所有数据均来自公开可获取的来源，包括世界银行、联合国、自由之家、V-Dem研究所等。我们不收集访客的任何个人数据。",
   "about.contact.title": "联系我们",
   "about.contact.text": "有问题或反馈？请通过以下方式联系我们",
-
   "methodology.title": "方法论",
   "methodology.intro": "我们如何计算繁荣评分",
   "methodology.scoring.title": "评分体系",
@@ -117,7 +106,6 @@
   "methodology.update.text": "当来源机构提供新数据时，评分将会更新，通常为每年一次。平台反映最新的可用数据。",
   "methodology.limitations.title": "局限性",
   "methodology.limitations.text": "没有任何单一指数能够完全反映国家繁荣的复杂性。我们的评分应被视为基于可用数据的近似指标，而非最终排名。",
-
   "impressum.title": "法律声明",
   "impressum.provider": "提供方",
   "impressum.provider.name": "WB全球倡议",
@@ -129,7 +117,6 @@
   "impressum.liability.text": "所有数据来自公开可获取的来源（世界银行、自由之家、联合国、V-Dem）。本平台没有任何政治倾向。",
   "impressum.privacy": "隐私",
   "impressum.privacy.see": "参见：",
-
   "privacy.title": "隐私政策",
   "privacy.highlight": "我们不收集任何个人数据。无Cookie。无追踪。",
   "privacy.collection.title": "1. 数据收集",
@@ -149,7 +136,6 @@
   "privacy.rights.text": "由于我们不收集任何个人数据，因此没有需要披露、更正或删除的内容。",
   "privacy.contact.title": "5. 联系我们",
   "privacy.updated": "最后更新：2026年2月",
-
   "footer.about": "关于",
   "footer.about.project": "关于本项目",
   "footer.about.methodology": "方法论",
@@ -161,13 +147,12 @@
   "footer.contact": "联系我们",
   "footer.email": "电子邮件",
   "footer.copyright": "© 2026 世界晴雨表 | 开放数据平台",
-  "footer.support": "\u2615 请我喝杯咖啡",
+  "footer.support": "☕ 请我喝杯咖啡",
   "about.support.title": "支持本项目",
   "about.support.text": "世界晴雨表是免费、开放和独立的。如果您觉得有用，可以支持其持续发展。",
   "share.label": "分享",
   "share.home_text": "世界晴雨表 — 160个国家12个繁荣支柱的开放数据。",
   "share.country_text": "世界晴雨表",
-
   "lang.en": "English",
   "lang.ro": "Română",
   "lang.de": "Deutsch",
@@ -180,13 +165,11 @@
   "lang.ja": "日本語",
   "lang.hi": "हिन्दी",
   "lang.it": "Italiano",
-
   "score.high": "高",
   "score.above_avg": "高于平均",
   "score.average": "平均",
   "score.below_avg": "低于平均",
   "score.low": "低",
-
   "econ.title": "经济概览",
   "econ.gdp": "GDP",
   "econ.gdp_per_capita": "人均GDP",
@@ -208,14 +191,12 @@
   "econ.exp.public_services": "公共服务",
   "econ.exp.debt_service": "债务偿还",
   "econ.exp.other": "其他",
-
   "global.econ_title": "世界经济",
   "global.gdp_total": "世界GDP",
   "global.avg_gdp_capita": "平均人均GDP",
   "global.avg_inflation": "平均通胀率",
   "global.avg_unemployment": "平均失业率",
   "global.avg_debt": "平均公共债务",
-
   "pol.title": "世界治理与政治体制",
   "pol.avg_democracy": "平均民主指数",
   "pol.avg_corruption": "平均腐败排名",
@@ -250,7 +231,6 @@
   "compare.select_country": "选择国家",
   "compare.add_country": "+ 添加国家",
   "compare.btn": "比较",
-
   "trade.title": "贸易与生产",
   "trade.exports": "出口",
   "trade.imports": "进口",
@@ -262,35 +242,30 @@
   "trade.total_imports": "世界进口总额",
   "trade.avg_openness": "平均贸易开放度",
   "trade.top_exporters": "贸易最开放的经济体",
-
   "satisfaction.title": "生活满意度",
   "satisfaction.very_high": "非常满意",
   "satisfaction.high": "满意",
   "satisfaction.moderate": "一般",
   "satisfaction.low": "不满意",
   "satisfaction.very_low": "非常不满意",
-
   "corruption.title": "腐败程度",
   "corruption.very_clean": "非常清廉",
   "corruption.clean": "清廉",
   "corruption.moderate": "一般",
   "corruption.corrupt": "腐败",
   "corruption.very_corrupt": "非常腐败",
-
   "justice.title": "法治水平",
   "justice.very_strong": "非常强",
   "justice.strong": "强",
   "justice.moderate": "一般",
   "justice.weak": "弱",
   "justice.very_weak": "非常弱",
-
   "press.title": "言论自由",
   "press.very_free": "非常自由",
   "press.free": "自由",
   "press.moderate": "一般",
   "press.restricted": "受限",
   "press.very_restricted": "严重受限",
-
   "nav.quiz": "知识问答",
   "quiz.title": "繁荣知识问答",
   "quiz.subtitle": "测试你对世界繁荣的了解",
@@ -319,7 +294,6 @@
   "quiz.q.lowest_corruption": "哪个国家的腐败程度最低？",
   "quiz.q.best_press": "哪个国家的新闻自由度最高？",
   "quiz.q.conflict_status": "{0}的冲突状态是什么？",
-
   "desc.satisfaction": "来自《世界幸福报告》的生活满意度评分，以0-10的量表衡量主观幸福感。",
   "desc.corruption": "透明国际腐败感知指数排名。排名越低，表示感知到的腐败程度越低。",
   "desc.rule_of_law": "世界正义项目法治指数，衡量问责制、开放政府和司法公正。量表0-1。",
@@ -346,7 +320,6 @@
   "desc.exp.public_services": "一般政府行政、警察、法院和公共秩序。",
   "desc.exp.debt_service": "政府债务的利息和本金偿还。",
   "desc.exp.other": "未归入上述类别的其他政府支出。",
-
   "export.aerospace": "航空航天",
   "export.agricultural_products": "农产品",
   "export.aircraft": "飞机",
@@ -508,7 +481,6 @@
   "export.wood": "木材",
   "export.wood_products": "木制品",
   "export.zinc": "锌",
-
   "summary.list_separator": "、",
   "summary.list_last_separator": "和",
   "summary.country.ranked": "在{1}个国家中排名第{0}位，总体评分为{2}/100。",
@@ -531,5 +503,34 @@
   "desc.global_gdp_capita": "所有追踪国家的平均人均GDP。",
   "desc.global_inflation": "所有追踪国家的年均消费者价格涨幅。",
   "desc.global_unemployment": "所有追踪国家的平均劳动力失业比例。",
-  "desc.global_debt": "所有追踪国家的平均政府债务占GDP百分比。"
+  "desc.global_debt": "所有追踪国家的平均政府债务占GDP百分比。",
+  "demo.title": "人口统计",
+  "demo.population": "人口",
+  "demo.pop_growth": "人口增长率",
+  "demo.median_age": "中位年龄",
+  "demo.life_exp": "预期寿命",
+  "demo.literacy": "识字率",
+  "demo.density": "人口密度",
+  "demo.years": "岁",
+  "demo.yr_abbr": "岁",
+  "demo.age_dist_title": "年龄分布",
+  "demo.age_0_14": "0–14岁",
+  "demo.age_15_64": "15–64岁",
+  "demo.age_65_plus": "65+岁",
+  "demo.urban_rural_title": "城市 vs 农村",
+  "demo.urban": "城市",
+  "demo.rural": "农村",
+  "demo.life_exp_title": "按性别的预期寿命",
+  "demo.male": "男性",
+  "demo.female": "女性",
+  "demo.fertility": "生育率",
+  "demo.infant_mortality": "婴儿死亡率（每1,000）",
+  "desc.population": "该国居住的总人数，基于最新人口普查或联合国估计。",
+  "desc.pop_growth": "人口的年百分比变化。负值表示人口下降。",
+  "desc.median_age": "将人口分为两半的年龄。较高的中位年龄表示老龄化社会。",
+  "desc.life_exp": "新生儿预期寿命的平均年数。",
+  "desc.literacy": "15岁及以上能够读写的人口百分比。基于联合国教科文组织数据。",
+  "desc.density": "每平方公里的平均人口数。",
+  "desc.fertility": "每位妇女的平均生育孩子数。2.1被视为更替水平。",
+  "desc.infant_mortality": "每1,000名活产婴儿中不到一岁的死亡人数。"
 }

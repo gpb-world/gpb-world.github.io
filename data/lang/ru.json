@@ -1,23 +1,18 @@
 {
   "site.title": "Мировой барометр",
   "site.subtitle": "2026",
-
   "nav.about": "О проекте",
   "nav.methodology": "Методология",
   "nav.data": "Данные",
   "nav.countries": "Страны",
   "nav.country_search": "Поиск стран...",
   "nav.compare": "Сравнить",
-
   "hero.title": "Мониторинг мирового процветания в реальном времени",
   "hero.subtitle": "Комплексный анализ 12 фундаментальных опор в 160 странах и их число растёт, отслеживание прогресса в направлении устойчивого развития и благополучия человека",
-
   "overview.title": "Мировой обзор",
   "overview.subtitle": "Ключевые показатели по состоянию на февраль 2026 года",
-
   "rankings.title": "Мировые рейтинги",
   "rankings.subtitle": "Лучшие страны по ключевым показателям",
-
   "pillars.title": "Столпы процветания",
   "pillars.subtitle": "Изучите подробный анализ по каждому направлению",
   "pillars.explore": "Изучить рейтинги",
@@ -38,7 +33,6 @@
   "overview.best_score": "Лучший балл",
   "overview.regime_type": "Тип режима",
   "pillars.global_avg": "Среднемировой показатель",
-
   "pillar.governance": "Управление",
   "pillar.governance.desc": "Демократия, верховенство закона и эффективность институтов",
   "pillar.security": "Безопасность и защита",
@@ -63,7 +57,6 @@
   "pillar.energy.desc": "Доступ к энергии, устойчивость и управление ресурсами",
   "pillar.housing": "Жильё и городское развитие",
   "pillar.housing.desc": "Доступность жилья, градостроительство и качество городской среды",
-
   "map.section_title": "Интерактивная карта мирового процветания",
   "map.title": "Индекс мирового процветания",
   "map.interactive": "Интерактивная карта",
@@ -79,7 +72,6 @@
   "map.popup.score": "Оценка процветания",
   "map.popup.ranking": "Рейтинг",
   "map.popup.details": "Подробнее",
-
   "country.title": "Профиль страны",
   "country.overall": "Общая оценка",
   "country.rank": "Мировой рейтинг",
@@ -87,7 +79,6 @@
   "country.back": "Назад",
   "country.not_found": "Страна не найдена",
   "country.democracy": "Индекс демократии",
-
   "ranking.title": "Рейтинги",
   "ranking.rank": "Место",
   "ranking.country": "Страна",
@@ -95,7 +86,6 @@
   "ranking.all_pillars": "Общий",
   "ranking.back": "Назад",
   "ranking.sources": "Источники данных",
-
   "about.title": "О проекте",
   "about.intro": "Мировой барометр (WB) — это открытая гражданская платформа данных, которая отслеживает и визуализирует показатели процветания стран по всему миру.",
   "about.mission.title": "Наша миссия",
@@ -106,7 +96,6 @@
   "about.open.text": "Все данные получены из общедоступных источников, включая Всемирный банк, ООН, Freedom House, Институт V-Dem и другие. Мы не собираем никаких персональных данных посетителей.",
   "about.contact.title": "Контакты",
   "about.contact.text": "Есть вопросы или отзывы? Свяжитесь с нами по адресу",
-
   "methodology.title": "Методология",
   "methodology.intro": "Как мы рассчитываем оценки процветания",
   "methodology.scoring.title": "Система оценки",
@@ -117,7 +106,6 @@
   "methodology.update.text": "Оценки обновляются по мере поступления новых данных от организаций-источников, как правило, ежегодно. Платформа отражает самые последние доступные данные.",
   "methodology.limitations.title": "Ограничения",
   "methodology.limitations.text": "Ни один индекс не может полностью отразить всю сложность национального процветания. Наши оценки следует рассматривать как приблизительные показатели на основе имеющихся данных, а не как окончательные рейтинги.",
-
   "impressum.title": "Правовая информация",
   "impressum.provider": "Провайдер",
   "impressum.provider.name": "Инициатива WB World",
@@ -129,7 +117,6 @@
   "impressum.liability.text": "Все данные получены из общедоступных источников (Всемирный банк, Freedom House, ООН, V-Dem). Платформа не имеет политической направленности.",
   "impressum.privacy": "Конфиденциальность",
   "impressum.privacy.see": "См.:",
-
   "privacy.title": "Политика конфиденциальности",
   "privacy.highlight": "Мы НЕ собираем персональные данные. Без файлов cookie. Без отслеживания.",
   "privacy.collection.title": "1. Сбор данных",
@@ -149,7 +136,6 @@
   "privacy.rights.text": "Поскольку мы не собираем персональные данные, раскрывать, исправлять или удалять нечего.",
   "privacy.contact.title": "5. Контакты",
   "privacy.updated": "Последнее обновление: февраль 2026",
-
   "footer.about": "О проекте",
   "footer.about.project": "О проекте",
   "footer.about.methodology": "Методология",
@@ -161,13 +147,12 @@
   "footer.contact": "Контакты",
   "footer.email": "Эл. почта",
   "footer.copyright": "© 2026 Мировой барометр | Открытая платформа данных",
-  "footer.support": "\u2615 Угостите меня кофе",
+  "footer.support": "☕ Угостите меня кофе",
   "about.support.title": "Поддержать проект",
   "about.support.text": "Мировой барометр — бесплатный, открытый и независимый. Если он полезен для вас, вы можете поддержать его развитие.",
   "share.label": "Поделиться",
   "share.home_text": "Мировой барометр — открытые данные о 160 странах по 12 показателям процветания.",
   "share.country_text": "Мировой барометр",
-
   "lang.en": "English",
   "lang.ro": "Română",
   "lang.de": "Deutsch",
@@ -180,13 +165,11 @@
   "lang.ja": "日本語",
   "lang.hi": "हिन्दी",
   "lang.it": "Italiano",
-
   "score.high": "Высокий",
   "score.above_avg": "Выше среднего",
   "score.average": "Средний",
   "score.below_avg": "Ниже среднего",
   "score.low": "Низкий",
-
   "econ.title": "Экономический обзор",
   "econ.gdp": "GDP",
   "econ.gdp_per_capita": "GDP на душу населения",
@@ -208,14 +191,12 @@
   "econ.exp.public_services": "Государственные услуги",
   "econ.exp.debt_service": "Обслуживание долга",
   "econ.exp.other": "Прочее",
-
   "global.econ_title": "Мировая экономика",
   "global.gdp_total": "Мировой ВВП",
   "global.avg_gdp_capita": "Сред. ВВП на душу",
   "global.avg_inflation": "Сред. инфляция",
   "global.avg_unemployment": "Сред. безработица",
   "global.avg_debt": "Сред. гос. долг",
-
   "pol.title": "Мировое управление и политические системы",
   "pol.avg_democracy": "Сред. индекс демократии",
   "pol.avg_corruption": "Сред. рейтинг коррупции",
@@ -250,7 +231,6 @@
   "compare.select_country": "Выберите страну",
   "compare.add_country": "+ Добавить страну",
   "compare.btn": "Сравнить",
-
   "trade.title": "Торговля и производство",
   "trade.exports": "Экспорт",
   "trade.imports": "Импорт",
@@ -262,35 +242,30 @@
   "trade.total_imports": "Мировой импорт",
   "trade.avg_openness": "Сред. торговая открытость",
   "trade.top_exporters": "Наиболее открытые экономики",
-
   "satisfaction.title": "Удовлетворённость жизнью",
   "satisfaction.very_high": "Очень доволен",
   "satisfaction.high": "Доволен",
   "satisfaction.moderate": "Умеренно",
   "satisfaction.low": "Недоволен",
   "satisfaction.very_low": "Очень недоволен",
-
   "corruption.title": "Уровень коррупции",
   "corruption.very_clean": "Очень чисто",
   "corruption.clean": "Чисто",
   "corruption.moderate": "Умеренно",
   "corruption.corrupt": "Коррумпировано",
   "corruption.very_corrupt": "Очень коррумпировано",
-
   "justice.title": "Верховенство закона",
   "justice.very_strong": "Очень сильное",
   "justice.strong": "Сильное",
   "justice.moderate": "Умеренное",
   "justice.weak": "Слабое",
   "justice.very_weak": "Очень слабое",
-
   "press.title": "Свобода слова",
   "press.very_free": "Очень свободная",
   "press.free": "Свободная",
   "press.moderate": "Умеренная",
   "press.restricted": "Ограниченная",
   "press.very_restricted": "Очень ограниченная",
-
   "nav.quiz": "Викторина",
   "quiz.title": "Викторина о процветании",
   "quiz.subtitle": "Проверьте свои знания о мировом процветании",
@@ -319,7 +294,6 @@
   "quiz.q.lowest_corruption": "В какой стране самый низкий уровень коррупции?",
   "quiz.q.best_press": "В какой стране лучшая свобода прессы?",
   "quiz.q.conflict_status": "Каков статус конфликта в {0}?",
-
   "desc.satisfaction": "Оценка удовлетворённости жизнью из Доклада о мировом счастье, измеряющая субъективное благополучие по шкале от 0 до 10.",
   "desc.corruption": "Рейтинг Индекса восприятия коррупции Transparency International. Более низкий ранг означает меньшую воспринимаемую коррупцию.",
   "desc.rule_of_law": "Индекс верховенства права World Justice Project, измеряющий подотчётность, открытость управления и доступ к правосудию. Шкала 0–1.",
@@ -346,7 +320,6 @@
   "desc.exp.public_services": "Общее государственное управление, полиция, суды и общественный порядок.",
   "desc.exp.debt_service": "Выплаты процентов и основного долга по государственным обязательствам.",
   "desc.exp.other": "Прочие государственные расходы, не отнесённые к вышеуказанным категориям.",
-
   "export.aerospace": "Аэрокосмическая продукция",
   "export.agricultural_products": "Сельскохозяйственная продукция",
   "export.aircraft": "Самолёты",
@@ -508,7 +481,6 @@
   "export.wood": "Древесина",
   "export.wood_products": "Изделия из дерева",
   "export.zinc": "Цинк",
-
   "summary.list_separator": ", ",
   "summary.list_last_separator": " и ",
   "summary.country.ranked": "Занимает #{0} место из {1} стран с общей оценкой {2}/100.",
@@ -531,5 +503,34 @@
   "desc.global_gdp_capita": "Средний ВВП на душу населения по всем отслеживаемым странам.",
   "desc.global_inflation": "Среднегодовой рост потребительских цен по всем отслеживаемым странам.",
   "desc.global_unemployment": "Средняя доля рабочей силы без работы по всем отслеживаемым странам.",
-  "desc.global_debt": "Средний государственный долг как процент от ВВП по всем отслеживаемым странам."
+  "desc.global_debt": "Средний государственный долг как процент от ВВП по всем отслеживаемым странам.",
+  "demo.title": "Демография",
+  "demo.population": "Население",
+  "demo.pop_growth": "Прирост населения",
+  "demo.median_age": "Медианный возраст",
+  "demo.life_exp": "Ожидаемая продолжительность жизни",
+  "demo.literacy": "Грамотность",
+  "demo.density": "Плотность нас.",
+  "demo.years": "лет",
+  "demo.yr_abbr": "л.",
+  "demo.age_dist_title": "Возрастное распределение",
+  "demo.age_0_14": "0–14 лет",
+  "demo.age_15_64": "15–64 лет",
+  "demo.age_65_plus": "65+ лет",
+  "demo.urban_rural_title": "Город vs Село",
+  "demo.urban": "Городское",
+  "demo.rural": "Сельское",
+  "demo.life_exp_title": "Продолжительность жизни по полу",
+  "demo.male": "Мужской",
+  "demo.female": "Женский",
+  "demo.fertility": "Коэффициент рождаемости",
+  "demo.infant_mortality": "Младенческая смертность (на 1 000)",
+  "desc.population": "Общее число людей, проживающих в стране.",
+  "desc.pop_growth": "Ежегодное процентное изменение населения. Отрицательные значения указывают на сокращение.",
+  "desc.median_age": "Возраст, который делит население на две равные половины.",
+  "desc.life_exp": "Среднее количество лет, которое новорождённый проживёт.",
+  "desc.literacy": "Процент людей от 15 лет, умеющих читать и писать.",
+  "desc.density": "Среднее количество людей на квадратный километр.",
+  "desc.fertility": "Среднее количество детей на женщину. Коэффициент 2,1 считается уровнем замещения.",
+  "desc.infant_mortality": "Количество смертей детей до года на 1 000 родов."
 }

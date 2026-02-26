@@ -1136,6 +1136,22 @@ body {
     flex-shrink: 0;
 }
 
+/* ===== Demographics Dashboard ===== */
+.demo-charts-bottom {
+    grid-template-columns: 1fr;
+    max-width: 50%;
+}
+
+.demo-charts-bottom .econ-chart-box canvas {
+    max-height: 120px;
+}
+
+.demo-metrics-extra {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
 /* ===== Trade Stats (used on trade detail page) ===== */
 .trade-tile-stats {
     display: flex;
@@ -1949,6 +1965,10 @@ body {
 
     .econ-charts {
         grid-template-columns: 1fr;
+    }
+
+    .demo-charts-bottom {
+        max-width: 100%;
     }
 
     .map-wrapper iframe {

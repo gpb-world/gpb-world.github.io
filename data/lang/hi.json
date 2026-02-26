@@ -1,23 +1,18 @@
 {
   "site.title": "विश्व बैरोमीटर",
   "site.subtitle": "2026",
-
   "nav.about": "परिचय",
   "nav.methodology": "कार्यप्रणाली",
   "nav.data": "डेटा",
   "nav.countries": "देश",
   "nav.country_search": "देश खोजें...",
   "nav.compare": "तुलना",
-
   "hero.title": "विश्व समृद्धि की वास्तविक समय में निगरानी",
   "hero.subtitle": "160 देशों और बढ़ते हुए में 12 मूलभूत स्तंभों का व्यापक विश्लेषण, सतत विकास और मानव कल्याण की दिशा में प्रगति की निगरानी",
-
   "overview.title": "विश्व अवलोकन",
   "overview.subtitle": "फरवरी 2026 तक के प्रमुख संकेतक",
-
   "rankings.title": "विश्व रैंकिंग",
   "rankings.subtitle": "प्रमुख संकेतकों के अनुसार शीर्ष देश",
-
   "pillars.title": "समृद्धि के स्तंभ",
   "pillars.subtitle": "प्रत्येक आयाम का विस्तृत विश्लेषण देखें",
   "pillars.explore": "रैंकिंग देखें",
@@ -38,7 +33,6 @@
   "overview.best_score": "सर्वश्रेष्ठ स्कोर",
   "overview.regime_type": "शासन प्रकार",
   "pillars.global_avg": "विश्व औसत",
-
   "pillar.governance": "शासन",
   "pillar.governance.desc": "लोकतंत्र, कानून का शासन और संस्थागत प्रभावशीलता",
   "pillar.security": "सुरक्षा और संरक्षा",
@@ -63,7 +57,6 @@
   "pillar.energy.desc": "ऊर्जा तक पहुँच, स्थिरता और संसाधन प्रबंधन",
   "pillar.housing": "आवास और शहरी विकास",
   "pillar.housing.desc": "आवास की सामर्थ्यता, शहरी नियोजन और रहने योग्यता",
-
   "map.section_title": "विश्व समृद्धि का इंटरैक्टिव मानचित्र",
   "map.title": "विश्व समृद्धि सूचकांक",
   "map.interactive": "इंटरैक्टिव मानचित्र",
@@ -79,7 +72,6 @@
   "map.popup.score": "समृद्धि स्कोर",
   "map.popup.ranking": "रैंकिंग",
   "map.popup.details": "विवरण देखें",
-
   "country.title": "देश प्रोफ़ाइल",
   "country.overall": "समग्र स्कोर",
   "country.rank": "विश्व रैंक",
@@ -87,7 +79,6 @@
   "country.back": "वापस",
   "country.not_found": "देश नहीं मिला",
   "country.democracy": "लोकतंत्र सूचकांक",
-
   "ranking.title": "रैंकिंग",
   "ranking.rank": "रैंक",
   "ranking.country": "देश",
@@ -95,7 +86,6 @@
   "ranking.all_pillars": "समग्र",
   "ranking.back": "वापस",
   "ranking.sources": "डेटा स्रोत",
-
   "about.title": "परियोजना के बारे में",
   "about.intro": "विश्व बैरोमीटर (WB) एक ओपन-डेटा नागरिक मंच है जो दुनिया भर के देशों में समृद्धि संकेतकों की निगरानी और दृश्यांकन करता है।",
   "about.mission.title": "हमारा उद्देश्य",
@@ -106,7 +96,6 @@
   "about.open.text": "सभी डेटा विश्व बैंक, संयुक्त राष्ट्र, फ्रीडम हाउस, V-Dem संस्थान और अन्य सहित सार्वजनिक रूप से सुलभ स्रोतों से आता है। हम आगंतुकों से कोई व्यक्तिगत डेटा एकत्र नहीं करते।",
   "about.contact.title": "संपर्क करें",
   "about.contact.text": "प्रश्न या प्रतिक्रिया? हमसे यहाँ संपर्क करें",
-
   "methodology.title": "कार्यप्रणाली",
   "methodology.intro": "हम समृद्धि स्कोर की गणना कैसे करते हैं",
   "methodology.scoring.title": "स्कोरिंग प्रणाली",
@@ -117,7 +106,6 @@
   "methodology.update.text": "स्रोत संगठनों से नया डेटा उपलब्ध होने पर स्कोर अपडेट किए जाते हैं, आमतौर पर वार्षिक आधार पर। मंच नवीनतम उपलब्ध डेटा को प्रदर्शित करता है।",
   "methodology.limitations.title": "सीमाएँ",
   "methodology.limitations.text": "कोई भी एकल सूचकांक राष्ट्रीय समृद्धि की जटिलता को पूरी तरह से प्रतिबिंबित नहीं कर सकता। हमारे स्कोर को उपलब्ध डेटा पर आधारित अनुमानित संकेतक के रूप में देखा जाना चाहिए, न कि निश्चित रैंकिंग के रूप में।",
-
   "impressum.title": "कानूनी सूचना",
   "impressum.provider": "प्रदाता",
   "impressum.provider.name": "WB वर्ल्ड इनिशिएटिव",
@@ -129,7 +117,6 @@
   "impressum.liability.text": "सभी डेटा सार्वजनिक रूप से सुलभ स्रोतों (विश्व बैंक, फ्रीडम हाउस, संयुक्त राष्ट्र, V-Dem) से आता है। इस मंच का कोई राजनीतिक एजेंडा नहीं है।",
   "impressum.privacy": "गोपनीयता",
   "impressum.privacy.see": "देखें:",
-
   "privacy.title": "गोपनीयता नीति",
   "privacy.highlight": "हम कोई व्यक्तिगत डेटा एकत्र नहीं करते। कोई कुकीज़ नहीं। कोई ट्रैकिंग नहीं।",
   "privacy.collection.title": "1. डेटा संग्रह",
@@ -149,7 +136,6 @@
   "privacy.rights.text": "चूँकि हम कोई व्यक्तिगत डेटा एकत्र नहीं करते, इसलिए प्रकट करने, सुधारने या हटाने के लिए कुछ भी नहीं है।",
   "privacy.contact.title": "5. संपर्क करें",
   "privacy.updated": "अंतिम अद्यतन: फरवरी 2026",
-
   "footer.about": "परिचय",
   "footer.about.project": "परियोजना के बारे में",
   "footer.about.methodology": "कार्यप्रणाली",
@@ -161,13 +147,12 @@
   "footer.contact": "संपर्क करें",
   "footer.email": "ईमेल",
   "footer.copyright": "© 2026 विश्व बैरोमीटर | ओपन डेटा प्लेटफ़ॉर्म",
-  "footer.support": "\u2615 मुझे एक कॉफ़ी दिलाइए",
+  "footer.support": "☕ मुझे एक कॉफ़ी दिलाइए",
   "about.support.title": "इस परियोजना का समर्थन करें",
   "about.support.text": "वर्ल्ड बैरोमीटर मुफ्त, खुला और स्वतंत्र है। यदि आपको यह उपयोगी लगता है, तो आप इसके निरंतर विकास का समर्थन कर सकते हैं।",
   "share.label": "साझा करें",
   "share.home_text": "वर्ल्ड बैरोमीटर — 160 देशों के 12 समृद्धि स्तंभों पर खुला डेटा।",
   "share.country_text": "वर्ल्ड बैरोमीटर",
-
   "lang.en": "English",
   "lang.ro": "Română",
   "lang.de": "Deutsch",
@@ -180,13 +165,11 @@
   "lang.ja": "日本語",
   "lang.hi": "हिन्दी",
   "lang.it": "Italiano",
-
   "score.high": "उच्च",
   "score.above_avg": "औसत से ऊपर",
   "score.average": "औसत",
   "score.below_avg": "औसत से नीचे",
   "score.low": "निम्न",
-
   "econ.title": "आर्थिक अवलोकन",
   "econ.gdp": "GDP",
   "econ.gdp_per_capita": "प्रति व्यक्ति GDP",
@@ -208,14 +191,12 @@
   "econ.exp.public_services": "सार्वजनिक सेवाएँ",
   "econ.exp.debt_service": "ऋण सेवा",
   "econ.exp.other": "अन्य",
-
   "global.econ_title": "विश्व अर्थव्यवस्था",
   "global.gdp_total": "विश्व GDP",
   "global.avg_gdp_capita": "औसत प्रति व्यक्ति GDP",
   "global.avg_inflation": "औसत मुद्रास्फीति",
   "global.avg_unemployment": "औसत बेरोज़गारी",
   "global.avg_debt": "औसत सार्वजनिक ऋण",
-
   "pol.title": "विश्व शासन और राजनीतिक प्रणालियाँ",
   "pol.avg_democracy": "औसत लोकतंत्र स्कोर",
   "pol.avg_corruption": "औसत भ्रष्टाचार रैंक",
@@ -250,7 +231,6 @@
   "compare.select_country": "देश चुनें",
   "compare.add_country": "+ देश जोड़ें",
   "compare.btn": "तुलना करें",
-
   "trade.title": "व्यापार और उत्पादन",
   "trade.exports": "निर्यात",
   "trade.imports": "आयात",
@@ -262,35 +242,30 @@
   "trade.total_imports": "विश्व आयात",
   "trade.avg_openness": "औसत व्यापार खुलापन",
   "trade.top_exporters": "सबसे व्यापार-खुली अर्थव्यवस्थाएँ",
-
   "satisfaction.title": "जीवन संतुष्टि",
   "satisfaction.very_high": "बहुत संतुष्ट",
   "satisfaction.high": "संतुष्ट",
   "satisfaction.moderate": "सामान्य",
   "satisfaction.low": "असंतुष्ट",
   "satisfaction.very_low": "बहुत असंतुष्ट",
-
   "corruption.title": "भ्रष्टाचार स्तर",
   "corruption.very_clean": "बहुत स्वच्छ",
   "corruption.clean": "स्वच्छ",
   "corruption.moderate": "सामान्य",
   "corruption.corrupt": "भ्रष्ट",
   "corruption.very_corrupt": "बहुत भ्रष्ट",
-
   "justice.title": "कानून का शासन",
   "justice.very_strong": "बहुत मजबूत",
   "justice.strong": "मजबूत",
   "justice.moderate": "सामान्य",
   "justice.weak": "कमजोर",
   "justice.very_weak": "बहुत कमजोर",
-
   "press.title": "अभिव्यक्ति की स्वतंत्रता",
   "press.very_free": "बहुत स्वतंत्र",
   "press.free": "स्वतंत्र",
   "press.moderate": "सामान्य",
   "press.restricted": "प्रतिबंधित",
   "press.very_restricted": "बहुत प्रतिबंधित",
-
   "nav.quiz": "प्रश्नोत्तरी",
   "quiz.title": "समृद्धि प्रश्नोत्तरी",
   "quiz.subtitle": "विश्व समृद्धि के बारे में अपने ज्ञान की परीक्षा लें",
@@ -319,7 +294,6 @@
   "quiz.q.lowest_corruption": "किस देश में सबसे कम भ्रष्टाचार है?",
   "quiz.q.best_press": "किस देश में सबसे अच्छी प्रेस स्वतंत्रता है?",
   "quiz.q.conflict_status": "{0} की संघर्ष स्थिति क्या है?",
-
   "desc.satisfaction": "विश्व खुशी रिपोर्ट से जीवन संतुष्टि स्कोर, 0-10 के पैमाने पर व्यक्तिपरक कल्याण को मापता है।",
   "desc.corruption": "ट्रांसपेरेंसी इंटरनेशनल का भ्रष्टाचार धारणा सूचकांक रैंकिंग। कम रैंक का मतलब कम भ्रष्टाचार।",
   "desc.rule_of_law": "वर्ल्ड जस्टिस प्रोजेक्ट का कानून का शासन सूचकांक, जवाबदेही, खुली सरकार और न्याय तक पहुंच को मापता है। पैमाना 0–1।",
@@ -346,7 +320,6 @@
   "desc.exp.public_services": "सामान्य सरकारी प्रशासन, पुलिस, अदालतें और सार्वजनिक व्यवस्था।",
   "desc.exp.debt_service": "सरकारी ऋण दायित्वों पर ब्याज और मूलधन भुगतान।",
   "desc.exp.other": "उपरोक्त श्रेणियों में वर्गीकृत नहीं किए गए अन्य सरकारी व्यय।",
-
   "export.aerospace": "एयरोस्पेस",
   "export.agricultural_products": "कृषि उत्पाद",
   "export.aircraft": "विमान",
@@ -508,7 +481,6 @@
   "export.wood": "लकड़ी",
   "export.wood_products": "लकड़ी के उत्पाद",
   "export.zinc": "जस्ता",
-
   "summary.list_separator": ", ",
   "summary.list_last_separator": " और ",
   "summary.country.ranked": "कुल {1} देशों में #{0} रैंक, समग्र स्कोर {2}/100।",
@@ -531,5 +503,34 @@
   "desc.global_gdp_capita": "सभी ट्रैक किए गए देशों में औसत प्रति व्यक्ति GDP।",
   "desc.global_inflation": "सभी ट्रैक किए गए देशों में औसत वार्षिक उपभोक्ता मूल्य वृद्धि।",
   "desc.global_unemployment": "सभी ट्रैक किए गए देशों में श्रम शक्ति का औसत बेरोज़गार हिस्सा।",
-  "desc.global_debt": "सभी ट्रैक किए गए देशों में GDP के प्रतिशत के रूप में औसत सरकारी ऋण।"
+  "desc.global_debt": "सभी ट्रैक किए गए देशों में GDP के प्रतिशत के रूप में औसत सरकारी ऋण।",
+  "demo.title": "जनसंख्या",
+  "demo.population": "जनसंख्या",
+  "demo.pop_growth": "जनसंख्या वृद्धि",
+  "demo.median_age": "मध्य आयु",
+  "demo.life_exp": "जीवन प्रत्याशा",
+  "demo.literacy": "साक्षरता दर",
+  "demo.density": "जनसंख्या घनत्व",
+  "demo.years": "वर्ष",
+  "demo.yr_abbr": "वर्ष",
+  "demo.age_dist_title": "आयु वितरण",
+  "demo.age_0_14": "0–14 वर्ष",
+  "demo.age_15_64": "15–64 वर्ष",
+  "demo.age_65_plus": "65+ वर्ष",
+  "demo.urban_rural_title": "शहरी बनाम ग्रामीण",
+  "demo.urban": "शहरी",
+  "demo.rural": "ग्रामीण",
+  "demo.life_exp_title": "लिंग के अनुसार जीवन प्रत्याशा",
+  "demo.male": "पुरुष",
+  "demo.female": "महिला",
+  "demo.fertility": "प्रजनन दर",
+  "demo.infant_mortality": "शिशु मृत्यु दर (प्रति 1,000)",
+  "desc.population": "देश में रहने वाले लोगों की कुल संख्या।",
+  "desc.pop_growth": "जनसंख्या में वार्षिक प्रतिशत परिवर्तन। नकारात्मक मान जनसंख्या गिरावट दर्शाते हैं।",
+  "desc.median_age": "वह आयु जो जनसंख्या को दो बराबर हिस्सों में विभाजित करती है।",
+  "desc.life_exp": "नवजात शिशु के जीवित रहने की औसत वर्षों की संख्या।",
+  "desc.literacy": "15 वर्ष और उससे अधिक आयु के लोगों में पढ़ने-लिखने में सक्षम लोगों का प्रतिशत।",
+  "desc.density": "प्रति वर्ग किलोमीटर में औसत लोगों की संख्या।",
+  "desc.fertility": "प्रति महिला औसत बच्चों की संख्या। 2.1 को प्रतिस्थापन स्तर माना जाता है।",
+  "desc.infant_mortality": "प्रति 1,000 जीवित जन्मों में एक वर्ष से कम आयु के शिशुओं की मृत्यु संख्या।"
 }

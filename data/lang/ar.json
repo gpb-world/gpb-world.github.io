@@ -1,23 +1,18 @@
 {
   "site.title": "البارومتر العالمي",
   "site.subtitle": "2026",
-
   "nav.about": "حول المشروع",
   "nav.methodology": "المنهجية",
   "nav.data": "البيانات",
   "nav.countries": "الدول",
   "nav.country_search": "البحث عن دولة...",
   "nav.compare": "مقارنة",
-
   "hero.title": "مراقبة الازدهار العالمي في الوقت الفعلي",
   "hero.subtitle": "تحليل شامل لـ 12 ركيزة أساسية عبر 160 دولة والعدد في ازدياد، لتتبع التقدم نحو التنمية المستدامة ورفاهية الإنسان",
-
   "overview.title": "نظرة عامة عالمية",
   "overview.subtitle": "المؤشرات الرئيسية حتى فبراير 2026",
-
   "rankings.title": "التصنيفات العالمية",
   "rankings.subtitle": "أفضل الدول حسب المؤشرات الرئيسية",
-
   "pillars.title": "أركان الازدهار",
   "pillars.subtitle": "استكشف التحليل التفصيلي لكل بُعد",
   "pillars.explore": "استكشاف التصنيفات",
@@ -38,7 +33,6 @@
   "overview.best_score": "أفضل نتيجة",
   "overview.regime_type": "نوع النظام",
   "pillars.global_avg": "المتوسط العالمي",
-
   "pillar.governance": "الحوكمة",
   "pillar.governance.desc": "الديمقراطية وسيادة القانون وفعالية المؤسسات",
   "pillar.security": "الأمن والسلامة",
@@ -63,7 +57,6 @@
   "pillar.energy.desc": "الوصول إلى الطاقة والاستدامة وإدارة الموارد",
   "pillar.housing": "الإسكان والتنمية الحضرية",
   "pillar.housing.desc": "القدرة على تحمل تكاليف السكن والتخطيط الحضري وجودة الحياة",
-
   "map.section_title": "خريطة تفاعلية للازدهار العالمي",
   "map.title": "مؤشر الازدهار العالمي",
   "map.interactive": "خريطة تفاعلية",
@@ -79,7 +72,6 @@
   "map.popup.score": "درجة الازدهار",
   "map.popup.ranking": "التصنيف",
   "map.popup.details": "عرض التفاصيل",
-
   "country.title": "ملف الدولة",
   "country.overall": "الدرجة الإجمالية",
   "country.rank": "التصنيف العالمي",
@@ -87,7 +79,6 @@
   "country.back": "رجوع",
   "country.not_found": "الدولة غير موجودة",
   "country.democracy": "مؤشر الديمقراطية",
-
   "ranking.title": "التصنيفات",
   "ranking.rank": "الترتيب",
   "ranking.country": "الدولة",
@@ -95,7 +86,6 @@
   "ranking.all_pillars": "الإجمالي",
   "ranking.back": "رجوع",
   "ranking.sources": "مصادر البيانات",
-
   "about.title": "حول المشروع",
   "about.intro": "البارومتر العالمي (WB) هو منصة مدنية مفتوحة البيانات تراقب وتصور مؤشرات الازدهار عبر دول العالم.",
   "about.mission.title": "مهمتنا",
@@ -106,7 +96,6 @@
   "about.open.text": "جميع البيانات مصدرها مصادر متاحة للجمهور تشمل البنك الدولي والأمم المتحدة وفريدم هاوس ومعهد V-Dem وغيرها. نحن لا نجمع أي بيانات شخصية من الزوار.",
   "about.contact.title": "اتصل بنا",
   "about.contact.text": "أسئلة أو ملاحظات؟ تواصل معنا عبر",
-
   "methodology.title": "المنهجية",
   "methodology.intro": "كيف نحسب درجات الازدهار",
   "methodology.scoring.title": "نظام التقييم",
@@ -117,7 +106,6 @@
   "methodology.update.text": "يتم تحديث الدرجات عند توفر بيانات جديدة من المنظمات المصدرية، عادةً على أساس سنوي. تعكس المنصة أحدث البيانات المتاحة.",
   "methodology.limitations.title": "القيود",
   "methodology.limitations.text": "لا يمكن لأي مؤشر واحد أن يعكس بالكامل تعقيد الازدهار الوطني. ينبغي النظر إلى درجاتنا كمؤشرات تقريبية بناءً على البيانات المتاحة، وليست تصنيفات نهائية.",
-
   "impressum.title": "البيانات القانونية",
   "impressum.provider": "المزود",
   "impressum.provider.name": "مبادرة WB العالمية",
@@ -129,7 +117,6 @@
   "impressum.liability.text": "جميع البيانات مصدرها مصادر متاحة للجمهور (البنك الدولي، فريدم هاوس، الأمم المتحدة، V-Dem). ليس للمنصة أي أجندة سياسية.",
   "impressum.privacy": "الخصوصية",
   "impressum.privacy.see": "انظر:",
-
   "privacy.title": "سياسة الخصوصية",
   "privacy.highlight": "نحن لا نجمع أي بيانات شخصية. لا ملفات تعريف ارتباط. لا تتبع.",
   "privacy.collection.title": "1. جمع البيانات",
@@ -149,7 +136,6 @@
   "privacy.rights.text": "بما أننا لا نجمع أي بيانات شخصية، فلا يوجد ما يمكن الكشف عنه أو تصحيحه أو حذفه.",
   "privacy.contact.title": "5. اتصل بنا",
   "privacy.updated": "آخر تحديث: فبراير 2026",
-
   "footer.about": "حول المشروع",
   "footer.about.project": "حول المشروع",
   "footer.about.methodology": "المنهجية",
@@ -161,13 +147,12 @@
   "footer.contact": "اتصل بنا",
   "footer.email": "البريد الإلكتروني",
   "footer.copyright": "© 2026 البارومتر العالمي | منصة بيانات مفتوحة",
-  "footer.support": "\u2615 اشترِ لي قهوة",
+  "footer.support": "☕ اشترِ لي قهوة",
   "about.support.title": "ادعم هذا المشروع",
   "about.support.text": "البارومتر العالمي مجاني ومفتوح ومستقل. إذا وجدته مفيداً، يمكنك دعم تطويره المستمر.",
   "share.label": "مشاركة",
   "share.home_text": "البارومتر العالمي — بيانات مفتوحة عن 160 دولة عبر 12 ركيزة للازدهار.",
   "share.country_text": "البارومتر العالمي",
-
   "lang.en": "English",
   "lang.ro": "Română",
   "lang.de": "Deutsch",
@@ -180,13 +165,11 @@
   "lang.ja": "日本語",
   "lang.hi": "हिन्दी",
   "lang.it": "Italiano",
-
   "score.high": "مرتفع",
   "score.above_avg": "فوق المتوسط",
   "score.average": "متوسط",
   "score.below_avg": "تحت المتوسط",
   "score.low": "منخفض",
-
   "econ.title": "نظرة اقتصادية عامة",
   "econ.gdp": "GDP",
   "econ.gdp_per_capita": "GDP للفرد",
@@ -208,14 +191,12 @@
   "econ.exp.public_services": "الخدمات العامة",
   "econ.exp.debt_service": "خدمة الدين",
   "econ.exp.other": "أخرى",
-
   "global.econ_title": "الاقتصاد العالمي",
   "global.gdp_total": "الناتج المحلي العالمي",
   "global.avg_gdp_capita": "متوسط الناتج للفرد",
   "global.avg_inflation": "متوسط التضخم",
   "global.avg_unemployment": "متوسط البطالة",
   "global.avg_debt": "متوسط الدين العام",
-
   "pol.title": "الحوكمة العالمية والأنظمة السياسية",
   "pol.avg_democracy": "متوسط مؤشر الديمقراطية",
   "pol.avg_corruption": "متوسط ترتيب الفساد",
@@ -250,7 +231,6 @@
   "compare.select_country": "اختر دولة",
   "compare.add_country": "+ إضافة دولة",
   "compare.btn": "مقارنة",
-
   "trade.title": "التجارة والإنتاج",
   "trade.exports": "الصادرات",
   "trade.imports": "الواردات",
@@ -262,35 +242,30 @@
   "trade.total_imports": "الواردات العالمية",
   "trade.avg_openness": "متوسط الانفتاح التجاري",
   "trade.top_exporters": "أكثر الاقتصادات انفتاحاً تجارياً",
-
   "satisfaction.title": "الرضا عن الحياة",
   "satisfaction.very_high": "راضٍ جداً",
   "satisfaction.high": "راضٍ",
   "satisfaction.moderate": "معتدل",
   "satisfaction.low": "غير راضٍ",
   "satisfaction.very_low": "غير راضٍ جداً",
-
   "corruption.title": "مستوى الفساد",
   "corruption.very_clean": "نظيف جداً",
   "corruption.clean": "نظيف",
   "corruption.moderate": "معتدل",
   "corruption.corrupt": "فاسد",
   "corruption.very_corrupt": "فاسد جداً",
-
   "justice.title": "سيادة القانون",
   "justice.very_strong": "قوي جداً",
   "justice.strong": "قوي",
   "justice.moderate": "معتدل",
   "justice.weak": "ضعيف",
   "justice.very_weak": "ضعيف جداً",
-
   "press.title": "حرية التعبير",
   "press.very_free": "حرة جداً",
   "press.free": "حرة",
   "press.moderate": "معتدلة",
   "press.restricted": "مقيّدة",
   "press.very_restricted": "مقيّدة جداً",
-
   "nav.quiz": "اختبار",
   "quiz.title": "اختبار الازدهار",
   "quiz.subtitle": "اختبر معلوماتك حول الازدهار العالمي",
@@ -319,7 +294,6 @@
   "quiz.q.lowest_corruption": "أي دولة لديها أقل مستوى فساد؟",
   "quiz.q.best_press": "أي دولة لديها أفضل حرية صحافة؟",
   "quiz.q.conflict_status": "ما هي حالة النزاع في {0}؟",
-
   "desc.satisfaction": "درجة الرضا عن الحياة من تقرير السعادة العالمي، تقيس الرفاهية الذاتية على مقياس من 0 إلى 10.",
   "desc.corruption": "ترتيب مؤشر مدركات الفساد لمنظمة الشفافية الدولية. الترتيب الأدنى يعني فساداً أقل.",
   "desc.rule_of_law": "مؤشر سيادة القانون لمشروع العدالة العالمي، يقيس المساءلة والحكم المفتوح والوصول إلى العدالة. المقياس 0–1.",
@@ -346,7 +320,6 @@
   "desc.exp.public_services": "الإدارة الحكومية العامة والشرطة والمحاكم والنظام العام.",
   "desc.exp.debt_service": "مدفوعات الفائدة والأصل على التزامات الدين الحكومي.",
   "desc.exp.other": "نفقات حكومية أخرى غير مصنفة في الفئات أعلاه.",
-
   "export.aerospace": "الفضاء الجوي",
   "export.agricultural_products": "المنتجات الزراعية",
   "export.aircraft": "الطائرات",
@@ -508,7 +481,6 @@
   "export.wood": "الخشب",
   "export.wood_products": "المنتجات الخشبية",
   "export.zinc": "الزنك",
-
   "summary.list_separator": "، ",
   "summary.list_last_separator": " و ",
   "summary.country.ranked": "في المرتبة #{0} من أصل {1} دولة بدرجة إجمالية {2}/100.",
@@ -531,5 +503,34 @@
   "desc.global_gdp_capita": "متوسط الناتج المحلي الإجمالي للفرد عبر جميع الدول المتابعة.",
   "desc.global_inflation": "متوسط الزيادة السنوية في أسعار المستهلك عبر جميع الدول المتابعة.",
   "desc.global_unemployment": "متوسط نسبة القوى العاملة بدون وظائف عبر جميع الدول المتابعة.",
-  "desc.global_debt": "متوسط الدين الحكومي كنسبة مئوية من الناتج المحلي الإجمالي عبر جميع الدول المتابعة."
+  "desc.global_debt": "متوسط الدين الحكومي كنسبة مئوية من الناتج المحلي الإجمالي عبر جميع الدول المتابعة.",
+  "demo.title": "الديموغرافيا",
+  "demo.population": "السكان",
+  "demo.pop_growth": "النمو السكاني",
+  "demo.median_age": "العمر الوسيط",
+  "demo.life_exp": "متوسط العمر",
+  "demo.literacy": "معدل الإلمام بالقراءة",
+  "demo.density": "الكثافة السكانية",
+  "demo.years": "سنة",
+  "demo.yr_abbr": "سنة",
+  "demo.age_dist_title": "التوزيع العمري",
+  "demo.age_0_14": "0–14 سنة",
+  "demo.age_15_64": "15–64 سنة",
+  "demo.age_65_plus": "+65 سنة",
+  "demo.urban_rural_title": "حضري مقابل ريفي",
+  "demo.urban": "حضري",
+  "demo.rural": "ريفي",
+  "demo.life_exp_title": "متوسط العمر حسب الجنس",
+  "demo.male": "ذكر",
+  "demo.female": "أنثى",
+  "demo.fertility": "معدل الخصوبة",
+  "demo.infant_mortality": "وفيات الرضع (لكل 1,000)",
+  "desc.population": "إجمالي عدد الأشخاص الذين يعيشون في البلد، بناءً على آخر تعداد أو تقدير للأمم المتحدة.",
+  "desc.pop_growth": "التغير السنوي في النسبة المئوية للسكان. القيم السلبية تشير إلى تراجع سكاني.",
+  "desc.median_age": "العمر الذي يقسم السكان إلى نصفين متساويين.",
+  "desc.life_exp": "متوسط عدد السنوات التي يُتوقع أن يعيشها المولود الجديد.",
+  "desc.literacy": "نسبة الأشخاص الذين تبلغ أعمارهم 15 عامًا فما فوق ويستطيعون القراءة والكتابة.",
+  "desc.density": "متوسط عدد الأشخاص لكل كيلومتر مربع.",
+  "desc.fertility": "متوسط عدد الأطفال لكل امرأة. معدل 2.1 يعتبر مستوى الإحلال.",
+  "desc.infant_mortality": "عدد وفيات الرضع دون سن العام لكل 1,000 ولادة حية."
 }

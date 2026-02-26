@@ -1,23 +1,18 @@
 {
   "site.title": "Welt-Barometer",
   "site.subtitle": "2026",
-
   "nav.about": "Über uns",
   "nav.methodology": "Methodik",
   "nav.data": "Daten",
   "nav.countries": "Länder",
   "nav.country_search": "Länder suchen...",
   "nav.compare": "Vergleichen",
-
   "hero.title": "Weltweiten Wohlstand in Echtzeit überwachen",
   "hero.subtitle": "Umfassende Analyse von 12 grundlegenden Säulen in 160 Ländern und wachsend, die den Fortschritt in Richtung nachhaltiger Entwicklung und menschlichem Wohlbefinden verfolgt",
-
   "overview.title": "Weltweite Übersicht",
   "overview.subtitle": "Schlüsselindikatoren, Stand Februar 2026",
-
   "rankings.title": "Weltweite Ranglisten",
   "rankings.subtitle": "Top-Länder nach Schlüsselindikatoren",
-
   "pillars.title": "Säulen des Wohlstands",
   "pillars.subtitle": "Detaillierte Analyse für jede Dimension erkunden",
   "pillars.explore": "Ranglisten erkunden",
@@ -38,7 +33,6 @@
   "overview.best_score": "Bester Wert",
   "overview.regime_type": "Regimetyp",
   "pillars.global_avg": "Weltweiter Durchschnitt",
-
   "pillar.governance": "Regierungsführung",
   "pillar.governance.desc": "Demokratie, Rechtsstaatlichkeit und institutionelle Wirksamkeit",
   "pillar.security": "Sicherheit & Schutz",
@@ -63,7 +57,6 @@
   "pillar.energy.desc": "Energiezugang, Nachhaltigkeit und Ressourcenmanagement",
   "pillar.housing": "Wohnen & Stadtentwicklung",
   "pillar.housing.desc": "Bezahlbares Wohnen, Stadtplanung und Lebensqualität",
-
   "map.section_title": "Interaktive Karte der weltweiten Prosperität",
   "map.title": "Welt-Wohlstandsindex",
   "map.interactive": "Interaktive Karte",
@@ -79,7 +72,6 @@
   "map.popup.score": "Wohlstandswert",
   "map.popup.ranking": "Rangliste",
   "map.popup.details": "Details anzeigen",
-
   "country.title": "Länderprofil",
   "country.overall": "Gesamtwert",
   "country.rank": "Weltweiter Rang",
@@ -87,7 +79,6 @@
   "country.back": "Zurück",
   "country.not_found": "Land nicht gefunden",
   "country.democracy": "Demokratie-Index",
-
   "ranking.title": "Ranglisten",
   "ranking.rank": "Rang",
   "ranking.country": "Land",
@@ -95,7 +86,6 @@
   "ranking.all_pillars": "Gesamt",
   "ranking.back": "Zurück",
   "ranking.sources": "Datenquellen",
-
   "about.title": "Über das Projekt",
   "about.intro": "Das Welt-Barometer (WB) ist eine offene Bürgerplattform, die Wohlstandsindikatoren in Ländern weltweit überwacht und visualisiert.",
   "about.mission.title": "Unsere Mission",
@@ -106,7 +96,6 @@
   "about.open.text": "Alle Daten stammen aus öffentlich zugänglichen Quellen, darunter die Weltbank, die Vereinten Nationen, Freedom House, das V-Dem-Institut und andere. Wir erheben keine personenbezogenen Daten von Besuchern.",
   "about.contact.title": "Kontakt",
   "about.contact.text": "Fragen oder Feedback? Erreichen Sie uns unter",
-
   "methodology.title": "Methodik",
   "methodology.intro": "Wie wir Wohlstandswerte berechnen",
   "methodology.scoring.title": "Bewertungssystem",
@@ -117,7 +106,6 @@
   "methodology.update.text": "Die Werte werden aktualisiert, sobald neue Daten von den Quellorganisationen verfügbar sind, in der Regel jährlich. Die Plattform zeigt die aktuellsten verfügbaren Daten an.",
   "methodology.limitations.title": "Einschränkungen",
   "methodology.limitations.text": "Kein einzelner Index kann die Komplexität nationalen Wohlstands vollständig erfassen. Unsere Werte sollten als ungefähre Indikatoren auf Basis verfügbarer Daten betrachtet werden, nicht als endgültige Ranglisten.",
-
   "impressum.title": "Impressum",
   "impressum.provider": "Anbieter",
   "impressum.provider.name": "WB World Initiative",
@@ -129,7 +117,6 @@
   "impressum.liability.text": "Alle Daten stammen aus öffentlich zugänglichen Quellen (Weltbank, Freedom House, UN, V-Dem). Die Plattform verfolgt keine politische Agenda.",
   "impressum.privacy": "Datenschutz",
   "impressum.privacy.see": "Siehe:",
-
   "privacy.title": "Datenschutzerklärung",
   "privacy.highlight": "Wir erheben KEINE personenbezogenen Daten. Keine Cookies. Kein Tracking.",
   "privacy.collection.title": "1. Datenerhebung",
@@ -149,7 +136,6 @@
   "privacy.rights.text": "Da wir keine personenbezogenen Daten erheben, gibt es nichts offenzulegen, zu korrigieren oder zu löschen.",
   "privacy.contact.title": "5. Kontakt",
   "privacy.updated": "Zuletzt aktualisiert: Februar 2026",
-
   "footer.about": "Über uns",
   "footer.about.project": "Über das Projekt",
   "footer.about.methodology": "Methodik",
@@ -161,13 +147,12 @@
   "footer.contact": "Kontakt",
   "footer.email": "E-Mail",
   "footer.copyright": "© 2026 Welt-Barometer | Offene Datenplattform",
-  "footer.support": "\u2615 Kauf mir einen Kaffee",
+  "footer.support": "☕ Kauf mir einen Kaffee",
   "about.support.title": "Projekt unterstützen",
   "about.support.text": "Das World Barometer ist kostenlos, offen und unabhängig. Wenn Sie es nützlich finden, können Sie die Weiterentwicklung unterstützen.",
   "share.label": "Teilen",
   "share.home_text": "World Barometer — Offene Daten zu 160 Ländern in 12 Dimensionen des Wohlstands.",
   "share.country_text": "World Barometer",
-
   "lang.en": "English",
   "lang.ro": "Română",
   "lang.de": "Deutsch",
@@ -180,13 +165,11 @@
   "lang.ja": "日本語",
   "lang.hi": "हिन्दी",
   "lang.it": "Italiano",
-
   "score.high": "Hoch",
   "score.above_avg": "Überdurchschnittlich",
   "score.average": "Durchschnittlich",
   "score.below_avg": "Unterdurchschnittlich",
   "score.low": "Niedrig",
-
   "econ.title": "Wirtschaftsübersicht",
   "econ.gdp": "BIP",
   "econ.gdp_per_capita": "BIP pro Kopf",
@@ -208,14 +191,12 @@
   "econ.exp.public_services": "Öffentliche Dienste",
   "econ.exp.debt_service": "Schuldendienst",
   "econ.exp.other": "Sonstiges",
-
   "global.econ_title": "Weltwirtschaft",
   "global.gdp_total": "Welt-BIP",
   "global.avg_gdp_capita": "Durchschn. BIP/Kopf",
   "global.avg_inflation": "Durchschn. Inflation",
   "global.avg_unemployment": "Durchschn. Arbeitslosigkeit",
   "global.avg_debt": "Durchschn. Staatsverschuldung",
-
   "pol.title": "Weltweite Regierungsführung und politische Systeme",
   "pol.avg_democracy": "Durchschn. Demokratie-Index",
   "pol.avg_corruption": "Durchschn. Korruptionsrang",
@@ -250,7 +231,6 @@
   "compare.select_country": "Land auswählen",
   "compare.add_country": "+ Land hinzufügen",
   "compare.btn": "Vergleichen",
-
   "trade.title": "Handel & Produktion",
   "trade.exports": "Exporte",
   "trade.imports": "Importe",
@@ -262,35 +242,30 @@
   "trade.total_imports": "Weltimporte",
   "trade.avg_openness": "Durchschn. Handelsoffenheit",
   "trade.top_exporters": "Handelsoffenste Volkswirtschaften",
-
   "satisfaction.title": "Lebenszufriedenheit",
   "satisfaction.very_high": "Sehr zufrieden",
   "satisfaction.high": "Zufrieden",
   "satisfaction.moderate": "Mäßig",
   "satisfaction.low": "Unzufrieden",
   "satisfaction.very_low": "Sehr unzufrieden",
-
   "corruption.title": "Korruptionsniveau",
   "corruption.very_clean": "Sehr sauber",
   "corruption.clean": "Sauber",
   "corruption.moderate": "Mäßig",
   "corruption.corrupt": "Korrupt",
   "corruption.very_corrupt": "Sehr korrupt",
-
   "justice.title": "Rechtsstaatlichkeit",
   "justice.very_strong": "Sehr stark",
   "justice.strong": "Stark",
   "justice.moderate": "Mäßig",
   "justice.weak": "Schwach",
   "justice.very_weak": "Sehr schwach",
-
   "press.title": "Meinungsfreiheit",
   "press.very_free": "Sehr frei",
   "press.free": "Frei",
   "press.moderate": "Mäßig",
   "press.restricted": "Eingeschränkt",
   "press.very_restricted": "Sehr eingeschränkt",
-
   "nav.quiz": "Quiz",
   "quiz.title": "Wohlstands-Quiz",
   "quiz.subtitle": "Testen Sie Ihr Wissen über weltweiten Wohlstand",
@@ -319,7 +294,6 @@
   "quiz.q.lowest_corruption": "Welches Land hat die geringste Korruption?",
   "quiz.q.best_press": "Welches Land hat die beste Pressefreiheit?",
   "quiz.q.conflict_status": "Was ist der Konfliktstatus von {0}?",
-
   "desc.satisfaction": "Lebenszufriedenheitswert aus dem World Happiness Report, misst subjektives Wohlbefinden auf einer Skala von 0–10.",
   "desc.corruption": "Korruptionswahrnehmungsindex-Ranking von Transparency International. Niedrigerer Rang bedeutet weniger wahrgenommene Korruption.",
   "desc.rule_of_law": "Rechtsstaatlichkeitsindex des World Justice Project, misst Rechenschaftspflicht, offene Regierungsführung und Zugang zur Justiz. Skala 0–1.",
@@ -346,7 +320,6 @@
   "desc.exp.public_services": "Allgemeine Regierungsverwaltung, Polizei, Gerichte und öffentliche Ordnung.",
   "desc.exp.debt_service": "Zins- und Tilgungszahlungen für staatliche Schulden.",
   "desc.exp.other": "Sonstige Staatsausgaben, die nicht in die obigen Kategorien eingeordnet sind.",
-
   "export.aerospace": "Luft- und Raumfahrt",
   "export.agricultural_products": "Landwirtschaftliche Produkte",
   "export.aircraft": "Flugzeuge",
@@ -508,7 +481,6 @@
   "export.wood": "Holz",
   "export.wood_products": "Holzprodukte",
   "export.zinc": "Zink",
-
   "summary.list_separator": ", ",
   "summary.list_last_separator": " und ",
   "summary.country.ranked": "Rang #{0} von {1} Ländern mit einem Gesamtwert von {2}/100.",
@@ -531,5 +503,34 @@
   "desc.global_gdp_capita": "Durchschnittliches BIP pro Person über alle erfassten Länder.",
   "desc.global_inflation": "Durchschnittlicher jährlicher Verbraucherpreisanstieg über alle erfassten Länder.",
   "desc.global_unemployment": "Durchschnittlicher Anteil der Erwerbspersonen ohne Beschäftigung über alle erfassten Länder.",
-  "desc.global_debt": "Durchschnittliche Staatsverschuldung als Prozentsatz des BIP über alle erfassten Länder."
+  "desc.global_debt": "Durchschnittliche Staatsverschuldung als Prozentsatz des BIP über alle erfassten Länder.",
+  "demo.title": "Demografie",
+  "demo.population": "Bevölkerung",
+  "demo.pop_growth": "Bevölkerungswachstum",
+  "demo.median_age": "Medianalter",
+  "demo.life_exp": "Lebenserwartung",
+  "demo.literacy": "Alphabetisierungsrate",
+  "demo.density": "Bevölkerungsdichte",
+  "demo.years": "Jahre",
+  "demo.yr_abbr": "J.",
+  "demo.age_dist_title": "Altersverteilung",
+  "demo.age_0_14": "0–14 Jahre",
+  "demo.age_15_64": "15–64 Jahre",
+  "demo.age_65_plus": "65+ Jahre",
+  "demo.urban_rural_title": "Stadt vs. Land",
+  "demo.urban": "Städtisch",
+  "demo.rural": "Ländlich",
+  "demo.life_exp_title": "Lebenserwartung nach Geschlecht",
+  "demo.male": "Männlich",
+  "demo.female": "Weiblich",
+  "demo.fertility": "Geburtenrate",
+  "demo.infant_mortality": "Säuglingssterblichkeit (pro 1.000)",
+  "desc.population": "Gesamtzahl der im Land lebenden Menschen, basierend auf der letzten Volkszählung oder UN-Schätzung.",
+  "desc.pop_growth": "Jährliche prozentuale Veränderung der Bevölkerung. Negative Werte zeigen einen Bevölkerungsrückgang an.",
+  "desc.median_age": "Das Alter, das die Bevölkerung in zwei gleiche Hälften teilt. Ein höheres Medianalter deutet auf eine alternde Gesellschaft hin.",
+  "desc.life_exp": "Durchschnittliche Anzahl der Jahre, die ein Neugeborenes voraussichtlich leben wird.",
+  "desc.literacy": "Prozentsatz der Personen ab 15 Jahren, die lesen und schreiben können. Basierend auf UNESCO-Daten.",
+  "desc.density": "Durchschnittliche Anzahl der Menschen pro Quadratkilometer Landesfläche.",
+  "desc.fertility": "Durchschnittliche Anzahl der Kinder pro Frau. Eine Rate von 2,1 gilt als Bestandserhaltungsniveau.",
+  "desc.infant_mortality": "Anzahl der Todesfälle von Säuglingen unter einem Jahr pro 1.000 Lebendgeburten."
 }

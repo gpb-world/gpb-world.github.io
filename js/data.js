@@ -7,6 +7,7 @@ const Data = (() => {
   let _pillars = null;
   let _economics = null;
   let _politics = null;
+  let _demographics = null;
 
   async function _load(url) {
     const resp = await fetch(url);
@@ -20,16 +21,18 @@ const Data = (() => {
 
   async function init() {
     if (!_countries || !_pillars) {
-      const [countries, pillars, economics, politics] = await Promise.all([
+      const [countries, pillars, economics, politics, demographics] = await Promise.all([
         _load('data/countries.json'),
         _load('data/pillars.json'),
         _loadSafe('data/economics.json'),
-        _loadSafe('data/politics.json')
+        _loadSafe('data/politics.json'),
+        _loadSafe('data/demographics.json')
       ]);
       _countries = countries;
       _pillars = pillars;
       _economics = economics;
       _politics = politics;
+      _demographics = demographics;
     }
   }
 
@@ -97,5 +100,9 @@ const Data = (() => {
     return _politics || {};
   }
 
-  return { init, getAllCountries, getCountry, getPillars, getPillar, getGlobalAverages, getOverallScore, getRanking, getScoreLabel, getEconomics, getPolitics, getAllPolitics };
+  function getDemographics(countryId) {
+    return (_demographics && _demographics[countryId]) || null;
+  }
+
+  return { init, getAllCountries, getCountry, getPillars, getPillar, getGlobalAverages, getOverallScore, getRanking, getScoreLabel, getEconomics, getPolitics, getAllPolitics, getDemographics };
 })();

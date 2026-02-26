@@ -1211,9 +1211,11 @@ function renderCountry() {
       <h2 class="scores-heading">${I18n.t('country.pillar_scores')}</h2>
       <div class="score-bars">${pillarBars}</div>
     </div>
+    <div id="demo-dashboard"></div>
     <div id="econ-dashboard"></div>
     <div id="share-bar-country"></div>`;
 
+  renderDemographicsSection(country);
   renderEconomicDashboard(country);
 
   // Share bar
@@ -1224,6 +1226,144 @@ function renderCountry() {
     _bindShareButtons(shareEl,
       name + ' — ' + I18n.t('share.country_text'),
       countryUrl);
+  }
+}
+
+// ── Demographics Dashboard ──
+
+let _demoCharts = [];
+
+function renderDemographicsSection(country) {
+  const container = document.getElementById('demo-dashboard');
+  if (!container) return;
+
+  const demo = Data.getDemographics(country.id);
+  if (!demo) { container.innerHTML = ''; return; }
+
+  _demoCharts.forEach(c => c.destroy());
+  _demoCharts = [];
+
+  function fmtPop(v) {
+    if (v >= 1e9) return (v / 1e9).toFixed(1) + 'B';
+    if (v >= 1e6) return (v / 1e6).toFixed(1) + 'M';
+    if (v >= 1e3) return (v / 1e3).toFixed(1) + 'K';
+    return v.toString();
+  }
+  function fmtGrowth(v) {
+    return (v >= 0 ? '+' : '') + v.toFixed(1) + '%';
+  }
+  const growthColor = demo.population_growth >= 0 ? '#2E7D32' : '#E53935';
+
+  const metrics = [
+    { key: 'demo.population', value: fmtPop(demo.population), desc: 'desc.population' },
+    { key: 'demo.pop_growth', value: fmtGrowth(demo.population_growth), desc: 'desc.pop_growth', color: growthColor },
+    { key: 'demo.median_age', value: demo.median_age + ' ' + I18n.t('demo.years'), desc: 'desc.median_age' },
+    { key: 'demo.life_exp', value: demo.life_exp_total + ' ' + I18n.t('demo.years'), desc: 'desc.life_exp' },
+    { key: 'demo.literacy', value: demo.literacy_rate + '%', desc: 'desc.literacy' },
+    { key: 'demo.density', value: demo.population_density.toFixed(0) + '/km\u00B2', desc: 'desc.density' }
+  ];
+
+  const metricCards = metrics.map(m => `
+    <div class="econ-metric">
+      <div class="econ-metric-label">${I18n.t(m.key)}</div>
+      <div class="econ-metric-value"${m.color ? ` style="color:${m.color}"` : ''}>${m.value} ${infoBtn(m.desc)}</div>
+    </div>`).join('');
+
+  const lifeExpLegend = `
+    <div class="econ-legend">
+      <div class="econ-legend-item"><span class="econ-legend-dot" style="background:#42A5F5"></span>${I18n.t('demo.male')}: ${demo.life_exp_male} ${I18n.t('demo.years')}</div>
+      <div class="econ-legend-item"><span class="econ-legend-dot" style="background:#EC407A"></span>${I18n.t('demo.female')}: ${demo.life_exp_female} ${I18n.t('demo.years')}</div>
+    </div>`;
+
+  const extraMetrics = `
+    <div class="econ-metrics demo-metrics-extra">
+      <div class="econ-metric">
+        <div class="econ-metric-label">${I18n.t('demo.fertility')}</div>
+        <div class="econ-metric-value">${demo.fertility_rate.toFixed(2)} ${infoBtn('desc.fertility')}</div>
+      </div>
+      <div class="econ-metric">
+        <div class="econ-metric-label">${I18n.t('demo.infant_mortality')}</div>
+        <div class="econ-metric-value">${demo.infant_mortality.toFixed(1)} ${infoBtn('desc.infant_mortality')}</div>
+      </div>
+    </div>`;
+
+  container.innerHTML = `
+    <div class="country-section">
+      <h2 class="scores-heading">${I18n.t('demo.title')}</h2>
+      <div class="econ-metrics">${metricCards}</div>
+      <div class="econ-charts">
+        <div class="econ-chart-box">
+          <h3>${I18n.t('demo.age_dist_title')}</h3>
+          <canvas id="chart-age-dist"></canvas>
+          <div class="econ-legend" id="legend-age-dist"></div>
+        </div>
+        <div class="econ-chart-box">
+          <h3>${I18n.t('demo.urban_rural_title')}</h3>
+          <canvas id="chart-urban-rural"></canvas>
+          <div class="econ-legend" id="legend-urban-rural"></div>
+        </div>
+      </div>
+      <div class="econ-charts demo-charts-bottom">
+        <div class="econ-chart-box">
+          <h3>${I18n.t('demo.life_exp_title')}</h3>
+          <canvas id="chart-life-exp"></canvas>
+          ${lifeExpLegend}
+        </div>
+      </div>
+      ${extraMetrics}
+    </div>`;
+
+  // Charts
+  if (typeof Chart !== 'undefined') {
+    // Age Distribution doughnut
+    const ageCtx = document.getElementById('chart-age-dist');
+    if (ageCtx) {
+      const ageColors = ['#42A5F5', '#1565C0', '#78909C'];
+      const ageLabels = [I18n.t('demo.age_0_14'), I18n.t('demo.age_15_64'), I18n.t('demo.age_65_plus')];
+      const ageData = [demo.age_0_14, demo.age_15_64, demo.age_65_plus];
+      document.getElementById('legend-age-dist').innerHTML = ageLabels.map((label, i) =>
+        `<div class="econ-legend-item"><span class="econ-legend-dot" style="background:${ageColors[i]}"></span>${label}: ${ageData[i]}%</div>`
+      ).join('');
+      _demoCharts.push(new Chart(ageCtx, {
+        type: 'doughnut',
+        data: { labels: ageLabels, datasets: [{ data: ageData, backgroundColor: ageColors, borderWidth: 2, borderColor: '#fff' }] },
+        options: { responsive: true, plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `${ctx.label}: ${ctx.parsed}%` } } } }
+      }));
+    }
+
+    // Urban/Rural doughnut
+    const urbanCtx = document.getElementById('chart-urban-rural');
+    if (urbanCtx) {
+      const urbanColors = ['#009edb', '#81C784'];
+      const urbanLabels = [I18n.t('demo.urban'), I18n.t('demo.rural')];
+      const urbanData = [demo.urban_pct, demo.rural_pct];
+      document.getElementById('legend-urban-rural').innerHTML = urbanLabels.map((label, i) =>
+        `<div class="econ-legend-item"><span class="econ-legend-dot" style="background:${urbanColors[i]}"></span>${label}: ${urbanData[i]}%</div>`
+      ).join('');
+      _demoCharts.push(new Chart(urbanCtx, {
+        type: 'doughnut',
+        data: { labels: urbanLabels, datasets: [{ data: urbanData, backgroundColor: urbanColors, borderWidth: 2, borderColor: '#fff' }] },
+        options: { responsive: true, plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `${ctx.label}: ${ctx.parsed}%` } } } }
+      }));
+    }
+
+    // Life Expectancy horizontal bar
+    const lifeCtx = document.getElementById('chart-life-exp');
+    if (lifeCtx) {
+      _demoCharts.push(new Chart(lifeCtx, {
+        type: 'bar',
+        data: {
+          labels: [I18n.t('demo.male'), I18n.t('demo.female')],
+          datasets: [{ data: [demo.life_exp_male, demo.life_exp_female], backgroundColor: ['#42A5F5', '#EC407A'], borderRadius: 4, barThickness: 36 }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `${ctx.parsed.x} ${I18n.t('demo.years')}` } } },
+          scales: { x: { min: 0, max: 100, ticks: { callback: v => v + ' ' + I18n.t('demo.yr_abbr') } }, y: { grid: { display: false } } }
+        }
+      }));
+    }
   }
 }
 
