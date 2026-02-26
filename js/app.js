@@ -1207,11 +1207,11 @@ function renderCountry() {
         <div class="meta-value">#${rank} / ${ranking.length}</div>
       </div>
     </div>
+    <div id="demo-dashboard"></div>
     <div class="country-section">
       <h2 class="scores-heading">${I18n.t('country.pillar_scores')}</h2>
       <div class="score-bars">${pillarBars}</div>
     </div>
-    <div id="demo-dashboard"></div>
     <div id="econ-dashboard"></div>
     <div id="share-bar-country"></div>`;
 
