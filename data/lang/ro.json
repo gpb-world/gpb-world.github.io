@@ -532,5 +532,7 @@
   "desc.literacy": "Procentul persoanelor de 15 ani și peste care știu să citească și să scrie. Bazat pe datele UNESCO.",
   "desc.density": "Numărul mediu de persoane pe kilometru pătrat de suprafață.",
   "desc.fertility": "Numărul mediu de copii pe femeie. O rată de 2,1 este considerată nivelul de înlocuire.",
-  "desc.infant_mortality": "Numărul deceselor copiilor sub un an la 1.000 de nașteri vii."
+  "desc.infant_mortality": "Numărul deceselor copiilor sub un an la 1.000 de nașteri vii.",
+  "country.top_pillar": "Cel mai puternic pilon",
+  "country.bottom_pillar": "Cel mai slab pilon"
 }

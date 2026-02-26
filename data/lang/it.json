@@ -532,5 +532,7 @@
   "desc.literacy": "Percentuale di persone di 15 anni e oltre che sanno leggere e scrivere.",
   "desc.density": "Numero medio di persone per chilometro quadrato.",
   "desc.fertility": "Numero medio di figli per donna. Un tasso di 2,1 è considerato il livello di sostituzione.",
-  "desc.infant_mortality": "Numero di decessi di bambini sotto un anno per 1.000 nati vivi."
+  "desc.infant_mortality": "Numero di decessi di bambini sotto un anno per 1.000 nati vivi.",
+  "country.top_pillar": "Pilastro più forte",
+  "country.bottom_pillar": "Pilastro più debole"
 }

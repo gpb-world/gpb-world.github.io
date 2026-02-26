@@ -532,5 +532,7 @@
   "desc.literacy": "15歳以上で読み書きができる人の割合。",
   "desc.density": "1平方キロメートルあたりの平均人口。",
   "desc.fertility": "女性一人あたりの平均出生数。2.1が人口置換水準。",
-  "desc.infant_mortality": "出生1,000人あたりの1歳未満の死亡数。"
+  "desc.infant_mortality": "出生1,000人あたりの1歳未満の死亡数。",
+  "country.top_pillar": "最強の柱",
+  "country.bottom_pillar": "最弱の柱"
 }

@@ -1197,7 +1197,7 @@ function renderCountry() {
     <h1 class="country-name">${name}</h1>
     <div class="summary-box">${summaryText}</div>
     ${govHtml}
-    <div class="country-meta">
+    <div class="country-meta country-meta-4">
       <div class="meta-card">
         <div class="meta-label">${I18n.t('country.overall')}</div>
         <div class="meta-value score-${Data.getScoreLabel(overall)}-text">${overall}/100</div>
@@ -1205,6 +1205,16 @@ function renderCountry() {
       <div class="meta-card">
         <div class="meta-label">${I18n.t('country.rank')}</div>
         <div class="meta-value">#${rank} / ${ranking.length}</div>
+      </div>
+      <div class="meta-card">
+        <div class="meta-label">${I18n.t('country.top_pillar')}</div>
+        <div class="meta-value">${(() => { const best = pillars.reduce((a, p) => (country.scores[p.id] || 0) > (country.scores[a.id] || 0) ? p : a); return best.icon + ' ' + (country.scores[best.id] || 0); })()}</div>
+        <div class="meta-sub">${(() => { const best = pillars.reduce((a, p) => (country.scores[p.id] || 0) > (country.scores[a.id] || 0) ? p : a); return I18n.t(best.name_key); })()}</div>
+      </div>
+      <div class="meta-card">
+        <div class="meta-label">${I18n.t('country.bottom_pillar')}</div>
+        <div class="meta-value">${(() => { const worst = pillars.reduce((a, p) => (country.scores[p.id] || 0) < (country.scores[a.id] || 0) ? p : a); return worst.icon + ' ' + (country.scores[worst.id] || 0); })()}</div>
+        <div class="meta-sub">${(() => { const worst = pillars.reduce((a, p) => (country.scores[p.id] || 0) < (country.scores[a.id] || 0) ? p : a); return I18n.t(worst.name_key); })()}</div>
       </div>
     </div>
     <div id="demo-dashboard"></div>

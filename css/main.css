@@ -682,12 +682,23 @@ body {
     flex-wrap: wrap;
 }
 
+.country-meta-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .meta-card {
     background: var(--bg-light);
     padding: 1.5rem 2rem;
     border-radius: 4px;
-    min-width: 180px;
+    min-width: 0;
     text-align: center;
+}
+
+.meta-sub {
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    margin-top: 0.3rem;
 }
 
 .meta-label {
@@ -1918,6 +1929,10 @@ body {
 
     .country-meta {
         flex-direction: column;
+    }
+
+    .country-meta-4 {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .score-row {

@@ -532,5 +532,7 @@
   "desc.literacy": "Prozentsatz der Personen ab 15 Jahren, die lesen und schreiben können. Basierend auf UNESCO-Daten.",
   "desc.density": "Durchschnittliche Anzahl der Menschen pro Quadratkilometer Landesfläche.",
   "desc.fertility": "Durchschnittliche Anzahl der Kinder pro Frau. Eine Rate von 2,1 gilt als Bestandserhaltungsniveau.",
-  "desc.infant_mortality": "Anzahl der Todesfälle von Säuglingen unter einem Jahr pro 1.000 Lebendgeburten."
+  "desc.infant_mortality": "Anzahl der Todesfälle von Säuglingen unter einem Jahr pro 1.000 Lebendgeburten.",
+  "country.top_pillar": "Stärkste Säule",
+  "country.bottom_pillar": "Schwächste Säule"
 }

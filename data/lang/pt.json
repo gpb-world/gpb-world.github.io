@@ -532,5 +532,7 @@
   "desc.literacy": "Percentual de pessoas com 15 anos ou mais que sabem ler e escrever. Baseado em dados da UNESCO.",
   "desc.density": "Número médio de pessoas por quilômetro quadrado de área.",
   "desc.fertility": "Número médio de filhos por mulher. Uma taxa de 2,1 é considerada nível de reposição.",
-  "desc.infant_mortality": "Número de mortes de crianças menores de um ano por 1.000 nascidos vivos."
+  "desc.infant_mortality": "Número de mortes de crianças menores de um ano por 1.000 nascidos vivos.",
+  "country.top_pillar": "Pilar mais forte",
+  "country.bottom_pillar": "Pilar mais fraco"
 }

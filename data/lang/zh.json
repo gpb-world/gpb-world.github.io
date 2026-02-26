@@ -532,5 +532,7 @@
   "desc.literacy": "15岁及以上能够读写的人口百分比。基于联合国教科文组织数据。",
   "desc.density": "每平方公里的平均人口数。",
   "desc.fertility": "每位妇女的平均生育孩子数。2.1被视为更替水平。",
-  "desc.infant_mortality": "每1,000名活产婴儿中不到一岁的死亡人数。"
+  "desc.infant_mortality": "每1,000名活产婴儿中不到一岁的死亡人数。",
+  "country.top_pillar": "最强支柱",
+  "country.bottom_pillar": "最弱支柱"
 }

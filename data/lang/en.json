@@ -538,5 +538,7 @@
   "desc.literacy": "Percentage of people aged 15 and above who can read and write. Based on UNESCO data.",
   "desc.density": "Average number of people per square kilometer of land area.",
   "desc.fertility": "Average number of children born per woman over her lifetime. A rate of 2.1 is considered replacement level.",
-  "desc.infant_mortality": "Number of deaths of infants under one year old per 1,000 live births."
+  "desc.infant_mortality": "Number of deaths of infants under one year old per 1,000 live births.",
+  "country.top_pillar": "Strongest Pillar",
+  "country.bottom_pillar": "Weakest Pillar"
 }
