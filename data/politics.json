@@ -304,7 +304,7 @@
     "regime": "flawed_democracy",
     "democracy_score": 7.85,
     "happiness_score": 6.7,
-    "conflict_status": "peace",
+    "conflict_status": "war",
     "corruption_rank": 24,
     "press_freedom_rank": 55,
     "rule_of_law": 0.73
@@ -614,7 +614,7 @@
     "regime": "authoritarian",
     "democracy_score": 1.96,
     "happiness_score": 4.7,
-    "conflict_status": "tension",
+    "conflict_status": "war",
     "corruption_rank": 147,
     "press_freedom_rank": 176,
     "rule_of_law": 0.34
@@ -997,7 +997,7 @@
     "conflict_status": "peace",
     "corruption_rank": 137,
     "press_freedom_rank": 99,
-    "rule_of_law": 0.40
+    "rule_of_law": 0.4
   },
   "sudan": {
     "system": "federal_republic",
@@ -1037,7 +1037,7 @@
     "conflict_status": "war",
     "corruption_rank": 180,
     "press_freedom_rank": 140,
-    "rule_of_law": 0.10
+    "rule_of_law": 0.1
   },
   "afghanistan": {
     "system": "theocratic_republic",
@@ -1097,7 +1097,7 @@
     "conflict_status": "tension",
     "corruption_rank": 142,
     "press_freedom_rank": 57,
-    "rule_of_law": 0.30
+    "rule_of_law": 0.3
   },
   "bulgaria": {
     "system": "parliamentary_republic",
@@ -1117,7 +1117,7 @@
     "conflict_status": "peace",
     "corruption_rank": 41,
     "press_freedom_rank": 14,
-    "rule_of_law": 0.70
+    "rule_of_law": 0.7
   },
   "bosnia": {
     "system": "parliamentary_republic",
@@ -1127,7 +1127,7 @@
     "conflict_status": "tension",
     "corruption_rank": 110,
     "press_freedom_rank": 64,
-    "rule_of_law": 0.40
+    "rule_of_law": 0.4
   },
   "belarus": {
     "system": "presidential_republic",
@@ -1137,7 +1137,7 @@
     "conflict_status": "tension",
     "corruption_rank": 98,
     "press_freedom_rank": 157,
-    "rule_of_law": 0.30
+    "rule_of_law": 0.3
   },
   "moldova": {
     "system": "parliamentary_republic",
@@ -1217,7 +1217,7 @@
     "conflict_status": "peace",
     "corruption_rank": 136,
     "press_freedom_rank": 161,
-    "rule_of_law": 0.30
+    "rule_of_law": 0.3
   },
   "fiji": {
     "system": "parliamentary_republic",
@@ -1317,7 +1317,7 @@
     "conflict_status": "tension",
     "corruption_rank": 56,
     "press_freedom_rank": 77,
-    "rule_of_law": 0.50
+    "rule_of_law": 0.5
   },
   "armenia": {
     "system": "parliamentary_republic",
@@ -1337,7 +1337,7 @@
     "conflict_status": "tension",
     "corruption_rank": 154,
     "press_freedom_rank": 162,
-    "rule_of_law": 0.30
+    "rule_of_law": 0.3
   },
   "namibia": {
     "system": "presidential_republic",
@@ -1357,7 +1357,7 @@
     "conflict_status": "peace",
     "corruption_rank": 49,
     "press_freedom_rank": 64,
-    "rule_of_law": 0.70
+    "rule_of_law": 0.7
   },
   "gabon": {
     "system": "presidential_republic",
@@ -1387,7 +1387,7 @@
     "conflict_status": "minor_conflict",
     "corruption_rank": 123,
     "press_freedom_rank": 61,
-    "rule_of_law": 0.30
+    "rule_of_law": 0.3
   },
   "chad": {
     "system": "presidential_republic",
@@ -1427,7 +1427,7 @@
     "conflict_status": "peace",
     "corruption_rank": 110,
     "press_freedom_rank": 51,
-    "rule_of_law": 0.40
+    "rule_of_law": 0.4
   },
   "benin": {
     "system": "presidential_republic",
@@ -1487,7 +1487,7 @@
     "conflict_status": "peace",
     "corruption_rank": 35,
     "press_freedom_rank": 152,
-    "rule_of_law": 0.60
+    "rule_of_law": 0.6
   },
   "maldives": {
     "system": "presidential_republic",
@@ -1497,7 +1497,7 @@
     "conflict_status": "peace",
     "corruption_rank": 117,
     "press_freedom_rank": 100,
-    "rule_of_law": 0.40
+    "rule_of_law": 0.4
   },
   "bhutan": {
     "system": "constitutional_monarchy",
@@ -1517,7 +1517,7 @@
     "conflict_status": "peace",
     "corruption_rank": 167,
     "press_freedom_rank": 176,
-    "rule_of_law": 0.20
+    "rule_of_law": 0.2
   },
   "tajikistan": {
     "system": "presidential_republic",
@@ -1567,7 +1567,7 @@
     "conflict_status": "peace",
     "corruption_rank": 94,
     "press_freedom_rank": 32,
-    "rule_of_law": 0.40
+    "rule_of_law": 0.4
   },
   "bahamas": {
     "system": "parliamentary_republic",

@@ -118,6 +118,49 @@ body {
     opacity: 0.95;
 }
 
+/* Breaking News Banner */
+.breaking-news-banner {
+    background: linear-gradient(135deg, #B71C1C 0%, #D32F2F 100%);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.breaking-news-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+.breaking-news-tag {
+    background: #fff;
+    color: #B71C1C;
+    font-weight: 800;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+    animation: pulse-tag 2s ease-in-out infinite;
+}
+@keyframes pulse-tag {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+.breaking-news-text {
+    flex: 1;
+}
+.breaking-news-link {
+    color: #FFCDD2;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.breaking-news-link:hover {
+    color: #fff;
+}
+
 /* Container */
 .container {
     max-width: 1200px;
@@ -566,6 +609,48 @@ body {
     font-weight: 400;
     color: var(--dark-blue);
     margin-bottom: 0.75rem;
+}
+.country-map-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    padding: 0.75rem 1rem;
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--border-gray);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.country-mini-world {
+    width: 120px;
+    height: 84px;
+    border-radius: 6px;
+    flex-shrink: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.country-shape-svg {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+}
+.country-map-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+@media (max-width: 600px) {
+    .country-map-bar {
+        gap: 0.6rem;
+        padding: 0.5rem 0.75rem;
+    }
+    .country-mini-world {
+        width: 90px;
+        height: 63px;
+    }
+    .country-shape-svg {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 /* Country Governance Bar */

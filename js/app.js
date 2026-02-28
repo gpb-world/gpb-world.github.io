@@ -1202,9 +1202,33 @@ function renderCountry() {
 
   const summaryText = _buildCountrySummary(country, overall, rank, ranking.length);
 
+  // Country map + shape
+  const coords = country.coords || [0, 0];
+  const mapCx = ((coords[1] + 180) / 360) * 100;
+  const mapCy = ((90 - coords[0]) / 180) * 70;
+  const shapePath = (typeof _countryShapes !== 'undefined' && _countryShapes[id]) ? _countryShapes[id] : '';
+  const countryMapHtml = `
+    <div class="country-map-bar">
+      <svg viewBox="0 0 100 70" class="country-mini-world">
+        <rect width="100" height="70" fill="#E3F2FD" rx="4"/>
+        <path d="M10,18 L14,15 L20,14 L26,16 L28,20 L30,26 L28,32 L24,36 L20,38 L18,42 L16,40 L14,34 L10,28 Z" fill="#BBDEFB"/>
+        <path d="M24,44 L28,42 L32,44 L34,48 L33,54 L30,60 L26,64 L24,60 L22,54 L22,48 Z" fill="#BBDEFB"/>
+        <path d="M44,16 L48,14 L52,15 L56,18 L54,22 L52,26 L48,28 L44,26 L42,22 L42,18 Z" fill="#BBDEFB"/>
+        <path d="M44,32 L48,30 L54,32 L58,36 L60,42 L58,50 L54,56 L50,60 L46,58 L44,52 L42,46 L42,38 Z" fill="#BBDEFB"/>
+        <path d="M56,14 L62,12 L70,14 L78,16 L82,20 L84,26 L82,32 L78,36 L72,38 L66,40 L60,38 L58,34 L56,28 L54,22 Z" fill="#BBDEFB"/>
+        <path d="M64,38 L68,36 L74,38 L80,42 L78,48 L74,50 L70,48 L66,44 Z" fill="#BBDEFB"/>
+        <path d="M76,54 L82,52 L88,54 L90,58 L88,62 L84,64 L78,62 L76,58 Z" fill="#BBDEFB"/>
+        <circle cx="${mapCx}" cy="${mapCy}" r="6" fill="var(--un-blue)" opacity="0.2"/>
+        <circle cx="${mapCx}" cy="${mapCy}" r="2.5" fill="var(--un-blue)" stroke="#fff" stroke-width="0.8"/>
+      </svg>
+      ${shapePath ? `<svg viewBox="0 0 50 50" class="country-shape-svg"><path d="${shapePath}" fill="var(--un-blue)" opacity="0.75" stroke="var(--dark-blue)" stroke-width="0.5"/></svg>` : ''}
+      <span class="country-map-label">${name}</span>
+    </div>`;
+
   container.innerHTML = `
     <a href="index.html" class="back-link">&larr; ${I18n.t('country.back')}</a>
     <h1 class="country-name">${name}</h1>
+    ${countryMapHtml}
     <div class="summary-box">${summaryText}</div>
     ${govHtml}
     <div class="country-meta country-meta-4">
