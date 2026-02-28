@@ -41,8 +41,8 @@
         <p data-i18n="hero.subtitle">Comprehensive analysis of 12 fundamental pillars across 160 countries and growing, tracking progress toward sustainable development and human wellbeing</p>
     </section>
 
-    <!-- Breaking News Alert -->
-    <div class="breaking-news-banner">
+    <!-- Breaking News Alert (auto-hides after 3 days from Feb 28, 2026) -->
+    <div class="breaking-news-banner" id="breaking-news">
         <div class="breaking-news-content">
             <span class="breaking-news-tag">BREAKING</span>
             <span class="breaking-news-text">
@@ -52,6 +52,15 @@
             </span>
         </div>
     </div>
+    <script>
+    (function() {
+      var expires = new Date('2026-03-03T23:59:59Z');
+      if (new Date() > expires) {
+        var el = document.getElementById('breaking-news');
+        if (el) el.style.display = 'none';
+      }
+    })();
+    </script>
 
     <!-- World Overview -->
     <div class="container">
