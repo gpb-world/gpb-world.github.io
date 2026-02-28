@@ -495,7 +495,14 @@ function renderPeaceBar() {
   const avgSecurity = Math.round(countries.reduce((s, c) => s + (c.scores.security || 0), 0) / countries.length);
   const avgGovernance = Math.round(countries.reduce((s, c) => s + (c.scores.governance || 0), 0) / countries.length);
 
+  // Stacked bar segments
+  const stackedBar = statusKeys.map(k => {
+    const pct = (conflicts[k].length / total * 100).toFixed(1);
+    return conflicts[k].length ? `<div class="peace-bar-seg" style="width:${pct}%;background:${statusColors[k]}" title="${I18n.t('peace.status.' + k)}: ${conflicts[k].length}"></div>` : '';
+  }).join('');
+
   const statusItems = statusKeys.filter(k => conflicts[k].length > 0).map(k => {
+    const pct = (conflicts[k].length / total * 100).toFixed(1);
     const names = conflicts[k].map(id => {
       const c = Data.getCountry(id);
       return c ? I18n.getCountryName(c) : id;
@@ -507,6 +514,8 @@ function renderPeaceBar() {
       <span class="peace-icon">${statusIcons[k]}</span>
       <span class="peace-label">${I18n.t('peace.status.' + k)}</span>
       <strong class="peace-count">${conflicts[k].length}</strong>
+      <div class="peace-row-bar"><div class="peace-row-fill" style="width:${pct}%;background:${statusColors[k]}"></div></div>
+      <span class="peace-pct">${pct}%</span>
       <span class="peace-countries">${nameList}</span>
     </div>`;
   }).join('');
@@ -520,6 +529,7 @@ function renderPeaceBar() {
         <div class="peace-big-stat"><span class="peace-big-num">${avgSecurity}/100</span><span class="peace-big-label">${I18n.t('peace.avg_security')}</span></div>
         <div class="peace-big-stat"><span class="peace-big-num">${avgGovernance}/100</span><span class="peace-big-label">${I18n.t('peace.avg_governance')}</span></div>
       </div>
+      <div class="peace-stacked-bar">${stackedBar}</div>
       <div class="peace-breakdown">${statusItems}</div>
     </div>`;
 }
