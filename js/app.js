@@ -501,22 +501,25 @@ function renderPeaceBar() {
     return conflicts[k].length ? `<div class="peace-bar-seg" style="width:${pct}%;background:${statusColors[k]}" title="${I18n.t('peace.status.' + k)}: ${conflicts[k].length}"></div>` : '';
   }).join('');
 
+  const maxCount = Math.max(...statusKeys.map(k => conflicts[k].length));
   const statusItems = statusKeys.filter(k => conflicts[k].length > 0).map(k => {
     const pct = (conflicts[k].length / total * 100).toFixed(1);
+    const barPct = (conflicts[k].length / maxCount * 100).toFixed(1);
     const names = conflicts[k].map(id => {
       const c = Data.getCountry(id);
       return c ? I18n.getCountryName(c) : id;
     });
-    const nameList = names.length <= 4
-      ? names.join(', ')
-      : names.slice(0, 3).join(', ') + ` <span class="info-btn" data-countries="${names.join(', ').replace(/"/g, '&quot;')}" role="button" tabindex="0">i</span>`;
+    const allNames = names.join(', ').replace(/"/g, '&quot;');
+    // Show proportional number of countries: fewer total = fewer shown
+    const showCount = Math.max(1, Math.min(4, Math.round(conflicts[k].length / 10)));
+    const preview = names.slice(0, showCount).join(', ') + (names.length > showCount ? ' ...' : '');
     return `<div class="peace-status-row">
       <span class="peace-icon">${statusIcons[k]}</span>
       <span class="peace-label">${I18n.t('peace.status.' + k)}</span>
       <strong class="peace-count">${conflicts[k].length}</strong>
-      <div class="peace-row-bar"><div class="peace-row-fill" style="width:${pct}%;background:${statusColors[k]}"></div></div>
-      <span class="peace-pct">${pct}%</span>
-      <span class="peace-countries">${nameList}</span>
+      <div class="peace-row-bar"><div class="peace-row-fill" style="width:${barPct}%;background:${statusColors[k]}"></div></div>
+      <span class="info-btn" data-countries="${allNames}" role="button" tabindex="0">i</span>
+      <span class="peace-countries">${preview}</span>
     </div>`;
   }).join('');
 
