@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found — World Barometer</title>
+    <meta name="description" content="The page you're looking for doesn't exist on World Barometer.">
+    <meta property="og:title" content="Page Not Found — World Barometer">
+    <meta property="og:description" content="The page you're looking for doesn't exist on World Barometer.">
+    <meta property="og:url" content="https://world-bar.github.io/404.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://world-bar.github.io/img/og-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Page Not Found — World Barometer">
+    <meta name="twitter:description" content="The page you're looking for doesn't exist on World Barometer.">
+    <meta name="twitter:image" content="https://world-bar.github.io/img/og-preview.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <style>
+        .error-section {
+            text-align: center;
+            padding: 4rem 1rem;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: #009edb;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .error-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .error-message {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 500px;
+            margin-bottom: 2rem;
+        }
+        .error-home {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background: #009edb;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        .error-home:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="" class="logo-icon"><span data-i18n="site.title">World Barometer</span></a>
+            <nav class="nav">
+                <a href="about.html" data-i18n="nav.about">About</a>
+                <a href="methodology.html" data-i18n="nav.methodology">Methodology</a>
+                <a href="pillar.html?id=overall" data-i18n="nav.data">Data</a>
+                <div id="country-selector"></div>
+                <a href="map.html" class="nav-map" data-i18n="nav.map">World Map</a>
+                <a href="compare.html" class="nav-compare" data-i18n="nav.compare">Compare</a>
+                <a href="quiz.html" class="nav-quiz" data-i18n="nav.quiz">Quiz</a>
+                <div id="lang-switcher"></div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="error-section">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Page Not Found</h1>
+            <p class="error-message">Sorry, the page you are looking for doesn't exist or has been moved. Let's get you back on track.</p>
+            <a href="index.html" class="error-home">Back to Home</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="footer.projects">Our Projects</h3>
+                <ul>
+                    <li><a href="https://eatclever.github.io" target="_blank">🥦 EatClever</a></li>
+                    <li><a href="https://world-bar.github.io" target="_blank">🌍 World Barometer</a></li>
+                    <li><a href="https://wildpedia.github.io" target="_blank">🐾 Wildpedia</a></li>
+                    <li><a href="https://wellbeingbar.github.io" target="_blank">🧘 WellBeingBar</a></li>
+                    <li><a href="https://moneyclever.github.io" target="_blank">💰 MoneyClever</a></li>
+                    <li><a href="https://goodnewsdaily.github.io" target="_blank">&#x2600;&#xFE0F; GoodNewsDaily</a></li>
+                    <li><a href="https://techclever.github.io" target="_blank">&#x1F4BB; TechClever</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.legal">Legal</h3>
+                <ul>
+                    <li><a href="impressum.html" data-i18n="footer.legal.impressum">Impressum</a></li>
+                    <li><a href="privacy.html" data-i18n="footer.legal.privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.contact">Contact</h3>
+                <p><a href="mailto:globaldata9@protonmail.com" data-i18n="footer.email">Email</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">&copy; 2026 World Barometer | Open Data Platform</p>
+            <p class="visitor-counter" id="visitor-counter"></p>
+            <p class="bmc-link"><a href="https://buymeacoffee.com/civicdata47" target="_blank" data-i18n="footer.support">&#9749; Buy me a Coffee</a></p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/country-selector.js"></script>
+    <script src="js/app.js"></script>
+    <script data-goatcounter="https://world-bar.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script>
+    (function() {
+      var el = document.getElementById('visitor-counter');
+      if (!el) return;
+      setTimeout(function() {
+        var p = location.pathname || '/';
+        if (p === '/index.html') p = '/';
+        fetch('https://world-bar.goatcounter.com/counter/' + encodeURIComponent(p) + '.json')
+          .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
+          .then(function(data) { el.textContent = data.count + ' visitors'; })
+          .catch(function() {});
+      }, 1500);
+    })();
+    </script>
+</body>
+</html>
