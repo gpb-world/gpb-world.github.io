@@ -774,9 +774,10 @@ function renderProsperityPage() {
   const rows = sorted.map((d, i) => {
     const e = d.econ;
     const name = I18n.getCountryName(d.country);
+    const thumb = d.country.image ? `<img src="${d.country.image}" alt="" class="rank-thumb" loading="lazy" onerror="this.style.display='none'">` : '';
     return `<tr>
       <td class="rank-num">${i + 1}</td>
-      <td><a href="country.html?id=${d.country.id}">${name}</a></td>
+      <td><a href="country.html?id=${d.country.id}" class="rank-country-link">${thumb}${name}</a></td>
       <td class="top-gdp-cell">${fmtB(e.gdp)}</td>
       <td>${fmtK(e.gdp_per_capita)}</td>
       <td>${e.public_debt_pct}%</td>
@@ -846,9 +847,10 @@ function renderTradePage() {
     const balanceStr = balance != null ? `${balance >= 0 ? '+' : ''}${fmtB(Math.abs(balance))}` : '\u2014';
     const balanceColor = balance != null ? (balance >= 0 ? '#2E7D32' : '#E53935') : '';
     const topExports = (e.top_exports || []).slice(0, 3).map(t => I18n.t(exportKey(t))).join(', ');
+    const thumb = d.country.image ? `<img src="${d.country.image}" alt="" class="rank-thumb" loading="lazy" onerror="this.style.display='none'">` : '';
     return `<tr>
       <td class="rank-num">${i + 1}</td>
-      <td><a href="country.html?id=${d.country.id}">${name}</a></td>
+      <td><a href="country.html?id=${d.country.id}" class="rank-country-link">${thumb}${name}</a></td>
       <td class="trade-val">${e.exports_pct_gdp || '\u2014'}%</td>
       <td>${e.exports != null ? fmtB(e.exports) : '\u2014'}</td>
       <td>${e.imports != null ? fmtB(e.imports) : '\u2014'}</td>
@@ -910,9 +912,10 @@ function renderPressFreedomPage() {
   const rows = sorted.map(([id, p], i) => {
     const c = Data.getCountry(id);
     const name = c ? I18n.getCountryName(c) : id;
+    const thumb = c && c.image ? `<img src="${c.image}" alt="" class="rank-thumb" loading="lazy" onerror="this.style.display='none'">` : '';
     return `<tr>
       <td class="rank-num">${i + 1}</td>
-      <td><a href="country.html?id=${id}">${name}</a></td>
+      <td><a href="country.html?id=${id}" class="rank-country-link">${thumb}${name}</a></td>
       <td><strong>#${p.press_freedom_rank}</strong></td>
       <td>${p.democracy_score}/10</td>
       <td>${I18n.t('pol.regime.' + p.regime)}</td>
@@ -970,11 +973,12 @@ function renderLifeSatisfactionPage() {
   const rows = sorted.map(([id, p], i) => {
     const c = Data.getCountry(id);
     const name = c ? I18n.getCountryName(c) : id;
+    const thumb = c && c.image ? `<img src="${c.image}" alt="" class="rank-thumb" loading="lazy" onerror="this.style.display='none'">` : '';
     const econ = Data.getEconomics(id);
     const gdpCap = econ ? fmtK(econ.gdp_per_capita) : '—';
     return `<tr>
       <td class="rank-num">${i + 1}</td>
-      <td><a href="country.html?id=${id}">${name}</a></td>
+      <td><a href="country.html?id=${id}" class="rank-country-link">${thumb}${name}</a></td>
       <td><strong>${p.happiness_score}/10</strong></td>
       <td>${gdpCap}</td>
       <td>${I18n.t('pol.regime.' + p.regime)}</td>
@@ -1032,9 +1036,10 @@ function renderRuleOfLawPage() {
   const rows = sorted.map(([id, p], i) => {
     const c = Data.getCountry(id);
     const name = c ? I18n.getCountryName(c) : id;
+    const thumb = c && c.image ? `<img src="${c.image}" alt="" class="rank-thumb" loading="lazy" onerror="this.style.display='none'">` : '';
     return `<tr>
       <td class="rank-num">${i + 1}</td>
-      <td><a href="country.html?id=${id}">${name}</a></td>
+      <td><a href="country.html?id=${id}" class="rank-country-link">${thumb}${name}</a></td>
       <td><strong>${p.rule_of_law.toFixed(2)}</strong></td>
       <td>#${p.corruption_rank}</td>
       <td>${p.democracy_score}/10</td>
@@ -1256,9 +1261,14 @@ function renderCountry() {
       <span class="country-map-label">${name}</span>
     </div>`;
 
+  const countryImg = country.image
+    ? `<div class="country-hero-img-wrap"><img src="${country.image}" alt="${name}" class="country-hero-img" loading="lazy" onerror="this.parentElement.style.display='none'"></div>`
+    : '';
+
   container.innerHTML = `
     <a href="index.html" class="back-link">&larr; ${I18n.t('country.back')}</a>
     <h1 class="country-name">${name}</h1>
+    ${countryImg}
     ${countryMapHtml}
     <div class="summary-box">${summaryText}</div>
     ${govHtml}
@@ -1633,17 +1643,21 @@ function renderPillar() {
       `).join('')}
     </div>`;
 
-  const rows = ranking.map((r, i) => `
+  const rows = ranking.map((r, i) => {
+    const c = Data.getCountry(r.id);
+    const thumb = c && c.image ? `<img src="${c.image}" alt="" class="rank-thumb" loading="lazy" onerror="this.style.display='none'">` : '';
+    return `
     <tr>
       <td class="rank-num">${i + 1}</td>
-      <td><a href="country.html?id=${r.id}">${I18n.getCountryName({ name: r.name, id: r.id })}</a></td>
+      <td><a href="country.html?id=${r.id}" class="rank-country-link">${thumb}${I18n.getCountryName({ name: r.name, id: r.id })}</a></td>
       <td>
         <div class="rank-bar-wrap">
           <div class="rank-bar score-${Data.getScoreLabel(r.score)}" style="width:${r.score}%"></div>
           <span class="rank-score">${r.score}</span>
         </div>
       </td>
-    </tr>`).join('');
+    </tr>`;
+  }).join('');
 
   const sourcesHtml = pillar && pillar.sources
     ? `<div class="sources"><h3>${I18n.t('ranking.sources')}</h3><ul>${pillar.sources.map(s => `<li>${s}</li>`).join('')}</ul></div>`
