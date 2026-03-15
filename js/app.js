@@ -205,33 +205,16 @@ function _buildCountryDescription(country, overall, rank, totalCountries) {
   const econ = Data.getEconomics(country.id);
   const demo = Data.getDemographics(country.id);
   const pol = Data.getPolitics(country.id);
+  const t = (k, ...args) => _tpl(I18n.t(k), ...args);
+  const b = v => '<strong>' + v + '</strong>';
   const paras = [];
 
-  // Varied opening hooks based on rank tier
-  const topPct = Math.round((rank / totalCountries) * 100);
-  const openers = {
-    excellent: [
-      `${name} stands among the world's most prosperous nations, earning a place at <strong>#${rank}</strong> out of ${totalCountries} countries with an impressive score of <strong>${overall}/100</strong>.`,
-      `A global leader in human development, ${name} secures the <strong>#${rank}</strong> position worldwide with a score of <strong>${overall}/100</strong> — a testament to decades of investment in its people and institutions.`
-    ],
-    good: [
-      `${name} holds a solid <strong>#${rank}</strong> position among ${totalCountries} nations, with a score of <strong>${overall}/100</strong> that reflects genuine progress across multiple dimensions of prosperity.`,
-      `Ranking <strong>#${rank}</strong> globally with <strong>${overall}/100</strong>, ${name} demonstrates that strong foundations in key areas can elevate a nation well above the world average.`
-    ],
-    average: [
-      `At <strong>#${rank}</strong> out of ${totalCountries} countries, ${name} sits in the middle of the global spectrum with a score of <strong>${overall}/100</strong> — a nation of contrasts where notable strengths coexist with significant challenges.`,
-      `${name} occupies the <strong>#${rank}</strong> spot globally with <strong>${overall}/100</strong>, a position that tells a story of potential not yet fully realized.`
-    ],
-    low: [
-      `${name} currently faces substantial challenges, ranking <strong>#${rank}</strong> out of ${totalCountries} countries with a score of <strong>${overall}/100</strong>. Behind the numbers lies a nation with untapped potential and a population striving for a better future.`,
-      `Ranking <strong>#${rank}</strong> globally with <strong>${overall}/100</strong>, ${name} confronts deep-rooted challenges — yet even here, pockets of resilience and progress tell a more nuanced story.`
-    ]
-  };
+  // Para 1: Opening hook
   const label = Data.getScoreLabel(overall);
-  const hooks = openers[label] || openers.low;
-  paras.push(hooks[rank % 2]); // alternate for variety
+  const hookKey = `cd.open.${label}.${(rank % 2) + 1}`;
+  paras.push(t(hookKey, b(name), b('#' + rank), b(totalCountries), b(overall + '/100')));
 
-  // Para 2: Strengths and weaknesses — narrative style
+  // Para 2: Strengths and weaknesses
   const diffs = pillars.map(p => ({
     name: I18n.t(p.name_key), id: p.id,
     score: country.scores[p.id] || 0,
@@ -240,92 +223,57 @@ function _buildCountryDescription(country, overall, rank, totalCountries) {
   const best = diffs[0];
   const worst = diffs[diffs.length - 1];
   const strengths = diffs.filter(d => d.diff > 5).slice(0, 3);
-  const weaknesses = diffs.filter(d => d.diff < -5).sort((a, b) => a.diff - b.diff).slice(0, 3);
 
-  let para2 = '';
-  if (best.score >= 80) {
-    para2 = `The country truly excels in <strong>${best.name}</strong>, scoring an outstanding ${best.score}/100`;
-  } else if (best.score >= 60) {
-    para2 = `Its strongest suit is <strong>${best.name}</strong> at ${best.score}/100`;
-  } else {
-    para2 = `<strong>${best.name}</strong> leads its profile with ${best.score}/100`;
-  }
+  const bestKey = best.score >= 80 ? 'cd.best.high' : best.score >= 60 ? 'cd.best.mid' : 'cd.best.low';
+  let para2 = t(bestKey, b(best.name), b(best.score + '/100'));
   if (strengths.length > 1) {
-    const others = strengths.slice(1).map(s => `<strong>${s.name}</strong>`).join(' and ');
-    para2 += `, supported by solid performance in ${others}`;
+    para2 += ' ' + t('cd.also_strong', b(strengths.slice(1).map(s => s.name).join(', ')));
   }
-  para2 += '.';
   if (worst.score !== best.score) {
     const gap = best.score - worst.score;
-    if (gap > 40) {
-      para2 += ` However, a striking gap of ${gap} points separates this from its weakest area, <strong>${worst.name}</strong> (${worst.score}/100), highlighting a deep imbalance in national development.`;
-    } else if (gap > 20) {
-      para2 += ` Meanwhile, <strong>${worst.name}</strong> at ${worst.score}/100 represents the area with the most room for growth.`;
-    } else {
-      para2 += ` The relatively small spread between its best and worst pillars suggests a balanced — if ${overall >= 60 ? 'consistently strong' : 'uniformly challenged'} — development profile.`;
-    }
+    const gapKey = gap > 40 ? 'cd.gap.large' : gap > 20 ? 'cd.gap.medium' : (overall >= 60 ? 'cd.gap.small.strong' : 'cd.gap.small.weak');
+    para2 += ' ' + t(gapKey, b(worst.name), b(worst.score + '/100'), b(gap));
   }
   paras.push(para2);
 
-  // Para 3: Economy — storytelling style
+  // Para 3: Economy
   if (econ) {
     const gdpCap = econ.gdp_per_capita >= 1000
       ? '$' + (econ.gdp_per_capita / 1000).toFixed(1) + 'K' : '$' + econ.gdp_per_capita;
-    let econText = '';
-    if (econ.gdp_per_capita >= 40000) {
-      econText = `With a GDP per capita of <strong>${gdpCap}</strong>, ${name} belongs to the world's wealthiest economies`;
-    } else if (econ.gdp_per_capita >= 15000) {
-      econText = `The economy generates <strong>${gdpCap}</strong> per person annually, placing ${name} in the upper-middle income bracket`;
-    } else if (econ.gdp_per_capita >= 5000) {
-      econText = `At <strong>${gdpCap}</strong> per capita, ${name}'s economy is developing but still faces significant gaps compared to wealthier nations`;
-    } else {
-      econText = `With just <strong>${gdpCap}</strong> per person, ${name}'s economy remains one of the world's most challenged`;
-    }
+    const econKey = econ.gdp_per_capita >= 40000 ? 'cd.econ.rich' : econ.gdp_per_capita >= 15000 ? 'cd.econ.upper' : econ.gdp_per_capita >= 5000 ? 'cd.econ.developing' : 'cd.econ.poor';
+    let econText = t(econKey, b(name), b(gdpCap));
     if (econ.currency_code && econ.currency_code !== 'USD') {
       const numLocale = I18n.getLang() || 'en';
-      econText += ` — in local terms, that's <strong>${econ.currency_symbol} ${Math.round(econ.gdp_per_capita * econ.usd_exchange).toLocaleString(numLocale)}</strong> per year`;
+      econText += ' ' + t('cd.econ.local', b(econ.currency_symbol + ' ' + Math.round(econ.gdp_per_capita * econ.usd_exchange).toLocaleString(numLocale)));
     }
-    econText += '.';
-    if (econ.unemployment > 15) {
-      econText += ` Unemployment stands at a concerning <strong>${econ.unemployment}%</strong>, reflecting structural economic difficulties.`;
-    } else if (econ.unemployment > 8) {
-      econText += ` Unemployment at <strong>${econ.unemployment}%</strong> suggests a labor market still working to absorb its workforce.`;
-    } else {
-      econText += ` A relatively healthy labor market keeps unemployment at <strong>${econ.unemployment}%</strong>.`;
-    }
+    const unempKey = econ.unemployment > 15 ? 'cd.unemp.high' : econ.unemployment > 8 ? 'cd.unemp.mid' : 'cd.unemp.low';
+    econText += ' ' + t(unempKey, b(econ.unemployment + '%'));
     if (econ.top_exports && econ.top_exports.length) {
-      econText += ` The country's economic engine is driven by ${econ.top_exports.slice(0, 3).join(', ')}.`;
+      econText += ' ' + t('cd.exports', econ.top_exports.slice(0, 3).join(', '));
     }
     paras.push(econText);
   }
 
   // Para 4: People and society
-  let para4Parts = [];
+  let para4 = '';
   if (demo) {
-    const popM = demo.population >= 1000 ? (demo.population / 1000).toFixed(1) + ' billion' : demo.population.toFixed(1) + ' million';
-    para4Parts.push(`Home to <strong>${popM} people</strong>`);
+    const popM = demo.population >= 1000 ? (demo.population / 1000).toFixed(1) : demo.population.toFixed(1);
+    const popUnit = demo.population >= 1000 ? I18n.t('cd.billion') : I18n.t('cd.million');
+    para4 = t('cd.pop', b(popM + ' ' + popUnit));
     if (demo.life_exp) {
-      if (demo.life_exp >= 78) para4Parts.push(`its citizens enjoy a life expectancy of <strong>${demo.life_exp} years</strong>`);
-      else if (demo.life_exp >= 65) para4Parts.push(`life expectancy sits at <strong>${demo.life_exp} years</strong>`);
-      else para4Parts.push(`life expectancy of just <strong>${demo.life_exp} years</strong> underscores the health challenges the nation faces`);
-    }
-    if (demo.urban_pct) {
-      if (demo.urban_pct >= 80) para4Parts.push(`with a highly urbanized society (${demo.urban_pct}% live in cities)`);
-      else if (demo.urban_pct <= 30) para4Parts.push(`with most of its population (${100 - demo.urban_pct}%) living in rural areas`);
+      const leKey = demo.life_exp >= 78 ? 'cd.life_exp.high' : demo.life_exp >= 65 ? 'cd.life_exp.mid' : 'cd.life_exp.low';
+      para4 += ' ' + t(leKey, b(demo.life_exp));
     }
   }
   if (pol) {
     const regime = I18n.t('pol.regime.' + pol.regime);
-    para4Parts.push(`${name} is governed as a <strong>${regime}</strong>`);
+    para4 += ' ' + t('cd.regime', b(name), b(regime));
     if (pol.happiness_score) {
-      if (pol.happiness_score >= 7) para4Parts.push(`where citizens report high life satisfaction (<strong>${pol.happiness_score}/10</strong>)`);
-      else if (pol.happiness_score >= 5) para4Parts.push(`with moderate life satisfaction (<strong>${pol.happiness_score}/10</strong>)`);
-      else para4Parts.push(`though life satisfaction remains low at <strong>${pol.happiness_score}/10</strong>`);
+      const hapKey = pol.happiness_score >= 7 ? 'cd.happy.high' : pol.happiness_score >= 5 ? 'cd.happy.mid' : 'cd.happy.low';
+      para4 += ' ' + t(hapKey, b(pol.happiness_score + '/10'));
     }
   }
-  if (para4Parts.length) {
-    paras.push(para4Parts.join(', ') + '.');
-  }
+  if (para4) paras.push(para4);
 
   return paras.map(p => `<p>${p}</p>`).join('');
 }
