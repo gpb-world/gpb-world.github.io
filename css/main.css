@@ -941,6 +941,13 @@ body {
 .pillar-desc {
     font-size: 1.1rem;
     color: var(--text-gray);
+    margin-bottom: 1rem;
+}
+
+.pillar-long-desc {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-dark);
     margin-bottom: 1.5rem;
 }
 
@@ -1272,6 +1279,15 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    flex-wrap: nowrap;
+}
+
+.econ-metric-value .info-btn {
+    flex-shrink: 0;
 }
 
 .econ-charts {

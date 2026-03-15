@@ -1689,6 +1689,11 @@ function renderPillar() {
     <a href="index.html#pillars" class="back-link">&larr; ${I18n.t('ranking.back')}</a>
     <h1>${pillarIcon} ${pillarName}</h1>
     ${pillar ? `<p class="pillar-desc">${I18n.t(pillar.desc_key)}</p>` : ''}
+    ${(() => {
+      const longKey = pillar ? pillar.desc_key.replace('.desc', '.long_desc') : 'ranking.overall.long_desc';
+      const longText = I18n.t(longKey);
+      return longText && longText !== longKey ? `<div class="pillar-long-desc summary-box">${longText}</div>` : '';
+    })()}
     ${tabs}
     <div class="table-wrap"><table class="ranking-table">
       <thead>
