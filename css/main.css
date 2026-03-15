@@ -1184,6 +1184,53 @@ body {
 .share-copy { background: var(--dark-blue); }
 .share-copy.copied { background: #2E7D32; }
 
+/* ===== Currency Box ===== */
+.currency-box {
+    background: linear-gradient(135deg, #e8f4fd 0%, #f5f7fa 100%);
+    border: 1px solid rgba(0, 158, 219, 0.2);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+.currency-main {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.currency-symbol-big {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    min-width: 40px;
+    text-align: center;
+}
+.currency-info strong {
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+.currency-code {
+    color: var(--text-gray);
+    font-size: 0.85rem;
+}
+.currency-rate {
+    background: var(--white);
+    padding: 0.4rem 0.85rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--dark-blue);
+    border: 1px solid var(--border-gray);
+}
+.currency-local-gdp {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    width: 100%;
+}
+
 /* ===== Economic Dashboard ===== */
 .econ-metrics {
     display: grid;

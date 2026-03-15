@@ -1549,9 +1549,28 @@ function renderEconomicDashboard(country) {
     </div>`;
   }
 
+  // Currency info
+  let currencyHtml = '';
+  if (econ.currency_code) {
+    const isUSD = econ.currency_code === 'USD';
+    const localGdpPc = isUSD ? '' : ` ≈ ${econ.currency_symbol}${(econ.gdp_per_capita * econ.usd_exchange).toLocaleString('en', {maximumFractionDigits: 0})}`;
+    currencyHtml = `
+      <div class="currency-box">
+        <div class="currency-main">
+          <span class="currency-symbol-big">${econ.currency_symbol}</span>
+          <div class="currency-info">
+            <strong>${econ.currency_name}</strong> <span class="currency-code">(${econ.currency_code})</span>
+          </div>
+        </div>
+        ${!isUSD ? `<div class="currency-rate">1 USD = ${econ.currency_symbol}${econ.usd_exchange.toLocaleString('en', {maximumFractionDigits: 2})}</div>` : ''}
+        ${localGdpPc ? `<div class="currency-local-gdp">${I18n.t('econ.gdp_per_capita')}: $${econ.gdp_per_capita.toLocaleString('en')}${localGdpPc}</div>` : ''}
+      </div>`;
+  }
+
   container.innerHTML = `
     <div class="country-section">
       <h2 class="scores-heading">${I18n.t('econ.title')}</h2>
+      ${currencyHtml}
       <div class="econ-metrics">${metricCards}</div>
       <div class="econ-charts">
         <div class="econ-chart-box">

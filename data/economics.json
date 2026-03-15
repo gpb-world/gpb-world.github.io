@@ -33,7 +33,11 @@
       "Seafood",
       "Metals",
       "Chemicals"
-    ]
+    ],
+    "currency_name": "Norwegian Krone",
+    "currency_code": "NOK",
+    "currency_symbol": "kr",
+    "usd_exchange": 10.85
   },
   "sweden": {
     "gdp": 593.3,
@@ -69,7 +73,11 @@
       "Vehicles",
       "Paper Products",
       "Pharmaceuticals"
-    ]
+    ],
+    "currency_name": "Swedish Krona",
+    "currency_code": "SEK",
+    "currency_symbol": "kr",
+    "usd_exchange": 10.42
   },
   "denmark": {
     "gdp": 404.2,
@@ -105,7 +113,11 @@
       "Machinery",
       "Food Products",
       "Wind Turbines"
-    ]
+    ],
+    "currency_name": "Danish Krone",
+    "currency_code": "DKK",
+    "currency_symbol": "kr",
+    "usd_exchange": 6.88
   },
   "finland": {
     "gdp": 300.5,
@@ -141,7 +153,11 @@
       "Machinery",
       "Electronics",
       "Chemicals"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "iceland": {
     "gdp": 28.5,
@@ -177,7 +193,11 @@
       "Aluminum",
       "Tourism Services",
       "Geothermal Tech"
-    ]
+    ],
+    "currency_name": "Icelandic Króna",
+    "currency_code": "ISK",
+    "currency_symbol": "kr",
+    "usd_exchange": 137.5
   },
   "germany": {
     "gdp": 4456.1,
@@ -213,7 +233,11 @@
       "Machinery",
       "Chemicals",
       "Electronics"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "netherlands": {
     "gdp": 1092.7,
@@ -249,7 +273,11 @@
       "Refined Petroleum",
       "Chemicals",
       "Food Products"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "switzerland": {
     "gdp": 884.9,
@@ -285,7 +313,11 @@
       "Watches",
       "Machinery",
       "Chemicals"
-    ]
+    ],
+    "currency_name": "Swiss Franc",
+    "currency_code": "CHF",
+    "currency_symbol": "Fr",
+    "usd_exchange": 0.88
   },
   "austria": {
     "gdp": 515.2,
@@ -321,7 +353,11 @@
       "Vehicles",
       "Iron & Steel",
       "Pharmaceuticals"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "belgium": {
     "gdp": 624.2,
@@ -357,7 +393,11 @@
       "Diamonds",
       "Vehicles",
       "Pharmaceuticals"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "france": {
     "gdp": 3049.0,
@@ -393,7 +433,11 @@
       "Vehicles",
       "Pharmaceuticals",
       "Wine & Spirits"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "uk": {
     "gdp": 3340.0,
@@ -429,7 +473,11 @@
       "Machinery",
       "Vehicles",
       "Pharmaceuticals"
-    ]
+    ],
+    "currency_name": "British Pound",
+    "currency_code": "GBP",
+    "currency_symbol": "£",
+    "usd_exchange": 0.79
   },
   "spain": {
     "gdp": 1580.5,
@@ -465,7 +513,11 @@
       "Food Products",
       "Machinery",
       "Chemicals"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "italy": {
     "gdp": 2186.1,
@@ -501,7 +553,11 @@
       "Vehicles",
       "Fashion & Textiles",
       "Pharmaceuticals"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "portugal": {
     "gdp": 287.1,
@@ -537,7 +593,11 @@
       "Textiles",
       "Cork Products",
       "Machinery"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "ireland": {
     "gdp": 545.6,
@@ -573,7 +633,11 @@
       "Tech Services",
       "Medical Devices",
       "Chemicals"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "poland": {
     "gdp": 842.2,
@@ -609,7 +673,11 @@
       "Vehicles",
       "Electronics",
       "Furniture"
-    ]
+    ],
+    "currency_name": "Polish Złoty",
+    "currency_code": "PLN",
+    "currency_symbol": "zł",
+    "usd_exchange": 3.97
   },
   "czechia": {
     "gdp": 330.5,
@@ -645,7 +713,11 @@
       "Machinery",
       "Electronics",
       "Iron & Steel"
-    ]
+    ],
+    "currency_name": "Czech Koruna",
+    "currency_code": "CZK",
+    "currency_symbol": "Kč",
+    "usd_exchange": 23.15
   },
   "greece": {
     "gdp": 238.2,
@@ -681,7 +753,11 @@
       "Food Products",
       "Shipping Services",
       "Aluminum"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "romania": {
     "gdp": 351.0,
@@ -717,7 +793,11 @@
       "Machinery",
       "Electronics",
       "Textiles"
-    ]
+    ],
+    "currency_name": "Romanian Leu",
+    "currency_code": "RON",
+    "currency_symbol": "lei",
+    "usd_exchange": 4.58
   },
   "japan": {
     "gdp": 4230.9,
@@ -753,7 +833,11 @@
       "Electronics",
       "Machinery",
       "Semiconductors"
-    ]
+    ],
+    "currency_name": "Japanese Yen",
+    "currency_code": "JPY",
+    "currency_symbol": "¥",
+    "usd_exchange": 149.5
   },
   "south_korea": {
     "gdp": 1712.8,
@@ -789,7 +873,11 @@
       "Vehicles",
       "Ships",
       "Electronics"
-    ]
+    ],
+    "currency_name": "South Korean Won",
+    "currency_code": "KRW",
+    "currency_symbol": "₩",
+    "usd_exchange": 1325.0
   },
   "china": {
     "gdp": 18530.0,
@@ -825,7 +913,11 @@
       "Machinery",
       "Textiles",
       "Solar Panels"
-    ]
+    ],
+    "currency_name": "Chinese Yuan",
+    "currency_code": "CNY",
+    "currency_symbol": "¥",
+    "usd_exchange": 7.24
   },
   "india": {
     "gdp": 3730.0,
@@ -861,7 +953,11 @@
       "Refined Petroleum",
       "Pharmaceuticals",
       "Textiles"
-    ]
+    ],
+    "currency_name": "Indian Rupee",
+    "currency_code": "INR",
+    "currency_symbol": "₹",
+    "usd_exchange": 83.4
   },
   "singapore": {
     "gdp": 497.3,
@@ -897,7 +993,11 @@
       "Refined Petroleum",
       "Chemicals",
       "Financial Services"
-    ]
+    ],
+    "currency_name": "Singapore Dollar",
+    "currency_code": "SGD",
+    "currency_symbol": "S$",
+    "usd_exchange": 1.34
   },
   "israel": {
     "gdp": 525.0,
@@ -933,7 +1033,11 @@
       "Tech Services",
       "Pharmaceuticals",
       "Electronics"
-    ]
+    ],
+    "currency_name": "Israeli Shekel",
+    "currency_code": "ILS",
+    "currency_symbol": "₪",
+    "usd_exchange": 3.65
   },
   "turkey": {
     "gdp": 1108.0,
@@ -969,7 +1073,11 @@
       "Textiles",
       "Iron & Steel",
       "Machinery"
-    ]
+    ],
+    "currency_name": "Turkish Lira",
+    "currency_code": "TRY",
+    "currency_symbol": "₺",
+    "usd_exchange": 32.5
   },
   "saudi_arabia": {
     "gdp": 1108.1,
@@ -1005,7 +1113,11 @@
       "Refined Petroleum",
       "Chemicals",
       "Plastics"
-    ]
+    ],
+    "currency_name": "Saudi Riyal",
+    "currency_code": "SAR",
+    "currency_symbol": "﷼",
+    "usd_exchange": 3.75
   },
   "uae": {
     "gdp": 509.2,
@@ -1041,7 +1153,11 @@
       "Refined Petroleum",
       "Gold",
       "Diamonds"
-    ]
+    ],
+    "currency_name": "UAE Dirham",
+    "currency_code": "AED",
+    "currency_symbol": "د.إ",
+    "usd_exchange": 3.67
   },
   "indonesia": {
     "gdp": 1417.4,
@@ -1077,7 +1193,11 @@
       "Coal",
       "Iron & Steel",
       "Rubber"
-    ]
+    ],
+    "currency_name": "Indonesian Rupiah",
+    "currency_code": "IDR",
+    "currency_symbol": "Rp",
+    "usd_exchange": 15650.0
   },
   "usa": {
     "gdp": 28780.0,
@@ -1113,7 +1233,11 @@
       "Aircraft",
       "Tech Services",
       "Machinery"
-    ]
+    ],
+    "currency_name": "US Dollar",
+    "currency_code": "USD",
+    "currency_symbol": "$",
+    "usd_exchange": 1.0
   },
   "canada": {
     "gdp": 2140.0,
@@ -1149,7 +1273,11 @@
       "Vehicles",
       "Minerals",
       "Wood Products"
-    ]
+    ],
+    "currency_name": "Canadian Dollar",
+    "currency_code": "CAD",
+    "currency_symbol": "C$",
+    "usd_exchange": 1.36
   },
   "brazil": {
     "gdp": 2173.7,
@@ -1185,7 +1313,11 @@
       "Iron Ore",
       "Oil & Gas",
       "Meat"
-    ]
+    ],
+    "currency_name": "Brazilian Real",
+    "currency_code": "BRL",
+    "currency_symbol": "R$",
+    "usd_exchange": 4.97
   },
   "mexico": {
     "gdp": 1789.0,
@@ -1221,7 +1353,11 @@
       "Electronics",
       "Oil & Gas",
       "Machinery"
-    ]
+    ],
+    "currency_name": "Mexican Peso",
+    "currency_code": "MXN",
+    "currency_symbol": "$",
+    "usd_exchange": 17.15
   },
   "argentina": {
     "gdp": 621.8,
@@ -1257,7 +1393,11 @@
       "Vehicles",
       "Corn",
       "Beef"
-    ]
+    ],
+    "currency_name": "Argentine Peso",
+    "currency_code": "ARS",
+    "currency_symbol": "$",
+    "usd_exchange": 870.0
   },
   "chile": {
     "gdp": 335.5,
@@ -1293,7 +1433,11 @@
       "Lithium",
       "Fruit",
       "Seafood"
-    ]
+    ],
+    "currency_name": "Chilean Peso",
+    "currency_code": "CLP",
+    "currency_symbol": "$",
+    "usd_exchange": 925.0
   },
   "colombia": {
     "gdp": 363.8,
@@ -1329,7 +1473,11 @@
       "Coal",
       "Coffee",
       "Gold"
-    ]
+    ],
+    "currency_name": "Colombian Peso",
+    "currency_code": "COP",
+    "currency_symbol": "$",
+    "usd_exchange": 3950.0
   },
   "costa_rica": {
     "gdp": 72.1,
@@ -1365,7 +1513,11 @@
       "Bananas",
       "Electronics",
       "Coffee"
-    ]
+    ],
+    "currency_name": "Costa Rican Colón",
+    "currency_code": "CRC",
+    "currency_symbol": "₡",
+    "usd_exchange": 515.0
   },
   "south_africa": {
     "gdp": 399.0,
@@ -1401,7 +1553,11 @@
       "Diamonds",
       "Platinum",
       "Vehicles"
-    ]
+    ],
+    "currency_name": "South African Rand",
+    "currency_code": "ZAR",
+    "currency_symbol": "R",
+    "usd_exchange": 18.65
   },
   "nigeria": {
     "gdp": 472.6,
@@ -1437,7 +1593,11 @@
       "LNG",
       "Cocoa",
       "Rubber"
-    ]
+    ],
+    "currency_name": "Nigerian Naira",
+    "currency_code": "NGN",
+    "currency_symbol": "₦",
+    "usd_exchange": 1550.0
   },
   "kenya": {
     "gdp": 113.0,
@@ -1473,7 +1633,11 @@
       "Cut Flowers",
       "Coffee",
       "Textiles"
-    ]
+    ],
+    "currency_name": "Kenyan Shilling",
+    "currency_code": "KES",
+    "currency_symbol": "KSh",
+    "usd_exchange": 155.0
   },
   "egypt": {
     "gdp": 395.9,
@@ -1509,7 +1673,11 @@
       "Textiles",
       "Chemicals",
       "Food Products"
-    ]
+    ],
+    "currency_name": "Egyptian Pound",
+    "currency_code": "EGP",
+    "currency_symbol": "E£",
+    "usd_exchange": 47.5
   },
   "ethiopia": {
     "gdp": 156.1,
@@ -1545,7 +1713,11 @@
       "Sesame",
       "Cut Flowers",
       "Textiles"
-    ]
+    ],
+    "currency_name": "Ethiopian Birr",
+    "currency_code": "ETB",
+    "currency_symbol": "Br",
+    "usd_exchange": 56.8
   },
   "ghana": {
     "gdp": 76.4,
@@ -1581,7 +1753,11 @@
       "Cocoa",
       "Oil & Gas",
       "Timber"
-    ]
+    ],
+    "currency_name": "Ghanaian Cedi",
+    "currency_code": "GHS",
+    "currency_symbol": "₵",
+    "usd_exchange": 14.5
   },
   "morocco": {
     "gdp": 141.1,
@@ -1617,7 +1793,11 @@
       "Phosphates",
       "Textiles",
       "Food Products"
-    ]
+    ],
+    "currency_name": "Moroccan Dirham",
+    "currency_code": "MAD",
+    "currency_symbol": "د.م.",
+    "usd_exchange": 10.05
   },
   "australia": {
     "gdp": 1788.0,
@@ -1653,7 +1833,11 @@
       "Coal",
       "LNG",
       "Gold"
-    ]
+    ],
+    "currency_name": "Australian Dollar",
+    "currency_code": "AUD",
+    "currency_symbol": "A$",
+    "usd_exchange": 1.53
   },
   "new_zealand": {
     "gdp": 252.8,
@@ -1689,7 +1873,11 @@
       "Meat",
       "Wood",
       "Wine"
-    ]
+    ],
+    "currency_name": "New Zealand Dollar",
+    "currency_code": "NZD",
+    "currency_symbol": "NZ$",
+    "usd_exchange": 1.64
   },
   "russia": {
     "gdp": 2022.0,
@@ -1725,7 +1913,11 @@
       "Metals",
       "Wheat",
       "Fertilizers"
-    ]
+    ],
+    "currency_name": "Russian Ruble",
+    "currency_code": "RUB",
+    "currency_symbol": "₽",
+    "usd_exchange": 92.0
   },
   "ukraine": {
     "gdp": 178.8,
@@ -1761,7 +1953,11 @@
       "Iron & Steel",
       "Sunflower Oil",
       "Machinery"
-    ]
+    ],
+    "currency_name": "Ukrainian Hryvnia",
+    "currency_code": "UAH",
+    "currency_symbol": "₴",
+    "usd_exchange": 41.2
   },
   "pakistan": {
     "gdp": 374.7,
@@ -1797,7 +1993,11 @@
       "Rice",
       "Leather",
       "Sports Goods"
-    ]
+    ],
+    "currency_name": "Pakistani Rupee",
+    "currency_code": "PKR",
+    "currency_symbol": "₨",
+    "usd_exchange": 278.0
   },
   "hungary": {
     "gdp": 212.4,
@@ -1833,7 +2033,11 @@
       "Electronics",
       "Machinery",
       "Pharmaceuticals"
-    ]
+    ],
+    "currency_name": "Hungarian Forint",
+    "currency_code": "HUF",
+    "currency_symbol": "Ft",
+    "usd_exchange": 358.0
   },
   "croatia": {
     "gdp": 78.9,
@@ -1869,7 +2073,11 @@
       "Refined Petroleum",
       "Machinery",
       "Food Products"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "estonia": {
     "gdp": 40.8,
@@ -1905,7 +2113,11 @@
       "Machinery",
       "Wood Products",
       "Mineral Fuels"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "serbia": {
     "gdp": 75.2,
@@ -1941,7 +2153,11 @@
       "Iron & Steel",
       "Electrical Equipment",
       "Food Products"
-    ]
+    ],
+    "currency_name": "Serbian Dinar",
+    "currency_code": "RSD",
+    "currency_symbol": "din",
+    "usd_exchange": 108.0
   },
   "lithuania": {
     "gdp": 78.3,
@@ -1977,7 +2193,11 @@
       "Furniture",
       "Chemicals",
       "Machinery"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "thailand": {
     "gdp": 514.9,
@@ -2013,7 +2233,11 @@
       "Vehicles",
       "Rubber",
       "Machinery"
-    ]
+    ],
+    "currency_name": "Thai Baht",
+    "currency_code": "THB",
+    "currency_symbol": "฿",
+    "usd_exchange": 35.5
   },
   "vietnam": {
     "gdp": 449.1,
@@ -2049,7 +2273,11 @@
       "Textiles",
       "Footwear",
       "Seafood"
-    ]
+    ],
+    "currency_name": "Vietnamese Đồng",
+    "currency_code": "VND",
+    "currency_symbol": "₫",
+    "usd_exchange": 24500.0
   },
   "malaysia": {
     "gdp": 434.8,
@@ -2085,7 +2313,11 @@
       "Palm Oil",
       "Petroleum Products",
       "Chemicals"
-    ]
+    ],
+    "currency_name": "Malaysian Ringgit",
+    "currency_code": "MYR",
+    "currency_symbol": "RM",
+    "usd_exchange": 4.72
   },
   "philippines": {
     "gdp": 437.1,
@@ -2121,7 +2353,11 @@
       "Machinery",
       "Fruit",
       "Coconut Oil"
-    ]
+    ],
+    "currency_name": "Philippine Peso",
+    "currency_code": "PHP",
+    "currency_symbol": "₱",
+    "usd_exchange": 55.8
   },
   "bangladesh": {
     "gdp": 460.2,
@@ -2157,7 +2393,11 @@
       "Garments",
       "Footwear",
       "Seafood"
-    ]
+    ],
+    "currency_name": "Bangladeshi Taka",
+    "currency_code": "BDT",
+    "currency_symbol": "৳",
+    "usd_exchange": 110.0
   },
   "taiwan": {
     "gdp": 790.7,
@@ -2193,7 +2433,11 @@
       "Electronics",
       "Machinery",
       "Plastics"
-    ]
+    ],
+    "currency_name": "New Taiwan Dollar",
+    "currency_code": "TWD",
+    "currency_symbol": "NT$",
+    "usd_exchange": 31.5
   },
   "iran": {
     "gdp": 401.5,
@@ -2229,7 +2473,11 @@
       "Petrochemicals",
       "Iron & Steel",
       "Plastics"
-    ]
+    ],
+    "currency_name": "Iranian Rial",
+    "currency_code": "IRR",
+    "currency_symbol": "﷼",
+    "usd_exchange": 42000.0
   },
   "peru": {
     "gdp": 268.2,
@@ -2265,7 +2513,11 @@
       "Gold",
       "Zinc",
       "Fishmeal"
-    ]
+    ],
+    "currency_name": "Peruvian Sol",
+    "currency_code": "PEN",
+    "currency_symbol": "S/",
+    "usd_exchange": 3.72
   },
   "uruguay": {
     "gdp": 77.2,
@@ -2301,7 +2553,11 @@
       "Soybeans",
       "Cellulose",
       "Dairy Products"
-    ]
+    ],
+    "currency_name": "Uruguayan Peso",
+    "currency_code": "UYU",
+    "currency_symbol": "$U",
+    "usd_exchange": 39.5
   },
   "dominican_republic": {
     "gdp": 121.4,
@@ -2337,7 +2593,11 @@
       "Medical Devices",
       "Cigars",
       "Textiles"
-    ]
+    ],
+    "currency_name": "Dominican Peso",
+    "currency_code": "DOP",
+    "currency_symbol": "RD$",
+    "usd_exchange": 58.5
   },
   "venezuela": {
     "gdp": 92.8,
@@ -2373,7 +2633,11 @@
       "Refined Petroleum",
       "Gold",
       "Iron Ore"
-    ]
+    ],
+    "currency_name": "Venezuelan Bolívar",
+    "currency_code": "VES",
+    "currency_symbol": "Bs",
+    "usd_exchange": 36.5
   },
   "cuba": {
     "gdp": 107.4,
@@ -2409,7 +2673,11 @@
       "Nickel",
       "Sugar",
       "Pharmaceuticals"
-    ]
+    ],
+    "currency_name": "Cuban Peso",
+    "currency_code": "CUP",
+    "currency_symbol": "$",
+    "usd_exchange": 24.0
   },
   "tanzania": {
     "gdp": 79.2,
@@ -2445,7 +2713,11 @@
       "Tobacco",
       "Cashew Nuts",
       "Coffee"
-    ]
+    ],
+    "currency_name": "Tanzanian Shilling",
+    "currency_code": "TZS",
+    "currency_symbol": "TSh",
+    "usd_exchange": 2520.0
   },
   "rwanda": {
     "gdp": 14.1,
@@ -2481,7 +2753,11 @@
       "Coffee",
       "Tea",
       "Minerals"
-    ]
+    ],
+    "currency_name": "Rwandan Franc",
+    "currency_code": "RWF",
+    "currency_symbol": "FRw",
+    "usd_exchange": 1270.0
   },
   "tunisia": {
     "gdp": 46.3,
@@ -2517,7 +2793,11 @@
       "Olive Oil",
       "Electrical Equipment",
       "Phosphates"
-    ]
+    ],
+    "currency_name": "Tunisian Dinar",
+    "currency_code": "TND",
+    "currency_symbol": "د.ت",
+    "usd_exchange": 3.12
   },
   "botswana": {
     "gdp": 19.4,
@@ -2553,7 +2833,11 @@
       "Copper",
       "Nickel",
       "Beef"
-    ]
+    ],
+    "currency_name": "Botswana Pula",
+    "currency_code": "BWP",
+    "currency_symbol": "P",
+    "usd_exchange": 13.6
   },
   "qatar": {
     "gdp": 219.6,
@@ -2589,7 +2873,11 @@
       "Crude Oil",
       "Petrochemicals",
       "Fertilizers"
-    ]
+    ],
+    "currency_name": "Qatari Riyal",
+    "currency_code": "QAR",
+    "currency_symbol": "﷼",
+    "usd_exchange": 3.64
   },
   "jordan": {
     "gdp": 50.8,
@@ -2625,7 +2913,11 @@
       "Potash",
       "Textiles",
       "Pharmaceuticals"
-    ]
+    ],
+    "currency_name": "Jordanian Dinar",
+    "currency_code": "JOD",
+    "currency_symbol": "د.ا",
+    "usd_exchange": 0.71
   },
   "kazakhstan": {
     "gdp": 259.7,
@@ -2661,7 +2953,11 @@
       "Natural Gas",
       "Metals",
       "Grain"
-    ]
+    ],
+    "currency_name": "Kazakhstani Tenge",
+    "currency_code": "KZT",
+    "currency_symbol": "₸",
+    "usd_exchange": 455.0
   },
   "senegal": {
     "gdp": 31.1,
@@ -2697,7 +2993,11 @@
       "Phosphates",
       "Fish",
       "Groundnuts"
-    ]
+    ],
+    "currency_name": "West African CFA Franc",
+    "currency_code": "XOF",
+    "currency_symbol": "CFA",
+    "usd_exchange": 603.0
   },
   "dr_congo": {
     "gdp": 64.0,
@@ -2733,7 +3033,11 @@
       "Copper",
       "Gold",
       "Diamonds"
-    ]
+    ],
+    "currency_name": "Congolese Franc",
+    "currency_code": "CDF",
+    "currency_symbol": "FC",
+    "usd_exchange": 2750.0
   },
   "cote_divoire": {
     "gdp": 78.0,
@@ -2769,7 +3073,11 @@
       "Cashews",
       "Rubber",
       "Petroleum"
-    ]
+    ],
+    "currency_name": "West African CFA Franc",
+    "currency_code": "XOF",
+    "currency_symbol": "CFA",
+    "usd_exchange": 603.0
   },
   "uganda": {
     "gdp": 50.0,
@@ -2805,7 +3113,11 @@
       "Gold",
       "Fish",
       "Tobacco"
-    ]
+    ],
+    "currency_name": "Ugandan Shilling",
+    "currency_code": "UGX",
+    "currency_symbol": "USh",
+    "usd_exchange": 3780.0
   },
   "angola": {
     "gdp": 75.0,
@@ -2841,7 +3153,11 @@
       "Diamonds",
       "Natural Gas",
       "Coffee"
-    ]
+    ],
+    "currency_name": "Angolan Kwanza",
+    "currency_code": "AOA",
+    "currency_symbol": "Kz",
+    "usd_exchange": 830.0
   },
   "mozambique": {
     "gdp": 20.0,
@@ -2877,7 +3193,11 @@
       "Coal",
       "Natural Gas",
       "Tobacco"
-    ]
+    ],
+    "currency_name": "Mozambican Metical",
+    "currency_code": "MZN",
+    "currency_symbol": "MT",
+    "usd_exchange": 63.5
   },
   "cameroon": {
     "gdp": 47.0,
@@ -2913,7 +3233,11 @@
       "Lumber",
       "Cocoa",
       "Aluminum"
-    ]
+    ],
+    "currency_name": "Central African CFA Franc",
+    "currency_code": "XAF",
+    "currency_symbol": "FCFA",
+    "usd_exchange": 603.0
   },
   "zambia": {
     "gdp": 29.0,
@@ -2949,7 +3273,11 @@
       "Cobalt",
       "Tobacco",
       "Gems"
-    ]
+    ],
+    "currency_name": "Zambian Kwacha",
+    "currency_code": "ZMW",
+    "currency_symbol": "ZK",
+    "usd_exchange": 26.5
   },
   "myanmar": {
     "gdp": 60.0,
@@ -2985,7 +3313,11 @@
       "Garments",
       "Jade",
       "Rice"
-    ]
+    ],
+    "currency_name": "Myanmar Kyat",
+    "currency_code": "MMK",
+    "currency_symbol": "K",
+    "usd_exchange": 2100.0
   },
   "sri_lanka": {
     "gdp": 75.0,
@@ -3021,7 +3353,11 @@
       "Garments",
       "Rubber",
       "Coconut"
-    ]
+    ],
+    "currency_name": "Sri Lankan Rupee",
+    "currency_code": "LKR",
+    "currency_symbol": "Rs",
+    "usd_exchange": 312.0
   },
   "nepal": {
     "gdp": 42.0,
@@ -3057,7 +3393,11 @@
       "Garments",
       "Iron & Steel",
       "Herbs"
-    ]
+    ],
+    "currency_name": "Nepalese Rupee",
+    "currency_code": "NPR",
+    "currency_symbol": "₨",
+    "usd_exchange": 133.5
   },
   "cambodia": {
     "gdp": 32.0,
@@ -3093,7 +3433,11 @@
       "Footwear",
       "Rice",
       "Rubber"
-    ]
+    ],
+    "currency_name": "Cambodian Riel",
+    "currency_code": "KHR",
+    "currency_symbol": "៛",
+    "usd_exchange": 4100.0
   },
   "ecuador": {
     "gdp": 115.0,
@@ -3129,7 +3473,11 @@
       "Bananas",
       "Shrimp",
       "Cacao"
-    ]
+    ],
+    "currency_name": "US Dollar",
+    "currency_code": "USD",
+    "currency_symbol": "$",
+    "usd_exchange": 1.0
   },
   "guatemala": {
     "gdp": 102.0,
@@ -3165,7 +3513,11 @@
       "Bananas",
       "Sugar",
       "Textiles"
-    ]
+    ],
+    "currency_name": "Guatemalan Quetzal",
+    "currency_code": "GTQ",
+    "currency_symbol": "Q",
+    "usd_exchange": 7.82
   },
   "jamaica": {
     "gdp": 18.0,
@@ -3201,7 +3553,11 @@
       "Bauxite",
       "Sugar",
       "Rum"
-    ]
+    ],
+    "currency_name": "Jamaican Dollar",
+    "currency_code": "JMD",
+    "currency_symbol": "J$",
+    "usd_exchange": 155.0
   },
   "slovakia": {
     "gdp": 130.0,
@@ -3237,7 +3593,11 @@
       "Electronics",
       "Machinery",
       "Iron & Steel"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "latvia": {
     "gdp": 44.0,
@@ -3273,7 +3633,11 @@
       "Machinery",
       "Metals",
       "Food Products"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "iraq": {
     "gdp": 267.0,
@@ -3309,7 +3673,11 @@
       "Refined Petroleum",
       "Gold",
       "Dates"
-    ]
+    ],
+    "currency_name": "Iraqi Dinar",
+    "currency_code": "IQD",
+    "currency_symbol": "ع.د",
+    "usd_exchange": 1310.0
   },
   "lebanon": {
     "gdp": 22.0,
@@ -3345,7 +3713,11 @@
       "Chemicals",
       "Food Products",
       "Textiles"
-    ]
+    ],
+    "currency_name": "Lebanese Pound",
+    "currency_code": "LBP",
+    "currency_symbol": "ل.ل",
+    "usd_exchange": 89500.0
   },
   "kuwait": {
     "gdp": 165.0,
@@ -3381,7 +3753,11 @@
       "Refined Petroleum",
       "Petrochemicals",
       "Fertilizers"
-    ]
+    ],
+    "currency_name": "Kuwaiti Dinar",
+    "currency_code": "KWD",
+    "currency_symbol": "د.ك",
+    "usd_exchange": 0.31
   },
   "papua_new_guinea": {
     "gdp": 32.0,
@@ -3417,7 +3793,11 @@
       "Gold",
       "Copper",
       "Palm Oil"
-    ]
+    ],
+    "currency_name": "Papua New Guinean Kina",
+    "currency_code": "PGK",
+    "currency_symbol": "K",
+    "usd_exchange": 3.75
   },
   "bolivia": {
     "gdp": 46.0,
@@ -3453,7 +3833,11 @@
       "Gold",
       "Zinc",
       "Soybeans"
-    ]
+    ],
+    "currency_name": "Bolivian Boliviano",
+    "currency_code": "BOB",
+    "currency_symbol": "Bs",
+    "usd_exchange": 6.91
   },
   "oman": {
     "gdp": 105.0,
@@ -3489,7 +3873,11 @@
       "Refined Petroleum",
       "LNG",
       "Metals"
-    ]
+    ],
+    "currency_name": "Omani Rial",
+    "currency_code": "OMR",
+    "currency_symbol": "﷼",
+    "usd_exchange": 0.385
   },
   "paraguay": {
     "gdp": 44.0,
@@ -3525,7 +3913,11 @@
       "Beef",
       "Electricity",
       "Corn"
-    ]
+    ],
+    "currency_name": "Paraguayan Guaraní",
+    "currency_code": "PYG",
+    "currency_symbol": "₲",
+    "usd_exchange": 7300.0
   },
   "bahrain": {
     "gdp": 44.0,
@@ -3561,7 +3953,11 @@
       "Aluminum",
       "Iron Ore",
       "Chemicals"
-    ]
+    ],
+    "currency_name": "Bahraini Dinar",
+    "currency_code": "BHD",
+    "currency_symbol": "BD",
+    "usd_exchange": 0.376
   },
   "honduras": {
     "gdp": 33.0,
@@ -3597,7 +3993,11 @@
       "Garments",
       "Bananas",
       "Palm Oil"
-    ]
+    ],
+    "currency_name": "Honduran Lempira",
+    "currency_code": "HNL",
+    "currency_symbol": "L",
+    "usd_exchange": 24.7
   },
   "sudan": {
     "gdp": 34.0,
@@ -3633,7 +4033,11 @@
       "Oil",
       "Sesame",
       "Livestock"
-    ]
+    ],
+    "currency_name": "Sudanese Pound",
+    "currency_code": "SDG",
+    "currency_symbol": "ج.س",
+    "usd_exchange": 601.0
   },
   "yemen": {
     "gdp": 22.0,
@@ -3669,7 +4073,11 @@
       "Gold",
       "Seafood",
       "Coffee"
-    ]
+    ],
+    "currency_name": "Yemeni Rial",
+    "currency_code": "YER",
+    "currency_symbol": "﷼",
+    "usd_exchange": 250.0
   },
   "syria": {
     "gdp": 12.0,
@@ -3705,7 +4113,11 @@
       "Textiles",
       "Fruits",
       "Phosphates"
-    ]
+    ],
+    "currency_name": "Syrian Pound",
+    "currency_code": "SYP",
+    "currency_symbol": "£S",
+    "usd_exchange": 13000.0
   },
   "somalia": {
     "gdp": 8.0,
@@ -3741,7 +4153,11 @@
       "Charcoal",
       "Fish",
       "Hides"
-    ]
+    ],
+    "currency_name": "Somali Shilling",
+    "currency_code": "SOS",
+    "currency_symbol": "Sh",
+    "usd_exchange": 571.0
   },
   "afghanistan": {
     "gdp": 14.0,
@@ -3777,7 +4193,11 @@
       "Carpets",
       "Precious Stones",
       "Medicinal Plants"
-    ]
+    ],
+    "currency_name": "Afghan Afghani",
+    "currency_code": "AFN",
+    "currency_symbol": "؋",
+    "usd_exchange": 70.5
   },
   "libya": {
     "gdp": 42.0,
@@ -3813,7 +4233,11 @@
       "Refined Petroleum",
       "Gold",
       "Iron"
-    ]
+    ],
+    "currency_name": "Libyan Dinar",
+    "currency_code": "LYD",
+    "currency_symbol": "ل.د",
+    "usd_exchange": 4.85
   },
   "algeria": {
     "gdp": 195.0,
@@ -3849,7 +4273,11 @@
       "Natural Gas",
       "Refined Petroleum",
       "Phosphates"
-    ]
+    ],
+    "currency_name": "Algerian Dinar",
+    "currency_code": "DZD",
+    "currency_symbol": "د.ج",
+    "usd_exchange": 134.5
   },
   "zimbabwe": {
     "gdp": 28.0,
@@ -3885,7 +4313,11 @@
       "Tobacco",
       "Nickel",
       "Diamonds"
-    ]
+    ],
+    "currency_name": "Zimbabwean Dollar",
+    "currency_code": "ZWL",
+    "currency_symbol": "Z$",
+    "usd_exchange": 5700.0
   },
   "mali": {
     "gdp": 19.0,
@@ -3921,7 +4353,11 @@
       "Cotton",
       "Livestock",
       "Phosphates"
-    ]
+    ],
+    "currency_name": "West African CFA Franc",
+    "currency_code": "XOF",
+    "currency_symbol": "CFA",
+    "usd_exchange": 603.0
   },
   "madagascar": {
     "gdp": 16.0,
@@ -3957,7 +4393,11 @@
       "Nickel",
       "Cloves",
       "Textiles"
-    ]
+    ],
+    "currency_name": "Malagasy Ariary",
+    "currency_code": "MGA",
+    "currency_symbol": "Ar",
+    "usd_exchange": 4550.0
   },
   "bulgaria": {
     "gdp": 100.0,
@@ -3993,7 +4433,11 @@
       "Machinery",
       "Copper",
       "Wheat"
-    ]
+    ],
+    "currency_name": "Bulgarian Lev",
+    "currency_code": "BGN",
+    "currency_symbol": "лв",
+    "usd_exchange": 1.8
   },
   "slovenia": {
     "gdp": 68.0,
@@ -4029,7 +4473,11 @@
       "Pharmaceuticals",
       "Machinery",
       "Electrical Equipment"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "bosnia": {
     "gdp": 24.0,
@@ -4065,7 +4513,11 @@
       "Electricity",
       "Wood",
       "Furniture"
-    ]
+    ],
+    "currency_name": "Bosnia-Herzegovina Mark",
+    "currency_code": "BAM",
+    "currency_symbol": "KM",
+    "usd_exchange": 1.8
   },
   "belarus": {
     "gdp": 72.0,
@@ -4101,7 +4553,11 @@
       "Potash",
       "Machinery",
       "Dairy"
-    ]
+    ],
+    "currency_name": "Belarusian Ruble",
+    "currency_code": "BYN",
+    "currency_symbol": "Br",
+    "usd_exchange": 3.27
   },
   "moldova": {
     "gdp": 16.0,
@@ -4137,7 +4593,11 @@
       "Sunflower Seeds",
       "Textiles",
       "Machinery"
-    ]
+    ],
+    "currency_name": "Moldovan Leu",
+    "currency_code": "MDL",
+    "currency_symbol": "L",
+    "usd_exchange": 17.8
   },
   "panama": {
     "gdp": 77.0,
@@ -4173,7 +4633,11 @@
       "Gold",
       "Bananas",
       "Shrimp"
-    ]
+    ],
+    "currency_name": "US Dollar",
+    "currency_code": "USD",
+    "currency_symbol": "$",
+    "usd_exchange": 1.0
   },
   "el_salvador": {
     "gdp": 33.0,
@@ -4209,7 +4673,11 @@
       "Coffee",
       "Sugar",
       "Ethanol"
-    ]
+    ],
+    "currency_name": "US Dollar",
+    "currency_code": "USD",
+    "currency_symbol": "$",
+    "usd_exchange": 1.0
   },
   "haiti": {
     "gdp": 20.0,
@@ -4245,7 +4713,11 @@
       "Cocoa",
       "Mangoes",
       "Essential Oils"
-    ]
+    ],
+    "currency_name": "Haitian Gourde",
+    "currency_code": "HTG",
+    "currency_symbol": "G",
+    "usd_exchange": 132.0
   },
   "trinidad_tobago": {
     "gdp": 28.0,
@@ -4281,7 +4753,11 @@
       "Crude Oil",
       "Ammonia",
       "Methanol"
-    ]
+    ],
+    "currency_name": "Trinidad & Tobago Dollar",
+    "currency_code": "TTD",
+    "currency_symbol": "TT$",
+    "usd_exchange": 6.78
   },
   "uzbekistan": {
     "gdp": 90.0,
@@ -4317,7 +4793,11 @@
       "Natural Gas",
       "Cotton",
       "Uranium"
-    ]
+    ],
+    "currency_name": "Uzbekistani Som",
+    "currency_code": "UZS",
+    "currency_symbol": "сўм",
+    "usd_exchange": 12350.0
   },
   "mongolia": {
     "gdp": 18.0,
@@ -4353,7 +4833,11 @@
       "Coal",
       "Gold",
       "Iron Ore"
-    ]
+    ],
+    "currency_name": "Mongolian Tugrik",
+    "currency_code": "MNT",
+    "currency_symbol": "₮",
+    "usd_exchange": 3420.0
   },
   "laos": {
     "gdp": 22.0,
@@ -4389,7 +4873,11 @@
       "Gold",
       "Copper",
       "Wood"
-    ]
+    ],
+    "currency_name": "Lao Kip",
+    "currency_code": "LAK",
+    "currency_symbol": "₭",
+    "usd_exchange": 20800.0
   },
   "fiji": {
     "gdp": 5.5,
@@ -4425,7 +4913,11 @@
       "Fish",
       "Gold",
       "Garments"
-    ]
+    ],
+    "currency_name": "Fijian Dollar",
+    "currency_code": "FJD",
+    "currency_symbol": "FJ$",
+    "usd_exchange": 2.25
   },
   "nicaragua": {
     "gdp": 17.0,
@@ -4461,7 +4953,11 @@
       "Beef",
       "Gold",
       "Textiles"
-    ]
+    ],
+    "currency_name": "Nicaraguan Córdoba",
+    "currency_code": "NIO",
+    "currency_symbol": "C$",
+    "usd_exchange": 36.7
   },
   "north_korea": {
     "gdp": 18.0,
@@ -4497,7 +4993,11 @@
       "Textiles",
       "Iron Ore",
       "Seafood"
-    ]
+    ],
+    "currency_name": "North Korean Won",
+    "currency_code": "KPW",
+    "currency_symbol": "₩",
+    "usd_exchange": 900.0
   },
   "luxembourg": {
     "gdp": 87.0,
@@ -4533,7 +5033,11 @@
       "Steel",
       "Chemicals",
       "Machinery"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "malta": {
     "gdp": 20.0,
@@ -4569,7 +5073,11 @@
       "Pharmaceuticals",
       "Financial Services",
       "Tourism"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "cyprus": {
     "gdp": 30.0,
@@ -4605,7 +5113,11 @@
       "Pharmaceuticals",
       "Citrus Fruits",
       "Financial Services"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "albania": {
     "gdp": 22.0,
@@ -4641,7 +5153,11 @@
       "Metals & Minerals",
       "Crude Oil",
       "Vegetables"
-    ]
+    ],
+    "currency_name": "Albanian Lek",
+    "currency_code": "ALL",
+    "currency_symbol": "L",
+    "usd_exchange": 95.0
   },
   "north_macedonia": {
     "gdp": 14.0,
@@ -4677,7 +5193,11 @@
       "Iron & Steel",
       "Textiles",
       "Tobacco"
-    ]
+    ],
+    "currency_name": "Macedonian Denar",
+    "currency_code": "MKD",
+    "currency_symbol": "ден",
+    "usd_exchange": 56.5
   },
   "montenegro": {
     "gdp": 7.0,
@@ -4713,7 +5233,11 @@
       "Electricity",
       "Tourism Services",
       "Wine"
-    ]
+    ],
+    "currency_name": "Euro",
+    "currency_code": "EUR",
+    "currency_symbol": "€",
+    "usd_exchange": 0.92
   },
   "georgia": {
     "gdp": 25.0,
@@ -4749,7 +5273,11 @@
       "Wine",
       "Vehicles",
       "Ferro-alloys"
-    ]
+    ],
+    "currency_name": "Georgian Lari",
+    "currency_code": "GEL",
+    "currency_symbol": "₾",
+    "usd_exchange": 2.68
   },
   "armenia": {
     "gdp": 20.0,
@@ -4785,7 +5313,11 @@
       "Gold",
       "Diamonds",
       "Tobacco"
-    ]
+    ],
+    "currency_name": "Armenian Dram",
+    "currency_code": "AMD",
+    "currency_symbol": "֏",
+    "usd_exchange": 387.0
   },
   "azerbaijan": {
     "gdp": 55.0,
@@ -4821,7 +5353,11 @@
       "Natural Gas",
       "Refined Petroleum",
       "Fruits"
-    ]
+    ],
+    "currency_name": "Azerbaijani Manat",
+    "currency_code": "AZN",
+    "currency_symbol": "₼",
+    "usd_exchange": 1.7
   },
   "namibia": {
     "gdp": 13.0,
@@ -4857,7 +5393,11 @@
       "Uranium",
       "Fish & Seafood",
       "Gold"
-    ]
+    ],
+    "currency_name": "Namibian Dollar",
+    "currency_code": "NAD",
+    "currency_symbol": "N$",
+    "usd_exchange": 18.65
   },
   "mauritius": {
     "gdp": 14.0,
@@ -4893,7 +5433,11 @@
       "Sugar",
       "Fish Products",
       "Financial Services"
-    ]
+    ],
+    "currency_name": "Mauritian Rupee",
+    "currency_code": "MUR",
+    "currency_symbol": "₨",
+    "usd_exchange": 45.5
   },
   "gabon": {
     "gdp": 20.0,
@@ -4929,7 +5473,11 @@
       "Manganese",
       "Timber",
       "Palm Oil"
-    ]
+    ],
+    "currency_name": "Central African CFA Franc",
+    "currency_code": "XAF",
+    "currency_symbol": "FCFA",
+    "usd_exchange": 603.0
   },
   "burkina_faso": {
     "gdp": 19.0,
@@ -4965,7 +5513,11 @@
       "Cotton",
       "Sesame Seeds",
       "Cashew Nuts"
-    ]
+    ],
+    "currency_name": "West African CFA Franc",
+    "currency_code": "XOF",
+    "currency_symbol": "CFA",
+    "usd_exchange": 603.0
   },
   "niger": {
     "gdp": 15.0,
@@ -5001,7 +5553,11 @@
       "Oil",
       "Gold",
       "Onions"
-    ]
+    ],
+    "currency_name": "West African CFA Franc",
+    "currency_code": "XOF",
+    "currency_symbol": "CFA",
+    "usd_exchange": 603.0
   },
   "chad": {
     "gdp": 12.0,
@@ -5037,7 +5593,11 @@
       "Cotton",
       "Cattle",
       "Gum Arabic"
-    ]
+    ],
+    "currency_name": "Central African CFA Franc",
+    "currency_code": "XAF",
+    "currency_symbol": "FCFA",
+    "usd_exchange": 603.0
   },
   "guinea": {
     "gdp": 17.0,
@@ -5073,7 +5633,11 @@
       "Gold",
       "Alumina",
       "Diamonds"
-    ]
+    ],
+    "currency_name": "Guinean Franc",
+    "currency_code": "GNF",
+    "currency_symbol": "FG",
+    "usd_exchange": 8600.0
   },
   "sierra_leone": {
     "gdp": 4.5,
@@ -5109,7 +5673,11 @@
       "Diamonds",
       "Titanium",
       "Cocoa"
-    ]
+    ],
+    "currency_name": "Sierra Leonean Leone",
+    "currency_code": "SLE",
+    "currency_symbol": "Le",
+    "usd_exchange": 22.5
   },
   "malawi": {
     "gdp": 12.0,
@@ -5145,7 +5713,11 @@
       "Tea",
       "Sugar",
       "Pulses"
-    ]
+    ],
+    "currency_name": "Malawian Kwacha",
+    "currency_code": "MWK",
+    "currency_symbol": "MK",
+    "usd_exchange": 1720.0
   },
   "benin": {
     "gdp": 18.0,
@@ -5181,7 +5753,11 @@
       "Cashew Nuts",
       "Palm Oil",
       "Shea Butter"
-    ]
+    ],
+    "currency_name": "West African CFA Franc",
+    "currency_code": "XOF",
+    "currency_symbol": "CFA",
+    "usd_exchange": 603.0
   },
   "togo": {
     "gdp": 9.0,
@@ -5217,7 +5793,11 @@
       "Cotton",
       "Cement",
       "Coffee"
-    ]
+    ],
+    "currency_name": "West African CFA Franc",
+    "currency_code": "XOF",
+    "currency_symbol": "CFA",
+    "usd_exchange": 603.0
   },
   "south_sudan": {
     "gdp": 5.0,
@@ -5253,7 +5833,11 @@
       "Timber",
       "Gold",
       "Livestock"
-    ]
+    ],
+    "currency_name": "South Sudanese Pound",
+    "currency_code": "SSP",
+    "currency_symbol": "£",
+    "usd_exchange": 950.0
   },
   "eritrea": {
     "gdp": 2.5,
@@ -5289,7 +5873,11 @@
       "Zinc",
       "Copper",
       "Livestock"
-    ]
+    ],
+    "currency_name": "Eritrean Nakfa",
+    "currency_code": "ERN",
+    "currency_symbol": "Nfk",
+    "usd_exchange": 15.0
   },
   "mauritania": {
     "gdp": 10.0,
@@ -5325,7 +5913,11 @@
       "Fish & Seafood",
       "Gold",
       "Crude Oil"
-    ]
+    ],
+    "currency_name": "Mauritanian Ouguiya",
+    "currency_code": "MRU",
+    "currency_symbol": "UM",
+    "usd_exchange": 39.5
   },
   "brunei": {
     "gdp": 15.0,
@@ -5361,7 +5953,11 @@
       "Natural Gas",
       "Refined Petroleum",
       "Petrochemicals"
-    ]
+    ],
+    "currency_name": "Brunei Dollar",
+    "currency_code": "BND",
+    "currency_symbol": "B$",
+    "usd_exchange": 1.34
   },
   "maldives": {
     "gdp": 6.0,
@@ -5397,7 +5993,11 @@
       "Tourism Services",
       "Boats",
       "Coconut Products"
-    ]
+    ],
+    "currency_name": "Maldivian Rufiyaa",
+    "currency_code": "MVR",
+    "currency_symbol": "Rf",
+    "usd_exchange": 15.4
   },
   "bhutan": {
     "gdp": 3.0,
@@ -5433,7 +6033,11 @@
       "Ferro-silicon",
       "Cardamom",
       "Cement"
-    ]
+    ],
+    "currency_name": "Bhutanese Ngultrum",
+    "currency_code": "BTN",
+    "currency_symbol": "Nu",
+    "usd_exchange": 83.4
   },
   "turkmenistan": {
     "gdp": 45.0,
@@ -5469,7 +6073,11 @@
       "Crude Oil",
       "Petrochemicals",
       "Cotton"
-    ]
+    ],
+    "currency_name": "Turkmen Manat",
+    "currency_code": "TMT",
+    "currency_symbol": "T",
+    "usd_exchange": 3.5
   },
   "tajikistan": {
     "gdp": 12.0,
@@ -5505,7 +6113,11 @@
       "Gold",
       "Cotton",
       "Electricity"
-    ]
+    ],
+    "currency_name": "Tajikistani Somoni",
+    "currency_code": "TJS",
+    "currency_symbol": "SM",
+    "usd_exchange": 10.92
   },
   "kyrgyzstan": {
     "gdp": 11.0,
@@ -5541,7 +6153,11 @@
       "Minerals",
       "Textiles",
       "Agricultural Products"
-    ]
+    ],
+    "currency_name": "Kyrgyzstani Som",
+    "currency_code": "KGS",
+    "currency_symbol": "сом",
+    "usd_exchange": 89.2
   },
   "timor_leste": {
     "gdp": 3.5,
@@ -5577,7 +6193,11 @@
       "Coffee",
       "Sandalwood",
       "Marble"
-    ]
+    ],
+    "currency_name": "US Dollar",
+    "currency_code": "USD",
+    "currency_symbol": "$",
+    "usd_exchange": 1.0
   },
   "guyana": {
     "gdp": 15.0,
@@ -5613,7 +6233,11 @@
       "Gold",
       "Bauxite",
       "Sugar & Rice"
-    ]
+    ],
+    "currency_name": "Guyanese Dollar",
+    "currency_code": "GYD",
+    "currency_symbol": "G$",
+    "usd_exchange": 209.0
   },
   "suriname": {
     "gdp": 4.0,
@@ -5649,7 +6273,11 @@
       "Crude Oil",
       "Lumber",
       "Bananas"
-    ]
+    ],
+    "currency_name": "Surinamese Dollar",
+    "currency_code": "SRD",
+    "currency_symbol": "$",
+    "usd_exchange": 36.2
   },
   "bahamas": {
     "gdp": 14.0,
@@ -5685,7 +6313,11 @@
       "Polystyrene",
       "Crustaceans",
       "Tourism Services"
-    ]
+    ],
+    "currency_name": "Bahamian Dollar",
+    "currency_code": "BSD",
+    "currency_symbol": "B$",
+    "usd_exchange": 1.0
   },
   "barbados": {
     "gdp": 6.0,
@@ -5721,7 +6353,11 @@
       "Sugar",
       "Chemicals",
       "Tourism Services"
-    ]
+    ],
+    "currency_name": "Barbadian Dollar",
+    "currency_code": "BBD",
+    "currency_symbol": "Bds$",
+    "usd_exchange": 2.0
   },
   "belize": {
     "gdp": 3.0,
@@ -5757,6 +6393,10 @@
       "Bananas",
       "Citrus Products",
       "Marine Products"
-    ]
+    ],
+    "currency_name": "Belize Dollar",
+    "currency_code": "BZD",
+    "currency_symbol": "BZ$",
+    "usd_exchange": 2.0
   }
 }
